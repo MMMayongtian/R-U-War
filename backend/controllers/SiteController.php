@@ -144,6 +144,7 @@ class SiteController extends \yii\web\Controller
         $commentService = Yii::$app->get(CommentServiceInterface::ServiceName);
         $comments = $commentService->getRecentComments(6);
         return $this->render('main', [
+            'info' => $info,
             'statics' => $statics,
             'comments' => $comments,
         ]);

@@ -7,17 +7,39 @@
 }
 
 .member {
+    transition: width 1s;
+    -webkit-transition: width 1s;
     width: 340px;
     height: 420px;
     margin-left: 500px;
+    transform: translate(-40%);
+    border-radius: 40px;
+    border-style: solid;
+    border-color: #363B42;
+    margin-top: 60px;
+    background-color: #161B22;
     display: flex;
     flex-direction: row;
     align-items: center;
     background: radial-gradient(circle at 6%, #1d2027, #161B22);
 }
 
+.member:hover {
+    width: 80%;
+}
+
+.member:hover .description {
+    transition-delay: 0.8s;
+    width: 540px;
+    visibility: inherit;
+}
 
 .description {
+    padding: 20px;
+    border-radius: 20px;
+    border-style: solid;
+    border-color: #363B42;
+    color: #C9D1D9;
     font-size: 26px;
     Line-height: 38px;
     transform: translate(15%);
@@ -25,6 +47,14 @@
     height: 280px;
     width: 0px;
     white-space: pre-wrap;
+}
+
+.memberEmail {
+    position: fixed;
+    bottom: 0px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    height: 30px;
 }
 
 .card {
@@ -81,6 +111,10 @@
     object-fit: cover;
     transition: 0.5s;
     transform-origin: top;
+}
+
+.circle .imgBox:hover img {
+    transform: scale(1.3);
 }
 
 .teamContent {
