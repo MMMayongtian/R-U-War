@@ -1,0 +1,81 @@
+2023-02-12 22:44:05 [127.0.0.1][1][dnlmbtugmh484b2amul8se0dp7][error][yii\base\ErrorException:2] yii\base\ErrorException: rmdir(D:\phpstudy_pro\WWW/frontend/web/admin/assets\ae0894af\js\plugins\layer\skin): Directory not empty in D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\helpers\BaseFileHelper.php:399
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(2, 'rmdir(D:\\phpstu...', 'D:\\phpstudy_pro...', 399, Array)
+#1 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\helpers\BaseFileHelper.php(399): rmdir('D:\\phpstudy_pro...')
+#2 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\helpers\BaseFileHelper.php(389): yii\helpers\BaseFileHelper::removeDirectory('D:\\phpstudy_pro...', Array)
+#3 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\helpers\BaseFileHelper.php(389): yii\helpers\BaseFileHelper::removeDirectory('D:\\phpstudy_pro...', Array)
+#4 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\helpers\BaseFileHelper.php(389): yii\helpers\BaseFileHelper::removeDirectory('D:\\phpstudy_pro...', Array)
+#5 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\helpers\BaseFileHelper.php(389): yii\helpers\BaseFileHelper::removeDirectory('D:\\phpstudy_pro...', Array)
+#6 D:\phpstudy_pro\WWW\backend\controllers\ClearController.php(60): yii\helpers\BaseFileHelper::removeDirectory('D:\\phpstudy_pro...')
+#7 D:\phpstudy_pro\WWW\backend\controllers\ClearController.php(29): backend\controllers\ClearController->deleteFiles(Array)
+#8 [internal function]: backend\controllers\ClearController->actionBackend()
+#9 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#10 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#11 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('backend', Array)
+#12 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('clear/backend', Array)
+#13 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#14 D:\phpstudy_pro\WWW\frontend\web\admin\index.php(18): yii\base\Application->run()
+#15 {main}
+2023-02-12 22:44:05 [127.0.0.1][1][dnlmbtugmh484b2amul8se0dp7][info][application] $_GET = [
+    'r' => 'clear/backend'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'wordpress_logged_in_86a9106ae65537651a8e456835b316ab' => 'mmma|1677050114|bT7ng8zBap8ZomuqdwGcjq60357AHSocZMRZYk1b7uI|33c8845584b6d712613a75dad4396516b8f24492be531ba5872116c6f5fd0330'
+    'wp-settings-time-1' => '1675943997'
+    '_identity-frontend' => 'ff4723d33490d1a30d5640e71fd7d121f9b6f51fd9475373e1d93f547b10525aa:2:{i:0;s:18:\"_identity-frontend\";i:1;s:46:\"[1,\"4sSpK38KErySZpizaMO18REH4nXWPDrD\",2592000]\";}'
+    '_identity-backend' => '7223aaae057f741b3ba5c4d0725f6f17a2846f199c7fcfd05830ef9b8b13aedaa:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"4sSpK38KErySZpizaMO18REH4nXWPDrD\",2592000]\";}'
+    'BACKEND_FEEHICMS' => 'dnlmbtugmh484b2amul8se0dp7'
+    '_csrf_backend' => '43663e0c7ed25d856c5cb2ed7134b91666a737f04f9e609acdd12844dabd5c26a:2:{i:0;s:13:\"_csrf_backend\";i:1;s:32:\"wFkO7t7yTnXMOvL3qmIzixR-iMTm-taQ\";}'
+    'PHPSESSID' => 'jri24p4a99164n5e1cvoguc7bq'
+    '_identity' => 'd8255b71788c2d7fd95b28dd1be29a10ac8ef0387a20febdf79467c8c972139da:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"8phKWid8OO7INzOjfkQZ-9XONLK2UX40\",2592000]\";}'
+    '_csrf' => 'cde2e1a7eef17364ffcddeb042b107004b3c63a356bf8182035cf19f06710b66a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"9Vp-GoADPRoz5MKyA2byBa1Ft6H1tgQA\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '_backend_returnUrl' => '/admin/'
+    '__captcha/site/captcha' => 'joba'
+    '__captcha/site/captchacount' => 1
+    '__backend__id' => 1
+    '_create_referer' => 'http://localhost:8080/admin/index.php?r=article%2Findex'
+    '_update_referer' => 'http://localhost:8080/admin/index.php?r=article%2Findex'
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'D:\\phpstudy_pro\\WWW\\frontend\\web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '49818'
+    'SERVER_SOFTWARE' => 'PHP 7.3.4 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/admin/index.php?r=clear%2Fbackend'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/admin/index.php'
+    'SCRIPT_FILENAME' => 'D:\\phpstudy_pro\\WWW\\frontend\\web\\admin\\index.php'
+    'PHP_SELF' => '/admin/index.php'
+    'QUERY_STRING' => 'r=clear%2Fbackend'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_SEC_CH_UA' => '\"Chromium\";v=\"110\", \"Not A(Brand\";v=\"24\", \"Microsoft Edge\";v=\"110\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36 Edg/110.0.1587.41'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'iframe'
+    'HTTP_REFERER' => 'http://localhost:8080/admin/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6'
+    'HTTP_COOKIE' => 'wordpress_logged_in_86a9106ae65537651a8e456835b316ab=mmma%7C1677050114%7CbT7ng8zBap8ZomuqdwGcjq60357AHSocZMRZYk1b7uI%7C33c8845584b6d712613a75dad4396516b8f24492be531ba5872116c6f5fd0330; wp-settings-time-1=1675943997; _identity-frontend=ff4723d33490d1a30d5640e71fd7d121f9b6f51fd9475373e1d93f547b10525aa%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%224sSpK38KErySZpizaMO18REH4nXWPDrD%22%2C2592000%5D%22%3B%7D; _identity-backend=7223aaae057f741b3ba5c4d0725f6f17a2846f199c7fcfd05830ef9b8b13aedaa%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%224sSpK38KErySZpizaMO18REH4nXWPDrD%22%2C2592000%5D%22%3B%7D; BACKEND_FEEHICMS=dnlmbtugmh484b2amul8se0dp7; _csrf_backend=43663e0c7ed25d856c5cb2ed7134b91666a737f04f9e609acdd12844dabd5c26a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf_backend%22%3Bi%3A1%3Bs%3A32%3A%22wFkO7t7yTnXMOvL3qmIzixR-iMTm-taQ%22%3B%7D; PHPSESSID=jri24p4a99164n5e1cvoguc7bq; _identity=d8255b71788c2d7fd95b28dd1be29a10ac8ef0387a20febdf79467c8c972139da%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%228phKWid8OO7INzOjfkQZ-9XONLK2UX40%22%2C2592000%5D%22%3B%7D; _csrf=cde2e1a7eef17364ffcddeb042b107004b3c63a356bf8182035cf19f06710b66a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%229Vp-GoADPRoz5MKyA2byBa1Ft6H1tgQA%22%3B%7D'
+    'REQUEST_TIME_FLOAT' => 1676213045.025
+    'REQUEST_TIME' => 1676213045
+]

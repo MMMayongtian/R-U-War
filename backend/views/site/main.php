@@ -21,7 +21,7 @@ $this->registerCss("
 ")
 ?>
 <div class="row">
-    <div class="col-sm-3">
+    <div class="col-sm-3" style="width:33%">
         <div class="ibox float-e-margins">
             <div class="ibox-title">
                 <span class="label label-success pull-right"><?= Yii::t('app', 'Month') ?></span>
@@ -34,7 +34,7 @@ $this->registerCss("
             </div>
         </div>
     </div>
-    <div class="col-sm-3">
+    <div class="col-sm-3" style="width:34%">
         <div class="ibox float-e-margins">
             <div class="ibox-title">
                 <span class="label label-info pull-right"><?= Yii::t('app', 'Today') ?></span>
@@ -47,7 +47,7 @@ $this->registerCss("
             </div>
         </div>
     </div>
-    <div class="col-sm-3">
+    <div class="col-sm-3" style="width:33%">
         <div class="ibox float-e-margins">
             <div class="ibox-title">
                 <span class="label label-primary pull-right"><?= Yii::t('app', 'Month') ?></span>
@@ -60,54 +60,9 @@ $this->registerCss("
             </div>
         </div>
     </div>
-    <div class="col-sm-3">
-        <div class="ibox float-e-margins">
-            <div class="ibox-title">
-                <span class="label label-success pull-right"><?= Yii::t('app', 'Month') ?></span>
-                <h5><?= Yii::t('app', 'Friendly Links') ?></h5>
-            </div>
-            <div class="ibox-content openContab" href="<?=Url::to(['friendly-link/index'])?>" title="<?= Yii::t('app', 'Friendly Links')?>" style="cursor: pointer">
-                <h1 class="no-margins"><?= $statics['FRIENDLY_LINK'][0] ?></h1>
-                <div class="stat-percent font-bold text-info"><?= $statics['FRIENDLY_LINK'][1] ?>% <i class="fa fa-level-up"></i></div>
-                <small><?= Yii::t('app', 'Total') ?></small>
-            </div>
-        </div>
-    </div>
 </div>
 <div class="row">
     <div class="col-sm-6">
-        <div>
-            <div class="ibox float-e-margins">
-                <div class="ibox-title">
-                    <h5><?= Yii::t('app', 'Notify') ?></h5>
-                    <div class="ibox-tools">
-                        <a target="_blank" href="http://api.feehi.com/cms"><?= Yii::t('app', 'More')?></a>
-                        <a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
-                        <a class="close-link"><i class="fa fa-times"></i></a>
-                    </div>
-                </div>
-                <div class="ibox-content no-padding">
-                    <ul class="list-group" id="notify">
-                        <li class="list-group-item">
-                            <div class="sk-spinner sk-spinner-fading-circle">
-                                <div class="sk-circle1 sk-circle"></div>
-                                <div class="sk-circle2 sk-circle"></div>
-                                <div class="sk-circle3 sk-circle"></div>
-                                <div class="sk-circle4 sk-circle"></div>
-                                <div class="sk-circle5 sk-circle"></div>
-                                <div class="sk-circle6 sk-circle"></div>
-                                <div class="sk-circle7 sk-circle"></div>
-                                <div class="sk-circle8 sk-circle"></div>
-                                <div class="sk-circle9 sk-circle"></div>
-                                <div class="sk-circle10 sk-circle"></div>
-                                <div class="sk-circle11 sk-circle"></div>
-                                <div class="sk-circle12 sk-circle"></div>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
         <div>
             <div class="ibox float-e-margins environment">
                 <div class="ibox-title">
@@ -119,9 +74,6 @@ $this->registerCss("
                 </div>
                 <div class="ibox-content no-padding">
                     <ul class="list-group">
-                        <li class="list-group-item">
-                            <span class="badge badge-primary">&nbsp;&nbsp;</span><strong>Feehi CMS</strong>: <?= Yii::$app->getVersion() ?>
-                        </li>
                         <li class="list-group-item ">
                             <span class="badge badge-info">&nbsp;&nbsp;</span> <strong>Web Server</strong>: <?= $info['OPERATING_ENVIRONMENT'] ?>
                         </li>
@@ -142,69 +94,6 @@ $this->registerCss("
                             <strong><?= Yii::t('app', 'PHP Execute Method') ?></strong>: <?= $info['PHP_RUN_MODE'] ?>
                         </li>
                     </ul>
-                </div>
-            </div>
-        </div>
-
-        <div>
-            <div class="ibox-title">
-                <h5><?= Yii::t('app', 'Status') ?></h5>
-                <div class="ibox-tools">
-                    <a class="collapse-link ui-sortable">
-                        <i class="fa fa-chevron-up"></i>
-                    </a>
-                    <a class="close-link">
-                        <i class="fa fa-times"></i>
-                    </a>
-                </div>
-            </div>
-            <div class="ibox-content">
-                <div>
-                    <div>
-                        <span><?= Yii::t('app', 'Memory Usage') ?></span>
-                        <small class="pull-right">
-                            <?php if (PHP_OS == 'Linux') {
-                                echo $status['MEM']['NUM'];
-                            } else {
-                                echo Yii::t('app', 'Only supported linux system');
-                            }
-                            ?>
-                        </small>
-                    </div>
-                    <div class="progress progress-small">
-                        <div style="width: <?= $status['MEM']['PERCENTAGE'] ?>;" class="progress-bar progress-bar<?=$status['MEM']['PERCENTAGE']>80 ? '-danger' : ''?>"></div>
-                    </div>
-
-                    <div>
-                        <span><?= Yii::t('app', 'Real Memory Usage') ?></span>
-                        <small class="pull-right">
-                            <?php if (PHP_OS == 'Linux') {
-                                echo $status['REAL_MEM']['NUM'];
-                            } else {
-                                echo Yii::t('app', 'Only supported linux system');
-                            }
-                            ?>
-                        </small>
-                    </div>
-                    <div class="progress progress-small">
-                        <div style="width: <?= $status['REAL_MEM']['PERCENTAGE'] ?>;" class="progress-bar progress-bar<?=$status['REAL_MEM']['PERCENTAGE']>80 ? '-danger' : ''?>"></div>
-                    </div>
-                    <!--
-                    <div>
-                        <span>CPU</span>
-                        <small class="pull-right">20 GB</small>
-                    </div>
-                    <div class="progress progress-small">
-                        <div style="width: 50%;" class="progress-bar"></div>
-                    </div>
-                    -->
-                    <div>
-                        <span><?= Yii::t('app', 'Disk Usage') ?></span>
-                        <small class="pull-right"><?= $status['DISK_SPACE']['NUM'] ?></small>
-                    </div>
-                    <div class="progress progress-small">
-                        <div style="width: <?= $status['DISK_SPACE']['PERCENTAGE'] ?>%;" class="progress-bar progress-bar<?=$status['DISK_SPACE']['PERCENTAGE']>80 ? '-danger' : ''?>"></div>
-                    </div>
                 </div>
             </div>
         </div>

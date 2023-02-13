@@ -1,0 +1,256 @@
+Message-ID: <2e9d57971fdb0461ffa49641401509c9@localhost>
+Date: Sat, 11 Feb 2023 17:01:40 +0800
+Subject: =?UTF-8?Q?=E6=9D=A5=E8=87=AA?= Feehi CMS
+ =?UTF-8?Q?=E5=90=8E=E5=8F=B0=E7=9A=84=E6=96=B0?=
+ =?UTF-8?Q?=E6=97=A5=E5=BF=97=E6=B6=88=E6=81=AF?=
+From: Feehi CMS robot  <admin@feehi.com>
+To: admin@feehi.com, liufee@126.com
+MIME-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+2023-02-11 17:01:40
+[127.0.0.1][1][pi6mvlgub59hjgsnrr0mehddms][error][yii\db\Exception]
+PDOException: SQLSTATE[42000]: Syntax error or access violation: 1103
+Incorrect table name '' in
+D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\db\Command.php:1290
+Stack trace:
+#0 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\db\Command.php(1290):
+PDOStatement->execute()
+#1 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\db\Command.php(1158):
+yii\db\Command->internalExecute('SHOW FULL COLUM...')
+#2 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\db\Command.php(399):
+yii\db\Command->queryInternal('fetchAll', NULL)
+#3 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\db\mysql\Schema.php(319):
+yii\db\Command->queryAll()
+#4 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\db\mysql\Schema.php(125):
+yii\db\mysql\Schema->findColumns(Object(yii\db\TableSchema))
+#5 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\db\Schema.php(744):
+yii\db\mysql\Schema->loadTableSchema(NULL)
+#6 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\db\Schema.php(194):
+yii\db\Schema->getTableMetadata(NULL, 'schema', false)
+#7 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\db\Connection.php(858):
+yii\db\Schema->getTableSchema(NULL, false)
+#8
+D:\phpstudy_pro\WWW\vendor\yiisoft\yii2-gii\src\generators\model\Generator=
+.php(510):
+yii\db\Connection->getTableSchema(NULL)
+#9
+D:\phpstudy_pro\WWW\vendor\yiisoft\yii2-gii\src\generators\model\Generator=
+.php(216):
+yii\gii\generators\model\Generator->generateRelations()
+#10
+D:\phpstudy_pro\WWW\vendor\yiisoft\yii2-gii\src\controllers\DefaultContro=
+ller.php(61):
+yii\gii\generators\model\Generator->generate()
+#11 [internal function]:
+yii\gii\controllers\DefaultController->actionView('model')
+#12 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\InlineAction.php(57):
+call_user_func_array(Array, Array)
+#13 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Controller.php(157):
+yii\base\InlineAction->runWithParams(Array)
+#14 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Module.php(528):
+yii\base\Controller->runAction('view', Array)
+#15 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\web\Application.php(103):
+yii\base\Module->runAction('gii/default/vie...', Array)
+#16 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Application.php(386):
+yii\web\Application->handleRequest(Object(yii\web\Request))
+#17 D:\phpstudy_pro\WWW\frontend\web\admin\index.php(18):
+yii\base\Application->run()
+#18 {main}
+
+Next yii\db\Exception: SQLSTATE[42000]: Syntax error or access
+violation: 1103 Incorrect table name ''
+The SQL being executed was: SHOW FULL COLUMNS FROM `` in
+D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\db\Schema.php:664
+Stack trace:
+#0 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\db\Command.php(1295):
+yii\db\Schema->convertException(Object(PDOException), 'SHOW FULL
+COLUM...')
+#1 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\db\Command.php(1158):
+yii\db\Command->internalExecute('SHOW FULL COLUM...')
+#2 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\db\Command.php(399):
+yii\db\Command->queryInternal('fetchAll', NULL)
+#3 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\db\mysql\Schema.php(319):
+yii\db\Command->queryAll()
+#4 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\db\mysql\Schema.php(125):
+yii\db\mysql\Schema->findColumns(Object(yii\db\TableSchema))
+#5 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\db\Schema.php(744):
+yii\db\mysql\Schema->loadTableSchema(NULL)
+#6 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\db\Schema.php(194):
+yii\db\Schema->getTableMetadata(NULL, 'schema', false)
+#7 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\db\Connection.php(858):
+yii\db\Schema->getTableSchema(NULL, false)
+#8
+D:\phpstudy_pro\WWW\vendor\yiisoft\yii2-gii\src\generators\model\Generator=
+.php(510):
+yii\db\Connection->getTableSchema(NULL)
+#9
+D:\phpstudy_pro\WWW\vendor\yiisoft\yii2-gii\src\generators\model\Generator=
+.php(216):
+yii\gii\generators\model\Generator->generateRelations()
+#10
+D:\phpstudy_pro\WWW\vendor\yiisoft\yii2-gii\src\controllers\DefaultContro=
+ller.php(61):
+yii\gii\generators\model\Generator->generate()
+#11 [internal function]:
+yii\gii\controllers\DefaultController->actionView('model')
+#12 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\InlineAction.php(57):
+call_user_func_array(Array, Array)
+#13 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Controller.php(157):
+yii\base\InlineAction->runWithParams(Array)
+#14 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Module.php(528):
+yii\base\Controller->runAction('view', Array)
+#15 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\web\Application.php(103):
+yii\base\Module->runAction('gii/default/vie...', Array)
+#16 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Application.php(386):
+yii\web\Application->handleRequest(Object(yii\web\Request))
+#17 D:\phpstudy_pro\WWW\frontend\web\admin\index.php(18):
+yii\base\Application->run()
+#18 {main}
+Additional Information:
+Array
+(
+    [0] =3D> 42000
+    [1] =3D> 1103
+    [2] =3D> Incorrect table name ''
+)
+
+2023-02-11 17:01:40
+[127.0.0.1][1][pi6mvlgub59hjgsnrr0mehddms][info][application] $_GET =3D
+[
+    'r' =3D> 'gii/default/view'
+    'id' =3D> 'model'
+]
+
+$_POST =3D [
+    '_csrf_backend' =3D>
+'6lH5NxI5I0mMaCfnyPbaphK_QL8HMmXehDLRtJyd9DDZOYl7dHt6GcdFTqqJnePNKsY07UpfEI=
+TtAJTjz-2uRA=3D=3D'
+    'Generator' =3D> [
+        'tableName' =3D> 'feehi_team'
+        'modelClass' =3D> 'Team'
+        'standardizeCapitals' =3D> '1'
+        'ns' =3D> 'common\\models'
+        'baseClass' =3D> 'yii\\db\\ActiveRecord'
+        'db' =3D> 'db'
+        'useTablePrefix' =3D> '1'
+        'generateRelations' =3D> 'all'
+        'generateRelationsFromCurrentSchema' =3D> '1'
+        'generateLabelsFromComments' =3D> '0'
+        'generateQuery' =3D> '0'
+        'queryNs' =3D> 'common\\models'
+        'queryBaseClass' =3D> 'yii\\db\\ActiveQuery'
+        'enableI18N' =3D> '0'
+        'messageCategory' =3D> 'app'
+        'useSchemaName' =3D> '1'
+        'template' =3D> 'default'
+    ]
+    'preview' =3D> ''
+]
+
+$_FILES =3D []
+
+$_COOKIE =3D [
+    'wordpress_logged_in_86a9106ae65537651a8e456835b316ab' =3D>
+'mmma|1677050114|bT7ng8zBap8ZomuqdwGcjq60357AHSocZMRZYk1b7uI|33c8845584b6d7=
+12613a75dad4396516b8f24492be531ba5872116c6f5fd0330'
+    'wp-settings-time-1' =3D> '1675943997'
+    '_identity-frontend' =3D>
+'ff4723d33490d1a30d5640e71fd7d121f9b6f51fd9475373e1d93f547b10525aa:2:{i:0=
+;s:18:\"_identity-frontend\";i:1;s:46:\"[1,\"4sSpK38KErySZpizaMO18REH4nX=
+WPDrD\",2592000]\";}'
+    '_identity-backend' =3D>
+'7223aaae057f741b3ba5c4d0725f6f17a2846f199c7fcfd05830ef9b8b13aedaa:2:{i:0;s=
+:17:\"_identity-backend\";i:1;s:46:\"[1,\"4sSpK38KErySZpizaMO18REH4nXWPD=
+rD\",2592000]\";}'
+    'BACKEND_FEEHICMS' =3D> 'pi6mvlgub59hjgsnrr0mehddms'
+    '_csrf_backend' =3D>
+'ae152197871f935c582860e0ee9e3fba381823906735adaead67a55f5dad9cbfa:2:{i:0;s=
+:13:\"_csrf_backend\";i:1;s:32:\"3hpLfBYPK-iMAk9k8ytRMmuZi2EWSpZt\";}'
+    'PHPSESSID' =3D> 'rc8n5lr5goppve04t5icjn3q1u'
+    '_csrf' =3D>
+'98f4e9638b107ccf1d31e4b9fe6ba9f5bcb626190024821c3dc86024270ef359a:2:{i:0;=
+s:5:\"_csrf\";i:1;s:32:\"v0HE9XVvPnKqN_E3zo-evAzc9jCiZca1\";}'
+]
+
+$_SESSION =3D [
+    '__flash' =3D> []
+    '_backend_returnUrl' =3D> '/admin/'
+    '__captcha/site/captcha' =3D> 'cede'
+    '__captcha/site/captchacount' =3D> 1
+    '__backend__id' =3D> 1
+    '_create_referer' =3D>
+'http://localhost:8080/admin/index.php?r=3Darticle%2Findex'
+    '_update_referer' =3D>
+'http://localhost:8080/admin/index.php?r=3Dfrontend-menu%2Findex'
+]
+
+$_SERVER =3D [
+    'DOCUMENT_ROOT' =3D> 'D:\\phpstudy_pro\\WWW\\frontend\\web'
+    'REMOTE_ADDR' =3D> '127.0.0.1'
+    'REMOTE_PORT' =3D> '9095'
+    'SERVER_SOFTWARE' =3D> 'PHP 7.3.4 Development Server'
+    'SERVER_PROTOCOL' =3D> 'HTTP/1.1'
+    'SERVER_NAME' =3D> 'localhost'
+    'SERVER_PORT' =3D> '8080'
+    'REQUEST_URI' =3D>
+'/admin/index.php?r=3Dgii%2Fdefault%2Fview&id=3Dmodel'
+    'REQUEST_METHOD' =3D> 'POST'
+    'SCRIPT_NAME' =3D> '/admin/index.php'
+    'SCRIPT_FILENAME' =3D>
+'D:\\phpstudy_pro\\WWW\\frontend\\web\\admin\\index.php'
+    'PHP_SELF' =3D> '/admin/index.php'
+    'QUERY_STRING' =3D> 'r=3Dgii%2Fdefault%2Fview&id=3Dmodel'
+    'HTTP_HOST' =3D> 'localhost:8080'
+    'HTTP_CONNECTION' =3D> 'keep-alive'
+    'CONTENT_LENGTH' =3D> '889'
+    'HTTP_CONTENT_LENGTH' =3D> '889'
+    'HTTP_CACHE_CONTROL' =3D> 'max-age=3D0'
+    'HTTP_SEC_CH_UA' =3D> '\"Not_A Brand\";v=3D\"99\", \"Microsoft
+Edge\";v=3D\"109\", \"Chromium\";v=3D\"109\"'
+    'HTTP_SEC_CH_UA_MOBILE' =3D> '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' =3D> '\"Windows\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' =3D> '1'
+    'HTTP_USER_AGENT' =3D> 'Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36
+Edg/109.0.1518.78'
+    'HTTP_ORIGIN' =3D> 'http://localhost:8080'
+    'CONTENT_TYPE' =3D> 'application/x-www-form-urlencoded'
+    'HTTP_CONTENT_TYPE' =3D> 'application/x-www-form-urlencoded'
+    'HTTP_ACCEPT' =3D>
+'text/html,application/xhtml+xml,application/xml;q=3D0.9,image/webp,image/a=
+png,*/*;q=3D0.8,application/signed-exchange;v=3Db3;q=3D0.9'
+    'HTTP_SEC_FETCH_SITE' =3D> 'same-origin'
+    'HTTP_SEC_FETCH_MODE' =3D> 'navigate'
+    'HTTP_SEC_FETCH_USER' =3D> '?1'
+    'HTTP_SEC_FETCH_DEST' =3D> 'document'
+    'HTTP_REFERER' =3D>
+'http://localhost:8080/admin/index.php?r=3Dgii%2Fdefault%2Fview&id=3Dmodel'
+    'HTTP_ACCEPT_ENCODING' =3D> 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' =3D>
+'zh-CN,zh;q=3D0.9,en;q=3D0.8,en-GB;q=3D0.7,en-US;q=3D0.6'
+    'HTTP_COOKIE' =3D>
+'wordpress_logged_in_86a9106ae65537651a8e456835b316ab=3Dmmma%7C1677050114%7=
+CbT7ng8zBap8ZomuqdwGcjq60357AHSocZMRZYk1b7uI%7C33c8845584b6d712613a75dad=
+4396516b8f24492be531ba5872116c6f5fd0330;
+wp-settings-time-1=3D1675943997;
+_identity-frontend=3Dff4723d33490d1a30d5640e71fd7d121f9b6f51fd9475373e1d93f=
+547b10525aa%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3=
+Bs%3A46%3A%22%5B1%2C%224sSpK38KErySZpizaMO18REH4nXWPDrD%22%2C2592000%5D%=
+22%3B%7D;
+_identity-backend=3D7223aaae057f741b3ba5c4d0725f6f17a2846f199c7fcfd05830=
+ef9b8b13aedaa%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%=
+3Bs%3A46%3A%22%5B1%2C%224sSpK38KErySZpizaMO18REH4nXWPDrD%22%2C2592000%5D=
+%22%3B%7D;
+BACKEND_FEEHICMS=3Dpi6mvlgub59hjgsnrr0mehddms;
+_csrf_backend=3Dae152197871f935c582860e0ee9e3fba381823906735adaead67a55f5da=
+d9cbfa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf_backend%22%3Bi%3A1%3Bs%3A32%3A=
+%223hpLfBYPK-iMAk9k8ytRMmuZi2EWSpZt%22%3B%7D;
+PHPSESSID=3Drc8n5lr5goppve04t5icjn3q1u;
+_csrf=3D98f4e9638b107ccf1d31e4b9fe6ba9f5bcb626190024821c3dc86024270ef359a%3=
+A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22v0HE9XVvPnKqN_=
+E3zo-evAzc9jCiZca1%22%3B%7D'
+    'REQUEST_TIME_FLOAT' =3D> 1676106100.3361
+    'REQUEST_TIME' =3D> 1676106100
+]

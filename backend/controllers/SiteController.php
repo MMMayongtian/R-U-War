@@ -113,9 +113,6 @@ class SiteController extends \yii\web\Controller
         $commentService = Yii::$app->get(CommentServiceInterface::ServiceName);
         /** @var UserServiceInterface $userService */
         $userService = Yii::$app->get(UserServiceInterface::ServiceName);
-        /** @var FriendlyLinkServiceInterface $friendlyLinkService */
-        $friendlyLinkService = Yii::$app->get(FriendlyLinkServiceInterface::ServiceName);
-
         $info = [
             'OPERATING_ENVIRONMENT' => PHP_OS . ' ' . $_SERVER['SERVER_SOFTWARE'],
             'PHP_RUN_MODE' => php_sapi_name(),
@@ -123,27 +120,10 @@ class SiteController extends \yii\web\Controller
             'UPLOAD_MAX_FILE_SIZE' => ini_get('upload_max_filesize'),
             'MAX_EXECUTION_TIME' => ini_get('max_execution_time') . "s"
         ];
-        $obj = new ServerInfo();
-        $serverInfo = $obj->getinfo();
-        $status = [
-            'DISK_SPACE' => [
-                'NUM' => ceil( $serverInfo['diskTotal'] - $serverInfo['freeSpace'] ) . 'G' . ' / ' . ceil($serverInfo['diskTotal']) . 'G',
-                'PERCENTAGE' => (floatval($serverInfo['diskTotal']) != 0) ? round(($serverInfo['diskTotal'] - $serverInfo['freeSpace']) / $serverInfo['diskTotal'] * 100, 2) : 0,
-            ],
-            'MEM' => [
-                'NUM' => $serverInfo["UsedMemory"] . ' / ' . $serverInfo['TotalMemory'],
-                'PERCENTAGE' => $serverInfo["memPercent"],
-            ],
-            'REAL_MEM' => [
-                'NUM' => $serverInfo["memRealUsed"] . "(Cached {$serverInfo['CachedMemory']})" . ' / ' . $serverInfo['TotalMemory'],
-                'PERCENTAGE' => $serverInfo['memRealPercent'] . '%',
-            ],
-        ];
         $temp = [
             'ARTICLE' => $articleService->getArticlesCountByPeriod(),
             'COMMENT' => $commentService->getCommentCountByPeriod(),
             'USER' => $userService->getUserCountByPeriod(),
-            'FRIENDLY_LINK' => $friendlyLinkService->getFriendlyLinkCountByPeriod(),
         ];
         $percent = '0.00';
         $statics = [
@@ -159,17 +139,11 @@ class SiteController extends \yii\web\Controller
                 $temp['USER'],
                 $temp['USER'] ? sprintf("%01.2f",($userService->getUserCountByPeriod(strtotime(date('Y-m-01 00:00:00')), strtotime(date('Y-m-01 23:59:59') . " +1 month -1 day")) / $temp['USER']) * 100) : $percent
             ],
-            'FRIENDLY_LINK' => [
-                $temp['FRIENDLY_LINK'],
-                $temp['FRIENDLY_LINK'] ? sprintf("%01.2f",($friendlyLinkService->getFriendlyLinkCountByPeriod(strtotime(date('Y-m-01 00:00:00')), strtotime(date('Y-m-01 23:59:59') . " +1 month -1 day")) / $temp['FRIENDLY_LINK']) * 100) : $percent
-            ],
         ];
         /** @var CommentServiceInterface $commentService */
         $commentService = Yii::$app->get(CommentServiceInterface::ServiceName);
         $comments = $commentService->getRecentComments(6);
         return $this->render('main', [
-            'info' => $info,
-            'status' => $status,
             'statics' => $statics,
             'comments' => $comments,
         ]);
@@ -253,12 +227,10 @@ class SiteController extends \yii\web\Controller
         } else {
             $message = Yii::t('yii', 'An internal server error occurred.');
         }
-        $statusCode = $exception->statusCode ? $exception->statusCode : 500;
         if (Yii::$app->getRequest()->getIsAjax()) {
             return "$name: $message";
         } else {
             return $this->render('error', [
-                'code' => $statusCode,
                 'name' => $name,
                 'message' => $message
             ]);

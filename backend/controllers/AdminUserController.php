@@ -34,17 +34,6 @@ class AdminUserController extends \yii\web\Controller
 {
 
     /**
-     * @auth
-     * - item group=权限 category=管理员 description-get=列表 sort=520 method=get
-     * - item group=权限 category=管理员 description-get=查看 sort=521 method=get  
-     * - item group=权限 category=管理员 description-post=删除 sort=522 method=post  
-     * - item group=权限 category=管理员 description-post=排序 sort=523 method=post 
-     * - item group=权限 category=管理员 description=创建 sort-get=524 sort-post=525 method=get,post
-     * - item group=权限 category=管理员 description=修改 sort-get=526 sort-post=527 method=get,post
-     * - item rbac=false
-     * - item rbac=false
-     * - item rbac=false
-     *  
      * @return array
      * @throws \yii\base\InvalidConfigException
      */

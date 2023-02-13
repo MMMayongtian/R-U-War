@@ -12,9 +12,7 @@ use Yii;
 use common\models\Category;
 use feehi\cdn\DummyTarget;
 use common\helpers\FileDependencyHelper;
-use backend\components\CustomLog;
 use yii\base\Component;
-use backend\components\AdminLog;
 use common\models\Options;
 use yii\caching\FileDependency;
 use yii\base\Event;
@@ -90,31 +88,6 @@ class Feehi extends Component
         self::configInit();
 
         self::determineLanguage();
-
-        Event::on(BaseActiveRecord::className(), BaseActiveRecord::EVENT_AFTER_INSERT, [
-            AdminLog::className(),
-            'create'
-        ]);
-        Event::on(BaseActiveRecord::className(), BaseActiveRecord::EVENT_AFTER_UPDATE, [
-            AdminLog::className(),
-            'update'
-        ]);
-        Event::on(BaseActiveRecord::className(), BaseActiveRecord::EVENT_AFTER_DELETE, [
-            AdminLog::className(),
-            'delete'
-        ]);
-        Event::on(CustomLog::className(), CustomLog::EVENT_AFTER_CREATE, [
-            AdminLog::className(),
-            'custom'
-        ]);
-        Event::on(CustomLog::className(), CustomLog::EVENT_AFTER_DELETE, [
-            AdminLog::className(),
-            'custom'
-        ]);
-        Event::on(CustomLog::className(), CustomLog::EVENT_CUSTOM, [
-            AdminLog::className(),
-            'custom'
-        ]);
         Event::on(BaseActiveRecord::className(), BaseActiveRecord::EVENT_AFTER_FIND, function ($event) {
             if (isset($event->sender->updated_at) && $event->sender->updated_at == 0) {
                 $event->sender->updated_at = null;

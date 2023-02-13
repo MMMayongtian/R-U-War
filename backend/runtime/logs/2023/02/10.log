@@ -1,0 +1,2244 @@
+2023-02-10 15:43:33 [127.0.0.1][1][uo0v6rrcqoqc8paf0uer0lomnc][error][yii\base\ErrorException:8192] yii\base\ErrorException: Array and string offset access syntax with curly braces is deprecated in D:\phpstudy_pro\WWW\vendor\ezyang\htmlpurifier\library\HTMLPurifier\TagTransform\Font.php:78
+Stack trace:
+#0 D:\phpstudy_pro\WWW\vendor\composer\ClassLoader.php(444): yii\base\ErrorHandler->handleError(8192, 'Array and strin...', 'D:\\phpstudy_pro...', 78, Array)
+#1 D:\phpstudy_pro\WWW\vendor\composer\ClassLoader.php(444): include()
+#2 D:\phpstudy_pro\WWW\vendor\composer\ClassLoader.php(322): Composer\Autoload\includeFile('D:\\phpstudy_pro...')
+#3 [internal function]: Composer\Autoload\ClassLoader->loadClass('HTMLPurifier_Ta...')
+#4 D:\phpstudy_pro\WWW\vendor\ezyang\htmlpurifier\library\HTMLPurifier\HTMLModule\Tidy\XHTMLAndHTML4.php(15): spl_autoload_call('HTMLPurifier_Ta...')
+#5 D:\phpstudy_pro\WWW\vendor\ezyang\htmlpurifier\library\HTMLPurifier\HTMLModule\Tidy.php(46): HTMLPurifier_HTMLModule_Tidy_XHTMLAndHTML4->makeFixes()
+#6 D:\phpstudy_pro\WWW\vendor\ezyang\htmlpurifier\library\HTMLPurifier\HTMLModuleManager.php(293): HTMLPurifier_HTMLModule_Tidy->setup(Object(HTMLPurifier_Config))
+#7 D:\phpstudy_pro\WWW\vendor\ezyang\htmlpurifier\library\HTMLPurifier\HTMLDefinition.php(220): HTMLPurifier_HTMLModuleManager->setup(Object(HTMLPurifier_Config))
+#8 D:\phpstudy_pro\WWW\vendor\ezyang\htmlpurifier\library\HTMLPurifier\HTMLDefinition.php(195): HTMLPurifier_HTMLDefinition->processModules(Object(HTMLPurifier_Config))
+#9 D:\phpstudy_pro\WWW\vendor\ezyang\htmlpurifier\library\HTMLPurifier\Definition.php(51): HTMLPurifier_HTMLDefinition->doSetup(Object(HTMLPurifier_Config))
+#10 D:\phpstudy_pro\WWW\vendor\ezyang\htmlpurifier\library\HTMLPurifier\Config.php(515): HTMLPurifier_Definition->setup(Object(HTMLPurifier_Config))
+#11 D:\phpstudy_pro\WWW\vendor\ezyang\htmlpurifier\library\HTMLPurifier\Config.php(415): HTMLPurifier_Config->getDefinition('HTML', false, false)
+#12 D:\phpstudy_pro\WWW\vendor\ezyang\htmlpurifier\library\HTMLPurifier\Generator.php(74): HTMLPurifier_Config->getHTMLDefinition()
+#13 D:\phpstudy_pro\WWW\vendor\ezyang\htmlpurifier\library\HTMLPurifier.php(158): HTMLPurifier_Generator->__construct(Object(HTMLPurifier_Config), Object(HTMLPurifier_Context))
+#14 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\helpers\BaseHtmlPurifier.php(58): HTMLPurifier->purify('&nbsp;&nbsp;&nb...')
+#15 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\i18n\Formatter.php(527): yii\helpers\BaseHtmlPurifier::process('&nbsp;&nbsp;&nb...', NULL)
+#16 [internal function]: yii\i18n\Formatter->asHtml('&nbsp;&nbsp;&nb...')
+#17 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\i18n\Formatter.php(443): call_user_func_array(Array, Array)
+#18 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\grid\DataColumn.php(244): yii\i18n\Formatter->format('&nbsp;&nbsp;&nb...', 'html')
+#19 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\grid\Column.php(111): yii\grid\DataColumn->renderDataCellContent(Object(common\models\Menu), 23, 0)
+#20 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\grid\GridView.php(525): yii\grid\Column->renderDataCell(Object(common\models\Menu), 23, 0)
+#21 D:\phpstudy_pro\WWW\backend\grid\GridView.php(81): yii\grid\GridView->renderTableRow(Object(common\models\Menu), 23, 0)
+#22 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\grid\GridView.php(494): backend\grid\GridView->renderTableRow(Object(common\models\Menu), 23, 0)
+#23 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\grid\GridView.php(358): yii\grid\GridView->renderTableBody()
+#24 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\widgets\BaseListView.php(160): yii\grid\GridView->renderItems()
+#25 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\grid\GridView.php(326): yii\widgets\BaseListView->renderSection('{items}')
+#26 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\widgets\BaseListView.php(135): yii\grid\GridView->renderSection('{items}')
+#27 [internal function]: yii\widgets\BaseListView->yii\widgets\{closure}(Array)
+#28 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\widgets\BaseListView.php(138): preg_replace_callback('/{\\w+}/', Object(Closure), '{items}')
+#29 D:\phpstudy_pro\WWW\backend\grid\GridView.php(112): yii\widgets\BaseListView->run()
+#30 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Widget.php(140): backend\grid\GridView->run()
+#31 D:\phpstudy_pro\WWW\backend\views\frontend-menu\index.php(111): yii\base\Widget::widget(Array)
+#32 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\View.php(348): require('D:\\phpstudy_pro...')
+#33 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\View.php(257): yii\base\View->renderPhpFile('D:\\phpstudy_pro...', Array)
+#34 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile('D:\\phpstudy_pro...', Array, Object(backend\controllers\FrontendMenuController))
+#35 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Controller.php(384): yii\base\View->render('index', Array, Object(backend\controllers\FrontendMenuController))
+#36 D:\phpstudy_pro\WWW\backend\actions\IndexAction.php(76): yii\base\Controller->render('index', Array)
+#37 [internal function]: backend\actions\IndexAction->run()
+#38 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Action.php(94): call_user_func_array(Array, Array)
+#39 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\Action->runWithParams(Array)
+#40 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('index', Array)
+#41 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('frontend-menu/i...', Array)
+#42 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#43 D:\phpstudy_pro\WWW\frontend\web\admin\index.php(18): yii\base\Application->run()
+#44 {main}
+2023-02-10 15:43:33 [127.0.0.1][1][uo0v6rrcqoqc8paf0uer0lomnc][info][application] $_GET = [
+    'r' => 'frontend-menu/index'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'wordpress_logged_in_86a9106ae65537651a8e456835b316ab' => 'mmma|1677050114|bT7ng8zBap8ZomuqdwGcjq60357AHSocZMRZYk1b7uI|33c8845584b6d712613a75dad4396516b8f24492be531ba5872116c6f5fd0330'
+    'wp-settings-time-1' => '1675943997'
+    '_identity-frontend' => 'ff4723d33490d1a30d5640e71fd7d121f9b6f51fd9475373e1d93f547b10525aa:2:{i:0;s:18:\"_identity-frontend\";i:1;s:46:\"[1,\"4sSpK38KErySZpizaMO18REH4nXWPDrD\",2592000]\";}'
+    '_identity-backend' => '7223aaae057f741b3ba5c4d0725f6f17a2846f199c7fcfd05830ef9b8b13aedaa:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"4sSpK38KErySZpizaMO18REH4nXWPDrD\",2592000]\";}'
+    'PHPSESSID' => 'bdbu8qdlckot5jrtn483nfc9u9'
+    '_csrf_install' => '87f3c5a501f332606775b896ec5939861b088ac8d9e90c976060be1d7dc9aa2fa:2:{i:0;s:13:\"_csrf_install\";i:1;s:32:\"tcg0mQWaCAu-2uT1f1hTE21raNkts6AV\";}'
+    'BACKEND_FEEHICMS' => 'uo0v6rrcqoqc8paf0uer0lomnc'
+    '_csrf_backend' => '92668291d22806e0f744c485be5eb7c95a5951d8f60a786f2ec90349bf51a11ca:2:{i:0;s:13:\"_csrf_backend\";i:1;s:32:\"uusmy3T-7S8OyzylqH4DSdUrF5y3lHdH\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '_backend_returnUrl' => '/admin/'
+    '__captcha/site/captcha' => 'wawd'
+    '__captcha/site/captchacount' => 1
+    '__backend__id' => 1
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'D:\\phpstudy_pro\\WWW\\frontend\\web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '5808'
+    'SERVER_SOFTWARE' => 'PHP 7.4.3 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/admin/index.php?r=frontend-menu%2Findex'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/admin/index.php'
+    'SCRIPT_FILENAME' => 'D:\\phpstudy_pro\\WWW\\frontend\\web\\admin\\index.php'
+    'PHP_SELF' => '/admin/index.php'
+    'QUERY_STRING' => 'r=frontend-menu%2Findex'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_SEC_CH_UA' => '\"Not_A Brand\";v=\"99\", \"Microsoft Edge\";v=\"109\", \"Chromium\";v=\"109\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36 Edg/109.0.1518.78'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_DEST' => 'iframe'
+    'HTTP_REFERER' => 'http://localhost:8080/admin/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6'
+    'HTTP_COOKIE' => 'wordpress_logged_in_86a9106ae65537651a8e456835b316ab=mmma%7C1677050114%7CbT7ng8zBap8ZomuqdwGcjq60357AHSocZMRZYk1b7uI%7C33c8845584b6d712613a75dad4396516b8f24492be531ba5872116c6f5fd0330; wp-settings-time-1=1675943997; _identity-frontend=ff4723d33490d1a30d5640e71fd7d121f9b6f51fd9475373e1d93f547b10525aa%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%224sSpK38KErySZpizaMO18REH4nXWPDrD%22%2C2592000%5D%22%3B%7D; _identity-backend=7223aaae057f741b3ba5c4d0725f6f17a2846f199c7fcfd05830ef9b8b13aedaa%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%224sSpK38KErySZpizaMO18REH4nXWPDrD%22%2C2592000%5D%22%3B%7D; PHPSESSID=bdbu8qdlckot5jrtn483nfc9u9; _csrf_install=87f3c5a501f332606775b896ec5939861b088ac8d9e90c976060be1d7dc9aa2fa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf_install%22%3Bi%3A1%3Bs%3A32%3A%22tcg0mQWaCAu-2uT1f1hTE21raNkts6AV%22%3B%7D; BACKEND_FEEHICMS=uo0v6rrcqoqc8paf0uer0lomnc; _csrf_backend=92668291d22806e0f744c485be5eb7c95a5951d8f60a786f2ec90349bf51a11ca%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf_backend%22%3Bi%3A1%3Bs%3A32%3A%22uusmy3T-7S8OyzylqH4DSdUrF5y3lHdH%22%3B%7D'
+    'REQUEST_TIME_FLOAT' => 1676015013.1374
+    'REQUEST_TIME' => 1676015013
+]
+2023-02-10 15:43:47 [127.0.0.1][1][uo0v6rrcqoqc8paf0uer0lomnc][error][yii\base\ErrorException:8192] yii\base\ErrorException: Array and string offset access syntax with curly braces is deprecated in D:\phpstudy_pro\WWW\vendor\ezyang\htmlpurifier\library\HTMLPurifier\TagTransform\Font.php:78
+Stack trace:
+#0 D:\phpstudy_pro\WWW\vendor\composer\ClassLoader.php(444): yii\base\ErrorHandler->handleError(8192, 'Array and strin...', 'D:\\phpstudy_pro...', 78, Array)
+#1 D:\phpstudy_pro\WWW\vendor\composer\ClassLoader.php(444): include()
+#2 D:\phpstudy_pro\WWW\vendor\composer\ClassLoader.php(322): Composer\Autoload\includeFile('D:\\phpstudy_pro...')
+#3 [internal function]: Composer\Autoload\ClassLoader->loadClass('HTMLPurifier_Ta...')
+#4 D:\phpstudy_pro\WWW\vendor\ezyang\htmlpurifier\library\HTMLPurifier\HTMLModule\Tidy\XHTMLAndHTML4.php(15): spl_autoload_call('HTMLPurifier_Ta...')
+#5 D:\phpstudy_pro\WWW\vendor\ezyang\htmlpurifier\library\HTMLPurifier\HTMLModule\Tidy.php(46): HTMLPurifier_HTMLModule_Tidy_XHTMLAndHTML4->makeFixes()
+#6 D:\phpstudy_pro\WWW\vendor\ezyang\htmlpurifier\library\HTMLPurifier\HTMLModuleManager.php(293): HTMLPurifier_HTMLModule_Tidy->setup(Object(HTMLPurifier_Config))
+#7 D:\phpstudy_pro\WWW\vendor\ezyang\htmlpurifier\library\HTMLPurifier\HTMLDefinition.php(220): HTMLPurifier_HTMLModuleManager->setup(Object(HTMLPurifier_Config))
+#8 D:\phpstudy_pro\WWW\vendor\ezyang\htmlpurifier\library\HTMLPurifier\HTMLDefinition.php(195): HTMLPurifier_HTMLDefinition->processModules(Object(HTMLPurifier_Config))
+#9 D:\phpstudy_pro\WWW\vendor\ezyang\htmlpurifier\library\HTMLPurifier\Definition.php(51): HTMLPurifier_HTMLDefinition->doSetup(Object(HTMLPurifier_Config))
+#10 D:\phpstudy_pro\WWW\vendor\ezyang\htmlpurifier\library\HTMLPurifier\Config.php(515): HTMLPurifier_Definition->setup(Object(HTMLPurifier_Config))
+#11 D:\phpstudy_pro\WWW\vendor\ezyang\htmlpurifier\library\HTMLPurifier\Config.php(415): HTMLPurifier_Config->getDefinition('HTML', false, false)
+#12 D:\phpstudy_pro\WWW\vendor\ezyang\htmlpurifier\library\HTMLPurifier\Generator.php(74): HTMLPurifier_Config->getHTMLDefinition()
+#13 D:\phpstudy_pro\WWW\vendor\ezyang\htmlpurifier\library\HTMLPurifier.php(158): HTMLPurifier_Generator->__construct(Object(HTMLPurifier_Config), Object(HTMLPurifier_Context))
+#14 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\helpers\BaseHtmlPurifier.php(58): HTMLPurifier->purify(' \xE2\x94\x94\xE8\xAE\xBE\xE7\xBD\xAE')
+#15 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\i18n\Formatter.php(527): yii\helpers\BaseHtmlPurifier::process(' \xE2\x94\x94\xE8\xAE\xBE\xE7\xBD\xAE', NULL)
+#16 [internal function]: yii\i18n\Formatter->asHtml(' \xE2\x94\x94\xE8\xAE\xBE\xE7\xBD\xAE')
+#17 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\i18n\Formatter.php(443): call_user_func_array(Array, Array)
+#18 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\grid\DataColumn.php(244): yii\i18n\Formatter->format(' \xE2\x94\x94\xE8\xAE\xBE\xE7\xBD\xAE', 'html')
+#19 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\grid\Column.php(111): yii\grid\DataColumn->renderDataCellContent(Object(common\models\Menu), 1, 0)
+#20 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\grid\GridView.php(525): yii\grid\Column->renderDataCell(Object(common\models\Menu), 1, 0)
+#21 D:\phpstudy_pro\WWW\backend\grid\GridView.php(81): yii\grid\GridView->renderTableRow(Object(common\models\Menu), 1, 0)
+#22 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\grid\GridView.php(494): backend\grid\GridView->renderTableRow(Object(common\models\Menu), 1, 0)
+#23 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\grid\GridView.php(358): yii\grid\GridView->renderTableBody()
+#24 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\widgets\BaseListView.php(160): yii\grid\GridView->renderItems()
+#25 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\grid\GridView.php(326): yii\widgets\BaseListView->renderSection('{items}')
+#26 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\widgets\BaseListView.php(135): yii\grid\GridView->renderSection('{items}')
+#27 [internal function]: yii\widgets\BaseListView->yii\widgets\{closure}(Array)
+#28 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\widgets\BaseListView.php(138): preg_replace_callback('/{\\w+}/', Object(Closure), '{items}')
+#29 D:\phpstudy_pro\WWW\backend\grid\GridView.php(112): yii\widgets\BaseListView->run()
+#30 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Widget.php(140): backend\grid\GridView->run()
+#31 D:\phpstudy_pro\WWW\backend\views\menu\index.php(107): yii\base\Widget::widget(Array)
+#32 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\View.php(348): require('D:\\phpstudy_pro...')
+#33 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\View.php(257): yii\base\View->renderPhpFile('D:\\phpstudy_pro...', Array)
+#34 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile('D:\\phpstudy_pro...', Array, Object(backend\controllers\MenuController))
+#35 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Controller.php(384): yii\base\View->render('index', Array, Object(backend\controllers\MenuController))
+#36 D:\phpstudy_pro\WWW\backend\actions\IndexAction.php(76): yii\base\Controller->render('index', Array)
+#37 [internal function]: backend\actions\IndexAction->run()
+#38 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Action.php(94): call_user_func_array(Array, Array)
+#39 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\Action->runWithParams(Array)
+#40 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('index', Array)
+#41 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('menu/index', Array)
+#42 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#43 D:\phpstudy_pro\WWW\frontend\web\admin\index.php(18): yii\base\Application->run()
+#44 {main}
+2023-02-10 15:43:47 [127.0.0.1][1][uo0v6rrcqoqc8paf0uer0lomnc][info][application] $_GET = [
+    'r' => 'menu/index'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'wordpress_logged_in_86a9106ae65537651a8e456835b316ab' => 'mmma|1677050114|bT7ng8zBap8ZomuqdwGcjq60357AHSocZMRZYk1b7uI|33c8845584b6d712613a75dad4396516b8f24492be531ba5872116c6f5fd0330'
+    'wp-settings-time-1' => '1675943997'
+    '_identity-frontend' => 'ff4723d33490d1a30d5640e71fd7d121f9b6f51fd9475373e1d93f547b10525aa:2:{i:0;s:18:\"_identity-frontend\";i:1;s:46:\"[1,\"4sSpK38KErySZpizaMO18REH4nXWPDrD\",2592000]\";}'
+    '_identity-backend' => '7223aaae057f741b3ba5c4d0725f6f17a2846f199c7fcfd05830ef9b8b13aedaa:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"4sSpK38KErySZpizaMO18REH4nXWPDrD\",2592000]\";}'
+    'PHPSESSID' => 'bdbu8qdlckot5jrtn483nfc9u9'
+    '_csrf_install' => '87f3c5a501f332606775b896ec5939861b088ac8d9e90c976060be1d7dc9aa2fa:2:{i:0;s:13:\"_csrf_install\";i:1;s:32:\"tcg0mQWaCAu-2uT1f1hTE21raNkts6AV\";}'
+    'BACKEND_FEEHICMS' => 'uo0v6rrcqoqc8paf0uer0lomnc'
+    '_csrf_backend' => '92668291d22806e0f744c485be5eb7c95a5951d8f60a786f2ec90349bf51a11ca:2:{i:0;s:13:\"_csrf_backend\";i:1;s:32:\"uusmy3T-7S8OyzylqH4DSdUrF5y3lHdH\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '_backend_returnUrl' => '/admin/'
+    '__captcha/site/captcha' => 'wawd'
+    '__captcha/site/captchacount' => 1
+    '__backend__id' => 1
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'D:\\phpstudy_pro\\WWW\\frontend\\web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '5824'
+    'SERVER_SOFTWARE' => 'PHP 7.4.3 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/admin/index.php?r=menu%2Findex'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/admin/index.php'
+    'SCRIPT_FILENAME' => 'D:\\phpstudy_pro\\WWW\\frontend\\web\\admin\\index.php'
+    'PHP_SELF' => '/admin/index.php'
+    'QUERY_STRING' => 'r=menu%2Findex'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_SEC_CH_UA' => '\"Not_A Brand\";v=\"99\", \"Microsoft Edge\";v=\"109\", \"Chromium\";v=\"109\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36 Edg/109.0.1518.78'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_DEST' => 'iframe'
+    'HTTP_REFERER' => 'http://localhost:8080/admin/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6'
+    'HTTP_COOKIE' => 'wordpress_logged_in_86a9106ae65537651a8e456835b316ab=mmma%7C1677050114%7CbT7ng8zBap8ZomuqdwGcjq60357AHSocZMRZYk1b7uI%7C33c8845584b6d712613a75dad4396516b8f24492be531ba5872116c6f5fd0330; wp-settings-time-1=1675943997; _identity-frontend=ff4723d33490d1a30d5640e71fd7d121f9b6f51fd9475373e1d93f547b10525aa%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%224sSpK38KErySZpizaMO18REH4nXWPDrD%22%2C2592000%5D%22%3B%7D; _identity-backend=7223aaae057f741b3ba5c4d0725f6f17a2846f199c7fcfd05830ef9b8b13aedaa%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%224sSpK38KErySZpizaMO18REH4nXWPDrD%22%2C2592000%5D%22%3B%7D; PHPSESSID=bdbu8qdlckot5jrtn483nfc9u9; _csrf_install=87f3c5a501f332606775b896ec5939861b088ac8d9e90c976060be1d7dc9aa2fa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf_install%22%3Bi%3A1%3Bs%3A32%3A%22tcg0mQWaCAu-2uT1f1hTE21raNkts6AV%22%3B%7D; BACKEND_FEEHICMS=uo0v6rrcqoqc8paf0uer0lomnc; _csrf_backend=92668291d22806e0f744c485be5eb7c95a5951d8f60a786f2ec90349bf51a11ca%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf_backend%22%3Bi%3A1%3Bs%3A32%3A%22uusmy3T-7S8OyzylqH4DSdUrF5y3lHdH%22%3B%7D'
+    'REQUEST_TIME_FLOAT' => 1676015027.2785
+    'REQUEST_TIME' => 1676015027
+]
+2023-02-10 15:44:47 [127.0.0.1][1][uo0v6rrcqoqc8paf0uer0lomnc][error][yii\base\ErrorException:8192] yii\base\ErrorException: Array and string offset access syntax with curly braces is deprecated in D:\phpstudy_pro\WWW\vendor\ezyang\htmlpurifier\library\HTMLPurifier\TagTransform\Font.php:78
+Stack trace:
+#0 D:\phpstudy_pro\WWW\vendor\composer\ClassLoader.php(444): yii\base\ErrorHandler->handleError(8192, 'Array and strin...', 'D:\\phpstudy_pro...', 78, Array)
+#1 D:\phpstudy_pro\WWW\vendor\composer\ClassLoader.php(444): include()
+#2 D:\phpstudy_pro\WWW\vendor\composer\ClassLoader.php(322): Composer\Autoload\includeFile('D:\\phpstudy_pro...')
+#3 [internal function]: Composer\Autoload\ClassLoader->loadClass('HTMLPurifier_Ta...')
+#4 D:\phpstudy_pro\WWW\vendor\ezyang\htmlpurifier\library\HTMLPurifier\HTMLModule\Tidy\XHTMLAndHTML4.php(15): spl_autoload_call('HTMLPurifier_Ta...')
+#5 D:\phpstudy_pro\WWW\vendor\ezyang\htmlpurifier\library\HTMLPurifier\HTMLModule\Tidy.php(46): HTMLPurifier_HTMLModule_Tidy_XHTMLAndHTML4->makeFixes()
+#6 D:\phpstudy_pro\WWW\vendor\ezyang\htmlpurifier\library\HTMLPurifier\HTMLModuleManager.php(293): HTMLPurifier_HTMLModule_Tidy->setup(Object(HTMLPurifier_Config))
+#7 D:\phpstudy_pro\WWW\vendor\ezyang\htmlpurifier\library\HTMLPurifier\HTMLDefinition.php(220): HTMLPurifier_HTMLModuleManager->setup(Object(HTMLPurifier_Config))
+#8 D:\phpstudy_pro\WWW\vendor\ezyang\htmlpurifier\library\HTMLPurifier\HTMLDefinition.php(195): HTMLPurifier_HTMLDefinition->processModules(Object(HTMLPurifier_Config))
+#9 D:\phpstudy_pro\WWW\vendor\ezyang\htmlpurifier\library\HTMLPurifier\Definition.php(51): HTMLPurifier_HTMLDefinition->doSetup(Object(HTMLPurifier_Config))
+#10 D:\phpstudy_pro\WWW\vendor\ezyang\htmlpurifier\library\HTMLPurifier\Config.php(515): HTMLPurifier_Definition->setup(Object(HTMLPurifier_Config))
+#11 D:\phpstudy_pro\WWW\vendor\ezyang\htmlpurifier\library\HTMLPurifier\Config.php(415): HTMLPurifier_Config->getDefinition('HTML', false, false)
+#12 D:\phpstudy_pro\WWW\vendor\ezyang\htmlpurifier\library\HTMLPurifier\Generator.php(74): HTMLPurifier_Config->getHTMLDefinition()
+#13 D:\phpstudy_pro\WWW\vendor\ezyang\htmlpurifier\library\HTMLPurifier.php(158): HTMLPurifier_Generator->__construct(Object(HTMLPurifier_Config), Object(HTMLPurifier_Context))
+#14 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\helpers\BaseHtmlPurifier.php(58): HTMLPurifier->purify(' \xE2\x94\x94php')
+#15 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\i18n\Formatter.php(527): yii\helpers\BaseHtmlPurifier::process(' \xE2\x94\x94php', NULL)
+#16 [internal function]: yii\i18n\Formatter->asHtml(' \xE2\x94\x94php')
+#17 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\i18n\Formatter.php(443): call_user_func_array(Array, Array)
+#18 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\grid\DataColumn.php(244): yii\i18n\Formatter->format(' \xE2\x94\x94php', 'html')
+#19 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\grid\Column.php(111): yii\grid\DataColumn->renderDataCellContent(Object(common\models\Category), 1, 0)
+#20 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\grid\GridView.php(525): yii\grid\Column->renderDataCell(Object(common\models\Category), 1, 0)
+#21 D:\phpstudy_pro\WWW\backend\grid\GridView.php(81): yii\grid\GridView->renderTableRow(Object(common\models\Category), 1, 0)
+#22 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\grid\GridView.php(494): backend\grid\GridView->renderTableRow(Object(common\models\Category), 1, 0)
+#23 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\grid\GridView.php(358): yii\grid\GridView->renderTableBody()
+#24 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\widgets\BaseListView.php(160): yii\grid\GridView->renderItems()
+#25 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\grid\GridView.php(326): yii\widgets\BaseListView->renderSection('{items}')
+#26 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\widgets\BaseListView.php(135): yii\grid\GridView->renderSection('{items}')
+#27 [internal function]: yii\widgets\BaseListView->yii\widgets\{closure}(Array)
+#28 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\widgets\BaseListView.php(138): preg_replace_callback('/{\\w+}/', Object(Closure), '{items}\n<div cl...')
+#29 D:\phpstudy_pro\WWW\backend\grid\GridView.php(112): yii\widgets\BaseListView->run()
+#30 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Widget.php(140): backend\grid\GridView->run()
+#31 D:\phpstudy_pro\WWW\backend\views\category\index.php(84): yii\base\Widget::widget(Array)
+#32 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\View.php(348): require('D:\\phpstudy_pro...')
+#33 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\View.php(257): yii\base\View->renderPhpFile('D:\\phpstudy_pro...', Array)
+#34 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile('D:\\phpstudy_pro...', Array, Object(backend\controllers\CategoryController))
+#35 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Controller.php(384): yii\base\View->render('index', Array, Object(backend\controllers\CategoryController))
+#36 D:\phpstudy_pro\WWW\backend\actions\IndexAction.php(76): yii\base\Controller->render('index', Array)
+#37 [internal function]: backend\actions\IndexAction->run()
+#38 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Action.php(94): call_user_func_array(Array, Array)
+#39 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\Action->runWithParams(Array)
+#40 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('index', Array)
+#41 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('category/index', Array)
+#42 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#43 D:\phpstudy_pro\WWW\frontend\web\admin\index.php(18): yii\base\Application->run()
+#44 {main}
+2023-02-10 15:44:47 [127.0.0.1][1][uo0v6rrcqoqc8paf0uer0lomnc][info][application] $_GET = [
+    'r' => 'category/index'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'wordpress_logged_in_86a9106ae65537651a8e456835b316ab' => 'mmma|1677050114|bT7ng8zBap8ZomuqdwGcjq60357AHSocZMRZYk1b7uI|33c8845584b6d712613a75dad4396516b8f24492be531ba5872116c6f5fd0330'
+    'wp-settings-time-1' => '1675943997'
+    '_identity-frontend' => 'ff4723d33490d1a30d5640e71fd7d121f9b6f51fd9475373e1d93f547b10525aa:2:{i:0;s:18:\"_identity-frontend\";i:1;s:46:\"[1,\"4sSpK38KErySZpizaMO18REH4nXWPDrD\",2592000]\";}'
+    '_identity-backend' => '7223aaae057f741b3ba5c4d0725f6f17a2846f199c7fcfd05830ef9b8b13aedaa:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"4sSpK38KErySZpizaMO18REH4nXWPDrD\",2592000]\";}'
+    'PHPSESSID' => 'bdbu8qdlckot5jrtn483nfc9u9'
+    '_csrf_install' => '87f3c5a501f332606775b896ec5939861b088ac8d9e90c976060be1d7dc9aa2fa:2:{i:0;s:13:\"_csrf_install\";i:1;s:32:\"tcg0mQWaCAu-2uT1f1hTE21raNkts6AV\";}'
+    'BACKEND_FEEHICMS' => 'uo0v6rrcqoqc8paf0uer0lomnc'
+    '_csrf_backend' => '92668291d22806e0f744c485be5eb7c95a5951d8f60a786f2ec90349bf51a11ca:2:{i:0;s:13:\"_csrf_backend\";i:1;s:32:\"uusmy3T-7S8OyzylqH4DSdUrF5y3lHdH\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '_backend_returnUrl' => '/admin/'
+    '__captcha/site/captcha' => 'wawd'
+    '__captcha/site/captchacount' => 1
+    '__backend__id' => 1
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'D:\\phpstudy_pro\\WWW\\frontend\\web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '6090'
+    'SERVER_SOFTWARE' => 'PHP 7.4.3 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/admin/index.php?r=category%2Findex'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/admin/index.php'
+    'SCRIPT_FILENAME' => 'D:\\phpstudy_pro\\WWW\\frontend\\web\\admin\\index.php'
+    'PHP_SELF' => '/admin/index.php'
+    'QUERY_STRING' => 'r=category%2Findex'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_SEC_CH_UA' => '\"Not_A Brand\";v=\"99\", \"Microsoft Edge\";v=\"109\", \"Chromium\";v=\"109\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36 Edg/109.0.1518.78'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_DEST' => 'iframe'
+    'HTTP_REFERER' => 'http://localhost:8080/admin/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6'
+    'HTTP_COOKIE' => 'wordpress_logged_in_86a9106ae65537651a8e456835b316ab=mmma%7C1677050114%7CbT7ng8zBap8ZomuqdwGcjq60357AHSocZMRZYk1b7uI%7C33c8845584b6d712613a75dad4396516b8f24492be531ba5872116c6f5fd0330; wp-settings-time-1=1675943997; _identity-frontend=ff4723d33490d1a30d5640e71fd7d121f9b6f51fd9475373e1d93f547b10525aa%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%224sSpK38KErySZpizaMO18REH4nXWPDrD%22%2C2592000%5D%22%3B%7D; _identity-backend=7223aaae057f741b3ba5c4d0725f6f17a2846f199c7fcfd05830ef9b8b13aedaa%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%224sSpK38KErySZpizaMO18REH4nXWPDrD%22%2C2592000%5D%22%3B%7D; PHPSESSID=bdbu8qdlckot5jrtn483nfc9u9; _csrf_install=87f3c5a501f332606775b896ec5939861b088ac8d9e90c976060be1d7dc9aa2fa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf_install%22%3Bi%3A1%3Bs%3A32%3A%22tcg0mQWaCAu-2uT1f1hTE21raNkts6AV%22%3B%7D; BACKEND_FEEHICMS=uo0v6rrcqoqc8paf0uer0lomnc; _csrf_backend=92668291d22806e0f744c485be5eb7c95a5951d8f60a786f2ec90349bf51a11ca%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf_backend%22%3Bi%3A1%3Bs%3A32%3A%22uusmy3T-7S8OyzylqH4DSdUrF5y3lHdH%22%3B%7D'
+    'REQUEST_TIME_FLOAT' => 1676015087.4316
+    'REQUEST_TIME' => 1676015087
+]
+2023-02-10 20:09:43 [127.0.0.1][1][akue3ggvr4j2uq50sg1u1ql5c9][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "team/index.php". in D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Module.php:537
+Stack trace:
+#0 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('team/index.php', Array)
+#1 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 D:\phpstudy_pro\WWW\frontend\web\admin\index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: 页面未找到。 in D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 D:\phpstudy_pro\WWW\frontend\web\admin\index.php(18): yii\base\Application->run()
+#2 {main}
+2023-02-10 20:09:43 [127.0.0.1][1][akue3ggvr4j2uq50sg1u1ql5c9][info][application] $_GET = [
+    'r' => 'team/index.php'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'wordpress_logged_in_86a9106ae65537651a8e456835b316ab' => 'mmma|1677050114|bT7ng8zBap8ZomuqdwGcjq60357AHSocZMRZYk1b7uI|33c8845584b6d712613a75dad4396516b8f24492be531ba5872116c6f5fd0330'
+    'wp-settings-time-1' => '1675943997'
+    '_identity-frontend' => 'ff4723d33490d1a30d5640e71fd7d121f9b6f51fd9475373e1d93f547b10525aa:2:{i:0;s:18:\"_identity-frontend\";i:1;s:46:\"[1,\"4sSpK38KErySZpizaMO18REH4nXWPDrD\",2592000]\";}'
+    '_identity-backend' => '7223aaae057f741b3ba5c4d0725f6f17a2846f199c7fcfd05830ef9b8b13aedaa:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"4sSpK38KErySZpizaMO18REH4nXWPDrD\",2592000]\";}'
+    'PHPSESSID' => 'nrb1d7gs20vpvcfiptk8232kol'
+    '_csrf' => '20a0a5e4bfee77375cf35354ddfbda6fb60e41ecf968435f9a56c307e99950b4a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"nFGgDs0Eb4Ke-p--9nmXR6oxu0TMGy8R\";}'
+    'BACKEND_FEEHICMS' => 'akue3ggvr4j2uq50sg1u1ql5c9'
+    '_csrf_backend' => 'b6d1d432fbd3a9b335ebfefa8fa170625fe684c74d101962e25f6663ad40493ca:2:{i:0;s:13:\"_csrf_backend\";i:1;s:32:\"rp704xcFjfRKybpp8X2vHzzfZXFGiBtf\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '_backend_returnUrl' => '/admin/'
+    '__captcha/site/captcha' => 'penw'
+    '__captcha/site/captchacount' => 1
+    '__backend__id' => 1
+    '_update_referer' => 'http://localhost:8080/admin/index.php?r=admin-user%2Findex'
+    '_create_referer' => 'http://localhost:8080/admin/index.php?r=menu%2Findex'
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'D:\\phpstudy_pro\\WWW\\frontend\\web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '7246'
+    'SERVER_SOFTWARE' => 'PHP 7.3.4 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/admin/index.php?r=team%2Findex.php'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/admin/index.php'
+    'SCRIPT_FILENAME' => 'D:\\phpstudy_pro\\WWW\\frontend\\web\\admin\\index.php'
+    'PHP_SELF' => '/admin/index.php'
+    'QUERY_STRING' => 'r=team%2Findex.php'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_SEC_CH_UA' => '\"Not_A Brand\";v=\"99\", \"Microsoft Edge\";v=\"109\", \"Chromium\";v=\"109\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36 Edg/109.0.1518.78'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_DEST' => 'iframe'
+    'HTTP_REFERER' => 'http://localhost:8080/admin/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6'
+    'HTTP_COOKIE' => 'wordpress_logged_in_86a9106ae65537651a8e456835b316ab=mmma%7C1677050114%7CbT7ng8zBap8ZomuqdwGcjq60357AHSocZMRZYk1b7uI%7C33c8845584b6d712613a75dad4396516b8f24492be531ba5872116c6f5fd0330; wp-settings-time-1=1675943997; _identity-frontend=ff4723d33490d1a30d5640e71fd7d121f9b6f51fd9475373e1d93f547b10525aa%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%224sSpK38KErySZpizaMO18REH4nXWPDrD%22%2C2592000%5D%22%3B%7D; _identity-backend=7223aaae057f741b3ba5c4d0725f6f17a2846f199c7fcfd05830ef9b8b13aedaa%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%224sSpK38KErySZpizaMO18REH4nXWPDrD%22%2C2592000%5D%22%3B%7D; PHPSESSID=nrb1d7gs20vpvcfiptk8232kol; _csrf=20a0a5e4bfee77375cf35354ddfbda6fb60e41ecf968435f9a56c307e99950b4a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22nFGgDs0Eb4Ke-p--9nmXR6oxu0TMGy8R%22%3B%7D; BACKEND_FEEHICMS=akue3ggvr4j2uq50sg1u1ql5c9; _csrf_backend=b6d1d432fbd3a9b335ebfefa8fa170625fe684c74d101962e25f6663ad40493ca%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf_backend%22%3Bi%3A1%3Bs%3A32%3A%22rp704xcFjfRKybpp8X2vHzzfZXFGiBtf%22%3B%7D'
+    'REQUEST_TIME_FLOAT' => 1676030983.5137
+    'REQUEST_TIME' => 1676030983
+]
+2023-02-10 20:10:32 [127.0.0.1][1][akue3ggvr4j2uq50sg1u1ql5c9][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "team/index". in D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Module.php:537
+Stack trace:
+#0 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('team/index', Array)
+#1 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 D:\phpstudy_pro\WWW\frontend\web\admin\index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: 页面未找到。 in D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 D:\phpstudy_pro\WWW\frontend\web\admin\index.php(18): yii\base\Application->run()
+#2 {main}
+2023-02-10 20:10:32 [127.0.0.1][1][akue3ggvr4j2uq50sg1u1ql5c9][info][application] $_GET = [
+    'r' => 'team/index'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'wordpress_logged_in_86a9106ae65537651a8e456835b316ab' => 'mmma|1677050114|bT7ng8zBap8ZomuqdwGcjq60357AHSocZMRZYk1b7uI|33c8845584b6d712613a75dad4396516b8f24492be531ba5872116c6f5fd0330'
+    'wp-settings-time-1' => '1675943997'
+    '_identity-frontend' => 'ff4723d33490d1a30d5640e71fd7d121f9b6f51fd9475373e1d93f547b10525aa:2:{i:0;s:18:\"_identity-frontend\";i:1;s:46:\"[1,\"4sSpK38KErySZpizaMO18REH4nXWPDrD\",2592000]\";}'
+    '_identity-backend' => '7223aaae057f741b3ba5c4d0725f6f17a2846f199c7fcfd05830ef9b8b13aedaa:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"4sSpK38KErySZpizaMO18REH4nXWPDrD\",2592000]\";}'
+    'PHPSESSID' => 'nrb1d7gs20vpvcfiptk8232kol'
+    '_csrf' => '20a0a5e4bfee77375cf35354ddfbda6fb60e41ecf968435f9a56c307e99950b4a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"nFGgDs0Eb4Ke-p--9nmXR6oxu0TMGy8R\";}'
+    'BACKEND_FEEHICMS' => 'akue3ggvr4j2uq50sg1u1ql5c9'
+    '_csrf_backend' => 'b6d1d432fbd3a9b335ebfefa8fa170625fe684c74d101962e25f6663ad40493ca:2:{i:0;s:13:\"_csrf_backend\";i:1;s:32:\"rp704xcFjfRKybpp8X2vHzzfZXFGiBtf\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '_backend_returnUrl' => '/admin/'
+    '__captcha/site/captcha' => 'penw'
+    '__captcha/site/captchacount' => 1
+    '__backend__id' => 1
+    '_update_referer' => 'http://localhost:8080/admin/index.php?r=menu%2Findex'
+    '_create_referer' => 'http://localhost:8080/admin/index.php?r=menu%2Findex'
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'D:\\phpstudy_pro\\WWW\\frontend\\web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '7487'
+    'SERVER_SOFTWARE' => 'PHP 7.3.4 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/admin/index.php?r=team%2Findex'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/admin/index.php'
+    'SCRIPT_FILENAME' => 'D:\\phpstudy_pro\\WWW\\frontend\\web\\admin\\index.php'
+    'PHP_SELF' => '/admin/index.php'
+    'QUERY_STRING' => 'r=team%2Findex'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_SEC_CH_UA' => '\"Not_A Brand\";v=\"99\", \"Microsoft Edge\";v=\"109\", \"Chromium\";v=\"109\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36 Edg/109.0.1518.78'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_DEST' => 'iframe'
+    'HTTP_REFERER' => 'http://localhost:8080/admin/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6'
+    'HTTP_COOKIE' => 'wordpress_logged_in_86a9106ae65537651a8e456835b316ab=mmma%7C1677050114%7CbT7ng8zBap8ZomuqdwGcjq60357AHSocZMRZYk1b7uI%7C33c8845584b6d712613a75dad4396516b8f24492be531ba5872116c6f5fd0330; wp-settings-time-1=1675943997; _identity-frontend=ff4723d33490d1a30d5640e71fd7d121f9b6f51fd9475373e1d93f547b10525aa%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%224sSpK38KErySZpizaMO18REH4nXWPDrD%22%2C2592000%5D%22%3B%7D; _identity-backend=7223aaae057f741b3ba5c4d0725f6f17a2846f199c7fcfd05830ef9b8b13aedaa%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%224sSpK38KErySZpizaMO18REH4nXWPDrD%22%2C2592000%5D%22%3B%7D; PHPSESSID=nrb1d7gs20vpvcfiptk8232kol; _csrf=20a0a5e4bfee77375cf35354ddfbda6fb60e41ecf968435f9a56c307e99950b4a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22nFGgDs0Eb4Ke-p--9nmXR6oxu0TMGy8R%22%3B%7D; BACKEND_FEEHICMS=akue3ggvr4j2uq50sg1u1ql5c9; _csrf_backend=b6d1d432fbd3a9b335ebfefa8fa170625fe684c74d101962e25f6663ad40493ca%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf_backend%22%3Bi%3A1%3Bs%3A32%3A%22rp704xcFjfRKybpp8X2vHzzfZXFGiBtf%22%3B%7D'
+    'REQUEST_TIME_FLOAT' => 1676031032.3856
+    'REQUEST_TIME' => 1676031032
+]
+2023-02-10 20:11:32 [127.0.0.1][1][akue3ggvr4j2uq50sg1u1ql5c9][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "team/index". in D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Module.php:537
+Stack trace:
+#0 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('team/index', Array)
+#1 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 D:\phpstudy_pro\WWW\frontend\web\admin\index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: 页面未找到。 in D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 D:\phpstudy_pro\WWW\frontend\web\admin\index.php(18): yii\base\Application->run()
+#2 {main}
+2023-02-10 20:11:32 [127.0.0.1][1][akue3ggvr4j2uq50sg1u1ql5c9][info][application] $_GET = [
+    'r' => 'team/index'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'wordpress_logged_in_86a9106ae65537651a8e456835b316ab' => 'mmma|1677050114|bT7ng8zBap8ZomuqdwGcjq60357AHSocZMRZYk1b7uI|33c8845584b6d712613a75dad4396516b8f24492be531ba5872116c6f5fd0330'
+    'wp-settings-time-1' => '1675943997'
+    '_identity-frontend' => 'ff4723d33490d1a30d5640e71fd7d121f9b6f51fd9475373e1d93f547b10525aa:2:{i:0;s:18:\"_identity-frontend\";i:1;s:46:\"[1,\"4sSpK38KErySZpizaMO18REH4nXWPDrD\",2592000]\";}'
+    '_identity-backend' => '7223aaae057f741b3ba5c4d0725f6f17a2846f199c7fcfd05830ef9b8b13aedaa:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"4sSpK38KErySZpizaMO18REH4nXWPDrD\",2592000]\";}'
+    'PHPSESSID' => 'nrb1d7gs20vpvcfiptk8232kol'
+    '_csrf' => '20a0a5e4bfee77375cf35354ddfbda6fb60e41ecf968435f9a56c307e99950b4a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"nFGgDs0Eb4Ke-p--9nmXR6oxu0TMGy8R\";}'
+    'BACKEND_FEEHICMS' => 'akue3ggvr4j2uq50sg1u1ql5c9'
+    '_csrf_backend' => 'b6d1d432fbd3a9b335ebfefa8fa170625fe684c74d101962e25f6663ad40493ca:2:{i:0;s:13:\"_csrf_backend\";i:1;s:32:\"rp704xcFjfRKybpp8X2vHzzfZXFGiBtf\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '_backend_returnUrl' => '/admin/'
+    '__captcha/site/captcha' => 'penw'
+    '__captcha/site/captchacount' => 1
+    '__backend__id' => 1
+    '_update_referer' => 'http://localhost:8080/admin/index.php?r=menu%2Findex'
+    '_create_referer' => 'http://localhost:8080/admin/index.php?r=menu%2Findex'
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'D:\\phpstudy_pro\\WWW\\frontend\\web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '7745'
+    'SERVER_SOFTWARE' => 'PHP 7.3.4 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/admin/index.php?r=team%2Findex'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/admin/index.php'
+    'SCRIPT_FILENAME' => 'D:\\phpstudy_pro\\WWW\\frontend\\web\\admin\\index.php'
+    'PHP_SELF' => '/admin/index.php'
+    'QUERY_STRING' => 'r=team%2Findex'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_SEC_CH_UA' => '\"Not_A Brand\";v=\"99\", \"Microsoft Edge\";v=\"109\", \"Chromium\";v=\"109\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36 Edg/109.0.1518.78'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_DEST' => 'iframe'
+    'HTTP_REFERER' => 'http://localhost:8080/admin/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6'
+    'HTTP_COOKIE' => 'wordpress_logged_in_86a9106ae65537651a8e456835b316ab=mmma%7C1677050114%7CbT7ng8zBap8ZomuqdwGcjq60357AHSocZMRZYk1b7uI%7C33c8845584b6d712613a75dad4396516b8f24492be531ba5872116c6f5fd0330; wp-settings-time-1=1675943997; _identity-frontend=ff4723d33490d1a30d5640e71fd7d121f9b6f51fd9475373e1d93f547b10525aa%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%224sSpK38KErySZpizaMO18REH4nXWPDrD%22%2C2592000%5D%22%3B%7D; _identity-backend=7223aaae057f741b3ba5c4d0725f6f17a2846f199c7fcfd05830ef9b8b13aedaa%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%224sSpK38KErySZpizaMO18REH4nXWPDrD%22%2C2592000%5D%22%3B%7D; PHPSESSID=nrb1d7gs20vpvcfiptk8232kol; _csrf=20a0a5e4bfee77375cf35354ddfbda6fb60e41ecf968435f9a56c307e99950b4a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22nFGgDs0Eb4Ke-p--9nmXR6oxu0TMGy8R%22%3B%7D; BACKEND_FEEHICMS=akue3ggvr4j2uq50sg1u1ql5c9; _csrf_backend=b6d1d432fbd3a9b335ebfefa8fa170625fe684c74d101962e25f6663ad40493ca%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf_backend%22%3Bi%3A1%3Bs%3A32%3A%22rp704xcFjfRKybpp8X2vHzzfZXFGiBtf%22%3B%7D'
+    'REQUEST_TIME_FLOAT' => 1676031092.5633
+    'REQUEST_TIME' => 1676031092
+]
+2023-02-10 20:16:17 [127.0.0.1][1][akue3ggvr4j2uq50sg1u1ql5c9][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "team/index". in D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Module.php:537
+Stack trace:
+#0 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('team/index', Array)
+#1 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 D:\phpstudy_pro\WWW\frontend\web\admin\index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: 页面未找到。 in D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 D:\phpstudy_pro\WWW\frontend\web\admin\index.php(18): yii\base\Application->run()
+#2 {main}
+2023-02-10 20:16:17 [127.0.0.1][1][akue3ggvr4j2uq50sg1u1ql5c9][info][application] $_GET = [
+    'r' => 'team/index'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'wordpress_logged_in_86a9106ae65537651a8e456835b316ab' => 'mmma|1677050114|bT7ng8zBap8ZomuqdwGcjq60357AHSocZMRZYk1b7uI|33c8845584b6d712613a75dad4396516b8f24492be531ba5872116c6f5fd0330'
+    'wp-settings-time-1' => '1675943997'
+    '_identity-frontend' => 'ff4723d33490d1a30d5640e71fd7d121f9b6f51fd9475373e1d93f547b10525aa:2:{i:0;s:18:\"_identity-frontend\";i:1;s:46:\"[1,\"4sSpK38KErySZpizaMO18REH4nXWPDrD\",2592000]\";}'
+    '_identity-backend' => '7223aaae057f741b3ba5c4d0725f6f17a2846f199c7fcfd05830ef9b8b13aedaa:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"4sSpK38KErySZpizaMO18REH4nXWPDrD\",2592000]\";}'
+    'PHPSESSID' => 'nrb1d7gs20vpvcfiptk8232kol'
+    '_csrf' => '20a0a5e4bfee77375cf35354ddfbda6fb60e41ecf968435f9a56c307e99950b4a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"nFGgDs0Eb4Ke-p--9nmXR6oxu0TMGy8R\";}'
+    'BACKEND_FEEHICMS' => 'akue3ggvr4j2uq50sg1u1ql5c9'
+    '_csrf_backend' => 'b6d1d432fbd3a9b335ebfefa8fa170625fe684c74d101962e25f6663ad40493ca:2:{i:0;s:13:\"_csrf_backend\";i:1;s:32:\"rp704xcFjfRKybpp8X2vHzzfZXFGiBtf\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '_backend_returnUrl' => '/admin/'
+    '__captcha/site/captcha' => 'penw'
+    '__captcha/site/captchacount' => 1
+    '__backend__id' => 1
+    '_update_referer' => 'http://localhost:8080/admin/'
+    '_create_referer' => 'http://localhost:8080/admin/index.php?r=menu%2Findex'
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'D:\\phpstudy_pro\\WWW\\frontend\\web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '8255'
+    'SERVER_SOFTWARE' => 'PHP 7.3.4 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/admin/index.php?r=team%2Findex'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/admin/index.php'
+    'SCRIPT_FILENAME' => 'D:\\phpstudy_pro\\WWW\\frontend\\web\\admin\\index.php'
+    'PHP_SELF' => '/admin/index.php'
+    'QUERY_STRING' => 'r=team%2Findex'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_SEC_CH_UA' => '\"Not_A Brand\";v=\"99\", \"Microsoft Edge\";v=\"109\", \"Chromium\";v=\"109\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36 Edg/109.0.1518.78'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_DEST' => 'iframe'
+    'HTTP_REFERER' => 'http://localhost:8080/admin/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6'
+    'HTTP_COOKIE' => 'wordpress_logged_in_86a9106ae65537651a8e456835b316ab=mmma%7C1677050114%7CbT7ng8zBap8ZomuqdwGcjq60357AHSocZMRZYk1b7uI%7C33c8845584b6d712613a75dad4396516b8f24492be531ba5872116c6f5fd0330; wp-settings-time-1=1675943997; _identity-frontend=ff4723d33490d1a30d5640e71fd7d121f9b6f51fd9475373e1d93f547b10525aa%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%224sSpK38KErySZpizaMO18REH4nXWPDrD%22%2C2592000%5D%22%3B%7D; _identity-backend=7223aaae057f741b3ba5c4d0725f6f17a2846f199c7fcfd05830ef9b8b13aedaa%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%224sSpK38KErySZpizaMO18REH4nXWPDrD%22%2C2592000%5D%22%3B%7D; PHPSESSID=nrb1d7gs20vpvcfiptk8232kol; _csrf=20a0a5e4bfee77375cf35354ddfbda6fb60e41ecf968435f9a56c307e99950b4a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22nFGgDs0Eb4Ke-p--9nmXR6oxu0TMGy8R%22%3B%7D; BACKEND_FEEHICMS=akue3ggvr4j2uq50sg1u1ql5c9; _csrf_backend=b6d1d432fbd3a9b335ebfefa8fa170625fe684c74d101962e25f6663ad40493ca%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf_backend%22%3Bi%3A1%3Bs%3A32%3A%22rp704xcFjfRKybpp8X2vHzzfZXFGiBtf%22%3B%7D'
+    'REQUEST_TIME_FLOAT' => 1676031377.2005
+    'REQUEST_TIME' => 1676031377
+]
+2023-02-10 20:16:23 [127.0.0.1][1][akue3ggvr4j2uq50sg1u1ql5c9][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "team/index". in D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Module.php:537
+Stack trace:
+#0 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('team/index', Array)
+#1 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 D:\phpstudy_pro\WWW\frontend\web\admin\index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: 页面未找到。 in D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 D:\phpstudy_pro\WWW\frontend\web\admin\index.php(18): yii\base\Application->run()
+#2 {main}
+2023-02-10 20:16:23 [127.0.0.1][1][akue3ggvr4j2uq50sg1u1ql5c9][info][application] $_GET = [
+    'r' => 'team/index'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'wordpress_logged_in_86a9106ae65537651a8e456835b316ab' => 'mmma|1677050114|bT7ng8zBap8ZomuqdwGcjq60357AHSocZMRZYk1b7uI|33c8845584b6d712613a75dad4396516b8f24492be531ba5872116c6f5fd0330'
+    'wp-settings-time-1' => '1675943997'
+    '_identity-frontend' => 'ff4723d33490d1a30d5640e71fd7d121f9b6f51fd9475373e1d93f547b10525aa:2:{i:0;s:18:\"_identity-frontend\";i:1;s:46:\"[1,\"4sSpK38KErySZpizaMO18REH4nXWPDrD\",2592000]\";}'
+    '_identity-backend' => '7223aaae057f741b3ba5c4d0725f6f17a2846f199c7fcfd05830ef9b8b13aedaa:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"4sSpK38KErySZpizaMO18REH4nXWPDrD\",2592000]\";}'
+    'PHPSESSID' => 'nrb1d7gs20vpvcfiptk8232kol'
+    '_csrf' => '20a0a5e4bfee77375cf35354ddfbda6fb60e41ecf968435f9a56c307e99950b4a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"nFGgDs0Eb4Ke-p--9nmXR6oxu0TMGy8R\";}'
+    'BACKEND_FEEHICMS' => 'akue3ggvr4j2uq50sg1u1ql5c9'
+    '_csrf_backend' => 'b6d1d432fbd3a9b335ebfefa8fa170625fe684c74d101962e25f6663ad40493ca:2:{i:0;s:13:\"_csrf_backend\";i:1;s:32:\"rp704xcFjfRKybpp8X2vHzzfZXFGiBtf\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '_backend_returnUrl' => '/admin/'
+    '__captcha/site/captcha' => 'penw'
+    '__captcha/site/captchacount' => 1
+    '__backend__id' => 1
+    '_update_referer' => 'http://localhost:8080/admin/'
+    '_create_referer' => 'http://localhost:8080/admin/index.php?r=menu%2Findex'
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'D:\\phpstudy_pro\\WWW\\frontend\\web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '8368'
+    'SERVER_SOFTWARE' => 'PHP 7.3.4 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/admin/index.php?r=team%2Findex'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/admin/index.php'
+    'SCRIPT_FILENAME' => 'D:\\phpstudy_pro\\WWW\\frontend\\web\\admin\\index.php'
+    'PHP_SELF' => '/admin/index.php'
+    'QUERY_STRING' => 'r=team%2Findex'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_SEC_CH_UA' => '\"Not_A Brand\";v=\"99\", \"Microsoft Edge\";v=\"109\", \"Chromium\";v=\"109\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36 Edg/109.0.1518.78'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_DEST' => 'iframe'
+    'HTTP_REFERER' => 'http://localhost:8080/admin/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6'
+    'HTTP_COOKIE' => 'wordpress_logged_in_86a9106ae65537651a8e456835b316ab=mmma%7C1677050114%7CbT7ng8zBap8ZomuqdwGcjq60357AHSocZMRZYk1b7uI%7C33c8845584b6d712613a75dad4396516b8f24492be531ba5872116c6f5fd0330; wp-settings-time-1=1675943997; _identity-frontend=ff4723d33490d1a30d5640e71fd7d121f9b6f51fd9475373e1d93f547b10525aa%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%224sSpK38KErySZpizaMO18REH4nXWPDrD%22%2C2592000%5D%22%3B%7D; _identity-backend=7223aaae057f741b3ba5c4d0725f6f17a2846f199c7fcfd05830ef9b8b13aedaa%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%224sSpK38KErySZpizaMO18REH4nXWPDrD%22%2C2592000%5D%22%3B%7D; PHPSESSID=nrb1d7gs20vpvcfiptk8232kol; _csrf=20a0a5e4bfee77375cf35354ddfbda6fb60e41ecf968435f9a56c307e99950b4a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22nFGgDs0Eb4Ke-p--9nmXR6oxu0TMGy8R%22%3B%7D; BACKEND_FEEHICMS=akue3ggvr4j2uq50sg1u1ql5c9; _csrf_backend=b6d1d432fbd3a9b335ebfefa8fa170625fe684c74d101962e25f6663ad40493ca%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf_backend%22%3Bi%3A1%3Bs%3A32%3A%22rp704xcFjfRKybpp8X2vHzzfZXFGiBtf%22%3B%7D'
+    'REQUEST_TIME_FLOAT' => 1676031383.3513
+    'REQUEST_TIME' => 1676031383
+]
+2023-02-10 20:16:41 [127.0.0.1][1][akue3ggvr4j2uq50sg1u1ql5c9][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "team/index". in D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Module.php:537
+Stack trace:
+#0 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('team/index', Array)
+#1 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 D:\phpstudy_pro\WWW\frontend\web\admin\index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: 页面未找到。 in D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 D:\phpstudy_pro\WWW\frontend\web\admin\index.php(18): yii\base\Application->run()
+#2 {main}
+2023-02-10 20:16:41 [127.0.0.1][1][akue3ggvr4j2uq50sg1u1ql5c9][info][application] $_GET = [
+    'r' => 'team/index'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'wordpress_logged_in_86a9106ae65537651a8e456835b316ab' => 'mmma|1677050114|bT7ng8zBap8ZomuqdwGcjq60357AHSocZMRZYk1b7uI|33c8845584b6d712613a75dad4396516b8f24492be531ba5872116c6f5fd0330'
+    'wp-settings-time-1' => '1675943997'
+    '_identity-frontend' => 'ff4723d33490d1a30d5640e71fd7d121f9b6f51fd9475373e1d93f547b10525aa:2:{i:0;s:18:\"_identity-frontend\";i:1;s:46:\"[1,\"4sSpK38KErySZpizaMO18REH4nXWPDrD\",2592000]\";}'
+    '_identity-backend' => '7223aaae057f741b3ba5c4d0725f6f17a2846f199c7fcfd05830ef9b8b13aedaa:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"4sSpK38KErySZpizaMO18REH4nXWPDrD\",2592000]\";}'
+    'PHPSESSID' => 'nrb1d7gs20vpvcfiptk8232kol'
+    '_csrf' => '20a0a5e4bfee77375cf35354ddfbda6fb60e41ecf968435f9a56c307e99950b4a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"nFGgDs0Eb4Ke-p--9nmXR6oxu0TMGy8R\";}'
+    'BACKEND_FEEHICMS' => 'akue3ggvr4j2uq50sg1u1ql5c9'
+    '_csrf_backend' => 'b6d1d432fbd3a9b335ebfefa8fa170625fe684c74d101962e25f6663ad40493ca:2:{i:0;s:13:\"_csrf_backend\";i:1;s:32:\"rp704xcFjfRKybpp8X2vHzzfZXFGiBtf\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '_backend_returnUrl' => '/admin/'
+    '__captcha/site/captcha' => 'penw'
+    '__captcha/site/captchacount' => 1
+    '__backend__id' => 1
+    '_update_referer' => 'http://localhost:8080/admin/'
+    '_create_referer' => 'http://localhost:8080/admin/index.php?r=menu%2Findex'
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'D:\\phpstudy_pro\\WWW\\frontend\\web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '8525'
+    'SERVER_SOFTWARE' => 'PHP 7.3.4 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/admin/index.php?r=team%2Findex'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/admin/index.php'
+    'SCRIPT_FILENAME' => 'D:\\phpstudy_pro\\WWW\\frontend\\web\\admin\\index.php'
+    'PHP_SELF' => '/admin/index.php'
+    'QUERY_STRING' => 'r=team%2Findex'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_SEC_CH_UA' => '\"Not_A Brand\";v=\"99\", \"Microsoft Edge\";v=\"109\", \"Chromium\";v=\"109\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36 Edg/109.0.1518.78'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_DEST' => 'iframe'
+    'HTTP_REFERER' => 'http://localhost:8080/admin/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6'
+    'HTTP_COOKIE' => 'wordpress_logged_in_86a9106ae65537651a8e456835b316ab=mmma%7C1677050114%7CbT7ng8zBap8ZomuqdwGcjq60357AHSocZMRZYk1b7uI%7C33c8845584b6d712613a75dad4396516b8f24492be531ba5872116c6f5fd0330; wp-settings-time-1=1675943997; _identity-frontend=ff4723d33490d1a30d5640e71fd7d121f9b6f51fd9475373e1d93f547b10525aa%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%224sSpK38KErySZpizaMO18REH4nXWPDrD%22%2C2592000%5D%22%3B%7D; _identity-backend=7223aaae057f741b3ba5c4d0725f6f17a2846f199c7fcfd05830ef9b8b13aedaa%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%224sSpK38KErySZpizaMO18REH4nXWPDrD%22%2C2592000%5D%22%3B%7D; PHPSESSID=nrb1d7gs20vpvcfiptk8232kol; _csrf=20a0a5e4bfee77375cf35354ddfbda6fb60e41ecf968435f9a56c307e99950b4a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22nFGgDs0Eb4Ke-p--9nmXR6oxu0TMGy8R%22%3B%7D; BACKEND_FEEHICMS=akue3ggvr4j2uq50sg1u1ql5c9; _csrf_backend=b6d1d432fbd3a9b335ebfefa8fa170625fe684c74d101962e25f6663ad40493ca%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf_backend%22%3Bi%3A1%3Bs%3A32%3A%22rp704xcFjfRKybpp8X2vHzzfZXFGiBtf%22%3B%7D'
+    'REQUEST_TIME_FLOAT' => 1676031401.2159
+    'REQUEST_TIME' => 1676031401
+]
+2023-02-10 20:17:34 [127.0.0.1][1][akue3ggvr4j2uq50sg1u1ql5c9][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "team/index". in D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Module.php:537
+Stack trace:
+#0 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('team/index', Array)
+#1 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 D:\phpstudy_pro\WWW\frontend\web\admin\index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: 页面未找到。 in D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 D:\phpstudy_pro\WWW\frontend\web\admin\index.php(18): yii\base\Application->run()
+#2 {main}
+2023-02-10 20:17:34 [127.0.0.1][1][akue3ggvr4j2uq50sg1u1ql5c9][info][application] $_GET = [
+    'r' => 'team/index'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'wordpress_logged_in_86a9106ae65537651a8e456835b316ab' => 'mmma|1677050114|bT7ng8zBap8ZomuqdwGcjq60357AHSocZMRZYk1b7uI|33c8845584b6d712613a75dad4396516b8f24492be531ba5872116c6f5fd0330'
+    'wp-settings-time-1' => '1675943997'
+    '_identity-frontend' => 'ff4723d33490d1a30d5640e71fd7d121f9b6f51fd9475373e1d93f547b10525aa:2:{i:0;s:18:\"_identity-frontend\";i:1;s:46:\"[1,\"4sSpK38KErySZpizaMO18REH4nXWPDrD\",2592000]\";}'
+    '_identity-backend' => '7223aaae057f741b3ba5c4d0725f6f17a2846f199c7fcfd05830ef9b8b13aedaa:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"4sSpK38KErySZpizaMO18REH4nXWPDrD\",2592000]\";}'
+    'PHPSESSID' => 'nrb1d7gs20vpvcfiptk8232kol'
+    '_csrf' => '20a0a5e4bfee77375cf35354ddfbda6fb60e41ecf968435f9a56c307e99950b4a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"nFGgDs0Eb4Ke-p--9nmXR6oxu0TMGy8R\";}'
+    'BACKEND_FEEHICMS' => 'akue3ggvr4j2uq50sg1u1ql5c9'
+    '_csrf_backend' => 'b6d1d432fbd3a9b335ebfefa8fa170625fe684c74d101962e25f6663ad40493ca:2:{i:0;s:13:\"_csrf_backend\";i:1;s:32:\"rp704xcFjfRKybpp8X2vHzzfZXFGiBtf\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '_backend_returnUrl' => '/admin/'
+    '__captcha/site/captcha' => 'penw'
+    '__captcha/site/captchacount' => 1
+    '__backend__id' => 1
+    '_update_referer' => 'http://localhost:8080/admin/'
+    '_create_referer' => 'http://localhost:8080/admin/index.php?r=menu%2Findex'
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'D:\\phpstudy_pro\\WWW\\frontend\\web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '8744'
+    'SERVER_SOFTWARE' => 'PHP 7.3.4 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/admin/index.php?r=team%2Findex'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/admin/index.php'
+    'SCRIPT_FILENAME' => 'D:\\phpstudy_pro\\WWW\\frontend\\web\\admin\\index.php'
+    'PHP_SELF' => '/admin/index.php'
+    'QUERY_STRING' => 'r=team%2Findex'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_SEC_CH_UA' => '\"Not_A Brand\";v=\"99\", \"Microsoft Edge\";v=\"109\", \"Chromium\";v=\"109\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36 Edg/109.0.1518.78'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_DEST' => 'iframe'
+    'HTTP_REFERER' => 'http://localhost:8080/admin/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6'
+    'HTTP_COOKIE' => 'wordpress_logged_in_86a9106ae65537651a8e456835b316ab=mmma%7C1677050114%7CbT7ng8zBap8ZomuqdwGcjq60357AHSocZMRZYk1b7uI%7C33c8845584b6d712613a75dad4396516b8f24492be531ba5872116c6f5fd0330; wp-settings-time-1=1675943997; _identity-frontend=ff4723d33490d1a30d5640e71fd7d121f9b6f51fd9475373e1d93f547b10525aa%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%224sSpK38KErySZpizaMO18REH4nXWPDrD%22%2C2592000%5D%22%3B%7D; _identity-backend=7223aaae057f741b3ba5c4d0725f6f17a2846f199c7fcfd05830ef9b8b13aedaa%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%224sSpK38KErySZpizaMO18REH4nXWPDrD%22%2C2592000%5D%22%3B%7D; PHPSESSID=nrb1d7gs20vpvcfiptk8232kol; _csrf=20a0a5e4bfee77375cf35354ddfbda6fb60e41ecf968435f9a56c307e99950b4a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22nFGgDs0Eb4Ke-p--9nmXR6oxu0TMGy8R%22%3B%7D; BACKEND_FEEHICMS=akue3ggvr4j2uq50sg1u1ql5c9; _csrf_backend=b6d1d432fbd3a9b335ebfefa8fa170625fe684c74d101962e25f6663ad40493ca%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf_backend%22%3Bi%3A1%3Bs%3A32%3A%22rp704xcFjfRKybpp8X2vHzzfZXFGiBtf%22%3B%7D'
+    'REQUEST_TIME_FLOAT' => 1676031454.5247
+    'REQUEST_TIME' => 1676031454
+]
+2023-02-10 20:21:00 [127.0.0.1][1][akue3ggvr4j2uq50sg1u1ql5c9][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "team/index". in D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Module.php:537
+Stack trace:
+#0 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('team/index', Array)
+#1 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 D:\phpstudy_pro\WWW\frontend\web\admin\index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: 页面未找到。 in D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 D:\phpstudy_pro\WWW\frontend\web\admin\index.php(18): yii\base\Application->run()
+#2 {main}
+2023-02-10 20:21:00 [127.0.0.1][1][akue3ggvr4j2uq50sg1u1ql5c9][info][application] $_GET = [
+    'r' => 'team/index'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'wordpress_logged_in_86a9106ae65537651a8e456835b316ab' => 'mmma|1677050114|bT7ng8zBap8ZomuqdwGcjq60357AHSocZMRZYk1b7uI|33c8845584b6d712613a75dad4396516b8f24492be531ba5872116c6f5fd0330'
+    'wp-settings-time-1' => '1675943997'
+    '_identity-frontend' => 'ff4723d33490d1a30d5640e71fd7d121f9b6f51fd9475373e1d93f547b10525aa:2:{i:0;s:18:\"_identity-frontend\";i:1;s:46:\"[1,\"4sSpK38KErySZpizaMO18REH4nXWPDrD\",2592000]\";}'
+    '_identity-backend' => '7223aaae057f741b3ba5c4d0725f6f17a2846f199c7fcfd05830ef9b8b13aedaa:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"4sSpK38KErySZpizaMO18REH4nXWPDrD\",2592000]\";}'
+    'PHPSESSID' => 'nrb1d7gs20vpvcfiptk8232kol'
+    '_csrf' => '20a0a5e4bfee77375cf35354ddfbda6fb60e41ecf968435f9a56c307e99950b4a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"nFGgDs0Eb4Ke-p--9nmXR6oxu0TMGy8R\";}'
+    'BACKEND_FEEHICMS' => 'akue3ggvr4j2uq50sg1u1ql5c9'
+    '_csrf_backend' => 'b6d1d432fbd3a9b335ebfefa8fa170625fe684c74d101962e25f6663ad40493ca:2:{i:0;s:13:\"_csrf_backend\";i:1;s:32:\"rp704xcFjfRKybpp8X2vHzzfZXFGiBtf\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '_backend_returnUrl' => '/admin/'
+    '__captcha/site/captcha' => 'penw'
+    '__captcha/site/captchacount' => 1
+    '__backend__id' => 1
+    '_update_referer' => 'http://localhost:8080/admin/'
+    '_create_referer' => 'http://localhost:8080/admin/index.php?r=menu%2Findex'
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'D:\\phpstudy_pro\\WWW\\frontend\\web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '9378'
+    'SERVER_SOFTWARE' => 'PHP 7.3.4 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/admin/index.php?r=team%2Findex'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/admin/index.php'
+    'SCRIPT_FILENAME' => 'D:\\phpstudy_pro\\WWW\\frontend\\web\\admin\\index.php'
+    'PHP_SELF' => '/admin/index.php'
+    'QUERY_STRING' => 'r=team%2Findex'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_SEC_CH_UA' => '\"Not_A Brand\";v=\"99\", \"Microsoft Edge\";v=\"109\", \"Chromium\";v=\"109\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36 Edg/109.0.1518.78'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_DEST' => 'iframe'
+    'HTTP_REFERER' => 'http://localhost:8080/admin/backend/user'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6'
+    'HTTP_COOKIE' => 'wordpress_logged_in_86a9106ae65537651a8e456835b316ab=mmma%7C1677050114%7CbT7ng8zBap8ZomuqdwGcjq60357AHSocZMRZYk1b7uI%7C33c8845584b6d712613a75dad4396516b8f24492be531ba5872116c6f5fd0330; wp-settings-time-1=1675943997; _identity-frontend=ff4723d33490d1a30d5640e71fd7d121f9b6f51fd9475373e1d93f547b10525aa%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%224sSpK38KErySZpizaMO18REH4nXWPDrD%22%2C2592000%5D%22%3B%7D; _identity-backend=7223aaae057f741b3ba5c4d0725f6f17a2846f199c7fcfd05830ef9b8b13aedaa%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%224sSpK38KErySZpizaMO18REH4nXWPDrD%22%2C2592000%5D%22%3B%7D; PHPSESSID=nrb1d7gs20vpvcfiptk8232kol; _csrf=20a0a5e4bfee77375cf35354ddfbda6fb60e41ecf968435f9a56c307e99950b4a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22nFGgDs0Eb4Ke-p--9nmXR6oxu0TMGy8R%22%3B%7D; BACKEND_FEEHICMS=akue3ggvr4j2uq50sg1u1ql5c9; _csrf_backend=b6d1d432fbd3a9b335ebfefa8fa170625fe684c74d101962e25f6663ad40493ca%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf_backend%22%3Bi%3A1%3Bs%3A32%3A%22rp704xcFjfRKybpp8X2vHzzfZXFGiBtf%22%3B%7D'
+    'REQUEST_TIME_FLOAT' => 1676031660.0777
+    'REQUEST_TIME' => 1676031660
+]
+2023-02-10 20:21:40 [127.0.0.1][1][akue3ggvr4j2uq50sg1u1ql5c9][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "team/index". in D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Module.php:537
+Stack trace:
+#0 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('team/index', Array)
+#1 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 D:\phpstudy_pro\WWW\frontend\web\admin\index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: 页面未找到。 in D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 D:\phpstudy_pro\WWW\frontend\web\admin\index.php(18): yii\base\Application->run()
+#2 {main}
+2023-02-10 20:21:40 [127.0.0.1][1][akue3ggvr4j2uq50sg1u1ql5c9][info][application] $_GET = [
+    'r' => 'team/index'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'wordpress_logged_in_86a9106ae65537651a8e456835b316ab' => 'mmma|1677050114|bT7ng8zBap8ZomuqdwGcjq60357AHSocZMRZYk1b7uI|33c8845584b6d712613a75dad4396516b8f24492be531ba5872116c6f5fd0330'
+    'wp-settings-time-1' => '1675943997'
+    '_identity-frontend' => 'ff4723d33490d1a30d5640e71fd7d121f9b6f51fd9475373e1d93f547b10525aa:2:{i:0;s:18:\"_identity-frontend\";i:1;s:46:\"[1,\"4sSpK38KErySZpizaMO18REH4nXWPDrD\",2592000]\";}'
+    '_identity-backend' => '7223aaae057f741b3ba5c4d0725f6f17a2846f199c7fcfd05830ef9b8b13aedaa:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"4sSpK38KErySZpizaMO18REH4nXWPDrD\",2592000]\";}'
+    'PHPSESSID' => 'nrb1d7gs20vpvcfiptk8232kol'
+    '_csrf' => '20a0a5e4bfee77375cf35354ddfbda6fb60e41ecf968435f9a56c307e99950b4a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"nFGgDs0Eb4Ke-p--9nmXR6oxu0TMGy8R\";}'
+    'BACKEND_FEEHICMS' => 'akue3ggvr4j2uq50sg1u1ql5c9'
+    '_csrf_backend' => 'b6d1d432fbd3a9b335ebfefa8fa170625fe684c74d101962e25f6663ad40493ca:2:{i:0;s:13:\"_csrf_backend\";i:1;s:32:\"rp704xcFjfRKybpp8X2vHzzfZXFGiBtf\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '_backend_returnUrl' => '/admin/'
+    '__captcha/site/captcha' => 'penw'
+    '__captcha/site/captchacount' => 1
+    '__backend__id' => 1
+    '_update_referer' => 'http://localhost:8080/admin/index.php?r=menu%2Findex'
+    '_create_referer' => 'http://localhost:8080/admin/index.php?r=menu%2Findex'
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'D:\\phpstudy_pro\\WWW\\frontend\\web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '9750'
+    'SERVER_SOFTWARE' => 'PHP 7.3.4 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/admin/index.php?r=team%2Findex'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/admin/index.php'
+    'SCRIPT_FILENAME' => 'D:\\phpstudy_pro\\WWW\\frontend\\web\\admin\\index.php'
+    'PHP_SELF' => '/admin/index.php'
+    'QUERY_STRING' => 'r=team%2Findex'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_SEC_CH_UA' => '\"Not_A Brand\";v=\"99\", \"Microsoft Edge\";v=\"109\", \"Chromium\";v=\"109\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36 Edg/109.0.1518.78'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_DEST' => 'iframe'
+    'HTTP_REFERER' => 'http://localhost:8080/admin/backend/user'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6'
+    'HTTP_COOKIE' => 'wordpress_logged_in_86a9106ae65537651a8e456835b316ab=mmma%7C1677050114%7CbT7ng8zBap8ZomuqdwGcjq60357AHSocZMRZYk1b7uI%7C33c8845584b6d712613a75dad4396516b8f24492be531ba5872116c6f5fd0330; wp-settings-time-1=1675943997; _identity-frontend=ff4723d33490d1a30d5640e71fd7d121f9b6f51fd9475373e1d93f547b10525aa%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%224sSpK38KErySZpizaMO18REH4nXWPDrD%22%2C2592000%5D%22%3B%7D; _identity-backend=7223aaae057f741b3ba5c4d0725f6f17a2846f199c7fcfd05830ef9b8b13aedaa%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%224sSpK38KErySZpizaMO18REH4nXWPDrD%22%2C2592000%5D%22%3B%7D; PHPSESSID=nrb1d7gs20vpvcfiptk8232kol; _csrf=20a0a5e4bfee77375cf35354ddfbda6fb60e41ecf968435f9a56c307e99950b4a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22nFGgDs0Eb4Ke-p--9nmXR6oxu0TMGy8R%22%3B%7D; BACKEND_FEEHICMS=akue3ggvr4j2uq50sg1u1ql5c9; _csrf_backend=b6d1d432fbd3a9b335ebfefa8fa170625fe684c74d101962e25f6663ad40493ca%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf_backend%22%3Bi%3A1%3Bs%3A32%3A%22rp704xcFjfRKybpp8X2vHzzfZXFGiBtf%22%3B%7D'
+    'REQUEST_TIME_FLOAT' => 1676031700.6942
+    'REQUEST_TIME' => 1676031700
+]
+2023-02-10 20:22:28 [127.0.0.1][1][akue3ggvr4j2uq50sg1u1ql5c9][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "team/index". in D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Module.php:537
+Stack trace:
+#0 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('team/index', Array)
+#1 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 D:\phpstudy_pro\WWW\frontend\web\admin\index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: 页面未找到。 in D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 D:\phpstudy_pro\WWW\frontend\web\admin\index.php(18): yii\base\Application->run()
+#2 {main}
+2023-02-10 20:22:28 [127.0.0.1][1][akue3ggvr4j2uq50sg1u1ql5c9][info][application] $_GET = [
+    'r' => 'team/index'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'wordpress_logged_in_86a9106ae65537651a8e456835b316ab' => 'mmma|1677050114|bT7ng8zBap8ZomuqdwGcjq60357AHSocZMRZYk1b7uI|33c8845584b6d712613a75dad4396516b8f24492be531ba5872116c6f5fd0330'
+    'wp-settings-time-1' => '1675943997'
+    '_identity-frontend' => 'ff4723d33490d1a30d5640e71fd7d121f9b6f51fd9475373e1d93f547b10525aa:2:{i:0;s:18:\"_identity-frontend\";i:1;s:46:\"[1,\"4sSpK38KErySZpizaMO18REH4nXWPDrD\",2592000]\";}'
+    '_identity-backend' => '7223aaae057f741b3ba5c4d0725f6f17a2846f199c7fcfd05830ef9b8b13aedaa:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"4sSpK38KErySZpizaMO18REH4nXWPDrD\",2592000]\";}'
+    'PHPSESSID' => 'nrb1d7gs20vpvcfiptk8232kol'
+    '_csrf' => '20a0a5e4bfee77375cf35354ddfbda6fb60e41ecf968435f9a56c307e99950b4a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"nFGgDs0Eb4Ke-p--9nmXR6oxu0TMGy8R\";}'
+    'BACKEND_FEEHICMS' => 'akue3ggvr4j2uq50sg1u1ql5c9'
+    '_csrf_backend' => 'b6d1d432fbd3a9b335ebfefa8fa170625fe684c74d101962e25f6663ad40493ca:2:{i:0;s:13:\"_csrf_backend\";i:1;s:32:\"rp704xcFjfRKybpp8X2vHzzfZXFGiBtf\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '_backend_returnUrl' => '/admin/'
+    '__captcha/site/captcha' => 'penw'
+    '__captcha/site/captchacount' => 1
+    '__backend__id' => 1
+    '_update_referer' => 'http://localhost:8080/admin/index.php?r=menu%2Findex'
+    '_create_referer' => 'http://localhost:8080/admin/index.php?r=menu%2Findex'
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'D:\\phpstudy_pro\\WWW\\frontend\\web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '10108'
+    'SERVER_SOFTWARE' => 'PHP 7.3.4 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/admin/index.php?r=team%2Findex'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/admin/index.php'
+    'SCRIPT_FILENAME' => 'D:\\phpstudy_pro\\WWW\\frontend\\web\\admin\\index.php'
+    'PHP_SELF' => '/admin/index.php'
+    'QUERY_STRING' => 'r=team%2Findex'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_SEC_CH_UA' => '\"Not_A Brand\";v=\"99\", \"Microsoft Edge\";v=\"109\", \"Chromium\";v=\"109\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36 Edg/109.0.1518.78'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_REFERER' => 'http://localhost:8080/admin/backend/user'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6'
+    'HTTP_COOKIE' => 'wordpress_logged_in_86a9106ae65537651a8e456835b316ab=mmma%7C1677050114%7CbT7ng8zBap8ZomuqdwGcjq60357AHSocZMRZYk1b7uI%7C33c8845584b6d712613a75dad4396516b8f24492be531ba5872116c6f5fd0330; wp-settings-time-1=1675943997; _identity-frontend=ff4723d33490d1a30d5640e71fd7d121f9b6f51fd9475373e1d93f547b10525aa%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%224sSpK38KErySZpizaMO18REH4nXWPDrD%22%2C2592000%5D%22%3B%7D; _identity-backend=7223aaae057f741b3ba5c4d0725f6f17a2846f199c7fcfd05830ef9b8b13aedaa%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%224sSpK38KErySZpizaMO18REH4nXWPDrD%22%2C2592000%5D%22%3B%7D; PHPSESSID=nrb1d7gs20vpvcfiptk8232kol; _csrf=20a0a5e4bfee77375cf35354ddfbda6fb60e41ecf968435f9a56c307e99950b4a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22nFGgDs0Eb4Ke-p--9nmXR6oxu0TMGy8R%22%3B%7D; BACKEND_FEEHICMS=akue3ggvr4j2uq50sg1u1ql5c9; _csrf_backend=b6d1d432fbd3a9b335ebfefa8fa170625fe684c74d101962e25f6663ad40493ca%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf_backend%22%3Bi%3A1%3Bs%3A32%3A%22rp704xcFjfRKybpp8X2vHzzfZXFGiBtf%22%3B%7D'
+    'REQUEST_TIME_FLOAT' => 1676031748.3482
+    'REQUEST_TIME' => 1676031748
+]
+2023-02-10 20:22:34 [127.0.0.1][1][akue3ggvr4j2uq50sg1u1ql5c9][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "team/index". in D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Module.php:537
+Stack trace:
+#0 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('team/index', Array)
+#1 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 D:\phpstudy_pro\WWW\frontend\web\admin\index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: 页面未找到。 in D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 D:\phpstudy_pro\WWW\frontend\web\admin\index.php(18): yii\base\Application->run()
+#2 {main}
+2023-02-10 20:22:33 [127.0.0.1][1][akue3ggvr4j2uq50sg1u1ql5c9][info][application] $_GET = [
+    'r' => 'team/index'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'wordpress_logged_in_86a9106ae65537651a8e456835b316ab' => 'mmma|1677050114|bT7ng8zBap8ZomuqdwGcjq60357AHSocZMRZYk1b7uI|33c8845584b6d712613a75dad4396516b8f24492be531ba5872116c6f5fd0330'
+    'wp-settings-time-1' => '1675943997'
+    '_identity-frontend' => 'ff4723d33490d1a30d5640e71fd7d121f9b6f51fd9475373e1d93f547b10525aa:2:{i:0;s:18:\"_identity-frontend\";i:1;s:46:\"[1,\"4sSpK38KErySZpizaMO18REH4nXWPDrD\",2592000]\";}'
+    '_identity-backend' => '7223aaae057f741b3ba5c4d0725f6f17a2846f199c7fcfd05830ef9b8b13aedaa:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"4sSpK38KErySZpizaMO18REH4nXWPDrD\",2592000]\";}'
+    'PHPSESSID' => 'nrb1d7gs20vpvcfiptk8232kol'
+    '_csrf' => '20a0a5e4bfee77375cf35354ddfbda6fb60e41ecf968435f9a56c307e99950b4a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"nFGgDs0Eb4Ke-p--9nmXR6oxu0TMGy8R\";}'
+    'BACKEND_FEEHICMS' => 'akue3ggvr4j2uq50sg1u1ql5c9'
+    '_csrf_backend' => 'b6d1d432fbd3a9b335ebfefa8fa170625fe684c74d101962e25f6663ad40493ca:2:{i:0;s:13:\"_csrf_backend\";i:1;s:32:\"rp704xcFjfRKybpp8X2vHzzfZXFGiBtf\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '_backend_returnUrl' => '/admin/'
+    '__captcha/site/captcha' => 'penw'
+    '__captcha/site/captchacount' => 1
+    '__backend__id' => 1
+    '_update_referer' => 'http://localhost:8080/admin/index.php?r=menu%2Findex'
+    '_create_referer' => 'http://localhost:8080/admin/index.php?r=menu%2Findex'
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'D:\\phpstudy_pro\\WWW\\frontend\\web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '10186'
+    'SERVER_SOFTWARE' => 'PHP 7.3.4 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/admin/index.php?r=team%2Findex'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/admin/index.php'
+    'SCRIPT_FILENAME' => 'D:\\phpstudy_pro\\WWW\\frontend\\web\\admin\\index.php'
+    'PHP_SELF' => '/admin/index.php'
+    'QUERY_STRING' => 'r=team%2Findex'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_SEC_CH_UA' => '\"Not_A Brand\";v=\"99\", \"Microsoft Edge\";v=\"109\", \"Chromium\";v=\"109\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36 Edg/109.0.1518.78'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_DEST' => 'iframe'
+    'HTTP_REFERER' => 'http://localhost:8080/admin/backend/user'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6'
+    'HTTP_COOKIE' => 'wordpress_logged_in_86a9106ae65537651a8e456835b316ab=mmma%7C1677050114%7CbT7ng8zBap8ZomuqdwGcjq60357AHSocZMRZYk1b7uI%7C33c8845584b6d712613a75dad4396516b8f24492be531ba5872116c6f5fd0330; wp-settings-time-1=1675943997; _identity-frontend=ff4723d33490d1a30d5640e71fd7d121f9b6f51fd9475373e1d93f547b10525aa%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%224sSpK38KErySZpizaMO18REH4nXWPDrD%22%2C2592000%5D%22%3B%7D; _identity-backend=7223aaae057f741b3ba5c4d0725f6f17a2846f199c7fcfd05830ef9b8b13aedaa%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%224sSpK38KErySZpizaMO18REH4nXWPDrD%22%2C2592000%5D%22%3B%7D; PHPSESSID=nrb1d7gs20vpvcfiptk8232kol; _csrf=20a0a5e4bfee77375cf35354ddfbda6fb60e41ecf968435f9a56c307e99950b4a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22nFGgDs0Eb4Ke-p--9nmXR6oxu0TMGy8R%22%3B%7D; BACKEND_FEEHICMS=akue3ggvr4j2uq50sg1u1ql5c9; _csrf_backend=b6d1d432fbd3a9b335ebfefa8fa170625fe684c74d101962e25f6663ad40493ca%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf_backend%22%3Bi%3A1%3Bs%3A32%3A%22rp704xcFjfRKybpp8X2vHzzfZXFGiBtf%22%3B%7D'
+    'REQUEST_TIME_FLOAT' => 1676031753.9602
+    'REQUEST_TIME' => 1676031753
+]
+2023-02-10 20:22:57 [127.0.0.1][1][akue3ggvr4j2uq50sg1u1ql5c9][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "team/index". in D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Module.php:537
+Stack trace:
+#0 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('team/index', Array)
+#1 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 D:\phpstudy_pro\WWW\frontend\web\admin\index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: 页面未找到。 in D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 D:\phpstudy_pro\WWW\frontend\web\admin\index.php(18): yii\base\Application->run()
+#2 {main}
+2023-02-10 20:22:57 [127.0.0.1][1][akue3ggvr4j2uq50sg1u1ql5c9][info][application] $_GET = [
+    'r' => 'team/index'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'wordpress_logged_in_86a9106ae65537651a8e456835b316ab' => 'mmma|1677050114|bT7ng8zBap8ZomuqdwGcjq60357AHSocZMRZYk1b7uI|33c8845584b6d712613a75dad4396516b8f24492be531ba5872116c6f5fd0330'
+    'wp-settings-time-1' => '1675943997'
+    '_identity-frontend' => 'ff4723d33490d1a30d5640e71fd7d121f9b6f51fd9475373e1d93f547b10525aa:2:{i:0;s:18:\"_identity-frontend\";i:1;s:46:\"[1,\"4sSpK38KErySZpizaMO18REH4nXWPDrD\",2592000]\";}'
+    '_identity-backend' => '7223aaae057f741b3ba5c4d0725f6f17a2846f199c7fcfd05830ef9b8b13aedaa:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"4sSpK38KErySZpizaMO18REH4nXWPDrD\",2592000]\";}'
+    'PHPSESSID' => 'nrb1d7gs20vpvcfiptk8232kol'
+    '_csrf' => '20a0a5e4bfee77375cf35354ddfbda6fb60e41ecf968435f9a56c307e99950b4a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"nFGgDs0Eb4Ke-p--9nmXR6oxu0TMGy8R\";}'
+    'BACKEND_FEEHICMS' => 'akue3ggvr4j2uq50sg1u1ql5c9'
+    '_csrf_backend' => 'b6d1d432fbd3a9b335ebfefa8fa170625fe684c74d101962e25f6663ad40493ca:2:{i:0;s:13:\"_csrf_backend\";i:1;s:32:\"rp704xcFjfRKybpp8X2vHzzfZXFGiBtf\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '_backend_returnUrl' => '/admin/'
+    '__captcha/site/captcha' => 'penw'
+    '__captcha/site/captchacount' => 1
+    '__backend__id' => 1
+    '_update_referer' => 'http://localhost:8080/admin/index.php?r=menu%2Findex'
+    '_create_referer' => 'http://localhost:8080/admin/index.php?r=menu%2Findex'
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'D:\\phpstudy_pro\\WWW\\frontend\\web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '10277'
+    'SERVER_SOFTWARE' => 'PHP 7.3.4 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/admin/index.php?r=team%2Findex'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/admin/index.php'
+    'SCRIPT_FILENAME' => 'D:\\phpstudy_pro\\WWW\\frontend\\web\\admin\\index.php'
+    'PHP_SELF' => '/admin/index.php'
+    'QUERY_STRING' => 'r=team%2Findex'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_SEC_CH_UA' => '\"Not_A Brand\";v=\"99\", \"Microsoft Edge\";v=\"109\", \"Chromium\";v=\"109\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36 Edg/109.0.1518.78'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_REFERER' => 'http://localhost:8080/admin/backend/user'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6'
+    'HTTP_COOKIE' => 'wordpress_logged_in_86a9106ae65537651a8e456835b316ab=mmma%7C1677050114%7CbT7ng8zBap8ZomuqdwGcjq60357AHSocZMRZYk1b7uI%7C33c8845584b6d712613a75dad4396516b8f24492be531ba5872116c6f5fd0330; wp-settings-time-1=1675943997; _identity-frontend=ff4723d33490d1a30d5640e71fd7d121f9b6f51fd9475373e1d93f547b10525aa%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%224sSpK38KErySZpizaMO18REH4nXWPDrD%22%2C2592000%5D%22%3B%7D; _identity-backend=7223aaae057f741b3ba5c4d0725f6f17a2846f199c7fcfd05830ef9b8b13aedaa%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%224sSpK38KErySZpizaMO18REH4nXWPDrD%22%2C2592000%5D%22%3B%7D; PHPSESSID=nrb1d7gs20vpvcfiptk8232kol; _csrf=20a0a5e4bfee77375cf35354ddfbda6fb60e41ecf968435f9a56c307e99950b4a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22nFGgDs0Eb4Ke-p--9nmXR6oxu0TMGy8R%22%3B%7D; BACKEND_FEEHICMS=akue3ggvr4j2uq50sg1u1ql5c9; _csrf_backend=b6d1d432fbd3a9b335ebfefa8fa170625fe684c74d101962e25f6663ad40493ca%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf_backend%22%3Bi%3A1%3Bs%3A32%3A%22rp704xcFjfRKybpp8X2vHzzfZXFGiBtf%22%3B%7D'
+    'REQUEST_TIME_FLOAT' => 1676031777.6409
+    'REQUEST_TIME' => 1676031777
+]
+2023-02-10 20:23:18 [127.0.0.1][1][akue3ggvr4j2uq50sg1u1ql5c9][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "team/index". in D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Module.php:537
+Stack trace:
+#0 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('team/index', Array)
+#1 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 D:\phpstudy_pro\WWW\frontend\web\admin\index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: 页面未找到。 in D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 D:\phpstudy_pro\WWW\frontend\web\admin\index.php(18): yii\base\Application->run()
+#2 {main}
+2023-02-10 20:23:18 [127.0.0.1][1][akue3ggvr4j2uq50sg1u1ql5c9][info][application] $_GET = [
+    'r' => 'team/index'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'wordpress_logged_in_86a9106ae65537651a8e456835b316ab' => 'mmma|1677050114|bT7ng8zBap8ZomuqdwGcjq60357AHSocZMRZYk1b7uI|33c8845584b6d712613a75dad4396516b8f24492be531ba5872116c6f5fd0330'
+    'wp-settings-time-1' => '1675943997'
+    '_identity-frontend' => 'ff4723d33490d1a30d5640e71fd7d121f9b6f51fd9475373e1d93f547b10525aa:2:{i:0;s:18:\"_identity-frontend\";i:1;s:46:\"[1,\"4sSpK38KErySZpizaMO18REH4nXWPDrD\",2592000]\";}'
+    '_identity-backend' => '7223aaae057f741b3ba5c4d0725f6f17a2846f199c7fcfd05830ef9b8b13aedaa:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"4sSpK38KErySZpizaMO18REH4nXWPDrD\",2592000]\";}'
+    'PHPSESSID' => 'nrb1d7gs20vpvcfiptk8232kol'
+    '_csrf' => '20a0a5e4bfee77375cf35354ddfbda6fb60e41ecf968435f9a56c307e99950b4a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"nFGgDs0Eb4Ke-p--9nmXR6oxu0TMGy8R\";}'
+    'BACKEND_FEEHICMS' => 'akue3ggvr4j2uq50sg1u1ql5c9'
+    '_csrf_backend' => 'b6d1d432fbd3a9b335ebfefa8fa170625fe684c74d101962e25f6663ad40493ca:2:{i:0;s:13:\"_csrf_backend\";i:1;s:32:\"rp704xcFjfRKybpp8X2vHzzfZXFGiBtf\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '_backend_returnUrl' => '/admin/'
+    '__captcha/site/captcha' => 'penw'
+    '__captcha/site/captchacount' => 1
+    '__backend__id' => 1
+    '_update_referer' => 'http://localhost:8080/admin/index.php?r=menu%2Findex'
+    '_create_referer' => 'http://localhost:8080/admin/index.php?r=menu%2Findex'
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'D:\\phpstudy_pro\\WWW\\frontend\\web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '10332'
+    'SERVER_SOFTWARE' => 'PHP 7.3.4 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/admin/index.php?r=team%2Findex'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/admin/index.php'
+    'SCRIPT_FILENAME' => 'D:\\phpstudy_pro\\WWW\\frontend\\web\\admin\\index.php'
+    'PHP_SELF' => '/admin/index.php'
+    'QUERY_STRING' => 'r=team%2Findex'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_SEC_CH_UA' => '\"Not_A Brand\";v=\"99\", \"Microsoft Edge\";v=\"109\", \"Chromium\";v=\"109\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36 Edg/109.0.1518.78'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_REFERER' => 'http://localhost:8080/admin/backend/user'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6'
+    'HTTP_COOKIE' => 'wordpress_logged_in_86a9106ae65537651a8e456835b316ab=mmma%7C1677050114%7CbT7ng8zBap8ZomuqdwGcjq60357AHSocZMRZYk1b7uI%7C33c8845584b6d712613a75dad4396516b8f24492be531ba5872116c6f5fd0330; wp-settings-time-1=1675943997; _identity-frontend=ff4723d33490d1a30d5640e71fd7d121f9b6f51fd9475373e1d93f547b10525aa%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%224sSpK38KErySZpizaMO18REH4nXWPDrD%22%2C2592000%5D%22%3B%7D; _identity-backend=7223aaae057f741b3ba5c4d0725f6f17a2846f199c7fcfd05830ef9b8b13aedaa%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%224sSpK38KErySZpizaMO18REH4nXWPDrD%22%2C2592000%5D%22%3B%7D; PHPSESSID=nrb1d7gs20vpvcfiptk8232kol; _csrf=20a0a5e4bfee77375cf35354ddfbda6fb60e41ecf968435f9a56c307e99950b4a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22nFGgDs0Eb4Ke-p--9nmXR6oxu0TMGy8R%22%3B%7D; BACKEND_FEEHICMS=akue3ggvr4j2uq50sg1u1ql5c9; _csrf_backend=b6d1d432fbd3a9b335ebfefa8fa170625fe684c74d101962e25f6663ad40493ca%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf_backend%22%3Bi%3A1%3Bs%3A32%3A%22rp704xcFjfRKybpp8X2vHzzfZXFGiBtf%22%3B%7D'
+    'REQUEST_TIME_FLOAT' => 1676031798.4206
+    'REQUEST_TIME' => 1676031798
+]
+2023-02-10 20:23:25 [127.0.0.1][1][akue3ggvr4j2uq50sg1u1ql5c9][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "team/index". in D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Module.php:537
+Stack trace:
+#0 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('team/index', Array)
+#1 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 D:\phpstudy_pro\WWW\frontend\web\admin\index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: 页面未找到。 in D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 D:\phpstudy_pro\WWW\frontend\web\admin\index.php(18): yii\base\Application->run()
+#2 {main}
+2023-02-10 20:23:25 [127.0.0.1][1][akue3ggvr4j2uq50sg1u1ql5c9][info][application] $_GET = [
+    'r' => 'team/index'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'wordpress_logged_in_86a9106ae65537651a8e456835b316ab' => 'mmma|1677050114|bT7ng8zBap8ZomuqdwGcjq60357AHSocZMRZYk1b7uI|33c8845584b6d712613a75dad4396516b8f24492be531ba5872116c6f5fd0330'
+    'wp-settings-time-1' => '1675943997'
+    '_identity-frontend' => 'ff4723d33490d1a30d5640e71fd7d121f9b6f51fd9475373e1d93f547b10525aa:2:{i:0;s:18:\"_identity-frontend\";i:1;s:46:\"[1,\"4sSpK38KErySZpizaMO18REH4nXWPDrD\",2592000]\";}'
+    '_identity-backend' => '7223aaae057f741b3ba5c4d0725f6f17a2846f199c7fcfd05830ef9b8b13aedaa:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"4sSpK38KErySZpizaMO18REH4nXWPDrD\",2592000]\";}'
+    'PHPSESSID' => 'nrb1d7gs20vpvcfiptk8232kol'
+    '_csrf' => '20a0a5e4bfee77375cf35354ddfbda6fb60e41ecf968435f9a56c307e99950b4a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"nFGgDs0Eb4Ke-p--9nmXR6oxu0TMGy8R\";}'
+    'BACKEND_FEEHICMS' => 'akue3ggvr4j2uq50sg1u1ql5c9'
+    '_csrf_backend' => 'b6d1d432fbd3a9b335ebfefa8fa170625fe684c74d101962e25f6663ad40493ca:2:{i:0;s:13:\"_csrf_backend\";i:1;s:32:\"rp704xcFjfRKybpp8X2vHzzfZXFGiBtf\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '_backend_returnUrl' => '/admin/'
+    '__captcha/site/captcha' => 'penw'
+    '__captcha/site/captchacount' => 1
+    '__backend__id' => 1
+    '_update_referer' => 'http://localhost:8080/admin/index.php?r=menu%2Findex'
+    '_create_referer' => 'http://localhost:8080/admin/index.php?r=menu%2Findex'
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'D:\\phpstudy_pro\\WWW\\frontend\\web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '10442'
+    'SERVER_SOFTWARE' => 'PHP 7.3.4 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/admin/index.php?r=team%2Findex'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/admin/index.php'
+    'SCRIPT_FILENAME' => 'D:\\phpstudy_pro\\WWW\\frontend\\web\\admin\\index.php'
+    'PHP_SELF' => '/admin/index.php'
+    'QUERY_STRING' => 'r=team%2Findex'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_SEC_CH_UA' => '\"Not_A Brand\";v=\"99\", \"Microsoft Edge\";v=\"109\", \"Chromium\";v=\"109\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36 Edg/109.0.1518.78'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_REFERER' => 'http://localhost:8080/admin/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6'
+    'HTTP_COOKIE' => 'wordpress_logged_in_86a9106ae65537651a8e456835b316ab=mmma%7C1677050114%7CbT7ng8zBap8ZomuqdwGcjq60357AHSocZMRZYk1b7uI%7C33c8845584b6d712613a75dad4396516b8f24492be531ba5872116c6f5fd0330; wp-settings-time-1=1675943997; _identity-frontend=ff4723d33490d1a30d5640e71fd7d121f9b6f51fd9475373e1d93f547b10525aa%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%224sSpK38KErySZpizaMO18REH4nXWPDrD%22%2C2592000%5D%22%3B%7D; _identity-backend=7223aaae057f741b3ba5c4d0725f6f17a2846f199c7fcfd05830ef9b8b13aedaa%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%224sSpK38KErySZpizaMO18REH4nXWPDrD%22%2C2592000%5D%22%3B%7D; PHPSESSID=nrb1d7gs20vpvcfiptk8232kol; _csrf=20a0a5e4bfee77375cf35354ddfbda6fb60e41ecf968435f9a56c307e99950b4a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22nFGgDs0Eb4Ke-p--9nmXR6oxu0TMGy8R%22%3B%7D; BACKEND_FEEHICMS=akue3ggvr4j2uq50sg1u1ql5c9; _csrf_backend=b6d1d432fbd3a9b335ebfefa8fa170625fe684c74d101962e25f6663ad40493ca%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf_backend%22%3Bi%3A1%3Bs%3A32%3A%22rp704xcFjfRKybpp8X2vHzzfZXFGiBtf%22%3B%7D'
+    'REQUEST_TIME_FLOAT' => 1676031805.6058
+    'REQUEST_TIME' => 1676031805
+]
+2023-02-10 20:24:07 [127.0.0.1][1][akue3ggvr4j2uq50sg1u1ql5c9][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "team/index". in D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Module.php:537
+Stack trace:
+#0 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('team/index', Array)
+#1 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 D:\phpstudy_pro\WWW\frontend\web\admin\index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: 页面未找到。 in D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 D:\phpstudy_pro\WWW\frontend\web\admin\index.php(18): yii\base\Application->run()
+#2 {main}
+2023-02-10 20:24:07 [127.0.0.1][1][akue3ggvr4j2uq50sg1u1ql5c9][info][application] $_GET = [
+    'r' => 'team/index'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'wordpress_logged_in_86a9106ae65537651a8e456835b316ab' => 'mmma|1677050114|bT7ng8zBap8ZomuqdwGcjq60357AHSocZMRZYk1b7uI|33c8845584b6d712613a75dad4396516b8f24492be531ba5872116c6f5fd0330'
+    'wp-settings-time-1' => '1675943997'
+    '_identity-frontend' => 'ff4723d33490d1a30d5640e71fd7d121f9b6f51fd9475373e1d93f547b10525aa:2:{i:0;s:18:\"_identity-frontend\";i:1;s:46:\"[1,\"4sSpK38KErySZpizaMO18REH4nXWPDrD\",2592000]\";}'
+    '_identity-backend' => '7223aaae057f741b3ba5c4d0725f6f17a2846f199c7fcfd05830ef9b8b13aedaa:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"4sSpK38KErySZpizaMO18REH4nXWPDrD\",2592000]\";}'
+    'PHPSESSID' => 'nrb1d7gs20vpvcfiptk8232kol'
+    '_csrf' => '20a0a5e4bfee77375cf35354ddfbda6fb60e41ecf968435f9a56c307e99950b4a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"nFGgDs0Eb4Ke-p--9nmXR6oxu0TMGy8R\";}'
+    'BACKEND_FEEHICMS' => 'akue3ggvr4j2uq50sg1u1ql5c9'
+    '_csrf_backend' => 'b6d1d432fbd3a9b335ebfefa8fa170625fe684c74d101962e25f6663ad40493ca:2:{i:0;s:13:\"_csrf_backend\";i:1;s:32:\"rp704xcFjfRKybpp8X2vHzzfZXFGiBtf\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '_backend_returnUrl' => '/admin/'
+    '__captcha/site/captcha' => 'penw'
+    '__captcha/site/captchacount' => 1
+    '__backend__id' => 1
+    '_update_referer' => 'http://localhost:8080/admin/index.php?r=menu%2Findex'
+    '_create_referer' => 'http://localhost:8080/admin/index.php?r=menu%2Findex'
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'D:\\phpstudy_pro\\WWW\\frontend\\web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '10653'
+    'SERVER_SOFTWARE' => 'PHP 7.3.4 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/admin/index.php?r=team%2Findex'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/admin/index.php'
+    'SCRIPT_FILENAME' => 'D:\\phpstudy_pro\\WWW\\frontend\\web\\admin\\index.php'
+    'PHP_SELF' => '/admin/index.php'
+    'QUERY_STRING' => 'r=team%2Findex'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_SEC_CH_UA' => '\"Not_A Brand\";v=\"99\", \"Microsoft Edge\";v=\"109\", \"Chromium\";v=\"109\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36 Edg/109.0.1518.78'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_DEST' => 'iframe'
+    'HTTP_REFERER' => 'http://localhost:8080/admin/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6'
+    'HTTP_COOKIE' => 'wordpress_logged_in_86a9106ae65537651a8e456835b316ab=mmma%7C1677050114%7CbT7ng8zBap8ZomuqdwGcjq60357AHSocZMRZYk1b7uI%7C33c8845584b6d712613a75dad4396516b8f24492be531ba5872116c6f5fd0330; wp-settings-time-1=1675943997; _identity-frontend=ff4723d33490d1a30d5640e71fd7d121f9b6f51fd9475373e1d93f547b10525aa%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%224sSpK38KErySZpizaMO18REH4nXWPDrD%22%2C2592000%5D%22%3B%7D; _identity-backend=7223aaae057f741b3ba5c4d0725f6f17a2846f199c7fcfd05830ef9b8b13aedaa%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%224sSpK38KErySZpizaMO18REH4nXWPDrD%22%2C2592000%5D%22%3B%7D; PHPSESSID=nrb1d7gs20vpvcfiptk8232kol; _csrf=20a0a5e4bfee77375cf35354ddfbda6fb60e41ecf968435f9a56c307e99950b4a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22nFGgDs0Eb4Ke-p--9nmXR6oxu0TMGy8R%22%3B%7D; BACKEND_FEEHICMS=akue3ggvr4j2uq50sg1u1ql5c9; _csrf_backend=b6d1d432fbd3a9b335ebfefa8fa170625fe684c74d101962e25f6663ad40493ca%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf_backend%22%3Bi%3A1%3Bs%3A32%3A%22rp704xcFjfRKybpp8X2vHzzfZXFGiBtf%22%3B%7D'
+    'REQUEST_TIME_FLOAT' => 1676031847.6245
+    'REQUEST_TIME' => 1676031847
+]
+2023-02-10 21:20:10 [127.0.0.1][1][akue3ggvr4j2uq50sg1u1ql5c9][error][yii\base\InvalidConfigException] yii\base\InvalidConfigException: Unknown component ID: teamService in D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\di\ServiceLocator.php:139
+Stack trace:
+#0 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Module.php(742): yii\di\ServiceLocator->get('teamService', true)
+#1 D:\phpstudy_pro\WWW\backend\controllers\TeamController.php(48): yii\base\Module->get('teamService')
+#2 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Controller.php(225): backend\controllers\TeamController->actions()
+#3 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Controller.php(126): yii\base\Controller->createAction('index')
+#4 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('index', Array)
+#5 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('team/index', Array)
+#6 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 D:\phpstudy_pro\WWW\frontend\web\admin\index.php(18): yii\base\Application->run()
+#8 {main}
+2023-02-10 21:20:10 [127.0.0.1][1][akue3ggvr4j2uq50sg1u1ql5c9][info][application] $_GET = [
+    'r' => 'team/index'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'wordpress_logged_in_86a9106ae65537651a8e456835b316ab' => 'mmma|1677050114|bT7ng8zBap8ZomuqdwGcjq60357AHSocZMRZYk1b7uI|33c8845584b6d712613a75dad4396516b8f24492be531ba5872116c6f5fd0330'
+    'wp-settings-time-1' => '1675943997'
+    '_identity-frontend' => 'ff4723d33490d1a30d5640e71fd7d121f9b6f51fd9475373e1d93f547b10525aa:2:{i:0;s:18:\"_identity-frontend\";i:1;s:46:\"[1,\"4sSpK38KErySZpizaMO18REH4nXWPDrD\",2592000]\";}'
+    '_identity-backend' => '7223aaae057f741b3ba5c4d0725f6f17a2846f199c7fcfd05830ef9b8b13aedaa:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"4sSpK38KErySZpizaMO18REH4nXWPDrD\",2592000]\";}'
+    'PHPSESSID' => 'nrb1d7gs20vpvcfiptk8232kol'
+    '_csrf' => '20a0a5e4bfee77375cf35354ddfbda6fb60e41ecf968435f9a56c307e99950b4a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"nFGgDs0Eb4Ke-p--9nmXR6oxu0TMGy8R\";}'
+    'BACKEND_FEEHICMS' => 'akue3ggvr4j2uq50sg1u1ql5c9'
+    '_csrf_backend' => 'b6d1d432fbd3a9b335ebfefa8fa170625fe684c74d101962e25f6663ad40493ca:2:{i:0;s:13:\"_csrf_backend\";i:1;s:32:\"rp704xcFjfRKybpp8X2vHzzfZXFGiBtf\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '_backend_returnUrl' => '/admin/'
+    '__captcha/site/captcha' => 'penw'
+    '__captcha/site/captchacount' => 1
+    '__backend__id' => 1
+    '_update_referer' => 'http://localhost:8080/admin/index.php?r=menu%2Findex'
+    '_create_referer' => 'http://localhost:8080/admin/index.php?r=user%2Findex'
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'D:\\phpstudy_pro\\WWW\\frontend\\web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '15079'
+    'SERVER_SOFTWARE' => 'PHP 7.3.4 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/admin/index.php?r=team%2Findex'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/admin/index.php'
+    'SCRIPT_FILENAME' => 'D:\\phpstudy_pro\\WWW\\frontend\\web\\admin\\index.php'
+    'PHP_SELF' => '/admin/index.php'
+    'QUERY_STRING' => 'r=team%2Findex'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_SEC_CH_UA' => '\"Not_A Brand\";v=\"99\", \"Microsoft Edge\";v=\"109\", \"Chromium\";v=\"109\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36 Edg/109.0.1518.78'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_DEST' => 'iframe'
+    'HTTP_REFERER' => 'http://localhost:8080/admin/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6'
+    'HTTP_COOKIE' => 'wordpress_logged_in_86a9106ae65537651a8e456835b316ab=mmma%7C1677050114%7CbT7ng8zBap8ZomuqdwGcjq60357AHSocZMRZYk1b7uI%7C33c8845584b6d712613a75dad4396516b8f24492be531ba5872116c6f5fd0330; wp-settings-time-1=1675943997; _identity-frontend=ff4723d33490d1a30d5640e71fd7d121f9b6f51fd9475373e1d93f547b10525aa%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%224sSpK38KErySZpizaMO18REH4nXWPDrD%22%2C2592000%5D%22%3B%7D; _identity-backend=7223aaae057f741b3ba5c4d0725f6f17a2846f199c7fcfd05830ef9b8b13aedaa%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%224sSpK38KErySZpizaMO18REH4nXWPDrD%22%2C2592000%5D%22%3B%7D; PHPSESSID=nrb1d7gs20vpvcfiptk8232kol; _csrf=20a0a5e4bfee77375cf35354ddfbda6fb60e41ecf968435f9a56c307e99950b4a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22nFGgDs0Eb4Ke-p--9nmXR6oxu0TMGy8R%22%3B%7D; BACKEND_FEEHICMS=akue3ggvr4j2uq50sg1u1ql5c9; _csrf_backend=b6d1d432fbd3a9b335ebfefa8fa170625fe684c74d101962e25f6663ad40493ca%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf_backend%22%3Bi%3A1%3Bs%3A32%3A%22rp704xcFjfRKybpp8X2vHzzfZXFGiBtf%22%3B%7D'
+    'REQUEST_TIME_FLOAT' => 1676035210.6912
+    'REQUEST_TIME' => 1676035210
+]
+2023-02-10 21:22:23 [127.0.0.1][1][akue3ggvr4j2uq50sg1u1ql5c9][error][yii\base\InvalidConfigException] yii\base\InvalidConfigException: Unknown component ID: teamService in D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\di\ServiceLocator.php:139
+Stack trace:
+#0 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Module.php(742): yii\di\ServiceLocator->get('teamService', true)
+#1 D:\phpstudy_pro\WWW\backend\controllers\TeamController.php(48): yii\base\Module->get('teamService')
+#2 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Controller.php(225): backend\controllers\TeamController->actions()
+#3 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Controller.php(126): yii\base\Controller->createAction('index')
+#4 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('index', Array)
+#5 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('team/index', Array)
+#6 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 D:\phpstudy_pro\WWW\frontend\web\admin\index.php(18): yii\base\Application->run()
+#8 {main}
+2023-02-10 21:22:23 [127.0.0.1][1][akue3ggvr4j2uq50sg1u1ql5c9][info][application] $_GET = [
+    'r' => 'team/index'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'wordpress_logged_in_86a9106ae65537651a8e456835b316ab' => 'mmma|1677050114|bT7ng8zBap8ZomuqdwGcjq60357AHSocZMRZYk1b7uI|33c8845584b6d712613a75dad4396516b8f24492be531ba5872116c6f5fd0330'
+    'wp-settings-time-1' => '1675943997'
+    '_identity-frontend' => 'ff4723d33490d1a30d5640e71fd7d121f9b6f51fd9475373e1d93f547b10525aa:2:{i:0;s:18:\"_identity-frontend\";i:1;s:46:\"[1,\"4sSpK38KErySZpizaMO18REH4nXWPDrD\",2592000]\";}'
+    '_identity-backend' => '7223aaae057f741b3ba5c4d0725f6f17a2846f199c7fcfd05830ef9b8b13aedaa:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"4sSpK38KErySZpizaMO18REH4nXWPDrD\",2592000]\";}'
+    'PHPSESSID' => 'nrb1d7gs20vpvcfiptk8232kol'
+    '_csrf' => '20a0a5e4bfee77375cf35354ddfbda6fb60e41ecf968435f9a56c307e99950b4a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"nFGgDs0Eb4Ke-p--9nmXR6oxu0TMGy8R\";}'
+    'BACKEND_FEEHICMS' => 'akue3ggvr4j2uq50sg1u1ql5c9'
+    '_csrf_backend' => 'b6d1d432fbd3a9b335ebfefa8fa170625fe684c74d101962e25f6663ad40493ca:2:{i:0;s:13:\"_csrf_backend\";i:1;s:32:\"rp704xcFjfRKybpp8X2vHzzfZXFGiBtf\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '_backend_returnUrl' => '/admin/'
+    '__captcha/site/captcha' => 'penw'
+    '__captcha/site/captchacount' => 1
+    '__backend__id' => 1
+    '_update_referer' => 'http://localhost:8080/admin/index.php?r=menu%2Findex'
+    '_create_referer' => 'http://localhost:8080/admin/index.php?r=user%2Findex'
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'D:\\phpstudy_pro\\WWW\\frontend\\web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '15191'
+    'SERVER_SOFTWARE' => 'PHP 7.3.4 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/admin/index.php?r=team%2Findex'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/admin/index.php'
+    'SCRIPT_FILENAME' => 'D:\\phpstudy_pro\\WWW\\frontend\\web\\admin\\index.php'
+    'PHP_SELF' => '/admin/index.php'
+    'QUERY_STRING' => 'r=team%2Findex'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_SEC_CH_UA' => '\"Not_A Brand\";v=\"99\", \"Microsoft Edge\";v=\"109\", \"Chromium\";v=\"109\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36 Edg/109.0.1518.78'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_REFERER' => 'http://localhost:8080/admin/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6'
+    'HTTP_COOKIE' => 'wordpress_logged_in_86a9106ae65537651a8e456835b316ab=mmma%7C1677050114%7CbT7ng8zBap8ZomuqdwGcjq60357AHSocZMRZYk1b7uI%7C33c8845584b6d712613a75dad4396516b8f24492be531ba5872116c6f5fd0330; wp-settings-time-1=1675943997; _identity-frontend=ff4723d33490d1a30d5640e71fd7d121f9b6f51fd9475373e1d93f547b10525aa%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%224sSpK38KErySZpizaMO18REH4nXWPDrD%22%2C2592000%5D%22%3B%7D; _identity-backend=7223aaae057f741b3ba5c4d0725f6f17a2846f199c7fcfd05830ef9b8b13aedaa%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%224sSpK38KErySZpizaMO18REH4nXWPDrD%22%2C2592000%5D%22%3B%7D; PHPSESSID=nrb1d7gs20vpvcfiptk8232kol; _csrf=20a0a5e4bfee77375cf35354ddfbda6fb60e41ecf968435f9a56c307e99950b4a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22nFGgDs0Eb4Ke-p--9nmXR6oxu0TMGy8R%22%3B%7D; BACKEND_FEEHICMS=akue3ggvr4j2uq50sg1u1ql5c9; _csrf_backend=b6d1d432fbd3a9b335ebfefa8fa170625fe684c74d101962e25f6663ad40493ca%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf_backend%22%3Bi%3A1%3Bs%3A32%3A%22rp704xcFjfRKybpp8X2vHzzfZXFGiBtf%22%3B%7D'
+    'REQUEST_TIME_FLOAT' => 1676035343.8447
+    'REQUEST_TIME' => 1676035343
+]
+2023-02-10 21:24:11 [127.0.0.1][1][akue3ggvr4j2uq50sg1u1ql5c9][error][yii\base\InvalidConfigException] yii\base\InvalidConfigException: Unknown component ID: teamService in D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\di\ServiceLocator.php:139
+Stack trace:
+#0 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Module.php(742): yii\di\ServiceLocator->get('teamService', true)
+#1 D:\phpstudy_pro\WWW\backend\controllers\TeamController.php(48): yii\base\Module->get('teamService')
+#2 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Controller.php(225): backend\controllers\TeamController->actions()
+#3 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Controller.php(126): yii\base\Controller->createAction('index')
+#4 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('index', Array)
+#5 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('team/index', Array)
+#6 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 D:\phpstudy_pro\WWW\frontend\web\admin\index.php(18): yii\base\Application->run()
+#8 {main}
+2023-02-10 21:24:11 [127.0.0.1][1][akue3ggvr4j2uq50sg1u1ql5c9][info][application] $_GET = [
+    'r' => 'team/index'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'wordpress_logged_in_86a9106ae65537651a8e456835b316ab' => 'mmma|1677050114|bT7ng8zBap8ZomuqdwGcjq60357AHSocZMRZYk1b7uI|33c8845584b6d712613a75dad4396516b8f24492be531ba5872116c6f5fd0330'
+    'wp-settings-time-1' => '1675943997'
+    '_identity-frontend' => 'ff4723d33490d1a30d5640e71fd7d121f9b6f51fd9475373e1d93f547b10525aa:2:{i:0;s:18:\"_identity-frontend\";i:1;s:46:\"[1,\"4sSpK38KErySZpizaMO18REH4nXWPDrD\",2592000]\";}'
+    '_identity-backend' => '7223aaae057f741b3ba5c4d0725f6f17a2846f199c7fcfd05830ef9b8b13aedaa:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"4sSpK38KErySZpizaMO18REH4nXWPDrD\",2592000]\";}'
+    'PHPSESSID' => 'nrb1d7gs20vpvcfiptk8232kol'
+    '_csrf' => '20a0a5e4bfee77375cf35354ddfbda6fb60e41ecf968435f9a56c307e99950b4a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"nFGgDs0Eb4Ke-p--9nmXR6oxu0TMGy8R\";}'
+    'BACKEND_FEEHICMS' => 'akue3ggvr4j2uq50sg1u1ql5c9'
+    '_csrf_backend' => 'b6d1d432fbd3a9b335ebfefa8fa170625fe684c74d101962e25f6663ad40493ca:2:{i:0;s:13:\"_csrf_backend\";i:1;s:32:\"rp704xcFjfRKybpp8X2vHzzfZXFGiBtf\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '_backend_returnUrl' => '/admin/'
+    '__captcha/site/captcha' => 'penw'
+    '__captcha/site/captchacount' => 1
+    '__backend__id' => 1
+    '_update_referer' => 'http://localhost:8080/admin/index.php?r=menu%2Findex'
+    '_create_referer' => 'http://localhost:8080/admin/index.php?r=user%2Findex'
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'D:\\phpstudy_pro\\WWW\\frontend\\web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '15257'
+    'SERVER_SOFTWARE' => 'PHP 7.3.4 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/admin/index.php?r=team%2Findex'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/admin/index.php'
+    'SCRIPT_FILENAME' => 'D:\\phpstudy_pro\\WWW\\frontend\\web\\admin\\index.php'
+    'PHP_SELF' => '/admin/index.php'
+    'QUERY_STRING' => 'r=team%2Findex'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_SEC_CH_UA' => '\"Not_A Brand\";v=\"99\", \"Microsoft Edge\";v=\"109\", \"Chromium\";v=\"109\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36 Edg/109.0.1518.78'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_REFERER' => 'http://localhost:8080/admin/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6'
+    'HTTP_COOKIE' => 'wordpress_logged_in_86a9106ae65537651a8e456835b316ab=mmma%7C1677050114%7CbT7ng8zBap8ZomuqdwGcjq60357AHSocZMRZYk1b7uI%7C33c8845584b6d712613a75dad4396516b8f24492be531ba5872116c6f5fd0330; wp-settings-time-1=1675943997; _identity-frontend=ff4723d33490d1a30d5640e71fd7d121f9b6f51fd9475373e1d93f547b10525aa%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%224sSpK38KErySZpizaMO18REH4nXWPDrD%22%2C2592000%5D%22%3B%7D; _identity-backend=7223aaae057f741b3ba5c4d0725f6f17a2846f199c7fcfd05830ef9b8b13aedaa%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%224sSpK38KErySZpizaMO18REH4nXWPDrD%22%2C2592000%5D%22%3B%7D; PHPSESSID=nrb1d7gs20vpvcfiptk8232kol; _csrf=20a0a5e4bfee77375cf35354ddfbda6fb60e41ecf968435f9a56c307e99950b4a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22nFGgDs0Eb4Ke-p--9nmXR6oxu0TMGy8R%22%3B%7D; BACKEND_FEEHICMS=akue3ggvr4j2uq50sg1u1ql5c9; _csrf_backend=b6d1d432fbd3a9b335ebfefa8fa170625fe684c74d101962e25f6663ad40493ca%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf_backend%22%3Bi%3A1%3Bs%3A32%3A%22rp704xcFjfRKybpp8X2vHzzfZXFGiBtf%22%3B%7D'
+    'REQUEST_TIME_FLOAT' => 1676035451.1552
+    'REQUEST_TIME' => 1676035451
+]
+2023-02-10 21:24:55 [127.0.0.1][1][akue3ggvr4j2uq50sg1u1ql5c9][error][yii\base\InvalidConfigException] yii\base\InvalidConfigException: Unknown component ID: teamService in D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\di\ServiceLocator.php:139
+Stack trace:
+#0 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Module.php(742): yii\di\ServiceLocator->get('teamService', true)
+#1 D:\phpstudy_pro\WWW\backend\controllers\TeamController.php(48): yii\base\Module->get('teamService')
+#2 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Controller.php(225): backend\controllers\TeamController->actions()
+#3 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Controller.php(126): yii\base\Controller->createAction('index')
+#4 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('index', Array)
+#5 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('team/index', Array)
+#6 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 D:\phpstudy_pro\WWW\frontend\web\admin\index.php(18): yii\base\Application->run()
+#8 {main}
+2023-02-10 21:24:55 [127.0.0.1][1][akue3ggvr4j2uq50sg1u1ql5c9][info][application] $_GET = [
+    'r' => 'team/index'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'wordpress_logged_in_86a9106ae65537651a8e456835b316ab' => 'mmma|1677050114|bT7ng8zBap8ZomuqdwGcjq60357AHSocZMRZYk1b7uI|33c8845584b6d712613a75dad4396516b8f24492be531ba5872116c6f5fd0330'
+    'wp-settings-time-1' => '1675943997'
+    '_identity-frontend' => 'ff4723d33490d1a30d5640e71fd7d121f9b6f51fd9475373e1d93f547b10525aa:2:{i:0;s:18:\"_identity-frontend\";i:1;s:46:\"[1,\"4sSpK38KErySZpizaMO18REH4nXWPDrD\",2592000]\";}'
+    '_identity-backend' => '7223aaae057f741b3ba5c4d0725f6f17a2846f199c7fcfd05830ef9b8b13aedaa:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"4sSpK38KErySZpizaMO18REH4nXWPDrD\",2592000]\";}'
+    'PHPSESSID' => 'nrb1d7gs20vpvcfiptk8232kol'
+    '_csrf' => '20a0a5e4bfee77375cf35354ddfbda6fb60e41ecf968435f9a56c307e99950b4a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"nFGgDs0Eb4Ke-p--9nmXR6oxu0TMGy8R\";}'
+    'BACKEND_FEEHICMS' => 'akue3ggvr4j2uq50sg1u1ql5c9'
+    '_csrf_backend' => 'b6d1d432fbd3a9b335ebfefa8fa170625fe684c74d101962e25f6663ad40493ca:2:{i:0;s:13:\"_csrf_backend\";i:1;s:32:\"rp704xcFjfRKybpp8X2vHzzfZXFGiBtf\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '_backend_returnUrl' => '/admin/'
+    '__captcha/site/captcha' => 'penw'
+    '__captcha/site/captchacount' => 1
+    '__backend__id' => 1
+    '_update_referer' => 'http://localhost:8080/admin/index.php?r=menu%2Findex'
+    '_create_referer' => 'http://localhost:8080/admin/index.php?r=user%2Findex'
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'D:\\phpstudy_pro\\WWW\\frontend\\web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '15281'
+    'SERVER_SOFTWARE' => 'PHP 7.3.4 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/admin/index.php?r=team%2Findex'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/admin/index.php'
+    'SCRIPT_FILENAME' => 'D:\\phpstudy_pro\\WWW\\frontend\\web\\admin\\index.php'
+    'PHP_SELF' => '/admin/index.php'
+    'QUERY_STRING' => 'r=team%2Findex'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_SEC_CH_UA' => '\"Not_A Brand\";v=\"99\", \"Microsoft Edge\";v=\"109\", \"Chromium\";v=\"109\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36 Edg/109.0.1518.78'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_REFERER' => 'http://localhost:8080/admin/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6'
+    'HTTP_COOKIE' => 'wordpress_logged_in_86a9106ae65537651a8e456835b316ab=mmma%7C1677050114%7CbT7ng8zBap8ZomuqdwGcjq60357AHSocZMRZYk1b7uI%7C33c8845584b6d712613a75dad4396516b8f24492be531ba5872116c6f5fd0330; wp-settings-time-1=1675943997; _identity-frontend=ff4723d33490d1a30d5640e71fd7d121f9b6f51fd9475373e1d93f547b10525aa%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%224sSpK38KErySZpizaMO18REH4nXWPDrD%22%2C2592000%5D%22%3B%7D; _identity-backend=7223aaae057f741b3ba5c4d0725f6f17a2846f199c7fcfd05830ef9b8b13aedaa%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%224sSpK38KErySZpizaMO18REH4nXWPDrD%22%2C2592000%5D%22%3B%7D; PHPSESSID=nrb1d7gs20vpvcfiptk8232kol; _csrf=20a0a5e4bfee77375cf35354ddfbda6fb60e41ecf968435f9a56c307e99950b4a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22nFGgDs0Eb4Ke-p--9nmXR6oxu0TMGy8R%22%3B%7D; BACKEND_FEEHICMS=akue3ggvr4j2uq50sg1u1ql5c9; _csrf_backend=b6d1d432fbd3a9b335ebfefa8fa170625fe684c74d101962e25f6663ad40493ca%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf_backend%22%3Bi%3A1%3Bs%3A32%3A%22rp704xcFjfRKybpp8X2vHzzfZXFGiBtf%22%3B%7D'
+    'REQUEST_TIME_FLOAT' => 1676035495.6931
+    'REQUEST_TIME' => 1676035495
+]
+2023-02-10 21:25:00 [127.0.0.1][1][akue3ggvr4j2uq50sg1u1ql5c9][error][yii\base\InvalidConfigException] yii\base\InvalidConfigException: Unknown component ID: teamService in D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\di\ServiceLocator.php:139
+Stack trace:
+#0 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Module.php(742): yii\di\ServiceLocator->get('teamService', true)
+#1 D:\phpstudy_pro\WWW\backend\controllers\TeamController.php(48): yii\base\Module->get('teamService')
+#2 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Controller.php(225): backend\controllers\TeamController->actions()
+#3 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Controller.php(126): yii\base\Controller->createAction('index')
+#4 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('index', Array)
+#5 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('team/index', Array)
+#6 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 D:\phpstudy_pro\WWW\frontend\web\admin\index.php(18): yii\base\Application->run()
+#8 {main}
+2023-02-10 21:25:00 [127.0.0.1][1][akue3ggvr4j2uq50sg1u1ql5c9][info][application] $_GET = [
+    'r' => 'team/index'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'wordpress_logged_in_86a9106ae65537651a8e456835b316ab' => 'mmma|1677050114|bT7ng8zBap8ZomuqdwGcjq60357AHSocZMRZYk1b7uI|33c8845584b6d712613a75dad4396516b8f24492be531ba5872116c6f5fd0330'
+    'wp-settings-time-1' => '1675943997'
+    '_identity-frontend' => 'ff4723d33490d1a30d5640e71fd7d121f9b6f51fd9475373e1d93f547b10525aa:2:{i:0;s:18:\"_identity-frontend\";i:1;s:46:\"[1,\"4sSpK38KErySZpizaMO18REH4nXWPDrD\",2592000]\";}'
+    '_identity-backend' => '7223aaae057f741b3ba5c4d0725f6f17a2846f199c7fcfd05830ef9b8b13aedaa:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"4sSpK38KErySZpizaMO18REH4nXWPDrD\",2592000]\";}'
+    'PHPSESSID' => 'nrb1d7gs20vpvcfiptk8232kol'
+    '_csrf' => '20a0a5e4bfee77375cf35354ddfbda6fb60e41ecf968435f9a56c307e99950b4a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"nFGgDs0Eb4Ke-p--9nmXR6oxu0TMGy8R\";}'
+    'BACKEND_FEEHICMS' => 'akue3ggvr4j2uq50sg1u1ql5c9'
+    '_csrf_backend' => 'b6d1d432fbd3a9b335ebfefa8fa170625fe684c74d101962e25f6663ad40493ca:2:{i:0;s:13:\"_csrf_backend\";i:1;s:32:\"rp704xcFjfRKybpp8X2vHzzfZXFGiBtf\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '_backend_returnUrl' => '/admin/'
+    '__captcha/site/captcha' => 'penw'
+    '__captcha/site/captchacount' => 1
+    '__backend__id' => 1
+    '_update_referer' => 'http://localhost:8080/admin/index.php?r=menu%2Findex'
+    '_create_referer' => 'http://localhost:8080/admin/index.php?r=user%2Findex'
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'D:\\phpstudy_pro\\WWW\\frontend\\web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '15356'
+    'SERVER_SOFTWARE' => 'PHP 7.3.4 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/admin/index.php?r=team%2Findex'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/admin/index.php'
+    'SCRIPT_FILENAME' => 'D:\\phpstudy_pro\\WWW\\frontend\\web\\admin\\index.php'
+    'PHP_SELF' => '/admin/index.php'
+    'QUERY_STRING' => 'r=team%2Findex'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_SEC_CH_UA' => '\"Not_A Brand\";v=\"99\", \"Microsoft Edge\";v=\"109\", \"Chromium\";v=\"109\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36 Edg/109.0.1518.78'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_REFERER' => 'http://localhost:8080/admin/index.php'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6'
+    'HTTP_COOKIE' => 'wordpress_logged_in_86a9106ae65537651a8e456835b316ab=mmma%7C1677050114%7CbT7ng8zBap8ZomuqdwGcjq60357AHSocZMRZYk1b7uI%7C33c8845584b6d712613a75dad4396516b8f24492be531ba5872116c6f5fd0330; wp-settings-time-1=1675943997; _identity-frontend=ff4723d33490d1a30d5640e71fd7d121f9b6f51fd9475373e1d93f547b10525aa%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%224sSpK38KErySZpizaMO18REH4nXWPDrD%22%2C2592000%5D%22%3B%7D; _identity-backend=7223aaae057f741b3ba5c4d0725f6f17a2846f199c7fcfd05830ef9b8b13aedaa%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%224sSpK38KErySZpizaMO18REH4nXWPDrD%22%2C2592000%5D%22%3B%7D; PHPSESSID=nrb1d7gs20vpvcfiptk8232kol; _csrf=20a0a5e4bfee77375cf35354ddfbda6fb60e41ecf968435f9a56c307e99950b4a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22nFGgDs0Eb4Ke-p--9nmXR6oxu0TMGy8R%22%3B%7D; BACKEND_FEEHICMS=akue3ggvr4j2uq50sg1u1ql5c9; _csrf_backend=b6d1d432fbd3a9b335ebfefa8fa170625fe684c74d101962e25f6663ad40493ca%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf_backend%22%3Bi%3A1%3Bs%3A32%3A%22rp704xcFjfRKybpp8X2vHzzfZXFGiBtf%22%3B%7D'
+    'REQUEST_TIME_FLOAT' => 1676035500.8719
+    'REQUEST_TIME' => 1676035500
+]
+2023-02-10 21:26:37 [127.0.0.1][1][akue3ggvr4j2uq50sg1u1ql5c9][error][yii\base\InvalidConfigException] yii\base\InvalidConfigException: Unknown component ID: teamService in D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\di\ServiceLocator.php:139
+Stack trace:
+#0 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Module.php(742): yii\di\ServiceLocator->get('teamService', true)
+#1 D:\phpstudy_pro\WWW\backend\controllers\TeamController.php(48): yii\base\Module->get('teamService')
+#2 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Controller.php(225): backend\controllers\TeamController->actions()
+#3 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Controller.php(126): yii\base\Controller->createAction('index')
+#4 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('index', Array)
+#5 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('team/index', Array)
+#6 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 D:\phpstudy_pro\WWW\frontend\web\admin\index.php(18): yii\base\Application->run()
+#8 {main}
+2023-02-10 21:26:37 [127.0.0.1][1][akue3ggvr4j2uq50sg1u1ql5c9][info][application] $_GET = [
+    'r' => 'team/index'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'wordpress_logged_in_86a9106ae65537651a8e456835b316ab' => 'mmma|1677050114|bT7ng8zBap8ZomuqdwGcjq60357AHSocZMRZYk1b7uI|33c8845584b6d712613a75dad4396516b8f24492be531ba5872116c6f5fd0330'
+    'wp-settings-time-1' => '1675943997'
+    '_identity-frontend' => 'ff4723d33490d1a30d5640e71fd7d121f9b6f51fd9475373e1d93f547b10525aa:2:{i:0;s:18:\"_identity-frontend\";i:1;s:46:\"[1,\"4sSpK38KErySZpizaMO18REH4nXWPDrD\",2592000]\";}'
+    '_identity-backend' => '7223aaae057f741b3ba5c4d0725f6f17a2846f199c7fcfd05830ef9b8b13aedaa:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"4sSpK38KErySZpizaMO18REH4nXWPDrD\",2592000]\";}'
+    'PHPSESSID' => 'nrb1d7gs20vpvcfiptk8232kol'
+    '_csrf' => '20a0a5e4bfee77375cf35354ddfbda6fb60e41ecf968435f9a56c307e99950b4a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"nFGgDs0Eb4Ke-p--9nmXR6oxu0TMGy8R\";}'
+    'BACKEND_FEEHICMS' => 'akue3ggvr4j2uq50sg1u1ql5c9'
+    '_csrf_backend' => 'b6d1d432fbd3a9b335ebfefa8fa170625fe684c74d101962e25f6663ad40493ca:2:{i:0;s:13:\"_csrf_backend\";i:1;s:32:\"rp704xcFjfRKybpp8X2vHzzfZXFGiBtf\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '_backend_returnUrl' => '/admin/'
+    '__captcha/site/captcha' => 'penw'
+    '__captcha/site/captchacount' => 1
+    '__backend__id' => 1
+    '_update_referer' => 'http://localhost:8080/admin/index.php?r=menu%2Findex'
+    '_create_referer' => 'http://localhost:8080/admin/index.php?r=user%2Findex'
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'D:\\phpstudy_pro\\WWW\\frontend\\web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '15450'
+    'SERVER_SOFTWARE' => 'PHP 7.3.4 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/admin/index.php?r=team%2Findex'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/admin/index.php'
+    'SCRIPT_FILENAME' => 'D:\\phpstudy_pro\\WWW\\frontend\\web\\admin\\index.php'
+    'PHP_SELF' => '/admin/index.php'
+    'QUERY_STRING' => 'r=team%2Findex'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_SEC_CH_UA' => '\"Not_A Brand\";v=\"99\", \"Microsoft Edge\";v=\"109\", \"Chromium\";v=\"109\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36 Edg/109.0.1518.78'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_DEST' => 'iframe'
+    'HTTP_REFERER' => 'http://localhost:8080/admin/index.php'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6'
+    'HTTP_COOKIE' => 'wordpress_logged_in_86a9106ae65537651a8e456835b316ab=mmma%7C1677050114%7CbT7ng8zBap8ZomuqdwGcjq60357AHSocZMRZYk1b7uI%7C33c8845584b6d712613a75dad4396516b8f24492be531ba5872116c6f5fd0330; wp-settings-time-1=1675943997; _identity-frontend=ff4723d33490d1a30d5640e71fd7d121f9b6f51fd9475373e1d93f547b10525aa%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%224sSpK38KErySZpizaMO18REH4nXWPDrD%22%2C2592000%5D%22%3B%7D; _identity-backend=7223aaae057f741b3ba5c4d0725f6f17a2846f199c7fcfd05830ef9b8b13aedaa%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%224sSpK38KErySZpizaMO18REH4nXWPDrD%22%2C2592000%5D%22%3B%7D; PHPSESSID=nrb1d7gs20vpvcfiptk8232kol; _csrf=20a0a5e4bfee77375cf35354ddfbda6fb60e41ecf968435f9a56c307e99950b4a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22nFGgDs0Eb4Ke-p--9nmXR6oxu0TMGy8R%22%3B%7D; BACKEND_FEEHICMS=akue3ggvr4j2uq50sg1u1ql5c9; _csrf_backend=b6d1d432fbd3a9b335ebfefa8fa170625fe684c74d101962e25f6663ad40493ca%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf_backend%22%3Bi%3A1%3Bs%3A32%3A%22rp704xcFjfRKybpp8X2vHzzfZXFGiBtf%22%3B%7D'
+    'REQUEST_TIME_FLOAT' => 1676035597.6158
+    'REQUEST_TIME' => 1676035597
+]
+2023-02-10 21:30:12 [127.0.0.1][1][akue3ggvr4j2uq50sg1u1ql5c9][error][Error] Error: Class 'backend\models\search\TeamSearch' not found in D:\phpstudy_pro\WWW\common\services\TeamService.php:20
+Stack trace:
+#0 D:\phpstudy_pro\WWW\common\services\Service.php(56): common\services\TeamService->getSearchModel(Array)
+#1 D:\phpstudy_pro\WWW\backend\controllers\TeamController.php(53): common\services\Service->getList(Array)
+#2 [internal function]: backend\controllers\TeamController->backend\controllers\{closure}(Array, Object(backend\actions\IndexAction))
+#3 D:\phpstudy_pro\WWW\backend\actions\IndexAction.php(65): call_user_func_array(Object(Closure), Array)
+#4 [internal function]: backend\actions\IndexAction->run()
+#5 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Action.php(94): call_user_func_array(Array, Array)
+#6 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\Action->runWithParams(Array)
+#7 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('index', Array)
+#8 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('team/index', Array)
+#9 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 D:\phpstudy_pro\WWW\frontend\web\admin\index.php(18): yii\base\Application->run()
+#11 {main}
+2023-02-10 21:30:12 [127.0.0.1][1][akue3ggvr4j2uq50sg1u1ql5c9][info][application] $_GET = [
+    'r' => 'team/index'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'wordpress_logged_in_86a9106ae65537651a8e456835b316ab' => 'mmma|1677050114|bT7ng8zBap8ZomuqdwGcjq60357AHSocZMRZYk1b7uI|33c8845584b6d712613a75dad4396516b8f24492be531ba5872116c6f5fd0330'
+    'wp-settings-time-1' => '1675943997'
+    '_identity-frontend' => 'ff4723d33490d1a30d5640e71fd7d121f9b6f51fd9475373e1d93f547b10525aa:2:{i:0;s:18:\"_identity-frontend\";i:1;s:46:\"[1,\"4sSpK38KErySZpizaMO18REH4nXWPDrD\",2592000]\";}'
+    '_identity-backend' => '7223aaae057f741b3ba5c4d0725f6f17a2846f199c7fcfd05830ef9b8b13aedaa:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"4sSpK38KErySZpizaMO18REH4nXWPDrD\",2592000]\";}'
+    'PHPSESSID' => 'nrb1d7gs20vpvcfiptk8232kol'
+    '_csrf' => '20a0a5e4bfee77375cf35354ddfbda6fb60e41ecf968435f9a56c307e99950b4a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"nFGgDs0Eb4Ke-p--9nmXR6oxu0TMGy8R\";}'
+    'BACKEND_FEEHICMS' => 'akue3ggvr4j2uq50sg1u1ql5c9'
+    '_csrf_backend' => 'b6d1d432fbd3a9b335ebfefa8fa170625fe684c74d101962e25f6663ad40493ca:2:{i:0;s:13:\"_csrf_backend\";i:1;s:32:\"rp704xcFjfRKybpp8X2vHzzfZXFGiBtf\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '_backend_returnUrl' => '/admin/'
+    '__captcha/site/captcha' => 'penw'
+    '__captcha/site/captchacount' => 1
+    '__backend__id' => 1
+    '_update_referer' => 'http://localhost:8080/admin/index.php?r=menu%2Findex'
+    '_create_referer' => 'http://localhost:8080/admin/index.php?r=user%2Findex'
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'D:\\phpstudy_pro\\WWW\\frontend\\web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '15636'
+    'SERVER_SOFTWARE' => 'PHP 7.3.4 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/admin/index.php?r=team%2Findex'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/admin/index.php'
+    'SCRIPT_FILENAME' => 'D:\\phpstudy_pro\\WWW\\frontend\\web\\admin\\index.php'
+    'PHP_SELF' => '/admin/index.php'
+    'QUERY_STRING' => 'r=team%2Findex'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_SEC_CH_UA' => '\"Not_A Brand\";v=\"99\", \"Microsoft Edge\";v=\"109\", \"Chromium\";v=\"109\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36 Edg/109.0.1518.78'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_REFERER' => 'http://localhost:8080/admin/index.php'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6'
+    'HTTP_COOKIE' => 'wordpress_logged_in_86a9106ae65537651a8e456835b316ab=mmma%7C1677050114%7CbT7ng8zBap8ZomuqdwGcjq60357AHSocZMRZYk1b7uI%7C33c8845584b6d712613a75dad4396516b8f24492be531ba5872116c6f5fd0330; wp-settings-time-1=1675943997; _identity-frontend=ff4723d33490d1a30d5640e71fd7d121f9b6f51fd9475373e1d93f547b10525aa%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%224sSpK38KErySZpizaMO18REH4nXWPDrD%22%2C2592000%5D%22%3B%7D; _identity-backend=7223aaae057f741b3ba5c4d0725f6f17a2846f199c7fcfd05830ef9b8b13aedaa%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%224sSpK38KErySZpizaMO18REH4nXWPDrD%22%2C2592000%5D%22%3B%7D; PHPSESSID=nrb1d7gs20vpvcfiptk8232kol; _csrf=20a0a5e4bfee77375cf35354ddfbda6fb60e41ecf968435f9a56c307e99950b4a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22nFGgDs0Eb4Ke-p--9nmXR6oxu0TMGy8R%22%3B%7D; BACKEND_FEEHICMS=akue3ggvr4j2uq50sg1u1ql5c9; _csrf_backend=b6d1d432fbd3a9b335ebfefa8fa170625fe684c74d101962e25f6663ad40493ca%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf_backend%22%3Bi%3A1%3Bs%3A32%3A%22rp704xcFjfRKybpp8X2vHzzfZXFGiBtf%22%3B%7D'
+    'REQUEST_TIME_FLOAT' => 1676035812.1151
+    'REQUEST_TIME' => 1676035812
+]
+2023-02-10 21:32:56 [127.0.0.1][1][akue3ggvr4j2uq50sg1u1ql5c9][error][yii\base\ErrorException:1] yii\base\ErrorException: Class common\models\Team contains 2 abstract methods and must therefore be declared abstract or implement the remaining methods (yii\web\IdentityInterface::getAuthKey, yii\web\IdentityInterface::validateAuthKey) in D:\phpstudy_pro\WWW\common\models\Team.php:34
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2023-02-10 21:32:56 [127.0.0.1][1][akue3ggvr4j2uq50sg1u1ql5c9][info][application] $_GET = [
+    'r' => 'team/index'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'wordpress_logged_in_86a9106ae65537651a8e456835b316ab' => 'mmma|1677050114|bT7ng8zBap8ZomuqdwGcjq60357AHSocZMRZYk1b7uI|33c8845584b6d712613a75dad4396516b8f24492be531ba5872116c6f5fd0330'
+    'wp-settings-time-1' => '1675943997'
+    '_identity-frontend' => 'ff4723d33490d1a30d5640e71fd7d121f9b6f51fd9475373e1d93f547b10525aa:2:{i:0;s:18:\"_identity-frontend\";i:1;s:46:\"[1,\"4sSpK38KErySZpizaMO18REH4nXWPDrD\",2592000]\";}'
+    '_identity-backend' => '7223aaae057f741b3ba5c4d0725f6f17a2846f199c7fcfd05830ef9b8b13aedaa:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"4sSpK38KErySZpizaMO18REH4nXWPDrD\",2592000]\";}'
+    'PHPSESSID' => 'nrb1d7gs20vpvcfiptk8232kol'
+    '_csrf' => '20a0a5e4bfee77375cf35354ddfbda6fb60e41ecf968435f9a56c307e99950b4a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"nFGgDs0Eb4Ke-p--9nmXR6oxu0TMGy8R\";}'
+    'BACKEND_FEEHICMS' => 'akue3ggvr4j2uq50sg1u1ql5c9'
+    '_csrf_backend' => 'b6d1d432fbd3a9b335ebfefa8fa170625fe684c74d101962e25f6663ad40493ca:2:{i:0;s:13:\"_csrf_backend\";i:1;s:32:\"rp704xcFjfRKybpp8X2vHzzfZXFGiBtf\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '_backend_returnUrl' => '/admin/'
+    '__captcha/site/captcha' => 'penw'
+    '__captcha/site/captchacount' => 1
+    '__backend__id' => 1
+    '_update_referer' => 'http://localhost:8080/admin/index.php?r=menu%2Findex'
+    '_create_referer' => 'http://localhost:8080/admin/index.php?r=user%2Findex'
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'D:\\phpstudy_pro\\WWW\\frontend\\web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '15786'
+    'SERVER_SOFTWARE' => 'PHP 7.3.4 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/admin/index.php?r=team%2Findex'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/admin/index.php'
+    'SCRIPT_FILENAME' => 'D:\\phpstudy_pro\\WWW\\frontend\\web\\admin\\index.php'
+    'PHP_SELF' => '/admin/index.php'
+    'QUERY_STRING' => 'r=team%2Findex'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_SEC_CH_UA' => '\"Not_A Brand\";v=\"99\", \"Microsoft Edge\";v=\"109\", \"Chromium\";v=\"109\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36 Edg/109.0.1518.78'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_REFERER' => 'http://localhost:8080/admin/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6'
+    'HTTP_COOKIE' => 'wordpress_logged_in_86a9106ae65537651a8e456835b316ab=mmma%7C1677050114%7CbT7ng8zBap8ZomuqdwGcjq60357AHSocZMRZYk1b7uI%7C33c8845584b6d712613a75dad4396516b8f24492be531ba5872116c6f5fd0330; wp-settings-time-1=1675943997; _identity-frontend=ff4723d33490d1a30d5640e71fd7d121f9b6f51fd9475373e1d93f547b10525aa%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%224sSpK38KErySZpizaMO18REH4nXWPDrD%22%2C2592000%5D%22%3B%7D; _identity-backend=7223aaae057f741b3ba5c4d0725f6f17a2846f199c7fcfd05830ef9b8b13aedaa%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%224sSpK38KErySZpizaMO18REH4nXWPDrD%22%2C2592000%5D%22%3B%7D; PHPSESSID=nrb1d7gs20vpvcfiptk8232kol; _csrf=20a0a5e4bfee77375cf35354ddfbda6fb60e41ecf968435f9a56c307e99950b4a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22nFGgDs0Eb4Ke-p--9nmXR6oxu0TMGy8R%22%3B%7D; BACKEND_FEEHICMS=akue3ggvr4j2uq50sg1u1ql5c9; _csrf_backend=b6d1d432fbd3a9b335ebfefa8fa170625fe684c74d101962e25f6663ad40493ca%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf_backend%22%3Bi%3A1%3Bs%3A32%3A%22rp704xcFjfRKybpp8X2vHzzfZXFGiBtf%22%3B%7D'
+    'REQUEST_TIME_FLOAT' => 1676035976.0898
+    'REQUEST_TIME' => 1676035976
+]
+2023-02-10 21:34:47 [127.0.0.1][1][akue3ggvr4j2uq50sg1u1ql5c9][error][Error] Error: Class 'User' not found in D:\phpstudy_pro\WWW\backend\views\team\index.php:59
+Stack trace:
+#0 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\View.php(348): require()
+#1 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\View.php(257): yii\base\View->renderPhpFile('D:\\phpstudy_pro...', Array)
+#2 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile('D:\\phpstudy_pro...', Array, Object(backend\controllers\TeamController))
+#3 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Controller.php(384): yii\base\View->render('index', Array, Object(backend\controllers\TeamController))
+#4 D:\phpstudy_pro\WWW\backend\actions\IndexAction.php(76): yii\base\Controller->render('index', Array)
+#5 [internal function]: backend\actions\IndexAction->run()
+#6 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Action.php(94): call_user_func_array(Array, Array)
+#7 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\Action->runWithParams(Array)
+#8 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('index', Array)
+#9 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('team/index', Array)
+#10 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 D:\phpstudy_pro\WWW\frontend\web\admin\index.php(18): yii\base\Application->run()
+#12 {main}
+2023-02-10 21:34:47 [127.0.0.1][1][akue3ggvr4j2uq50sg1u1ql5c9][info][application] $_GET = [
+    'r' => 'team/index'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'wordpress_logged_in_86a9106ae65537651a8e456835b316ab' => 'mmma|1677050114|bT7ng8zBap8ZomuqdwGcjq60357AHSocZMRZYk1b7uI|33c8845584b6d712613a75dad4396516b8f24492be531ba5872116c6f5fd0330'
+    'wp-settings-time-1' => '1675943997'
+    '_identity-frontend' => 'ff4723d33490d1a30d5640e71fd7d121f9b6f51fd9475373e1d93f547b10525aa:2:{i:0;s:18:\"_identity-frontend\";i:1;s:46:\"[1,\"4sSpK38KErySZpizaMO18REH4nXWPDrD\",2592000]\";}'
+    '_identity-backend' => '7223aaae057f741b3ba5c4d0725f6f17a2846f199c7fcfd05830ef9b8b13aedaa:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"4sSpK38KErySZpizaMO18REH4nXWPDrD\",2592000]\";}'
+    'PHPSESSID' => 'nrb1d7gs20vpvcfiptk8232kol'
+    '_csrf' => '20a0a5e4bfee77375cf35354ddfbda6fb60e41ecf968435f9a56c307e99950b4a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"nFGgDs0Eb4Ke-p--9nmXR6oxu0TMGy8R\";}'
+    'BACKEND_FEEHICMS' => 'akue3ggvr4j2uq50sg1u1ql5c9'
+    '_csrf_backend' => 'b6d1d432fbd3a9b335ebfefa8fa170625fe684c74d101962e25f6663ad40493ca:2:{i:0;s:13:\"_csrf_backend\";i:1;s:32:\"rp704xcFjfRKybpp8X2vHzzfZXFGiBtf\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '_backend_returnUrl' => '/admin/'
+    '__captcha/site/captcha' => 'penw'
+    '__captcha/site/captchacount' => 1
+    '__backend__id' => 1
+    '_update_referer' => 'http://localhost:8080/admin/index.php?r=menu%2Findex'
+    '_create_referer' => 'http://localhost:8080/admin/index.php?r=user%2Findex'
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'D:\\phpstudy_pro\\WWW\\frontend\\web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '15866'
+    'SERVER_SOFTWARE' => 'PHP 7.3.4 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/admin/index.php?r=team%2Findex'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/admin/index.php'
+    'SCRIPT_FILENAME' => 'D:\\phpstudy_pro\\WWW\\frontend\\web\\admin\\index.php'
+    'PHP_SELF' => '/admin/index.php'
+    'QUERY_STRING' => 'r=team%2Findex'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_SEC_CH_UA' => '\"Not_A Brand\";v=\"99\", \"Microsoft Edge\";v=\"109\", \"Chromium\";v=\"109\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36 Edg/109.0.1518.78'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_REFERER' => 'http://localhost:8080/admin/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6'
+    'HTTP_COOKIE' => 'wordpress_logged_in_86a9106ae65537651a8e456835b316ab=mmma%7C1677050114%7CbT7ng8zBap8ZomuqdwGcjq60357AHSocZMRZYk1b7uI%7C33c8845584b6d712613a75dad4396516b8f24492be531ba5872116c6f5fd0330; wp-settings-time-1=1675943997; _identity-frontend=ff4723d33490d1a30d5640e71fd7d121f9b6f51fd9475373e1d93f547b10525aa%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%224sSpK38KErySZpizaMO18REH4nXWPDrD%22%2C2592000%5D%22%3B%7D; _identity-backend=7223aaae057f741b3ba5c4d0725f6f17a2846f199c7fcfd05830ef9b8b13aedaa%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%224sSpK38KErySZpizaMO18REH4nXWPDrD%22%2C2592000%5D%22%3B%7D; PHPSESSID=nrb1d7gs20vpvcfiptk8232kol; _csrf=20a0a5e4bfee77375cf35354ddfbda6fb60e41ecf968435f9a56c307e99950b4a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22nFGgDs0Eb4Ke-p--9nmXR6oxu0TMGy8R%22%3B%7D; BACKEND_FEEHICMS=akue3ggvr4j2uq50sg1u1ql5c9; _csrf_backend=b6d1d432fbd3a9b335ebfefa8fa170625fe684c74d101962e25f6663ad40493ca%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf_backend%22%3Bi%3A1%3Bs%3A32%3A%22rp704xcFjfRKybpp8X2vHzzfZXFGiBtf%22%3B%7D'
+    'REQUEST_TIME_FLOAT' => 1676036087.2396
+    'REQUEST_TIME' => 1676036087
+]
+2023-02-10 21:35:59 [127.0.0.1][1][akue3ggvr4j2uq50sg1u1ql5c9][error][Error] Error: Class 'User' not found in D:\phpstudy_pro\WWW\backend\views\team\_form.php:41
+Stack trace:
+#0 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\View.php(348): require()
+#1 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\View.php(257): yii\base\View->renderPhpFile('D:\\phpstudy_pro...', Array)
+#2 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile('D:\\phpstudy_pro...', Array, NULL)
+#3 D:\phpstudy_pro\WWW\backend\views\team\create.php(19): yii\base\View->render('_form', Array)
+#4 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\View.php(348): require('D:\\phpstudy_pro...')
+#5 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\View.php(257): yii\base\View->renderPhpFile('D:\\phpstudy_pro...', Array)
+#6 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile('D:\\phpstudy_pro...', Array, Object(backend\controllers\TeamController))
+#7 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Controller.php(384): yii\base\View->render('create', Array, Object(backend\controllers\TeamController))
+#8 D:\phpstudy_pro\WWW\backend\actions\CreateAction.php(150): yii\base\Controller->render('create', Array)
+#9 [internal function]: backend\actions\CreateAction->run()
+#10 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Action.php(94): call_user_func_array(Array, Array)
+#11 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\Action->runWithParams(Array)
+#12 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('create', Array)
+#13 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('team/create', Array)
+#14 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#15 D:\phpstudy_pro\WWW\frontend\web\admin\index.php(18): yii\base\Application->run()
+#16 {main}
+2023-02-10 21:35:59 [127.0.0.1][1][akue3ggvr4j2uq50sg1u1ql5c9][info][application] $_GET = [
+    'r' => 'team/create'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'wordpress_logged_in_86a9106ae65537651a8e456835b316ab' => 'mmma|1677050114|bT7ng8zBap8ZomuqdwGcjq60357AHSocZMRZYk1b7uI|33c8845584b6d712613a75dad4396516b8f24492be531ba5872116c6f5fd0330'
+    'wp-settings-time-1' => '1675943997'
+    '_identity-frontend' => 'ff4723d33490d1a30d5640e71fd7d121f9b6f51fd9475373e1d93f547b10525aa:2:{i:0;s:18:\"_identity-frontend\";i:1;s:46:\"[1,\"4sSpK38KErySZpizaMO18REH4nXWPDrD\",2592000]\";}'
+    '_identity-backend' => '7223aaae057f741b3ba5c4d0725f6f17a2846f199c7fcfd05830ef9b8b13aedaa:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"4sSpK38KErySZpizaMO18REH4nXWPDrD\",2592000]\";}'
+    'PHPSESSID' => 'nrb1d7gs20vpvcfiptk8232kol'
+    '_csrf' => '20a0a5e4bfee77375cf35354ddfbda6fb60e41ecf968435f9a56c307e99950b4a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"nFGgDs0Eb4Ke-p--9nmXR6oxu0TMGy8R\";}'
+    'BACKEND_FEEHICMS' => 'akue3ggvr4j2uq50sg1u1ql5c9'
+    '_csrf_backend' => 'b6d1d432fbd3a9b335ebfefa8fa170625fe684c74d101962e25f6663ad40493ca:2:{i:0;s:13:\"_csrf_backend\";i:1;s:32:\"rp704xcFjfRKybpp8X2vHzzfZXFGiBtf\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '_backend_returnUrl' => '/admin/'
+    '__captcha/site/captcha' => 'penw'
+    '__captcha/site/captchacount' => 1
+    '__backend__id' => 1
+    '_update_referer' => 'http://localhost:8080/admin/index.php?r=menu%2Findex'
+    '_create_referer' => 'http://localhost:8080/admin/index.php?r=team%2Findex'
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'D:\\phpstudy_pro\\WWW\\frontend\\web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '15941'
+    'SERVER_SOFTWARE' => 'PHP 7.3.4 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/admin/index.php?r=team%2Fcreate'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/admin/index.php'
+    'SCRIPT_FILENAME' => 'D:\\phpstudy_pro\\WWW\\frontend\\web\\admin\\index.php'
+    'PHP_SELF' => '/admin/index.php'
+    'QUERY_STRING' => 'r=team%2Fcreate'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_SEC_CH_UA' => '\"Not_A Brand\";v=\"99\", \"Microsoft Edge\";v=\"109\", \"Chromium\";v=\"109\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36 Edg/109.0.1518.78'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_REFERER' => 'http://localhost:8080/admin/index.php?r=team%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6'
+    'HTTP_COOKIE' => 'wordpress_logged_in_86a9106ae65537651a8e456835b316ab=mmma%7C1677050114%7CbT7ng8zBap8ZomuqdwGcjq60357AHSocZMRZYk1b7uI%7C33c8845584b6d712613a75dad4396516b8f24492be531ba5872116c6f5fd0330; wp-settings-time-1=1675943997; _identity-frontend=ff4723d33490d1a30d5640e71fd7d121f9b6f51fd9475373e1d93f547b10525aa%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%224sSpK38KErySZpizaMO18REH4nXWPDrD%22%2C2592000%5D%22%3B%7D; _identity-backend=7223aaae057f741b3ba5c4d0725f6f17a2846f199c7fcfd05830ef9b8b13aedaa%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%224sSpK38KErySZpizaMO18REH4nXWPDrD%22%2C2592000%5D%22%3B%7D; PHPSESSID=nrb1d7gs20vpvcfiptk8232kol; _csrf=20a0a5e4bfee77375cf35354ddfbda6fb60e41ecf968435f9a56c307e99950b4a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22nFGgDs0Eb4Ke-p--9nmXR6oxu0TMGy8R%22%3B%7D; BACKEND_FEEHICMS=akue3ggvr4j2uq50sg1u1ql5c9; _csrf_backend=b6d1d432fbd3a9b335ebfefa8fa170625fe684c74d101962e25f6663ad40493ca%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf_backend%22%3Bi%3A1%3Bs%3A32%3A%22rp704xcFjfRKybpp8X2vHzzfZXFGiBtf%22%3B%7D'
+    'REQUEST_TIME_FLOAT' => 1676036158.999
+    'REQUEST_TIME' => 1676036158
+]
+2023-02-10 21:38:22 [127.0.0.1][1][akue3ggvr4j2uq50sg1u1ql5c9][error][yii\base\UnknownPropertyException] yii\base\UnknownPropertyException: Getting unknown property: common\models\Team::username in D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Component.php:154
+Stack trace:
+#0 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\db\BaseActiveRecord.php(298): yii\base\Component->__get('username')
+#1 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\helpers\BaseHtml.php(2227): yii\db\BaseActiveRecord->__get('username')
+#2 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\helpers\BaseHtml.php(1353): yii\helpers\BaseHtml::getAttributeValue(Object(common\models\Team), 'username')
+#3 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\helpers\BaseHtml.php(1407): yii\helpers\BaseHtml::activeInput('text', Object(common\models\Team), 'username', Array)
+#4 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\widgets\ActiveField.php(404): yii\helpers\BaseHtml::activeTextInput(Object(common\models\Team), 'username', Array)
+#5 D:\phpstudy_pro\WWW\backend\views\team\_form.php(35): yii\widgets\ActiveField->textInput(Array)
+#6 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\View.php(348): require('D:\\phpstudy_pro...')
+#7 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\View.php(257): yii\base\View->renderPhpFile('D:\\phpstudy_pro...', Array)
+#8 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile('D:\\phpstudy_pro...', Array, NULL)
+#9 D:\phpstudy_pro\WWW\backend\views\team\create.php(19): yii\base\View->render('_form', Array)
+#10 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\View.php(348): require('D:\\phpstudy_pro...')
+#11 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\View.php(257): yii\base\View->renderPhpFile('D:\\phpstudy_pro...', Array)
+#12 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile('D:\\phpstudy_pro...', Array, Object(backend\controllers\TeamController))
+#13 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Controller.php(384): yii\base\View->render('create', Array, Object(backend\controllers\TeamController))
+#14 D:\phpstudy_pro\WWW\backend\actions\CreateAction.php(150): yii\base\Controller->render('create', Array)
+#15 [internal function]: backend\actions\CreateAction->run()
+#16 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Action.php(94): call_user_func_array(Array, Array)
+#17 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\Action->runWithParams(Array)
+#18 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('create', Array)
+#19 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('team/create', Array)
+#20 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#21 D:\phpstudy_pro\WWW\frontend\web\admin\index.php(18): yii\base\Application->run()
+#22 {main}
+2023-02-10 21:38:22 [127.0.0.1][1][akue3ggvr4j2uq50sg1u1ql5c9][info][application] $_GET = [
+    'r' => 'team/create'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'wordpress_logged_in_86a9106ae65537651a8e456835b316ab' => 'mmma|1677050114|bT7ng8zBap8ZomuqdwGcjq60357AHSocZMRZYk1b7uI|33c8845584b6d712613a75dad4396516b8f24492be531ba5872116c6f5fd0330'
+    'wp-settings-time-1' => '1675943997'
+    '_identity-frontend' => 'ff4723d33490d1a30d5640e71fd7d121f9b6f51fd9475373e1d93f547b10525aa:2:{i:0;s:18:\"_identity-frontend\";i:1;s:46:\"[1,\"4sSpK38KErySZpizaMO18REH4nXWPDrD\",2592000]\";}'
+    '_identity-backend' => '7223aaae057f741b3ba5c4d0725f6f17a2846f199c7fcfd05830ef9b8b13aedaa:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"4sSpK38KErySZpizaMO18REH4nXWPDrD\",2592000]\";}'
+    'PHPSESSID' => 'nrb1d7gs20vpvcfiptk8232kol'
+    '_csrf' => '20a0a5e4bfee77375cf35354ddfbda6fb60e41ecf968435f9a56c307e99950b4a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"nFGgDs0Eb4Ke-p--9nmXR6oxu0TMGy8R\";}'
+    'BACKEND_FEEHICMS' => 'akue3ggvr4j2uq50sg1u1ql5c9'
+    '_csrf_backend' => 'b6d1d432fbd3a9b335ebfefa8fa170625fe684c74d101962e25f6663ad40493ca:2:{i:0;s:13:\"_csrf_backend\";i:1;s:32:\"rp704xcFjfRKybpp8X2vHzzfZXFGiBtf\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '_backend_returnUrl' => '/admin/'
+    '__captcha/site/captcha' => 'penw'
+    '__captcha/site/captchacount' => 1
+    '__backend__id' => 1
+    '_update_referer' => 'http://localhost:8080/admin/index.php?r=menu%2Findex'
+    '_create_referer' => 'http://localhost:8080/admin/index.php?r=team%2Findex'
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'D:\\phpstudy_pro\\WWW\\frontend\\web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '16915'
+    'SERVER_SOFTWARE' => 'PHP 7.3.4 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/admin/index.php?r=team%2Fcreate'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/admin/index.php'
+    'SCRIPT_FILENAME' => 'D:\\phpstudy_pro\\WWW\\frontend\\web\\admin\\index.php'
+    'PHP_SELF' => '/admin/index.php'
+    'QUERY_STRING' => 'r=team%2Fcreate'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_SEC_CH_UA' => '\"Not_A Brand\";v=\"99\", \"Microsoft Edge\";v=\"109\", \"Chromium\";v=\"109\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36 Edg/109.0.1518.78'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'iframe'
+    'HTTP_REFERER' => 'http://localhost:8080/admin/index.php?r=team%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6'
+    'HTTP_COOKIE' => 'wordpress_logged_in_86a9106ae65537651a8e456835b316ab=mmma%7C1677050114%7CbT7ng8zBap8ZomuqdwGcjq60357AHSocZMRZYk1b7uI%7C33c8845584b6d712613a75dad4396516b8f24492be531ba5872116c6f5fd0330; wp-settings-time-1=1675943997; _identity-frontend=ff4723d33490d1a30d5640e71fd7d121f9b6f51fd9475373e1d93f547b10525aa%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%224sSpK38KErySZpizaMO18REH4nXWPDrD%22%2C2592000%5D%22%3B%7D; _identity-backend=7223aaae057f741b3ba5c4d0725f6f17a2846f199c7fcfd05830ef9b8b13aedaa%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%224sSpK38KErySZpizaMO18REH4nXWPDrD%22%2C2592000%5D%22%3B%7D; PHPSESSID=nrb1d7gs20vpvcfiptk8232kol; _csrf=20a0a5e4bfee77375cf35354ddfbda6fb60e41ecf968435f9a56c307e99950b4a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22nFGgDs0Eb4Ke-p--9nmXR6oxu0TMGy8R%22%3B%7D; BACKEND_FEEHICMS=akue3ggvr4j2uq50sg1u1ql5c9; _csrf_backend=b6d1d432fbd3a9b335ebfefa8fa170625fe684c74d101962e25f6663ad40493ca%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf_backend%22%3Bi%3A1%3Bs%3A32%3A%22rp704xcFjfRKybpp8X2vHzzfZXFGiBtf%22%3B%7D'
+    'REQUEST_TIME_FLOAT' => 1676036302.4614
+    'REQUEST_TIME' => 1676036302
+]

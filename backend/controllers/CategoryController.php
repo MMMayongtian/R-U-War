@@ -30,13 +30,6 @@ use yii\helpers\ArrayHelper;
 class CategoryController extends \yii\web\Controller
 {
     /**
-     * @auth
-     * - item group=内容 category=分类 description-get=列表 sort=310  method=get
-     * - item group=内容 category=分类 description-get=查看 sort=311 method=get  
-     * - item group=内容 category=分类 description=创建 sort-get=312 sort-post=313 method=get,post  
-     * - item group=内容 category=分类 description=修改 sort-get=314 sort-post=315 method=get,post  
-     * - item group=内容 category=分类 description-post=删除 sort=316 method=post  
-     * - item group=内容 category=分类 description-post=排序 sort=317 method=post  
      * @return array
      * @throws \yii\base\InvalidConfigException
      */

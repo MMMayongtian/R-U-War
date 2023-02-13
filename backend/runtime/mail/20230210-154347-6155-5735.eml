@@ -1,0 +1,238 @@
+Message-ID: <034b344ad4c95eb0fa2ba12577cec0af@localhost>
+Date: Fri, 10 Feb 2023 15:43:47 +0800
+Subject: =?UTF-8?Q?=E6=9D=A5=E8=87=AA?= Feehi CMS
+ =?UTF-8?Q?=E5=90=8E=E5=8F=B0=E7=9A=84=E6=96=B0?=
+ =?UTF-8?Q?=E6=97=A5=E5=BF=97=E6=B6=88=E6=81=AF?=
+From: Feehi CMS robot  <admin@feehi.com>
+To: admin@feehi.com, liufee@126.com
+MIME-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+2023-02-10 15:43:47
+[127.0.0.1][1][uo0v6rrcqoqc8paf0uer0lomnc][error][yii\base\ErrorException=
+:8192]
+yii\base\ErrorException: Array and string offset access syntax with
+curly braces is deprecated in
+D:\phpstudy_pro\WWW\vendor\ezyang\htmlpurifier\library\HTMLPurifier\TagTran=
+sform\Font.php:78
+Stack trace:
+#0 D:\phpstudy_pro\WWW\vendor\composer\ClassLoader.php(444):
+yii\base\ErrorHandler->handleError(8192, 'Array and strin...',
+'D:\\phpstudy_pro...', 78, Array)
+#1 D:\phpstudy_pro\WWW\vendor\composer\ClassLoader.php(444): include()
+#2 D:\phpstudy_pro\WWW\vendor\composer\ClassLoader.php(322):
+Composer\Autoload\includeFile('D:\\phpstudy_pro...')
+#3 [internal function]:
+Composer\Autoload\ClassLoader->loadClass('HTMLPurifier_Ta...')
+#4
+D:\phpstudy_pro\WWW\vendor\ezyang\htmlpurifier\library\HTMLPurifier\HTMLMod=
+ule\Tidy\XHTMLAndHTML4.php(15):
+spl_autoload_call('HTMLPurifier_Ta...')
+#5
+D:\phpstudy_pro\WWW\vendor\ezyang\htmlpurifier\library\HTMLPurifier\HTMLMo=
+dule\Tidy.php(46):
+HTMLPurifier_HTMLModule_Tidy_XHTMLAndHTML4->makeFixes()
+#6
+D:\phpstudy_pro\WWW\vendor\ezyang\htmlpurifier\library\HTMLPurifier\HTMLMo=
+duleManager.php(293):
+HTMLPurifier_HTMLModule_Tidy->setup(Object(HTMLPurifier_Config))
+#7
+D:\phpstudy_pro\WWW\vendor\ezyang\htmlpurifier\library\HTMLPurifier\HTMLDe=
+finition.php(220):
+HTMLPurifier_HTMLModuleManager->setup(Object(HTMLPurifier_Config))
+#8
+D:\phpstudy_pro\WWW\vendor\ezyang\htmlpurifier\library\HTMLPurifier\HTMLDef=
+inition.php(195):
+HTMLPurifier_HTMLDefinition->processModules(Object(HTMLPurifier_Config))
+#9
+D:\phpstudy_pro\WWW\vendor\ezyang\htmlpurifier\library\HTMLPurifier\Defini=
+tion.php(51):
+HTMLPurifier_HTMLDefinition->doSetup(Object(HTMLPurifier_Config))
+#10
+D:\phpstudy_pro\WWW\vendor\ezyang\htmlpurifier\library\HTMLPurifier\Confi=
+g.php(515):
+HTMLPurifier_Definition->setup(Object(HTMLPurifier_Config))
+#11
+D:\phpstudy_pro\WWW\vendor\ezyang\htmlpurifier\library\HTMLPurifier\Confi=
+g.php(415):
+HTMLPurifier_Config->getDefinition('HTML', false, false)
+#12
+D:\phpstudy_pro\WWW\vendor\ezyang\htmlpurifier\library\HTMLPurifier\Gener=
+ator.php(74):
+HTMLPurifier_Config->getHTMLDefinition()
+#13
+D:\phpstudy_pro\WWW\vendor\ezyang\htmlpurifier\library\HTMLPurifier.php(1=
+58):
+HTMLPurifier_Generator->__construct(Object(HTMLPurifier_Config),
+Object(HTMLPurifier_Context))
+#14
+D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\helpers\BaseHtmlPurifier.php(58):
+HTMLPurifier->purify(' \xE2\x94\x94\xE8\xAE\xBE\xE7\xBD\xAE')
+#15 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\i18n\Formatter.php(527):
+yii\helpers\BaseHtmlPurifier::process('
+\xE2\x94\x94\xE8\xAE\xBE\xE7\xBD\xAE', NULL)
+#16 [internal function]: yii\i18n\Formatter->asHtml('
+\xE2\x94\x94\xE8\xAE\xBE\xE7\xBD\xAE')
+#17 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\i18n\Formatter.php(443):
+call_user_func_array(Array, Array)
+#18 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\grid\DataColumn.php(244):
+yii\i18n\Formatter->format(' \xE2\x94\x94\xE8\xAE\xBE\xE7\xBD\xAE',
+'html')
+#19 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\grid\Column.php(111):
+yii\grid\DataColumn->renderDataCellContent(Object(common\models\Menu),
+1, 0)
+#20 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\grid\GridView.php(525):
+yii\grid\Column->renderDataCell(Object(common\models\Menu), 1, 0)
+#21 D:\phpstudy_pro\WWW\backend\grid\GridView.php(81):
+yii\grid\GridView->renderTableRow(Object(common\models\Menu), 1, 0)
+#22 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\grid\GridView.php(494):
+backend\grid\GridView->renderTableRow(Object(common\models\Menu), 1,
+0)
+#23 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\grid\GridView.php(358):
+yii\grid\GridView->renderTableBody()
+#24
+D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\widgets\BaseListView.php(160):
+yii\grid\GridView->renderItems()
+#25 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\grid\GridView.php(326):
+yii\widgets\BaseListView->renderSection('{items}')
+#26
+D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\widgets\BaseListView.php(135):
+yii\grid\GridView->renderSection('{items}')
+#27 [internal function]:
+yii\widgets\BaseListView->yii\widgets\{closure}(Array)
+#28
+D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\widgets\BaseListView.php(138):
+preg_replace_callback('/{\\w+}/', Object(Closure), '{items}')
+#29 D:\phpstudy_pro\WWW\backend\grid\GridView.php(112):
+yii\widgets\BaseListView->run()
+#30 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Widget.php(140):
+backend\grid\GridView->run()
+#31 D:\phpstudy_pro\WWW\backend\views\menu\index.php(107):
+yii\base\Widget::widget(Array)
+#32 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\View.php(348):
+require('D:\\phpstudy_pro...')
+#33 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\View.php(257):
+yii\base\View->renderPhpFile('D:\\phpstudy_pro...', Array)
+#34 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\View.php(156):
+yii\base\View->renderFile('D:\\phpstudy_pro...', Array,
+Object(backend\controllers\MenuController))
+#35 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Controller.php(384):
+yii\base\View->render('index', Array,
+Object(backend\controllers\MenuController))
+#36 D:\phpstudy_pro\WWW\backend\actions\IndexAction.php(76):
+yii\base\Controller->render('index', Array)
+#37 [internal function]: backend\actions\IndexAction->run()
+#38 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Action.php(94):
+call_user_func_array(Array, Array)
+#39 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Controller.php(157):
+yii\base\Action->runWithParams(Array)
+#40 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Module.php(528):
+yii\base\Controller->runAction('index', Array)
+#41 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\web\Application.php(103):
+yii\base\Module->runAction('menu/index', Array)
+#42 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Application.php(386):
+yii\web\Application->handleRequest(Object(yii\web\Request))
+#43 D:\phpstudy_pro\WWW\frontend\web\admin\index.php(18):
+yii\base\Application->run()
+#44 {main}
+2023-02-10 15:43:47
+[127.0.0.1][1][uo0v6rrcqoqc8paf0uer0lomnc][info][application] $_GET =3D
+[
+    'r' =3D> 'menu/index'
+]
+
+$_POST =3D []
+
+$_FILES =3D []
+
+$_COOKIE =3D [
+    'wordpress_logged_in_86a9106ae65537651a8e456835b316ab' =3D>
+'mmma|1677050114|bT7ng8zBap8ZomuqdwGcjq60357AHSocZMRZYk1b7uI|33c8845584b6d7=
+12613a75dad4396516b8f24492be531ba5872116c6f5fd0330'
+    'wp-settings-time-1' =3D> '1675943997'
+    '_identity-frontend' =3D>
+'ff4723d33490d1a30d5640e71fd7d121f9b6f51fd9475373e1d93f547b10525aa:2:{i:0=
+;s:18:\"_identity-frontend\";i:1;s:46:\"[1,\"4sSpK38KErySZpizaMO18REH4nX=
+WPDrD\",2592000]\";}'
+    '_identity-backend' =3D>
+'7223aaae057f741b3ba5c4d0725f6f17a2846f199c7fcfd05830ef9b8b13aedaa:2:{i:0;s=
+:17:\"_identity-backend\";i:1;s:46:\"[1,\"4sSpK38KErySZpizaMO18REH4nXWPD=
+rD\",2592000]\";}'
+    'PHPSESSID' =3D> 'bdbu8qdlckot5jrtn483nfc9u9'
+    '_csrf_install' =3D>
+'87f3c5a501f332606775b896ec5939861b088ac8d9e90c976060be1d7dc9aa2fa:2:{i:0;=
+s:13:\"_csrf_install\";i:1;s:32:\"tcg0mQWaCAu-2uT1f1hTE21raNkts6AV\";}'
+    'BACKEND_FEEHICMS' =3D> 'uo0v6rrcqoqc8paf0uer0lomnc'
+    '_csrf_backend' =3D>
+'92668291d22806e0f744c485be5eb7c95a5951d8f60a786f2ec90349bf51a11ca:2:{i:0;s=
+:13:\"_csrf_backend\";i:1;s:32:\"uusmy3T-7S8OyzylqH4DSdUrF5y3lHdH\";}'
+]
+
+$_SESSION =3D [
+    '__flash' =3D> []
+    '_backend_returnUrl' =3D> '/admin/'
+    '__captcha/site/captcha' =3D> 'wawd'
+    '__captcha/site/captchacount' =3D> 1
+    '__backend__id' =3D> 1
+]
+
+$_SERVER =3D [
+    'DOCUMENT_ROOT' =3D> 'D:\\phpstudy_pro\\WWW\\frontend\\web'
+    'REMOTE_ADDR' =3D> '127.0.0.1'
+    'REMOTE_PORT' =3D> '5824'
+    'SERVER_SOFTWARE' =3D> 'PHP 7.4.3 Development Server'
+    'SERVER_PROTOCOL' =3D> 'HTTP/1.1'
+    'SERVER_NAME' =3D> 'localhost'
+    'SERVER_PORT' =3D> '8080'
+    'REQUEST_URI' =3D> '/admin/index.php?r=3Dmenu%2Findex'
+    'REQUEST_METHOD' =3D> 'GET'
+    'SCRIPT_NAME' =3D> '/admin/index.php'
+    'SCRIPT_FILENAME' =3D>
+'D:\\phpstudy_pro\\WWW\\frontend\\web\\admin\\index.php'
+    'PHP_SELF' =3D> '/admin/index.php'
+    'QUERY_STRING' =3D> 'r=3Dmenu%2Findex'
+    'HTTP_HOST' =3D> 'localhost:8080'
+    'HTTP_CONNECTION' =3D> 'keep-alive'
+    'HTTP_SEC_CH_UA' =3D> '\"Not_A Brand\";v=3D\"99\", \"Microsoft
+Edge\";v=3D\"109\", \"Chromium\";v=3D\"109\"'
+    'HTTP_SEC_CH_UA_MOBILE' =3D> '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' =3D> '\"Windows\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' =3D> '1'
+    'HTTP_USER_AGENT' =3D> 'Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36
+Edg/109.0.1518.78'
+    'HTTP_ACCEPT' =3D>
+'text/html,application/xhtml+xml,application/xml;q=3D0.9,image/webp,image/a=
+png,*/*;q=3D0.8,application/signed-exchange;v=3Db3;q=3D0.9'
+    'HTTP_SEC_FETCH_SITE' =3D> 'same-origin'
+    'HTTP_SEC_FETCH_MODE' =3D> 'navigate'
+    'HTTP_SEC_FETCH_DEST' =3D> 'iframe'
+    'HTTP_REFERER' =3D> 'http://localhost:8080/admin/'
+    'HTTP_ACCEPT_ENCODING' =3D> 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' =3D>
+'zh-CN,zh;q=3D0.9,en;q=3D0.8,en-GB;q=3D0.7,en-US;q=3D0.6'
+    'HTTP_COOKIE' =3D>
+'wordpress_logged_in_86a9106ae65537651a8e456835b316ab=3Dmmma%7C167705011=
+4%7CbT7ng8zBap8ZomuqdwGcjq60357AHSocZMRZYk1b7uI%7C33c8845584b6d712613a75=
+dad4396516b8f24492be531ba5872116c6f5fd0330;
+wp-settings-time-1=3D1675943997;
+_identity-frontend=3Dff4723d33490d1a30d5640e71fd7d121f9b6f51fd9475373e1d=
+93f547b10525aa%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A=
+1%3Bs%3A46%3A%22%5B1%2C%224sSpK38KErySZpizaMO18REH4nXWPDrD%22%2C2592000%=
+5D%22%3B%7D;
+_identity-backend=3D7223aaae057f741b3ba5c4d0725f6f17a2846f199c7fcfd05830e=
+f9b8b13aedaa%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3=
+Bs%3A46%3A%22%5B1%2C%224sSpK38KErySZpizaMO18REH4nXWPDrD%22%2C2592000%5D%=
+22%3B%7D;
+PHPSESSID=3Dbdbu8qdlckot5jrtn483nfc9u9;
+_csrf_install=3D87f3c5a501f332606775b896ec5939861b088ac8d9e90c976060be1d7dc=
+9aa2fa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf_install%22%3Bi%3A1%3Bs%3A32%3A=
+%22tcg0mQWaCAu-2uT1f1hTE21raNkts6AV%22%3B%7D;
+BACKEND_FEEHICMS=3Duo0v6rrcqoqc8paf0uer0lomnc;
+_csrf_backend=3D92668291d22806e0f744c485be5eb7c95a5951d8f60a786f2ec90349bf5=
+1a11ca%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf_backend%22%3Bi%3A1%3Bs%3A32%3A=
+%22uusmy3T-7S8OyzylqH4DSdUrF5y3lHdH%22%3B%7D'
+    'REQUEST_TIME_FLOAT' =3D> 1676015027.2785
+    'REQUEST_TIME' =3D> 1676015027
+]

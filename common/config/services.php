@@ -9,9 +9,6 @@ return [
     \common\services\MenuServiceInterface::ServiceName => [
         'class' => \common\services\MenuService::className(),
     ],
-    \common\services\FriendlyLinkServiceInterface::ServiceName => [
-        'class' => \common\services\FriendlyLinkService::className(),
-    ],
     \common\services\CommentServiceInterface::ServiceName => [
         'class' => \common\services\CommentService::className(),
     ],
@@ -20,9 +17,6 @@ return [
     ],
     \common\services\SettingServiceInterface::ServiceName => [
         'class' => \common\services\SettingService::className(),
-    ],
-    \common\services\AdServiceInterface::ServiceName => [
-        'class' => \common\services\AdService::className(),
     ],
     \common\services\AdminUserServiceInterface::ServiceName => [
         'class' => \common\services\AdminUserService::className(),
@@ -41,5 +35,11 @@ return [
     ],
     \common\services\BannerServiceInterface::ServiceName => [
         'class' => \common\services\BannerService::className(),
+    ],
+    \common\services\TeamServiceInterface::ServiceName => [
+        'class' => \common\services\TeamService::className(),
+    ],
+    \common\services\TeamServiceInterface::ServiceName=>[
+        'class' => \common\services\TeamService::className(),
     ],
 ];
