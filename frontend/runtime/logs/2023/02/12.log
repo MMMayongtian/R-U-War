@@ -1,0 +1,2400 @@
+2023-02-12 16:03:57 [::1][-][qui3d79atov56st6efpsa82667][error][yii\web\HttpException:404] yii\web\NotFoundHttpException: 未找到分类view/16 in D:\wamp64\www\Feehi_CMS\frontend\controllers\ArticleController.php:78
+Stack trace:
+#0 [internal function]: frontend\controllers\ArticleController->actionIndex('view/16')
+#1 D:\wamp64\www\Feehi_CMS\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#2 D:\wamp64\www\Feehi_CMS\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#3 D:\wamp64\www\Feehi_CMS\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('index', Array)
+#4 D:\wamp64\www\Feehi_CMS\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('', Array)
+#5 D:\wamp64\www\Feehi_CMS\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#6 D:\wamp64\www\Feehi_CMS\frontend\web\index.php(17): yii\base\Application->run()
+#7 {main}
+2023-02-12 16:03:57 [::1][-][qui3d79atov56st6efpsa82667][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'wordpress_logged_in_86a9106ae65537651a8e456835b316ab' => 'Wanwan|1677050114|nNbyePEJNhBeYqiB8uYorYIWKunt6T7RMavrsRtcg1G|76c634d69ffdb7d37ccc03881c3b12a5ed3cc861fc62b27ec0109e2af9f9c54b'
+    'wp-settings-time-1' => '1675886118'
+    '_identity-frontend' => 'd4b7ad72a8e6c6d95ab49812ead33890fe92444bd5e60117090753dae4aa3b2ba:2:{i:0;s:18:\"_identity-frontend\";i:1;s:46:\"[1,\"RxcspEY_9Aj9arphhsD7ftuXdBpzNgju\",2592000]\";}'
+    '_identity-backend' => '8fa528a6c635a32cfb8b3a23f8f9872ffcee529b5080a0dca075b7006fa1656aa:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"RxcspEY_9Aj9arphhsD7ftuXdBpzNgju\",2592000]\";}'
+    'PHPSESSID' => 'qui3d79atov56st6efpsa82667'
+    '_csrf' => '8fd4237a714c8172b7e7d380e4f1c4634ff9a5a25a2ecef5b5c81a6f65da33c7a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"dsbdpzXNc_rPxszzfY4IFciAYvSxRmKh\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'D:\\wamp64\\www\\Feehi_CMS\\frontend\\web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '60482'
+    'SERVER_SOFTWARE' => 'PHP 7.3.4 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/view/16'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'D:\\wamp64\\www\\Feehi_CMS\\frontend\\web\\index.php'
+    'PATH_INFO' => '/view/16'
+    'PHP_SELF' => '/index.php/view/16'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_SEC_CH_UA' => '\"Chromium\";v=\"110\", \"Not A(Brand\";v=\"24\", \"Microsoft Edge\";v=\"110\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36 Edg/110.0.1587.41'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_REFERER' => 'http://localhost:8080/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6'
+    'HTTP_COOKIE' => 'wordpress_logged_in_86a9106ae65537651a8e456835b316ab=Wanwan%7C1677050114%7CnNbyePEJNhBeYqiB8uYorYIWKunt6T7RMavrsRtcg1G%7C76c634d69ffdb7d37ccc03881c3b12a5ed3cc861fc62b27ec0109e2af9f9c54b; wp-settings-time-1=1675886118; _identity-frontend=d4b7ad72a8e6c6d95ab49812ead33890fe92444bd5e60117090753dae4aa3b2ba%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22RxcspEY_9Aj9arphhsD7ftuXdBpzNgju%22%2C2592000%5D%22%3B%7D; _identity-backend=8fa528a6c635a32cfb8b3a23f8f9872ffcee529b5080a0dca075b7006fa1656aa%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22RxcspEY_9Aj9arphhsD7ftuXdBpzNgju%22%2C2592000%5D%22%3B%7D; PHPSESSID=qui3d79atov56st6efpsa82667; _csrf=8fd4237a714c8172b7e7d380e4f1c4634ff9a5a25a2ecef5b5c81a6f65da33c7a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22dsbdpzXNc_rPxszzfY4IFciAYvSxRmKh%22%3B%7D'
+    'REQUEST_TIME_FLOAT' => 1676189037.3908
+    'REQUEST_TIME' => 1676189037
+]
+2023-02-12 19:11:32 [127.0.0.1][-][9p6mesfa92jkjb7guf27jltqi6][error][yii\web\HttpException:404] yii\web\NotFoundHttpException: 文章id 22不存在 in D:\phpstudy_pro\WWW\frontend\controllers\ArticleController.php:51
+Stack trace:
+#0 [internal function]: frontend\controllers\ArticleController->frontend\controllers\{closure}(Object(yii\base\InlineAction), NULL)
+#1 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\filters\HttpCache.php(129): call_user_func(Object(Closure), Object(yii\base\InlineAction), NULL)
+#2 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\ActionFilter.php(77): yii\filters\HttpCache->beforeAction(Object(yii\base\InlineAction))
+#3 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#4 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Component.php(627): call_user_func(Array, Object(yii\base\ActionEvent))
+#5 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Controller.php(274): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#6 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\web\Controller.php(164): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#7 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Controller.php(155): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#8 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('view', Array)
+#9 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('article/view', Array)
+#10 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 D:\phpstudy_pro\WWW\frontend\web\index.php(17): yii\base\Application->run()
+#12 {main}
+2023-02-12 19:11:32 [127.0.0.1][-][9p6mesfa92jkjb7guf27jltqi6][info][application] $_GET = [
+    'r' => 'article/view'
+    'id' => '22'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'wordpress_logged_in_86a9106ae65537651a8e456835b316ab' => 'mmma|1677050114|bT7ng8zBap8ZomuqdwGcjq60357AHSocZMRZYk1b7uI|33c8845584b6d712613a75dad4396516b8f24492be531ba5872116c6f5fd0330'
+    'wp-settings-time-1' => '1675943997'
+    '_identity-frontend' => 'ff4723d33490d1a30d5640e71fd7d121f9b6f51fd9475373e1d93f547b10525aa:2:{i:0;s:18:\"_identity-frontend\";i:1;s:46:\"[1,\"4sSpK38KErySZpizaMO18REH4nXWPDrD\",2592000]\";}'
+    '_identity-backend' => '7223aaae057f741b3ba5c4d0725f6f17a2846f199c7fcfd05830ef9b8b13aedaa:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"4sSpK38KErySZpizaMO18REH4nXWPDrD\",2592000]\";}'
+    'PHPSESSID' => '9p6mesfa92jkjb7guf27jltqi6'
+    '_csrf' => 'b990290e34e23836e0c59cb896275d87aab967cc4a99085a3c5850cfc6e19a09a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"1p9UAhq8Ribs_Q6lmdGxFt9cOneYZOwO\";}'
+    'BACKEND_FEEHICMS' => 'dnlmbtugmh484b2amul8se0dp7'
+    '_csrf_backend' => '43663e0c7ed25d856c5cb2ed7134b91666a737f04f9e609acdd12844dabd5c26a:2:{i:0;s:13:\"_csrf_backend\";i:1;s:32:\"wFkO7t7yTnXMOvL3qmIzixR-iMTm-taQ\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => 'http://localhost:8080/index.php?r=article%2Findex'
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'D:\\phpstudy_pro\\WWW\\frontend\\web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '13957'
+    'SERVER_SOFTWARE' => 'PHP 7.3.4 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/index.php?r=article%2Fview&id=22'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'D:\\phpstudy_pro\\WWW\\frontend\\web\\index.php'
+    'PHP_SELF' => '/index.php'
+    'QUERY_STRING' => 'r=article%2Fview&id=22'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_SEC_CH_UA' => '\"Chromium\";v=\"110\", \"Not A(Brand\";v=\"24\", \"Microsoft Edge\";v=\"110\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36 Edg/110.0.1587.41'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_REFERER' => 'http://localhost:8080/index.php?r=article%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6'
+    'HTTP_COOKIE' => 'wordpress_logged_in_86a9106ae65537651a8e456835b316ab=mmma%7C1677050114%7CbT7ng8zBap8ZomuqdwGcjq60357AHSocZMRZYk1b7uI%7C33c8845584b6d712613a75dad4396516b8f24492be531ba5872116c6f5fd0330; wp-settings-time-1=1675943997; _identity-frontend=ff4723d33490d1a30d5640e71fd7d121f9b6f51fd9475373e1d93f547b10525aa%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%224sSpK38KErySZpizaMO18REH4nXWPDrD%22%2C2592000%5D%22%3B%7D; _identity-backend=7223aaae057f741b3ba5c4d0725f6f17a2846f199c7fcfd05830ef9b8b13aedaa%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%224sSpK38KErySZpizaMO18REH4nXWPDrD%22%2C2592000%5D%22%3B%7D; PHPSESSID=9p6mesfa92jkjb7guf27jltqi6; _csrf=b990290e34e23836e0c59cb896275d87aab967cc4a99085a3c5850cfc6e19a09a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%221p9UAhq8Ribs_Q6lmdGxFt9cOneYZOwO%22%3B%7D; BACKEND_FEEHICMS=dnlmbtugmh484b2amul8se0dp7; _csrf_backend=43663e0c7ed25d856c5cb2ed7134b91666a737f04f9e609acdd12844dabd5c26a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf_backend%22%3Bi%3A1%3Bs%3A32%3A%22wFkO7t7yTnXMOvL3qmIzixR-iMTm-taQ%22%3B%7D'
+    'REQUEST_TIME_FLOAT' => 1676200292.1885
+    'REQUEST_TIME' => 1676200292
+]
+2023-02-12 21:41:48 [127.0.0.1][1][-][error][yii\web\HttpException:400] yii\web\BadRequestHttpException: 您提交的数据无法被验证。 in D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\web\Controller.php:166
+Stack trace:
+#0 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Controller.php(155): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#1 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('view', Array)
+#2 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('article/view', Array)
+#3 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#4 D:\phpstudy_pro\WWW\frontend\web\index.php(17): yii\base\Application->run()
+#5 {main}
+2023-02-12 21:41:47 [127.0.0.1][1][-][info][application] $_GET = [
+    'r' => 'article/view'
+    'id' => '26'
+]
+
+$_POST = [
+    '_csrf' => 'fkntjX6hV-6sFpbhT7Xv6RJrS8LJGcRqLL50-tA4HuxPOdTYP8km1v5_9JIQ5NmFfw8Muo9t_Qlj0BGjindpow=='
+    'Comment' => [
+        'aid' => '26'
+        'content' => 'saa '
+        'reply_to' => '0'
+        'nickname' => '游客'
+        'email' => ''
+        'website_url' => ''
+    ]
+    'submit' => ''
+    'comment_post_ID' => '114'
+    'akismet_comment_nonce' => '32920dc775'
+    'ak_js' => '101'
+    'comment_mail_notify' => 'comment_mail_notify'
+]
+
+$_FILES = []
+
+$_COOKIE = [
+    'wordpress_logged_in_86a9106ae65537651a8e456835b316ab' => 'mmma|1677050114|bT7ng8zBap8ZomuqdwGcjq60357AHSocZMRZYk1b7uI|33c8845584b6d712613a75dad4396516b8f24492be531ba5872116c6f5fd0330'
+    'wp-settings-time-1' => '1675943997'
+    '_identity-frontend' => 'ff4723d33490d1a30d5640e71fd7d121f9b6f51fd9475373e1d93f547b10525aa:2:{i:0;s:18:\"_identity-frontend\";i:1;s:46:\"[1,\"4sSpK38KErySZpizaMO18REH4nXWPDrD\",2592000]\";}'
+    '_identity-backend' => '7223aaae057f741b3ba5c4d0725f6f17a2846f199c7fcfd05830ef9b8b13aedaa:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"4sSpK38KErySZpizaMO18REH4nXWPDrD\",2592000]\";}'
+    'BACKEND_FEEHICMS' => 'dnlmbtugmh484b2amul8se0dp7'
+    '_csrf_backend' => '43663e0c7ed25d856c5cb2ed7134b91666a737f04f9e609acdd12844dabd5c26a:2:{i:0;s:13:\"_csrf_backend\";i:1;s:32:\"wFkO7t7yTnXMOvL3qmIzixR-iMTm-taQ\";}'
+    'PHPSESSID' => '34rg71sl4r9skuq32iu61snlnm'
+    '_identity' => 'd8255b71788c2d7fd95b28dd1be29a10ac8ef0387a20febdf79467c8c972139da:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"8phKWid8OO7INzOjfkQZ-9XONLK2UX40\",2592000]\";}'
+    '_csrf' => 'fc429ff5a839e87716fa8246e3b2b8d9b53c1a454c5e0309e72879c20ca2c160a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"xA7ik6OsEDffwwJTjMLay9cTppYPDGWF\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => 'http://localhost:8080/index.php?r=article%2Fview&id=26'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'D:\\phpstudy_pro\\WWW\\frontend\\web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '33174'
+    'SERVER_SOFTWARE' => 'PHP 7.3.4 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/index.php?r=article%2Fview&id=26'
+    'REQUEST_METHOD' => 'POST'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'D:\\phpstudy_pro\\WWW\\frontend\\web\\index.php'
+    'PHP_SELF' => '/index.php'
+    'QUERY_STRING' => 'r=article%2Fview&id=26'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '366'
+    'HTTP_CONTENT_LENGTH' => '366'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_SEC_CH_UA' => '\"Chromium\";v=\"110\", \"Not A(Brand\";v=\"24\", \"Microsoft Edge\";v=\"110\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ORIGIN' => 'http://localhost:8080'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36 Edg/110.0.1587.41'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_REFERER' => 'http://localhost:8080/index.php?r=article%2Fview&id=26'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6'
+    'HTTP_COOKIE' => 'wordpress_logged_in_86a9106ae65537651a8e456835b316ab=mmma%7C1677050114%7CbT7ng8zBap8ZomuqdwGcjq60357AHSocZMRZYk1b7uI%7C33c8845584b6d712613a75dad4396516b8f24492be531ba5872116c6f5fd0330; wp-settings-time-1=1675943997; _identity-frontend=ff4723d33490d1a30d5640e71fd7d121f9b6f51fd9475373e1d93f547b10525aa%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%224sSpK38KErySZpizaMO18REH4nXWPDrD%22%2C2592000%5D%22%3B%7D; _identity-backend=7223aaae057f741b3ba5c4d0725f6f17a2846f199c7fcfd05830ef9b8b13aedaa%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%224sSpK38KErySZpizaMO18REH4nXWPDrD%22%2C2592000%5D%22%3B%7D; BACKEND_FEEHICMS=dnlmbtugmh484b2amul8se0dp7; _csrf_backend=43663e0c7ed25d856c5cb2ed7134b91666a737f04f9e609acdd12844dabd5c26a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf_backend%22%3Bi%3A1%3Bs%3A32%3A%22wFkO7t7yTnXMOvL3qmIzixR-iMTm-taQ%22%3B%7D; PHPSESSID=34rg71sl4r9skuq32iu61snlnm; _identity=d8255b71788c2d7fd95b28dd1be29a10ac8ef0387a20febdf79467c8c972139da%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%228phKWid8OO7INzOjfkQZ-9XONLK2UX40%22%2C2592000%5D%22%3B%7D; _csrf=fc429ff5a839e87716fa8246e3b2b8d9b53c1a454c5e0309e72879c20ca2c160a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22xA7ik6OsEDffwwJTjMLay9cTppYPDGWF%22%3B%7D'
+    'REQUEST_TIME_FLOAT' => 1676209307.9837
+    'REQUEST_TIME' => 1676209307
+]
+2023-02-12 21:41:48 [127.0.0.1][1][34rg71sl4r9skuq32iu61snlnm][error][yii\web\HttpException:400] yii\web\BadRequestHttpException: 您提交的数据无法被验证。 in D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\web\Controller.php:166
+Stack trace:
+#0 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Controller.php(155): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#1 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('view', Array)
+#2 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('article/view', Array)
+#3 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#4 D:\phpstudy_pro\WWW\frontend\web\index.php(17): yii\base\Application->run()
+#5 {main}
+2023-02-12 21:41:48 [127.0.0.1][1][34rg71sl4r9skuq32iu61snlnm][info][application] $_GET = [
+    'r' => 'article/view'
+    'id' => '26'
+]
+
+$_POST = [
+    '_csrf' => 'fkntjX6hV-6sFpbhT7Xv6RJrS8LJGcRqLL50-tA4HuxPOdTYP8km1v5_9JIQ5NmFfw8Muo9t_Qlj0BGjindpow=='
+    'Comment' => [
+        'aid' => '26'
+        'content' => 'saa '
+        'reply_to' => '0'
+        'nickname' => '游客'
+        'email' => ''
+        'website_url' => ''
+    ]
+    'submit' => ''
+    'comment_post_ID' => '114'
+    'akismet_comment_nonce' => '32920dc775'
+    'ak_js' => '101'
+    'comment_mail_notify' => 'comment_mail_notify'
+]
+
+$_FILES = []
+
+$_COOKIE = [
+    'wordpress_logged_in_86a9106ae65537651a8e456835b316ab' => 'mmma|1677050114|bT7ng8zBap8ZomuqdwGcjq60357AHSocZMRZYk1b7uI|33c8845584b6d712613a75dad4396516b8f24492be531ba5872116c6f5fd0330'
+    'wp-settings-time-1' => '1675943997'
+    '_identity-frontend' => 'ff4723d33490d1a30d5640e71fd7d121f9b6f51fd9475373e1d93f547b10525aa:2:{i:0;s:18:\"_identity-frontend\";i:1;s:46:\"[1,\"4sSpK38KErySZpizaMO18REH4nXWPDrD\",2592000]\";}'
+    '_identity-backend' => '7223aaae057f741b3ba5c4d0725f6f17a2846f199c7fcfd05830ef9b8b13aedaa:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"4sSpK38KErySZpizaMO18REH4nXWPDrD\",2592000]\";}'
+    'BACKEND_FEEHICMS' => 'dnlmbtugmh484b2amul8se0dp7'
+    '_csrf_backend' => '43663e0c7ed25d856c5cb2ed7134b91666a737f04f9e609acdd12844dabd5c26a:2:{i:0;s:13:\"_csrf_backend\";i:1;s:32:\"wFkO7t7yTnXMOvL3qmIzixR-iMTm-taQ\";}'
+    'PHPSESSID' => '34rg71sl4r9skuq32iu61snlnm'
+    '_identity' => 'd8255b71788c2d7fd95b28dd1be29a10ac8ef0387a20febdf79467c8c972139da:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"8phKWid8OO7INzOjfkQZ-9XONLK2UX40\",2592000]\";}'
+    '_csrf' => 'fc429ff5a839e87716fa8246e3b2b8d9b53c1a454c5e0309e72879c20ca2c160a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"xA7ik6OsEDffwwJTjMLay9cTppYPDGWF\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => 'http://localhost:8080/index.php?r=article%2Fview&id=26'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'D:\\phpstudy_pro\\WWW\\frontend\\web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '33182'
+    'SERVER_SOFTWARE' => 'PHP 7.3.4 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/index.php?r=article%2Fview&id=26'
+    'REQUEST_METHOD' => 'POST'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'D:\\phpstudy_pro\\WWW\\frontend\\web\\index.php'
+    'PHP_SELF' => '/index.php'
+    'QUERY_STRING' => 'r=article%2Fview&id=26'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '366'
+    'HTTP_CONTENT_LENGTH' => '366'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_SEC_CH_UA' => '\"Chromium\";v=\"110\", \"Not A(Brand\";v=\"24\", \"Microsoft Edge\";v=\"110\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ORIGIN' => 'http://localhost:8080'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36 Edg/110.0.1587.41'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_REFERER' => 'http://localhost:8080/index.php?r=article%2Fview&id=26'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6'
+    'HTTP_COOKIE' => 'wordpress_logged_in_86a9106ae65537651a8e456835b316ab=mmma%7C1677050114%7CbT7ng8zBap8ZomuqdwGcjq60357AHSocZMRZYk1b7uI%7C33c8845584b6d712613a75dad4396516b8f24492be531ba5872116c6f5fd0330; wp-settings-time-1=1675943997; _identity-frontend=ff4723d33490d1a30d5640e71fd7d121f9b6f51fd9475373e1d93f547b10525aa%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%224sSpK38KErySZpizaMO18REH4nXWPDrD%22%2C2592000%5D%22%3B%7D; _identity-backend=7223aaae057f741b3ba5c4d0725f6f17a2846f199c7fcfd05830ef9b8b13aedaa%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%224sSpK38KErySZpizaMO18REH4nXWPDrD%22%2C2592000%5D%22%3B%7D; BACKEND_FEEHICMS=dnlmbtugmh484b2amul8se0dp7; _csrf_backend=43663e0c7ed25d856c5cb2ed7134b91666a737f04f9e609acdd12844dabd5c26a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf_backend%22%3Bi%3A1%3Bs%3A32%3A%22wFkO7t7yTnXMOvL3qmIzixR-iMTm-taQ%22%3B%7D; PHPSESSID=34rg71sl4r9skuq32iu61snlnm; _identity=d8255b71788c2d7fd95b28dd1be29a10ac8ef0387a20febdf79467c8c972139da%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%228phKWid8OO7INzOjfkQZ-9XONLK2UX40%22%2C2592000%5D%22%3B%7D; _csrf=fc429ff5a839e87716fa8246e3b2b8d9b53c1a454c5e0309e72879c20ca2c160a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22xA7ik6OsEDffwwJTjMLay9cTppYPDGWF%22%3B%7D'
+    'REQUEST_TIME_FLOAT' => 1676209308.0858
+    'REQUEST_TIME' => 1676209308
+]
+2023-02-12 21:41:56 [127.0.0.1][1][34rg71sl4r9skuq32iu61snlnm][error][yii\web\HttpException:400] yii\web\BadRequestHttpException: 您提交的数据无法被验证。 in D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\web\Controller.php:166
+Stack trace:
+#0 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Controller.php(155): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#1 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('view', Array)
+#2 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('article/view', Array)
+#3 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#4 D:\phpstudy_pro\WWW\frontend\web\index.php(17): yii\base\Application->run()
+#5 {main}
+2023-02-12 21:41:56 [127.0.0.1][1][34rg71sl4r9skuq32iu61snlnm][info][application] $_GET = [
+    'r' => 'article/view'
+    'id' => '26'
+]
+
+$_POST = [
+    '_csrf' => 'fkntjX6hV-6sFpbhT7Xv6RJrS8LJGcRqLL50-tA4HuxPOdTYP8km1v5_9JIQ5NmFfw8Muo9t_Qlj0BGjindpow=='
+    'Comment' => [
+        'aid' => '26'
+        'content' => 'saa '
+        'reply_to' => '0'
+        'nickname' => '游客'
+        'email' => ''
+        'website_url' => ''
+    ]
+    'submit' => ''
+    'comment_post_ID' => '114'
+    'akismet_comment_nonce' => '32920dc775'
+    'ak_js' => '101'
+    'comment_mail_notify' => 'comment_mail_notify'
+]
+
+$_FILES = []
+
+$_COOKIE = [
+    'wordpress_logged_in_86a9106ae65537651a8e456835b316ab' => 'mmma|1677050114|bT7ng8zBap8ZomuqdwGcjq60357AHSocZMRZYk1b7uI|33c8845584b6d712613a75dad4396516b8f24492be531ba5872116c6f5fd0330'
+    'wp-settings-time-1' => '1675943997'
+    '_identity-frontend' => 'ff4723d33490d1a30d5640e71fd7d121f9b6f51fd9475373e1d93f547b10525aa:2:{i:0;s:18:\"_identity-frontend\";i:1;s:46:\"[1,\"4sSpK38KErySZpizaMO18REH4nXWPDrD\",2592000]\";}'
+    '_identity-backend' => '7223aaae057f741b3ba5c4d0725f6f17a2846f199c7fcfd05830ef9b8b13aedaa:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"4sSpK38KErySZpizaMO18REH4nXWPDrD\",2592000]\";}'
+    'BACKEND_FEEHICMS' => 'dnlmbtugmh484b2amul8se0dp7'
+    '_csrf_backend' => '43663e0c7ed25d856c5cb2ed7134b91666a737f04f9e609acdd12844dabd5c26a:2:{i:0;s:13:\"_csrf_backend\";i:1;s:32:\"wFkO7t7yTnXMOvL3qmIzixR-iMTm-taQ\";}'
+    'PHPSESSID' => '34rg71sl4r9skuq32iu61snlnm'
+    '_identity' => 'd8255b71788c2d7fd95b28dd1be29a10ac8ef0387a20febdf79467c8c972139da:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"8phKWid8OO7INzOjfkQZ-9XONLK2UX40\",2592000]\";}'
+    '_csrf' => 'fc429ff5a839e87716fa8246e3b2b8d9b53c1a454c5e0309e72879c20ca2c160a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"xA7ik6OsEDffwwJTjMLay9cTppYPDGWF\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => 'http://localhost:8080/index.php?r=article%2Fview&id=26'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'D:\\phpstudy_pro\\WWW\\frontend\\web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '33203'
+    'SERVER_SOFTWARE' => 'PHP 7.3.4 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/index.php?r=article%2Fview&id=26'
+    'REQUEST_METHOD' => 'POST'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'D:\\phpstudy_pro\\WWW\\frontend\\web\\index.php'
+    'PHP_SELF' => '/index.php'
+    'QUERY_STRING' => 'r=article%2Fview&id=26'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '366'
+    'HTTP_CONTENT_LENGTH' => '366'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_SEC_CH_UA' => '\"Chromium\";v=\"110\", \"Not A(Brand\";v=\"24\", \"Microsoft Edge\";v=\"110\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36 Edg/110.0.1587.41'
+    'HTTP_ORIGIN' => 'http://localhost:8080'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_REFERER' => 'http://localhost:8080/index.php?r=article%2Fview&id=26'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6'
+    'HTTP_COOKIE' => 'wordpress_logged_in_86a9106ae65537651a8e456835b316ab=mmma%7C1677050114%7CbT7ng8zBap8ZomuqdwGcjq60357AHSocZMRZYk1b7uI%7C33c8845584b6d712613a75dad4396516b8f24492be531ba5872116c6f5fd0330; wp-settings-time-1=1675943997; _identity-frontend=ff4723d33490d1a30d5640e71fd7d121f9b6f51fd9475373e1d93f547b10525aa%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%224sSpK38KErySZpizaMO18REH4nXWPDrD%22%2C2592000%5D%22%3B%7D; _identity-backend=7223aaae057f741b3ba5c4d0725f6f17a2846f199c7fcfd05830ef9b8b13aedaa%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%224sSpK38KErySZpizaMO18REH4nXWPDrD%22%2C2592000%5D%22%3B%7D; BACKEND_FEEHICMS=dnlmbtugmh484b2amul8se0dp7; _csrf_backend=43663e0c7ed25d856c5cb2ed7134b91666a737f04f9e609acdd12844dabd5c26a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf_backend%22%3Bi%3A1%3Bs%3A32%3A%22wFkO7t7yTnXMOvL3qmIzixR-iMTm-taQ%22%3B%7D; PHPSESSID=34rg71sl4r9skuq32iu61snlnm; _identity=d8255b71788c2d7fd95b28dd1be29a10ac8ef0387a20febdf79467c8c972139da%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%228phKWid8OO7INzOjfkQZ-9XONLK2UX40%22%2C2592000%5D%22%3B%7D; _csrf=fc429ff5a839e87716fa8246e3b2b8d9b53c1a454c5e0309e72879c20ca2c160a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22xA7ik6OsEDffwwJTjMLay9cTppYPDGWF%22%3B%7D'
+    'REQUEST_TIME_FLOAT' => 1676209316.4055
+    'REQUEST_TIME' => 1676209316
+]
+2023-02-12 21:42:12 [127.0.0.1][1][34rg71sl4r9skuq32iu61snlnm][error][yii\web\HttpException:400] yii\web\BadRequestHttpException: 您提交的数据无法被验证。 in D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\web\Controller.php:166
+Stack trace:
+#0 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Controller.php(155): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#1 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('view', Array)
+#2 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('article/view', Array)
+#3 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#4 D:\phpstudy_pro\WWW\frontend\web\index.php(17): yii\base\Application->run()
+#5 {main}
+2023-02-12 21:42:12 [127.0.0.1][1][34rg71sl4r9skuq32iu61snlnm][info][application] $_GET = [
+    'r' => 'article/view'
+    'id' => '26'
+]
+
+$_POST = [
+    '_csrf' => 'fkntjX6hV-6sFpbhT7Xv6RJrS8LJGcRqLL50-tA4HuxPOdTYP8km1v5_9JIQ5NmFfw8Muo9t_Qlj0BGjindpow=='
+    'Comment' => [
+        'aid' => '26'
+        'content' => 'iii'
+        'reply_to' => '0'
+        'nickname' => '游客'
+        'email' => ''
+        'website_url' => ''
+    ]
+    'submit' => ''
+    'comment_post_ID' => '114'
+    'akismet_comment_nonce' => '32920dc775'
+    'ak_js' => '101'
+    'comment_mail_notify' => 'comment_mail_notify'
+]
+
+$_FILES = []
+
+$_COOKIE = [
+    'wordpress_logged_in_86a9106ae65537651a8e456835b316ab' => 'mmma|1677050114|bT7ng8zBap8ZomuqdwGcjq60357AHSocZMRZYk1b7uI|33c8845584b6d712613a75dad4396516b8f24492be531ba5872116c6f5fd0330'
+    'wp-settings-time-1' => '1675943997'
+    '_identity-frontend' => 'ff4723d33490d1a30d5640e71fd7d121f9b6f51fd9475373e1d93f547b10525aa:2:{i:0;s:18:\"_identity-frontend\";i:1;s:46:\"[1,\"4sSpK38KErySZpizaMO18REH4nXWPDrD\",2592000]\";}'
+    '_identity-backend' => '7223aaae057f741b3ba5c4d0725f6f17a2846f199c7fcfd05830ef9b8b13aedaa:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"4sSpK38KErySZpizaMO18REH4nXWPDrD\",2592000]\";}'
+    'BACKEND_FEEHICMS' => 'dnlmbtugmh484b2amul8se0dp7'
+    '_csrf_backend' => '43663e0c7ed25d856c5cb2ed7134b91666a737f04f9e609acdd12844dabd5c26a:2:{i:0;s:13:\"_csrf_backend\";i:1;s:32:\"wFkO7t7yTnXMOvL3qmIzixR-iMTm-taQ\";}'
+    'PHPSESSID' => '34rg71sl4r9skuq32iu61snlnm'
+    '_identity' => 'd8255b71788c2d7fd95b28dd1be29a10ac8ef0387a20febdf79467c8c972139da:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"8phKWid8OO7INzOjfkQZ-9XONLK2UX40\",2592000]\";}'
+    '_csrf' => 'fc429ff5a839e87716fa8246e3b2b8d9b53c1a454c5e0309e72879c20ca2c160a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"xA7ik6OsEDffwwJTjMLay9cTppYPDGWF\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => 'http://localhost:8080/index.php?r=article%2Fview&id=26'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'D:\\phpstudy_pro\\WWW\\frontend\\web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '33304'
+    'SERVER_SOFTWARE' => 'PHP 7.3.4 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/index.php?r=article%2Fview&id=26'
+    'REQUEST_METHOD' => 'POST'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'D:\\phpstudy_pro\\WWW\\frontend\\web\\index.php'
+    'PHP_SELF' => '/index.php'
+    'QUERY_STRING' => 'r=article%2Fview&id=26'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '365'
+    'HTTP_CONTENT_LENGTH' => '365'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_SEC_CH_UA' => '\"Chromium\";v=\"110\", \"Not A(Brand\";v=\"24\", \"Microsoft Edge\";v=\"110\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ORIGIN' => 'http://localhost:8080'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36 Edg/110.0.1587.41'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_REFERER' => 'http://localhost:8080/index.php?r=article%2Fview&id=26'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6'
+    'HTTP_COOKIE' => 'wordpress_logged_in_86a9106ae65537651a8e456835b316ab=mmma%7C1677050114%7CbT7ng8zBap8ZomuqdwGcjq60357AHSocZMRZYk1b7uI%7C33c8845584b6d712613a75dad4396516b8f24492be531ba5872116c6f5fd0330; wp-settings-time-1=1675943997; _identity-frontend=ff4723d33490d1a30d5640e71fd7d121f9b6f51fd9475373e1d93f547b10525aa%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%224sSpK38KErySZpizaMO18REH4nXWPDrD%22%2C2592000%5D%22%3B%7D; _identity-backend=7223aaae057f741b3ba5c4d0725f6f17a2846f199c7fcfd05830ef9b8b13aedaa%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%224sSpK38KErySZpizaMO18REH4nXWPDrD%22%2C2592000%5D%22%3B%7D; BACKEND_FEEHICMS=dnlmbtugmh484b2amul8se0dp7; _csrf_backend=43663e0c7ed25d856c5cb2ed7134b91666a737f04f9e609acdd12844dabd5c26a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf_backend%22%3Bi%3A1%3Bs%3A32%3A%22wFkO7t7yTnXMOvL3qmIzixR-iMTm-taQ%22%3B%7D; PHPSESSID=34rg71sl4r9skuq32iu61snlnm; _identity=d8255b71788c2d7fd95b28dd1be29a10ac8ef0387a20febdf79467c8c972139da%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%228phKWid8OO7INzOjfkQZ-9XONLK2UX40%22%2C2592000%5D%22%3B%7D; _csrf=fc429ff5a839e87716fa8246e3b2b8d9b53c1a454c5e0309e72879c20ca2c160a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22xA7ik6OsEDffwwJTjMLay9cTppYPDGWF%22%3B%7D'
+    'REQUEST_TIME_FLOAT' => 1676209332.8376
+    'REQUEST_TIME' => 1676209332
+]
+2023-02-12 22:03:52 [127.0.0.1][-][l6c2h7hthgqt29rt3agd99u27j][error][yii\web\HttpException:404] yii\web\NotFoundHttpException: 文章id 7不存在 in D:\phpstudy_pro\WWW\frontend\controllers\ArticleController.php:51
+Stack trace:
+#0 [internal function]: frontend\controllers\ArticleController->frontend\controllers\{closure}(Object(yii\base\InlineAction), NULL)
+#1 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\filters\HttpCache.php(129): call_user_func(Object(Closure), Object(yii\base\InlineAction), NULL)
+#2 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\ActionFilter.php(77): yii\filters\HttpCache->beforeAction(Object(yii\base\InlineAction))
+#3 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#4 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Component.php(627): call_user_func(Array, Object(yii\base\ActionEvent))
+#5 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Controller.php(274): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#6 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\web\Controller.php(164): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#7 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Controller.php(155): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#8 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('view', Array)
+#9 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('article/view', Array)
+#10 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 D:\phpstudy_pro\WWW\frontend\web\index.php(17): yii\base\Application->run()
+#12 {main}
+2023-02-12 22:03:52 [127.0.0.1][-][l6c2h7hthgqt29rt3agd99u27j][info][application] $_GET = [
+    'r' => 'article/view'
+    'id' => '7'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'l6c2h7hthgqt29rt3agd99u27j'
+    '_csrf' => 'a737e7d1532a5ce81e979d2171ca5e8d0c6803408fdc4d0ecbfd9e4954c768f2a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"gt_gcqEYgpCyQWv0LYona8YklEMKT7JD\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'D:\\phpstudy_pro\\WWW\\frontend\\web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '38610'
+    'SERVER_SOFTWARE' => 'PHP 7.3.4 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/index.php?r=article%2Fview&id=7'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'D:\\phpstudy_pro\\WWW\\frontend\\web\\index.php'
+    'PHP_SELF' => '/index.php'
+    'QUERY_STRING' => 'r=article%2Fview&id=7'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/109.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_REFERER' => 'http://localhost:8080/'
+    'HTTP_COOKIE' => 'PHPSESSID=l6c2h7hthgqt29rt3agd99u27j; _csrf=a737e7d1532a5ce81e979d2171ca5e8d0c6803408fdc4d0ecbfd9e4954c768f2a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22gt_gcqEYgpCyQWv0LYona8YklEMKT7JD%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'REQUEST_TIME_FLOAT' => 1676210632.3784
+    'REQUEST_TIME' => 1676210632
+]
+2023-02-12 22:03:57 [127.0.0.1][-][l6c2h7hthgqt29rt3agd99u27j][error][yii\web\HttpException:404] yii\web\NotFoundHttpException: 文章id 7不存在 in D:\phpstudy_pro\WWW\frontend\controllers\ArticleController.php:51
+Stack trace:
+#0 [internal function]: frontend\controllers\ArticleController->frontend\controllers\{closure}(Object(yii\base\InlineAction), NULL)
+#1 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\filters\HttpCache.php(129): call_user_func(Object(Closure), Object(yii\base\InlineAction), NULL)
+#2 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\ActionFilter.php(77): yii\filters\HttpCache->beforeAction(Object(yii\base\InlineAction))
+#3 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#4 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Component.php(627): call_user_func(Array, Object(yii\base\ActionEvent))
+#5 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Controller.php(274): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#6 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\web\Controller.php(164): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#7 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Controller.php(155): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#8 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('view', Array)
+#9 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('article/view', Array)
+#10 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 D:\phpstudy_pro\WWW\frontend\web\index.php(17): yii\base\Application->run()
+#12 {main}
+2023-02-12 22:03:57 [127.0.0.1][-][l6c2h7hthgqt29rt3agd99u27j][info][application] $_GET = [
+    'r' => 'article/view'
+    'id' => '7'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'l6c2h7hthgqt29rt3agd99u27j'
+    '_csrf' => 'a737e7d1532a5ce81e979d2171ca5e8d0c6803408fdc4d0ecbfd9e4954c768f2a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"gt_gcqEYgpCyQWv0LYona8YklEMKT7JD\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'D:\\phpstudy_pro\\WWW\\frontend\\web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '38669'
+    'SERVER_SOFTWARE' => 'PHP 7.3.4 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/index.php?r=article%2Fview&id=7'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'D:\\phpstudy_pro\\WWW\\frontend\\web\\index.php'
+    'PHP_SELF' => '/index.php'
+    'QUERY_STRING' => 'r=article%2Fview&id=7'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/109.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_REFERER' => 'http://localhost:8080/index.php?r=article%2Fview&id=27'
+    'HTTP_COOKIE' => 'PHPSESSID=l6c2h7hthgqt29rt3agd99u27j; _csrf=a737e7d1532a5ce81e979d2171ca5e8d0c6803408fdc4d0ecbfd9e4954c768f2a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22gt_gcqEYgpCyQWv0LYona8YklEMKT7JD%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'REQUEST_TIME_FLOAT' => 1676210637.8133
+    'REQUEST_TIME' => 1676210637
+]
+2023-02-12 22:04:04 [127.0.0.1][-][l6c2h7hthgqt29rt3agd99u27j][error][yii\web\HttpException:404] yii\web\NotFoundHttpException: 文章id 7不存在 in D:\phpstudy_pro\WWW\frontend\controllers\ArticleController.php:51
+Stack trace:
+#0 [internal function]: frontend\controllers\ArticleController->frontend\controllers\{closure}(Object(yii\base\InlineAction), NULL)
+#1 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\filters\HttpCache.php(129): call_user_func(Object(Closure), Object(yii\base\InlineAction), NULL)
+#2 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\ActionFilter.php(77): yii\filters\HttpCache->beforeAction(Object(yii\base\InlineAction))
+#3 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#4 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Component.php(627): call_user_func(Array, Object(yii\base\ActionEvent))
+#5 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Controller.php(274): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#6 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\web\Controller.php(164): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#7 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Controller.php(155): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#8 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('view', Array)
+#9 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('article/view', Array)
+#10 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 D:\phpstudy_pro\WWW\frontend\web\index.php(17): yii\base\Application->run()
+#12 {main}
+2023-02-12 22:04:04 [127.0.0.1][-][l6c2h7hthgqt29rt3agd99u27j][info][application] $_GET = [
+    'r' => 'article/view'
+    'id' => '7'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'l6c2h7hthgqt29rt3agd99u27j'
+    '_csrf' => 'a737e7d1532a5ce81e979d2171ca5e8d0c6803408fdc4d0ecbfd9e4954c768f2a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"gt_gcqEYgpCyQWv0LYona8YklEMKT7JD\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'D:\\phpstudy_pro\\WWW\\frontend\\web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '38689'
+    'SERVER_SOFTWARE' => 'PHP 7.3.4 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/index.php?r=article%2Fview&id=7'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'D:\\phpstudy_pro\\WWW\\frontend\\web\\index.php'
+    'PHP_SELF' => '/index.php'
+    'QUERY_STRING' => 'r=article%2Fview&id=7'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/109.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_REFERER' => 'http://localhost:8080/index.php?r=article%2Fview&id=27'
+    'HTTP_COOKIE' => 'PHPSESSID=l6c2h7hthgqt29rt3agd99u27j; _csrf=a737e7d1532a5ce81e979d2171ca5e8d0c6803408fdc4d0ecbfd9e4954c768f2a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22gt_gcqEYgpCyQWv0LYona8YklEMKT7JD%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'REQUEST_TIME_FLOAT' => 1676210644.2562
+    'REQUEST_TIME' => 1676210644
+]
+2023-02-12 22:04:42 [127.0.0.1][1][34rg71sl4r9skuq32iu61snlnm][error][yii\web\HttpException:404] yii\web\NotFoundHttpException: 文章id 7不存在 in D:\phpstudy_pro\WWW\frontend\controllers\ArticleController.php:51
+Stack trace:
+#0 [internal function]: frontend\controllers\ArticleController->frontend\controllers\{closure}(Object(yii\base\InlineAction), NULL)
+#1 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\filters\HttpCache.php(129): call_user_func(Object(Closure), Object(yii\base\InlineAction), NULL)
+#2 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\ActionFilter.php(77): yii\filters\HttpCache->beforeAction(Object(yii\base\InlineAction))
+#3 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#4 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Component.php(627): call_user_func(Array, Object(yii\base\ActionEvent))
+#5 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Controller.php(274): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#6 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\web\Controller.php(164): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#7 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Controller.php(155): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#8 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('view', Array)
+#9 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('article/view', Array)
+#10 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 D:\phpstudy_pro\WWW\frontend\web\index.php(17): yii\base\Application->run()
+#12 {main}
+2023-02-12 22:04:42 [127.0.0.1][1][34rg71sl4r9skuq32iu61snlnm][info][application] $_GET = [
+    'r' => 'article/view'
+    'id' => '7'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'wordpress_logged_in_86a9106ae65537651a8e456835b316ab' => 'mmma|1677050114|bT7ng8zBap8ZomuqdwGcjq60357AHSocZMRZYk1b7uI|33c8845584b6d712613a75dad4396516b8f24492be531ba5872116c6f5fd0330'
+    'wp-settings-time-1' => '1675943997'
+    '_identity-frontend' => 'ff4723d33490d1a30d5640e71fd7d121f9b6f51fd9475373e1d93f547b10525aa:2:{i:0;s:18:\"_identity-frontend\";i:1;s:46:\"[1,\"4sSpK38KErySZpizaMO18REH4nXWPDrD\",2592000]\";}'
+    '_identity-backend' => '7223aaae057f741b3ba5c4d0725f6f17a2846f199c7fcfd05830ef9b8b13aedaa:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"4sSpK38KErySZpizaMO18REH4nXWPDrD\",2592000]\";}'
+    'BACKEND_FEEHICMS' => 'dnlmbtugmh484b2amul8se0dp7'
+    '_csrf_backend' => '43663e0c7ed25d856c5cb2ed7134b91666a737f04f9e609acdd12844dabd5c26a:2:{i:0;s:13:\"_csrf_backend\";i:1;s:32:\"wFkO7t7yTnXMOvL3qmIzixR-iMTm-taQ\";}'
+    'PHPSESSID' => '34rg71sl4r9skuq32iu61snlnm'
+    '_identity' => 'd8255b71788c2d7fd95b28dd1be29a10ac8ef0387a20febdf79467c8c972139da:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"8phKWid8OO7INzOjfkQZ-9XONLK2UX40\",2592000]\";}'
+    '_csrf' => 'fc429ff5a839e87716fa8246e3b2b8d9b53c1a454c5e0309e72879c20ca2c160a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"xA7ik6OsEDffwwJTjMLay9cTppYPDGWF\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => 'http://localhost:8080/index.php?r=article%2Fview&id=26'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'D:\\phpstudy_pro\\WWW\\frontend\\web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '38749'
+    'SERVER_SOFTWARE' => 'PHP 7.3.4 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/index.php?r=article%2Fview&id=7'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'D:\\phpstudy_pro\\WWW\\frontend\\web\\index.php'
+    'PHP_SELF' => '/index.php'
+    'QUERY_STRING' => 'r=article%2Fview&id=7'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_SEC_CH_UA' => '\"Chromium\";v=\"110\", \"Not A(Brand\";v=\"24\", \"Microsoft Edge\";v=\"110\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36 Edg/110.0.1587.41'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_REFERER' => 'http://localhost:8080/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6'
+    'HTTP_COOKIE' => 'wordpress_logged_in_86a9106ae65537651a8e456835b316ab=mmma%7C1677050114%7CbT7ng8zBap8ZomuqdwGcjq60357AHSocZMRZYk1b7uI%7C33c8845584b6d712613a75dad4396516b8f24492be531ba5872116c6f5fd0330; wp-settings-time-1=1675943997; _identity-frontend=ff4723d33490d1a30d5640e71fd7d121f9b6f51fd9475373e1d93f547b10525aa%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%224sSpK38KErySZpizaMO18REH4nXWPDrD%22%2C2592000%5D%22%3B%7D; _identity-backend=7223aaae057f741b3ba5c4d0725f6f17a2846f199c7fcfd05830ef9b8b13aedaa%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%224sSpK38KErySZpizaMO18REH4nXWPDrD%22%2C2592000%5D%22%3B%7D; BACKEND_FEEHICMS=dnlmbtugmh484b2amul8se0dp7; _csrf_backend=43663e0c7ed25d856c5cb2ed7134b91666a737f04f9e609acdd12844dabd5c26a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf_backend%22%3Bi%3A1%3Bs%3A32%3A%22wFkO7t7yTnXMOvL3qmIzixR-iMTm-taQ%22%3B%7D; PHPSESSID=34rg71sl4r9skuq32iu61snlnm; _identity=d8255b71788c2d7fd95b28dd1be29a10ac8ef0387a20febdf79467c8c972139da%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%228phKWid8OO7INzOjfkQZ-9XONLK2UX40%22%2C2592000%5D%22%3B%7D; _csrf=fc429ff5a839e87716fa8246e3b2b8d9b53c1a454c5e0309e72879c20ca2c160a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22xA7ik6OsEDffwwJTjMLay9cTppYPDGWF%22%3B%7D'
+    'REQUEST_TIME_FLOAT' => 1676210682.0387
+    'REQUEST_TIME' => 1676210682
+]
+2023-02-12 22:05:11 [127.0.0.1][1][34rg71sl4r9skuq32iu61snlnm][error][yii\web\HttpException:404] yii\web\NotFoundHttpException: 文章id 7不存在 in D:\phpstudy_pro\WWW\frontend\controllers\ArticleController.php:51
+Stack trace:
+#0 [internal function]: frontend\controllers\ArticleController->frontend\controllers\{closure}(Object(yii\base\InlineAction), NULL)
+#1 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\filters\HttpCache.php(129): call_user_func(Object(Closure), Object(yii\base\InlineAction), NULL)
+#2 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\ActionFilter.php(77): yii\filters\HttpCache->beforeAction(Object(yii\base\InlineAction))
+#3 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#4 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Component.php(627): call_user_func(Array, Object(yii\base\ActionEvent))
+#5 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Controller.php(274): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#6 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\web\Controller.php(164): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#7 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Controller.php(155): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#8 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('view', Array)
+#9 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('article/view', Array)
+#10 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 D:\phpstudy_pro\WWW\frontend\web\index.php(17): yii\base\Application->run()
+#12 {main}
+2023-02-12 22:05:11 [127.0.0.1][1][34rg71sl4r9skuq32iu61snlnm][info][application] $_GET = [
+    'r' => 'article/view'
+    'id' => '7'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'wordpress_logged_in_86a9106ae65537651a8e456835b316ab' => 'mmma|1677050114|bT7ng8zBap8ZomuqdwGcjq60357AHSocZMRZYk1b7uI|33c8845584b6d712613a75dad4396516b8f24492be531ba5872116c6f5fd0330'
+    'wp-settings-time-1' => '1675943997'
+    '_identity-frontend' => 'ff4723d33490d1a30d5640e71fd7d121f9b6f51fd9475373e1d93f547b10525aa:2:{i:0;s:18:\"_identity-frontend\";i:1;s:46:\"[1,\"4sSpK38KErySZpizaMO18REH4nXWPDrD\",2592000]\";}'
+    '_identity-backend' => '7223aaae057f741b3ba5c4d0725f6f17a2846f199c7fcfd05830ef9b8b13aedaa:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"4sSpK38KErySZpizaMO18REH4nXWPDrD\",2592000]\";}'
+    'BACKEND_FEEHICMS' => 'dnlmbtugmh484b2amul8se0dp7'
+    '_csrf_backend' => '43663e0c7ed25d856c5cb2ed7134b91666a737f04f9e609acdd12844dabd5c26a:2:{i:0;s:13:\"_csrf_backend\";i:1;s:32:\"wFkO7t7yTnXMOvL3qmIzixR-iMTm-taQ\";}'
+    'PHPSESSID' => '34rg71sl4r9skuq32iu61snlnm'
+    '_identity' => 'd8255b71788c2d7fd95b28dd1be29a10ac8ef0387a20febdf79467c8c972139da:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"8phKWid8OO7INzOjfkQZ-9XONLK2UX40\",2592000]\";}'
+    '_csrf' => 'fc429ff5a839e87716fa8246e3b2b8d9b53c1a454c5e0309e72879c20ca2c160a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"xA7ik6OsEDffwwJTjMLay9cTppYPDGWF\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => 'http://localhost:8080/index.php?r=article%2Fview&id=26'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'D:\\phpstudy_pro\\WWW\\frontend\\web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '38779'
+    'SERVER_SOFTWARE' => 'PHP 7.3.4 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/index.php?r=article%2Fview&id=7'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'D:\\phpstudy_pro\\WWW\\frontend\\web\\index.php'
+    'PHP_SELF' => '/index.php'
+    'QUERY_STRING' => 'r=article%2Fview&id=7'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_SEC_CH_UA' => '\"Chromium\";v=\"110\", \"Not A(Brand\";v=\"24\", \"Microsoft Edge\";v=\"110\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36 Edg/110.0.1587.41'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_REFERER' => 'http://localhost:8080/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6'
+    'HTTP_COOKIE' => 'wordpress_logged_in_86a9106ae65537651a8e456835b316ab=mmma%7C1677050114%7CbT7ng8zBap8ZomuqdwGcjq60357AHSocZMRZYk1b7uI%7C33c8845584b6d712613a75dad4396516b8f24492be531ba5872116c6f5fd0330; wp-settings-time-1=1675943997; _identity-frontend=ff4723d33490d1a30d5640e71fd7d121f9b6f51fd9475373e1d93f547b10525aa%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%224sSpK38KErySZpizaMO18REH4nXWPDrD%22%2C2592000%5D%22%3B%7D; _identity-backend=7223aaae057f741b3ba5c4d0725f6f17a2846f199c7fcfd05830ef9b8b13aedaa%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%224sSpK38KErySZpizaMO18REH4nXWPDrD%22%2C2592000%5D%22%3B%7D; BACKEND_FEEHICMS=dnlmbtugmh484b2amul8se0dp7; _csrf_backend=43663e0c7ed25d856c5cb2ed7134b91666a737f04f9e609acdd12844dabd5c26a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf_backend%22%3Bi%3A1%3Bs%3A32%3A%22wFkO7t7yTnXMOvL3qmIzixR-iMTm-taQ%22%3B%7D; PHPSESSID=34rg71sl4r9skuq32iu61snlnm; _identity=d8255b71788c2d7fd95b28dd1be29a10ac8ef0387a20febdf79467c8c972139da%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%228phKWid8OO7INzOjfkQZ-9XONLK2UX40%22%2C2592000%5D%22%3B%7D; _csrf=fc429ff5a839e87716fa8246e3b2b8d9b53c1a454c5e0309e72879c20ca2c160a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22xA7ik6OsEDffwwJTjMLay9cTppYPDGWF%22%3B%7D'
+    'REQUEST_TIME_FLOAT' => 1676210711.4183
+    'REQUEST_TIME' => 1676210711
+]
+2023-02-12 22:05:31 [127.0.0.1][1][34rg71sl4r9skuq32iu61snlnm][error][yii\web\HttpException:404] yii\web\NotFoundHttpException: 文章id 7不存在 in D:\phpstudy_pro\WWW\frontend\controllers\ArticleController.php:51
+Stack trace:
+#0 [internal function]: frontend\controllers\ArticleController->frontend\controllers\{closure}(Object(yii\base\InlineAction), NULL)
+#1 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\filters\HttpCache.php(129): call_user_func(Object(Closure), Object(yii\base\InlineAction), NULL)
+#2 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\ActionFilter.php(77): yii\filters\HttpCache->beforeAction(Object(yii\base\InlineAction))
+#3 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#4 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Component.php(627): call_user_func(Array, Object(yii\base\ActionEvent))
+#5 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Controller.php(274): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#6 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\web\Controller.php(164): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#7 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Controller.php(155): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#8 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('view', Array)
+#9 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('article/view', Array)
+#10 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 D:\phpstudy_pro\WWW\frontend\web\index.php(17): yii\base\Application->run()
+#12 {main}
+2023-02-12 22:05:31 [127.0.0.1][1][34rg71sl4r9skuq32iu61snlnm][info][application] $_GET = [
+    'r' => 'article/view'
+    'id' => '7'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'wordpress_logged_in_86a9106ae65537651a8e456835b316ab' => 'mmma|1677050114|bT7ng8zBap8ZomuqdwGcjq60357AHSocZMRZYk1b7uI|33c8845584b6d712613a75dad4396516b8f24492be531ba5872116c6f5fd0330'
+    'wp-settings-time-1' => '1675943997'
+    '_identity-frontend' => 'ff4723d33490d1a30d5640e71fd7d121f9b6f51fd9475373e1d93f547b10525aa:2:{i:0;s:18:\"_identity-frontend\";i:1;s:46:\"[1,\"4sSpK38KErySZpizaMO18REH4nXWPDrD\",2592000]\";}'
+    '_identity-backend' => '7223aaae057f741b3ba5c4d0725f6f17a2846f199c7fcfd05830ef9b8b13aedaa:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"4sSpK38KErySZpizaMO18REH4nXWPDrD\",2592000]\";}'
+    'BACKEND_FEEHICMS' => 'dnlmbtugmh484b2amul8se0dp7'
+    '_csrf_backend' => '43663e0c7ed25d856c5cb2ed7134b91666a737f04f9e609acdd12844dabd5c26a:2:{i:0;s:13:\"_csrf_backend\";i:1;s:32:\"wFkO7t7yTnXMOvL3qmIzixR-iMTm-taQ\";}'
+    'PHPSESSID' => '34rg71sl4r9skuq32iu61snlnm'
+    '_identity' => 'd8255b71788c2d7fd95b28dd1be29a10ac8ef0387a20febdf79467c8c972139da:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"8phKWid8OO7INzOjfkQZ-9XONLK2UX40\",2592000]\";}'
+    '_csrf' => 'fc429ff5a839e87716fa8246e3b2b8d9b53c1a454c5e0309e72879c20ca2c160a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"xA7ik6OsEDffwwJTjMLay9cTppYPDGWF\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => 'http://localhost:8080/index.php?r=article%2Fview&id=26'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'D:\\phpstudy_pro\\WWW\\frontend\\web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '39024'
+    'SERVER_SOFTWARE' => 'PHP 7.3.4 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/index.php?r=article%2Fview&id=7'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'D:\\phpstudy_pro\\WWW\\frontend\\web\\index.php'
+    'PHP_SELF' => '/index.php'
+    'QUERY_STRING' => 'r=article%2Fview&id=7'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_SEC_CH_UA' => '\"Chromium\";v=\"110\", \"Not A(Brand\";v=\"24\", \"Microsoft Edge\";v=\"110\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36 Edg/110.0.1587.41'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_REFERER' => 'http://localhost:8080/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6'
+    'HTTP_COOKIE' => 'wordpress_logged_in_86a9106ae65537651a8e456835b316ab=mmma%7C1677050114%7CbT7ng8zBap8ZomuqdwGcjq60357AHSocZMRZYk1b7uI%7C33c8845584b6d712613a75dad4396516b8f24492be531ba5872116c6f5fd0330; wp-settings-time-1=1675943997; _identity-frontend=ff4723d33490d1a30d5640e71fd7d121f9b6f51fd9475373e1d93f547b10525aa%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%224sSpK38KErySZpizaMO18REH4nXWPDrD%22%2C2592000%5D%22%3B%7D; _identity-backend=7223aaae057f741b3ba5c4d0725f6f17a2846f199c7fcfd05830ef9b8b13aedaa%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%224sSpK38KErySZpizaMO18REH4nXWPDrD%22%2C2592000%5D%22%3B%7D; BACKEND_FEEHICMS=dnlmbtugmh484b2amul8se0dp7; _csrf_backend=43663e0c7ed25d856c5cb2ed7134b91666a737f04f9e609acdd12844dabd5c26a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf_backend%22%3Bi%3A1%3Bs%3A32%3A%22wFkO7t7yTnXMOvL3qmIzixR-iMTm-taQ%22%3B%7D; PHPSESSID=34rg71sl4r9skuq32iu61snlnm; _identity=d8255b71788c2d7fd95b28dd1be29a10ac8ef0387a20febdf79467c8c972139da%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%228phKWid8OO7INzOjfkQZ-9XONLK2UX40%22%2C2592000%5D%22%3B%7D; _csrf=fc429ff5a839e87716fa8246e3b2b8d9b53c1a454c5e0309e72879c20ca2c160a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22xA7ik6OsEDffwwJTjMLay9cTppYPDGWF%22%3B%7D'
+    'REQUEST_TIME_FLOAT' => 1676210731.393
+    'REQUEST_TIME' => 1676210731
+]
+2023-02-12 22:05:37 [127.0.0.1][1][34rg71sl4r9skuq32iu61snlnm][error][yii\web\HttpException:404] yii\web\NotFoundHttpException: 文章id 7不存在 in D:\phpstudy_pro\WWW\frontend\controllers\ArticleController.php:51
+Stack trace:
+#0 [internal function]: frontend\controllers\ArticleController->frontend\controllers\{closure}(Object(yii\base\InlineAction), NULL)
+#1 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\filters\HttpCache.php(129): call_user_func(Object(Closure), Object(yii\base\InlineAction), NULL)
+#2 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\ActionFilter.php(77): yii\filters\HttpCache->beforeAction(Object(yii\base\InlineAction))
+#3 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#4 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Component.php(627): call_user_func(Array, Object(yii\base\ActionEvent))
+#5 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Controller.php(274): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#6 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\web\Controller.php(164): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#7 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Controller.php(155): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#8 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('view', Array)
+#9 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('article/view', Array)
+#10 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 D:\phpstudy_pro\WWW\frontend\web\index.php(17): yii\base\Application->run()
+#12 {main}
+2023-02-12 22:05:37 [127.0.0.1][1][34rg71sl4r9skuq32iu61snlnm][info][application] $_GET = [
+    'r' => 'article/view'
+    'id' => '7'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'wordpress_logged_in_86a9106ae65537651a8e456835b316ab' => 'mmma|1677050114|bT7ng8zBap8ZomuqdwGcjq60357AHSocZMRZYk1b7uI|33c8845584b6d712613a75dad4396516b8f24492be531ba5872116c6f5fd0330'
+    'wp-settings-time-1' => '1675943997'
+    '_identity-frontend' => 'ff4723d33490d1a30d5640e71fd7d121f9b6f51fd9475373e1d93f547b10525aa:2:{i:0;s:18:\"_identity-frontend\";i:1;s:46:\"[1,\"4sSpK38KErySZpizaMO18REH4nXWPDrD\",2592000]\";}'
+    '_identity-backend' => '7223aaae057f741b3ba5c4d0725f6f17a2846f199c7fcfd05830ef9b8b13aedaa:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"4sSpK38KErySZpizaMO18REH4nXWPDrD\",2592000]\";}'
+    'BACKEND_FEEHICMS' => 'dnlmbtugmh484b2amul8se0dp7'
+    '_csrf_backend' => '43663e0c7ed25d856c5cb2ed7134b91666a737f04f9e609acdd12844dabd5c26a:2:{i:0;s:13:\"_csrf_backend\";i:1;s:32:\"wFkO7t7yTnXMOvL3qmIzixR-iMTm-taQ\";}'
+    'PHPSESSID' => '34rg71sl4r9skuq32iu61snlnm'
+    '_identity' => 'd8255b71788c2d7fd95b28dd1be29a10ac8ef0387a20febdf79467c8c972139da:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"8phKWid8OO7INzOjfkQZ-9XONLK2UX40\",2592000]\";}'
+    '_csrf' => 'fc429ff5a839e87716fa8246e3b2b8d9b53c1a454c5e0309e72879c20ca2c160a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"xA7ik6OsEDffwwJTjMLay9cTppYPDGWF\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => 'http://localhost:8080/index.php?r=article%2Fview&id=26'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'D:\\phpstudy_pro\\WWW\\frontend\\web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '39089'
+    'SERVER_SOFTWARE' => 'PHP 7.3.4 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/index.php?r=article%2Fview&id=7'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'D:\\phpstudy_pro\\WWW\\frontend\\web\\index.php'
+    'PHP_SELF' => '/index.php'
+    'QUERY_STRING' => 'r=article%2Fview&id=7'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_SEC_CH_UA' => '\"Chromium\";v=\"110\", \"Not A(Brand\";v=\"24\", \"Microsoft Edge\";v=\"110\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36 Edg/110.0.1587.41'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_REFERER' => 'http://localhost:8080/index.php?r=article%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6'
+    'HTTP_COOKIE' => 'wordpress_logged_in_86a9106ae65537651a8e456835b316ab=mmma%7C1677050114%7CbT7ng8zBap8ZomuqdwGcjq60357AHSocZMRZYk1b7uI%7C33c8845584b6d712613a75dad4396516b8f24492be531ba5872116c6f5fd0330; wp-settings-time-1=1675943997; _identity-frontend=ff4723d33490d1a30d5640e71fd7d121f9b6f51fd9475373e1d93f547b10525aa%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%224sSpK38KErySZpizaMO18REH4nXWPDrD%22%2C2592000%5D%22%3B%7D; _identity-backend=7223aaae057f741b3ba5c4d0725f6f17a2846f199c7fcfd05830ef9b8b13aedaa%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%224sSpK38KErySZpizaMO18REH4nXWPDrD%22%2C2592000%5D%22%3B%7D; BACKEND_FEEHICMS=dnlmbtugmh484b2amul8se0dp7; _csrf_backend=43663e0c7ed25d856c5cb2ed7134b91666a737f04f9e609acdd12844dabd5c26a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf_backend%22%3Bi%3A1%3Bs%3A32%3A%22wFkO7t7yTnXMOvL3qmIzixR-iMTm-taQ%22%3B%7D; PHPSESSID=34rg71sl4r9skuq32iu61snlnm; _identity=d8255b71788c2d7fd95b28dd1be29a10ac8ef0387a20febdf79467c8c972139da%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%228phKWid8OO7INzOjfkQZ-9XONLK2UX40%22%2C2592000%5D%22%3B%7D; _csrf=fc429ff5a839e87716fa8246e3b2b8d9b53c1a454c5e0309e72879c20ca2c160a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22xA7ik6OsEDffwwJTjMLay9cTppYPDGWF%22%3B%7D'
+    'REQUEST_TIME_FLOAT' => 1676210737.4095
+    'REQUEST_TIME' => 1676210737
+]
+2023-02-12 22:05:47 [127.0.0.1][1][34rg71sl4r9skuq32iu61snlnm][error][yii\web\HttpException:404] yii\web\NotFoundHttpException: 文章id 7不存在 in D:\phpstudy_pro\WWW\frontend\controllers\ArticleController.php:51
+Stack trace:
+#0 [internal function]: frontend\controllers\ArticleController->frontend\controllers\{closure}(Object(yii\base\InlineAction), NULL)
+#1 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\filters\HttpCache.php(129): call_user_func(Object(Closure), Object(yii\base\InlineAction), NULL)
+#2 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\ActionFilter.php(77): yii\filters\HttpCache->beforeAction(Object(yii\base\InlineAction))
+#3 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#4 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Component.php(627): call_user_func(Array, Object(yii\base\ActionEvent))
+#5 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Controller.php(274): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#6 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\web\Controller.php(164): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#7 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Controller.php(155): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#8 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('view', Array)
+#9 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('article/view', Array)
+#10 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 D:\phpstudy_pro\WWW\frontend\web\index.php(17): yii\base\Application->run()
+#12 {main}
+2023-02-12 22:05:47 [127.0.0.1][1][34rg71sl4r9skuq32iu61snlnm][info][application] $_GET = [
+    'r' => 'article/view'
+    'id' => '7'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'wordpress_logged_in_86a9106ae65537651a8e456835b316ab' => 'mmma|1677050114|bT7ng8zBap8ZomuqdwGcjq60357AHSocZMRZYk1b7uI|33c8845584b6d712613a75dad4396516b8f24492be531ba5872116c6f5fd0330'
+    'wp-settings-time-1' => '1675943997'
+    '_identity-frontend' => 'ff4723d33490d1a30d5640e71fd7d121f9b6f51fd9475373e1d93f547b10525aa:2:{i:0;s:18:\"_identity-frontend\";i:1;s:46:\"[1,\"4sSpK38KErySZpizaMO18REH4nXWPDrD\",2592000]\";}'
+    '_identity-backend' => '7223aaae057f741b3ba5c4d0725f6f17a2846f199c7fcfd05830ef9b8b13aedaa:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"4sSpK38KErySZpizaMO18REH4nXWPDrD\",2592000]\";}'
+    'BACKEND_FEEHICMS' => 'dnlmbtugmh484b2amul8se0dp7'
+    '_csrf_backend' => '43663e0c7ed25d856c5cb2ed7134b91666a737f04f9e609acdd12844dabd5c26a:2:{i:0;s:13:\"_csrf_backend\";i:1;s:32:\"wFkO7t7yTnXMOvL3qmIzixR-iMTm-taQ\";}'
+    'PHPSESSID' => '34rg71sl4r9skuq32iu61snlnm'
+    '_identity' => 'd8255b71788c2d7fd95b28dd1be29a10ac8ef0387a20febdf79467c8c972139da:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"8phKWid8OO7INzOjfkQZ-9XONLK2UX40\",2592000]\";}'
+    '_csrf' => 'fc429ff5a839e87716fa8246e3b2b8d9b53c1a454c5e0309e72879c20ca2c160a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"xA7ik6OsEDffwwJTjMLay9cTppYPDGWF\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => 'http://localhost:8080/index.php?r=article%2Fview&id=26'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'D:\\phpstudy_pro\\WWW\\frontend\\web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '39189'
+    'SERVER_SOFTWARE' => 'PHP 7.3.4 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/index.php?r=article%2Fview&id=7'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'D:\\phpstudy_pro\\WWW\\frontend\\web\\index.php'
+    'PHP_SELF' => '/index.php'
+    'QUERY_STRING' => 'r=article%2Fview&id=7'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_SEC_CH_UA' => '\"Chromium\";v=\"110\", \"Not A(Brand\";v=\"24\", \"Microsoft Edge\";v=\"110\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36 Edg/110.0.1587.41'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_REFERER' => 'http://localhost:8080/index.php?r=article%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6'
+    'HTTP_COOKIE' => 'wordpress_logged_in_86a9106ae65537651a8e456835b316ab=mmma%7C1677050114%7CbT7ng8zBap8ZomuqdwGcjq60357AHSocZMRZYk1b7uI%7C33c8845584b6d712613a75dad4396516b8f24492be531ba5872116c6f5fd0330; wp-settings-time-1=1675943997; _identity-frontend=ff4723d33490d1a30d5640e71fd7d121f9b6f51fd9475373e1d93f547b10525aa%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%224sSpK38KErySZpizaMO18REH4nXWPDrD%22%2C2592000%5D%22%3B%7D; _identity-backend=7223aaae057f741b3ba5c4d0725f6f17a2846f199c7fcfd05830ef9b8b13aedaa%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%224sSpK38KErySZpizaMO18REH4nXWPDrD%22%2C2592000%5D%22%3B%7D; BACKEND_FEEHICMS=dnlmbtugmh484b2amul8se0dp7; _csrf_backend=43663e0c7ed25d856c5cb2ed7134b91666a737f04f9e609acdd12844dabd5c26a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf_backend%22%3Bi%3A1%3Bs%3A32%3A%22wFkO7t7yTnXMOvL3qmIzixR-iMTm-taQ%22%3B%7D; PHPSESSID=34rg71sl4r9skuq32iu61snlnm; _identity=d8255b71788c2d7fd95b28dd1be29a10ac8ef0387a20febdf79467c8c972139da%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%228phKWid8OO7INzOjfkQZ-9XONLK2UX40%22%2C2592000%5D%22%3B%7D; _csrf=fc429ff5a839e87716fa8246e3b2b8d9b53c1a454c5e0309e72879c20ca2c160a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22xA7ik6OsEDffwwJTjMLay9cTppYPDGWF%22%3B%7D'
+    'REQUEST_TIME_FLOAT' => 1676210747.1527
+    'REQUEST_TIME' => 1676210747
+]
+2023-02-12 22:05:53 [127.0.0.1][1][34rg71sl4r9skuq32iu61snlnm][error][yii\web\HttpException:404] yii\web\NotFoundHttpException: 文章id 7不存在 in D:\phpstudy_pro\WWW\frontend\controllers\ArticleController.php:51
+Stack trace:
+#0 [internal function]: frontend\controllers\ArticleController->frontend\controllers\{closure}(Object(yii\base\InlineAction), NULL)
+#1 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\filters\HttpCache.php(129): call_user_func(Object(Closure), Object(yii\base\InlineAction), NULL)
+#2 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\ActionFilter.php(77): yii\filters\HttpCache->beforeAction(Object(yii\base\InlineAction))
+#3 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#4 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Component.php(627): call_user_func(Array, Object(yii\base\ActionEvent))
+#5 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Controller.php(274): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#6 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\web\Controller.php(164): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#7 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Controller.php(155): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#8 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('view', Array)
+#9 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('article/view', Array)
+#10 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 D:\phpstudy_pro\WWW\frontend\web\index.php(17): yii\base\Application->run()
+#12 {main}
+2023-02-12 22:05:52 [127.0.0.1][1][34rg71sl4r9skuq32iu61snlnm][info][application] $_GET = [
+    'r' => 'article/view'
+    'id' => '7'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'wordpress_logged_in_86a9106ae65537651a8e456835b316ab' => 'mmma|1677050114|bT7ng8zBap8ZomuqdwGcjq60357AHSocZMRZYk1b7uI|33c8845584b6d712613a75dad4396516b8f24492be531ba5872116c6f5fd0330'
+    'wp-settings-time-1' => '1675943997'
+    '_identity-frontend' => 'ff4723d33490d1a30d5640e71fd7d121f9b6f51fd9475373e1d93f547b10525aa:2:{i:0;s:18:\"_identity-frontend\";i:1;s:46:\"[1,\"4sSpK38KErySZpizaMO18REH4nXWPDrD\",2592000]\";}'
+    '_identity-backend' => '7223aaae057f741b3ba5c4d0725f6f17a2846f199c7fcfd05830ef9b8b13aedaa:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"4sSpK38KErySZpizaMO18REH4nXWPDrD\",2592000]\";}'
+    'BACKEND_FEEHICMS' => 'dnlmbtugmh484b2amul8se0dp7'
+    '_csrf_backend' => '43663e0c7ed25d856c5cb2ed7134b91666a737f04f9e609acdd12844dabd5c26a:2:{i:0;s:13:\"_csrf_backend\";i:1;s:32:\"wFkO7t7yTnXMOvL3qmIzixR-iMTm-taQ\";}'
+    'PHPSESSID' => '34rg71sl4r9skuq32iu61snlnm'
+    '_identity' => 'd8255b71788c2d7fd95b28dd1be29a10ac8ef0387a20febdf79467c8c972139da:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"8phKWid8OO7INzOjfkQZ-9XONLK2UX40\",2592000]\";}'
+    '_csrf' => 'fc429ff5a839e87716fa8246e3b2b8d9b53c1a454c5e0309e72879c20ca2c160a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"xA7ik6OsEDffwwJTjMLay9cTppYPDGWF\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => 'http://localhost:8080/index.php?r=article%2Fview&id=26'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'D:\\phpstudy_pro\\WWW\\frontend\\web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '39262'
+    'SERVER_SOFTWARE' => 'PHP 7.3.4 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/index.php?r=article%2Fview&id=7'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'D:\\phpstudy_pro\\WWW\\frontend\\web\\index.php'
+    'PHP_SELF' => '/index.php'
+    'QUERY_STRING' => 'r=article%2Fview&id=7'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_SEC_CH_UA' => '\"Chromium\";v=\"110\", \"Not A(Brand\";v=\"24\", \"Microsoft Edge\";v=\"110\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36 Edg/110.0.1587.41'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_REFERER' => 'http://localhost:8080/index.php?r=article%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6'
+    'HTTP_COOKIE' => 'wordpress_logged_in_86a9106ae65537651a8e456835b316ab=mmma%7C1677050114%7CbT7ng8zBap8ZomuqdwGcjq60357AHSocZMRZYk1b7uI%7C33c8845584b6d712613a75dad4396516b8f24492be531ba5872116c6f5fd0330; wp-settings-time-1=1675943997; _identity-frontend=ff4723d33490d1a30d5640e71fd7d121f9b6f51fd9475373e1d93f547b10525aa%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%224sSpK38KErySZpizaMO18REH4nXWPDrD%22%2C2592000%5D%22%3B%7D; _identity-backend=7223aaae057f741b3ba5c4d0725f6f17a2846f199c7fcfd05830ef9b8b13aedaa%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%224sSpK38KErySZpizaMO18REH4nXWPDrD%22%2C2592000%5D%22%3B%7D; BACKEND_FEEHICMS=dnlmbtugmh484b2amul8se0dp7; _csrf_backend=43663e0c7ed25d856c5cb2ed7134b91666a737f04f9e609acdd12844dabd5c26a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf_backend%22%3Bi%3A1%3Bs%3A32%3A%22wFkO7t7yTnXMOvL3qmIzixR-iMTm-taQ%22%3B%7D; PHPSESSID=34rg71sl4r9skuq32iu61snlnm; _identity=d8255b71788c2d7fd95b28dd1be29a10ac8ef0387a20febdf79467c8c972139da%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%228phKWid8OO7INzOjfkQZ-9XONLK2UX40%22%2C2592000%5D%22%3B%7D; _csrf=fc429ff5a839e87716fa8246e3b2b8d9b53c1a454c5e0309e72879c20ca2c160a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22xA7ik6OsEDffwwJTjMLay9cTppYPDGWF%22%3B%7D'
+    'REQUEST_TIME_FLOAT' => 1676210752.9968
+    'REQUEST_TIME' => 1676210752
+]
+2023-02-12 22:06:15 [127.0.0.1][1][34rg71sl4r9skuq32iu61snlnm][error][yii\web\HttpException:404] yii\web\NotFoundHttpException: 文章id 7不存在 in D:\phpstudy_pro\WWW\frontend\controllers\ArticleController.php:51
+Stack trace:
+#0 [internal function]: frontend\controllers\ArticleController->frontend\controllers\{closure}(Object(yii\base\InlineAction), NULL)
+#1 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\filters\HttpCache.php(129): call_user_func(Object(Closure), Object(yii\base\InlineAction), NULL)
+#2 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\ActionFilter.php(77): yii\filters\HttpCache->beforeAction(Object(yii\base\InlineAction))
+#3 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#4 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Component.php(627): call_user_func(Array, Object(yii\base\ActionEvent))
+#5 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Controller.php(274): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#6 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\web\Controller.php(164): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#7 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Controller.php(155): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#8 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('view', Array)
+#9 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('article/view', Array)
+#10 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 D:\phpstudy_pro\WWW\frontend\web\index.php(17): yii\base\Application->run()
+#12 {main}
+2023-02-12 22:06:15 [127.0.0.1][1][34rg71sl4r9skuq32iu61snlnm][info][application] $_GET = [
+    'r' => 'article/view'
+    'id' => '7'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'wordpress_logged_in_86a9106ae65537651a8e456835b316ab' => 'mmma|1677050114|bT7ng8zBap8ZomuqdwGcjq60357AHSocZMRZYk1b7uI|33c8845584b6d712613a75dad4396516b8f24492be531ba5872116c6f5fd0330'
+    'wp-settings-time-1' => '1675943997'
+    '_identity-frontend' => 'ff4723d33490d1a30d5640e71fd7d121f9b6f51fd9475373e1d93f547b10525aa:2:{i:0;s:18:\"_identity-frontend\";i:1;s:46:\"[1,\"4sSpK38KErySZpizaMO18REH4nXWPDrD\",2592000]\";}'
+    '_identity-backend' => '7223aaae057f741b3ba5c4d0725f6f17a2846f199c7fcfd05830ef9b8b13aedaa:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"4sSpK38KErySZpizaMO18REH4nXWPDrD\",2592000]\";}'
+    'BACKEND_FEEHICMS' => 'dnlmbtugmh484b2amul8se0dp7'
+    '_csrf_backend' => '43663e0c7ed25d856c5cb2ed7134b91666a737f04f9e609acdd12844dabd5c26a:2:{i:0;s:13:\"_csrf_backend\";i:1;s:32:\"wFkO7t7yTnXMOvL3qmIzixR-iMTm-taQ\";}'
+    'PHPSESSID' => '34rg71sl4r9skuq32iu61snlnm'
+    '_identity' => 'd8255b71788c2d7fd95b28dd1be29a10ac8ef0387a20febdf79467c8c972139da:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"8phKWid8OO7INzOjfkQZ-9XONLK2UX40\",2592000]\";}'
+    '_csrf' => 'fc429ff5a839e87716fa8246e3b2b8d9b53c1a454c5e0309e72879c20ca2c160a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"xA7ik6OsEDffwwJTjMLay9cTppYPDGWF\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => 'http://localhost:8080/index.php?r=article%2Fview&id=26'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'D:\\phpstudy_pro\\WWW\\frontend\\web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '39452'
+    'SERVER_SOFTWARE' => 'PHP 7.3.4 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/index.php?r=article%2Fview&id=7'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'D:\\phpstudy_pro\\WWW\\frontend\\web\\index.php'
+    'PHP_SELF' => '/index.php'
+    'QUERY_STRING' => 'r=article%2Fview&id=7'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_SEC_CH_UA' => '\"Chromium\";v=\"110\", \"Not A(Brand\";v=\"24\", \"Microsoft Edge\";v=\"110\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36 Edg/110.0.1587.41'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_REFERER' => 'http://localhost:8080/index.php?r=article%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6'
+    'HTTP_COOKIE' => 'wordpress_logged_in_86a9106ae65537651a8e456835b316ab=mmma%7C1677050114%7CbT7ng8zBap8ZomuqdwGcjq60357AHSocZMRZYk1b7uI%7C33c8845584b6d712613a75dad4396516b8f24492be531ba5872116c6f5fd0330; wp-settings-time-1=1675943997; _identity-frontend=ff4723d33490d1a30d5640e71fd7d121f9b6f51fd9475373e1d93f547b10525aa%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%224sSpK38KErySZpizaMO18REH4nXWPDrD%22%2C2592000%5D%22%3B%7D; _identity-backend=7223aaae057f741b3ba5c4d0725f6f17a2846f199c7fcfd05830ef9b8b13aedaa%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%224sSpK38KErySZpizaMO18REH4nXWPDrD%22%2C2592000%5D%22%3B%7D; BACKEND_FEEHICMS=dnlmbtugmh484b2amul8se0dp7; _csrf_backend=43663e0c7ed25d856c5cb2ed7134b91666a737f04f9e609acdd12844dabd5c26a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf_backend%22%3Bi%3A1%3Bs%3A32%3A%22wFkO7t7yTnXMOvL3qmIzixR-iMTm-taQ%22%3B%7D; PHPSESSID=34rg71sl4r9skuq32iu61snlnm; _identity=d8255b71788c2d7fd95b28dd1be29a10ac8ef0387a20febdf79467c8c972139da%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%228phKWid8OO7INzOjfkQZ-9XONLK2UX40%22%2C2592000%5D%22%3B%7D; _csrf=fc429ff5a839e87716fa8246e3b2b8d9b53c1a454c5e0309e72879c20ca2c160a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22xA7ik6OsEDffwwJTjMLay9cTppYPDGWF%22%3B%7D'
+    'REQUEST_TIME_FLOAT' => 1676210775.3525
+    'REQUEST_TIME' => 1676210775
+]
+2023-02-12 22:06:28 [127.0.0.1][1][34rg71sl4r9skuq32iu61snlnm][error][yii\web\HttpException:404] yii\web\NotFoundHttpException: 文章id 7不存在 in D:\phpstudy_pro\WWW\frontend\controllers\ArticleController.php:51
+Stack trace:
+#0 [internal function]: frontend\controllers\ArticleController->frontend\controllers\{closure}(Object(yii\base\InlineAction), NULL)
+#1 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\filters\HttpCache.php(129): call_user_func(Object(Closure), Object(yii\base\InlineAction), NULL)
+#2 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\ActionFilter.php(77): yii\filters\HttpCache->beforeAction(Object(yii\base\InlineAction))
+#3 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#4 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Component.php(627): call_user_func(Array, Object(yii\base\ActionEvent))
+#5 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Controller.php(274): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#6 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\web\Controller.php(164): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#7 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Controller.php(155): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#8 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('view', Array)
+#9 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('article/view', Array)
+#10 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 D:\phpstudy_pro\WWW\frontend\web\index.php(17): yii\base\Application->run()
+#12 {main}
+2023-02-12 22:06:28 [127.0.0.1][1][34rg71sl4r9skuq32iu61snlnm][info][application] $_GET = [
+    'r' => 'article/view'
+    'id' => '7'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'wordpress_logged_in_86a9106ae65537651a8e456835b316ab' => 'mmma|1677050114|bT7ng8zBap8ZomuqdwGcjq60357AHSocZMRZYk1b7uI|33c8845584b6d712613a75dad4396516b8f24492be531ba5872116c6f5fd0330'
+    'wp-settings-time-1' => '1675943997'
+    '_identity-frontend' => 'ff4723d33490d1a30d5640e71fd7d121f9b6f51fd9475373e1d93f547b10525aa:2:{i:0;s:18:\"_identity-frontend\";i:1;s:46:\"[1,\"4sSpK38KErySZpizaMO18REH4nXWPDrD\",2592000]\";}'
+    '_identity-backend' => '7223aaae057f741b3ba5c4d0725f6f17a2846f199c7fcfd05830ef9b8b13aedaa:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"4sSpK38KErySZpizaMO18REH4nXWPDrD\",2592000]\";}'
+    'BACKEND_FEEHICMS' => 'dnlmbtugmh484b2amul8se0dp7'
+    '_csrf_backend' => '43663e0c7ed25d856c5cb2ed7134b91666a737f04f9e609acdd12844dabd5c26a:2:{i:0;s:13:\"_csrf_backend\";i:1;s:32:\"wFkO7t7yTnXMOvL3qmIzixR-iMTm-taQ\";}'
+    'PHPSESSID' => '34rg71sl4r9skuq32iu61snlnm'
+    '_identity' => 'd8255b71788c2d7fd95b28dd1be29a10ac8ef0387a20febdf79467c8c972139da:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"8phKWid8OO7INzOjfkQZ-9XONLK2UX40\",2592000]\";}'
+    '_csrf' => 'fc429ff5a839e87716fa8246e3b2b8d9b53c1a454c5e0309e72879c20ca2c160a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"xA7ik6OsEDffwwJTjMLay9cTppYPDGWF\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => 'http://localhost:8080/index.php?r=article%2Fview&id=26'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'D:\\phpstudy_pro\\WWW\\frontend\\web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '39642'
+    'SERVER_SOFTWARE' => 'PHP 7.3.4 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/index.php?r=article%2Fview&id=7'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'D:\\phpstudy_pro\\WWW\\frontend\\web\\index.php'
+    'PHP_SELF' => '/index.php'
+    'QUERY_STRING' => 'r=article%2Fview&id=7'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_SEC_CH_UA' => '\"Chromium\";v=\"110\", \"Not A(Brand\";v=\"24\", \"Microsoft Edge\";v=\"110\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36 Edg/110.0.1587.41'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_REFERER' => 'http://localhost:8080/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6'
+    'HTTP_COOKIE' => 'wordpress_logged_in_86a9106ae65537651a8e456835b316ab=mmma%7C1677050114%7CbT7ng8zBap8ZomuqdwGcjq60357AHSocZMRZYk1b7uI%7C33c8845584b6d712613a75dad4396516b8f24492be531ba5872116c6f5fd0330; wp-settings-time-1=1675943997; _identity-frontend=ff4723d33490d1a30d5640e71fd7d121f9b6f51fd9475373e1d93f547b10525aa%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%224sSpK38KErySZpizaMO18REH4nXWPDrD%22%2C2592000%5D%22%3B%7D; _identity-backend=7223aaae057f741b3ba5c4d0725f6f17a2846f199c7fcfd05830ef9b8b13aedaa%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%224sSpK38KErySZpizaMO18REH4nXWPDrD%22%2C2592000%5D%22%3B%7D; BACKEND_FEEHICMS=dnlmbtugmh484b2amul8se0dp7; _csrf_backend=43663e0c7ed25d856c5cb2ed7134b91666a737f04f9e609acdd12844dabd5c26a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf_backend%22%3Bi%3A1%3Bs%3A32%3A%22wFkO7t7yTnXMOvL3qmIzixR-iMTm-taQ%22%3B%7D; PHPSESSID=34rg71sl4r9skuq32iu61snlnm; _identity=d8255b71788c2d7fd95b28dd1be29a10ac8ef0387a20febdf79467c8c972139da%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%228phKWid8OO7INzOjfkQZ-9XONLK2UX40%22%2C2592000%5D%22%3B%7D; _csrf=fc429ff5a839e87716fa8246e3b2b8d9b53c1a454c5e0309e72879c20ca2c160a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22xA7ik6OsEDffwwJTjMLay9cTppYPDGWF%22%3B%7D'
+    'REQUEST_TIME_FLOAT' => 1676210788.6029
+    'REQUEST_TIME' => 1676210788
+]
+2023-02-12 22:29:19 [127.0.0.1][-][2cm5gh25nu75eb9asg288k5kcq][error][yii\web\HttpException:404] yii\web\NotFoundHttpException: 未找到分类adm in D:\phpstudy_pro\WWW\frontend\controllers\ArticleController.php:78
+Stack trace:
+#0 [internal function]: frontend\controllers\ArticleController->actionIndex('adm')
+#1 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#2 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#3 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('index', Array)
+#4 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('', Array)
+#5 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#6 D:\phpstudy_pro\WWW\frontend\web\index.php(17): yii\base\Application->run()
+#7 {main}
+2023-02-12 22:29:19 [127.0.0.1][-][2cm5gh25nu75eb9asg288k5kcq][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => '2cm5gh25nu75eb9asg288k5kcq'
+    '_csrf' => '1862af286636ae5009d8792bbce3182e9ce69c3116f44c1468ddb4a7685dddbaa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"fsZ7PTu5Ivx6O1QsumGKLwyH2It0H8lf\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'D:\\phpstudy_pro\\WWW\\frontend\\web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '45162'
+    'SERVER_SOFTWARE' => 'PHP 7.3.4 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/adm'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'D:\\phpstudy_pro\\WWW\\frontend\\web\\index.php'
+    'PATH_INFO' => '/adm'
+    'PHP_SELF' => '/index.php/adm'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/109.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => 'PHPSESSID=2cm5gh25nu75eb9asg288k5kcq; _csrf=1862af286636ae5009d8792bbce3182e9ce69c3116f44c1468ddb4a7685dddbaa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22fsZ7PTu5Ivx6O1QsumGKLwyH2It0H8lf%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_SITE' => 'none'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'REQUEST_TIME_FLOAT' => 1676212159.9144
+    'REQUEST_TIME' => 1676212159
+]
+2023-02-12 22:35:51 [127.0.0.1][1][2p9qmls1gkkrr72de7rsu8hq22][error][yii\web\HttpException:400] yii\web\BadRequestHttpException: 您提交的数据无法被验证。 in D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\web\Controller.php:166
+Stack trace:
+#0 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Controller.php(155): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#1 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('comment', Array)
+#2 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('article/comment', Array)
+#3 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#4 D:\phpstudy_pro\WWW\frontend\web\index.php(17): yii\base\Application->run()
+#5 {main}
+2023-02-12 22:35:51 [127.0.0.1][1][2p9qmls1gkkrr72de7rsu8hq22][info][application] $_GET = [
+    'r' => 'article/comment'
+]
+
+$_POST = [
+    '_csrf' => 'nIsaWBRJumpBO3MJTq0ozqHOTYWrq-DAtZT0pm3-3qD6-EBvRB3PXwhNCz8BnHm91KMKzufcmYiH3YCWJcayxg=='
+    'Comment' => [
+        'aid' => '1'
+        'content' => '累'
+        'reply_to' => '0'
+        'nickname' => 'wanwan'
+        'email' => ''
+        'website_url' => ''
+    ]
+    'comment_post_ID' => '114'
+    'akismet_comment_nonce' => '32920dc775'
+    'ak_js' => '101'
+    'comment_mail_notify' => 'comment_mail_notify'
+]
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => '2p9qmls1gkkrr72de7rsu8hq22'
+    '_csrf' => '3e9dc5de3b0abc69e06d420894d170da5f385d4d87a4509cbdcf074451a04afaa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"5g7_UKLVnM_mQIOU2d9ZZcpU8riiS_uk\";}'
+    'BACKEND_FEEHICMS' => 'ng2sku9vaqhgc6usu9os3kg90q'
+    '_csrf_backend' => 'c8107efad5c8c2aab925fbecb54235eb76a1ce9bda9665aeb64e357f2c181715a:2:{i:0;s:13:\"_csrf_backend\";i:1;s:32:\"A8MLLEPJc31JiNVi64d7Mrp4VDiBMZrv\";}'
+    '_identity' => 'd8255b71788c2d7fd95b28dd1be29a10ac8ef0387a20febdf79467c8c972139da:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"8phKWid8OO7INzOjfkQZ-9XONLK2UX40\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => 'http://localhost:8080/index.php?r=article%2Findex'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'D:\\phpstudy_pro\\WWW\\frontend\\web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '46462'
+    'SERVER_SOFTWARE' => 'PHP 7.3.4 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/index.php?r=article%2Fcomment'
+    'REQUEST_METHOD' => 'POST'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'D:\\phpstudy_pro\\WWW\\frontend\\web\\index.php'
+    'PHP_SELF' => '/index.php'
+    'QUERY_STRING' => 'r=article%2Fcomment'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/109.0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_X_CSRF_TOKEN' => 'nIsaWBRJumpBO3MJTq0ozqHOTYWrq-DAtZT0pm3-3qD6-EBvRB3PXwhNCz8BnHm91KMKzufcmYiH3YCWJcayxg=='
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'CONTENT_LENGTH' => '350'
+    'HTTP_CONTENT_LENGTH' => '350'
+    'HTTP_ORIGIN' => 'http://localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_REFERER' => 'http://localhost:8080/index.php?r=article%2Fview&id=1'
+    'HTTP_COOKIE' => 'PHPSESSID=2p9qmls1gkkrr72de7rsu8hq22; _csrf=3e9dc5de3b0abc69e06d420894d170da5f385d4d87a4509cbdcf074451a04afaa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%225g7_UKLVnM_mQIOU2d9ZZcpU8riiS_uk%22%3B%7D; BACKEND_FEEHICMS=ng2sku9vaqhgc6usu9os3kg90q; _csrf_backend=c8107efad5c8c2aab925fbecb54235eb76a1ce9bda9665aeb64e357f2c181715a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf_backend%22%3Bi%3A1%3Bs%3A32%3A%22A8MLLEPJc31JiNVi64d7Mrp4VDiBMZrv%22%3B%7D; _identity=d8255b71788c2d7fd95b28dd1be29a10ac8ef0387a20febdf79467c8c972139da%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%228phKWid8OO7INzOjfkQZ-9XONLK2UX40%22%2C2592000%5D%22%3B%7D'
+    'HTTP_SEC_FETCH_DEST' => 'empty'
+    'HTTP_SEC_FETCH_MODE' => 'cors'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'REQUEST_TIME_FLOAT' => 1676212551.0801
+    'REQUEST_TIME' => 1676212551
+]
+2023-02-12 22:36:05 [127.0.0.1][1][2p9qmls1gkkrr72de7rsu8hq22][error][yii\web\HttpException:400] yii\web\BadRequestHttpException: 您提交的数据无法被验证。 in D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\web\Controller.php:166
+Stack trace:
+#0 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Controller.php(155): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#1 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('comment', Array)
+#2 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('article/comment', Array)
+#3 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#4 D:\phpstudy_pro\WWW\frontend\web\index.php(17): yii\base\Application->run()
+#5 {main}
+2023-02-12 22:36:05 [127.0.0.1][1][2p9qmls1gkkrr72de7rsu8hq22][info][application] $_GET = [
+    'r' => 'article/comment'
+]
+
+$_POST = [
+    '_csrf' => 'nIsaWBRJumpBO3MJTq0ozqHOTYWrq-DAtZT0pm3-3qD6-EBvRB3PXwhNCz8BnHm91KMKzufcmYiH3YCWJcayxg=='
+    'Comment' => [
+        'aid' => '1'
+        'content' => '累'
+        'reply_to' => '0'
+        'nickname' => 'wanwan'
+        'email' => '1@qq.com'
+        'website_url' => '1.com'
+    ]
+    'comment_post_ID' => '114'
+    'akismet_comment_nonce' => '32920dc775'
+    'ak_js' => '101'
+    'comment_mail_notify' => 'comment_mail_notify'
+]
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => '2p9qmls1gkkrr72de7rsu8hq22'
+    '_csrf' => '3e9dc5de3b0abc69e06d420894d170da5f385d4d87a4509cbdcf074451a04afaa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"5g7_UKLVnM_mQIOU2d9ZZcpU8riiS_uk\";}'
+    'BACKEND_FEEHICMS' => 'ng2sku9vaqhgc6usu9os3kg90q'
+    '_csrf_backend' => 'c8107efad5c8c2aab925fbecb54235eb76a1ce9bda9665aeb64e357f2c181715a:2:{i:0;s:13:\"_csrf_backend\";i:1;s:32:\"A8MLLEPJc31JiNVi64d7Mrp4VDiBMZrv\";}'
+    '_identity' => 'd8255b71788c2d7fd95b28dd1be29a10ac8ef0387a20febdf79467c8c972139da:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"8phKWid8OO7INzOjfkQZ-9XONLK2UX40\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => 'http://localhost:8080/index.php?r=article%2Findex'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'D:\\phpstudy_pro\\WWW\\frontend\\web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '46468'
+    'SERVER_SOFTWARE' => 'PHP 7.3.4 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/index.php?r=article%2Fcomment'
+    'REQUEST_METHOD' => 'POST'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'D:\\phpstudy_pro\\WWW\\frontend\\web\\index.php'
+    'PHP_SELF' => '/index.php'
+    'QUERY_STRING' => 'r=article%2Fcomment'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/109.0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_X_CSRF_TOKEN' => 'nIsaWBRJumpBO3MJTq0ozqHOTYWrq-DAtZT0pm3-3qD6-EBvRB3PXwhNCz8BnHm91KMKzufcmYiH3YCWJcayxg=='
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'CONTENT_LENGTH' => '365'
+    'HTTP_CONTENT_LENGTH' => '365'
+    'HTTP_ORIGIN' => 'http://localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_REFERER' => 'http://localhost:8080/index.php?r=article%2Fview&id=1'
+    'HTTP_COOKIE' => 'PHPSESSID=2p9qmls1gkkrr72de7rsu8hq22; _csrf=3e9dc5de3b0abc69e06d420894d170da5f385d4d87a4509cbdcf074451a04afaa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%225g7_UKLVnM_mQIOU2d9ZZcpU8riiS_uk%22%3B%7D; BACKEND_FEEHICMS=ng2sku9vaqhgc6usu9os3kg90q; _csrf_backend=c8107efad5c8c2aab925fbecb54235eb76a1ce9bda9665aeb64e357f2c181715a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf_backend%22%3Bi%3A1%3Bs%3A32%3A%22A8MLLEPJc31JiNVi64d7Mrp4VDiBMZrv%22%3B%7D; _identity=d8255b71788c2d7fd95b28dd1be29a10ac8ef0387a20febdf79467c8c972139da%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%228phKWid8OO7INzOjfkQZ-9XONLK2UX40%22%2C2592000%5D%22%3B%7D'
+    'HTTP_SEC_FETCH_DEST' => 'empty'
+    'HTTP_SEC_FETCH_MODE' => 'cors'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'REQUEST_TIME_FLOAT' => 1676212565.1141
+    'REQUEST_TIME' => 1676212565
+]
+2023-02-12 22:38:00 [127.0.0.1][1][5apsltl5a325rnqtc3hpe4qatp][error][yii\web\HttpException:400] yii\web\BadRequestHttpException: 您提交的数据无法被验证。 in D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\web\Controller.php:166
+Stack trace:
+#0 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Controller.php(155): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#1 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('comment', Array)
+#2 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('article/comment', Array)
+#3 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#4 D:\phpstudy_pro\WWW\frontend\web\index.php(17): yii\base\Application->run()
+#5 {main}
+2023-02-12 22:38:00 [127.0.0.1][1][5apsltl5a325rnqtc3hpe4qatp][info][application] $_GET = [
+    'r' => 'article/comment'
+]
+
+$_POST = [
+    '_csrf' => 'LogRkLbc7r9ENi-ZT-0EJ1nIOkmBsjJKKOFkHyFwYDNWySb53eqhzAFySf84mk5zM4V2KPiLUR5YkT1PZTc3dQ=='
+    'Comment' => [
+        'aid' => '1'
+        'content' => '累'
+        'reply_to' => '0'
+        'nickname' => 'wanwan'
+        'email' => ''
+        'website_url' => ''
+    ]
+    'comment_post_ID' => '114'
+    'akismet_comment_nonce' => '32920dc775'
+    'ak_js' => '101'
+    'comment_mail_notify' => 'comment_mail_notify'
+]
+
+$_FILES = []
+
+$_COOKIE = [
+    'wordpress_logged_in_86a9106ae65537651a8e456835b316ab' => 'mmma|1677050114|bT7ng8zBap8ZomuqdwGcjq60357AHSocZMRZYk1b7uI|33c8845584b6d712613a75dad4396516b8f24492be531ba5872116c6f5fd0330'
+    'wp-settings-time-1' => '1675943997'
+    '_identity-frontend' => 'ff4723d33490d1a30d5640e71fd7d121f9b6f51fd9475373e1d93f547b10525aa:2:{i:0;s:18:\"_identity-frontend\";i:1;s:46:\"[1,\"4sSpK38KErySZpizaMO18REH4nXWPDrD\",2592000]\";}'
+    '_identity-backend' => '7223aaae057f741b3ba5c4d0725f6f17a2846f199c7fcfd05830ef9b8b13aedaa:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"4sSpK38KErySZpizaMO18REH4nXWPDrD\",2592000]\";}'
+    'BACKEND_FEEHICMS' => 'dnlmbtugmh484b2amul8se0dp7'
+    '_csrf_backend' => '43663e0c7ed25d856c5cb2ed7134b91666a737f04f9e609acdd12844dabd5c26a:2:{i:0;s:13:\"_csrf_backend\";i:1;s:32:\"wFkO7t7yTnXMOvL3qmIzixR-iMTm-taQ\";}'
+    'PHPSESSID' => '5apsltl5a325rnqtc3hpe4qatp'
+    '_identity' => 'd8255b71788c2d7fd95b28dd1be29a10ac8ef0387a20febdf79467c8c972139da:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"8phKWid8OO7INzOjfkQZ-9XONLK2UX40\",2592000]\";}'
+    '_csrf' => '92af61a699f1aaffd7085349e2ea5e39fcbc06534432fd6f176277fbb364f5dea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"lSz4IT2bZtbQB3MrxgBVZXI0YPxDGkUO\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => 'http://localhost:8080/'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'D:\\phpstudy_pro\\WWW\\frontend\\web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '47634'
+    'SERVER_SOFTWARE' => 'PHP 7.3.4 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/index.php?r=article%2Fcomment'
+    'REQUEST_METHOD' => 'POST'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'D:\\phpstudy_pro\\WWW\\frontend\\web\\index.php'
+    'PHP_SELF' => '/index.php'
+    'QUERY_STRING' => 'r=article%2Fcomment'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '350'
+    'HTTP_CONTENT_LENGTH' => '350'
+    'HTTP_SEC_CH_UA' => '\"Chromium\";v=\"110\", \"Not A(Brand\";v=\"24\", \"Microsoft Edge\";v=\"110\"'
+    'HTTP_X_CSRF_TOKEN' => 'LogRkLbc7r9ENi-ZT-0EJ1nIOkmBsjJKKOFkHyFwYDNWySb53eqhzAFySf84mk5zM4V2KPiLUR5YkT1PZTc3dQ=='
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36 Edg/110.0.1587.41'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_ORIGIN' => 'http://localhost:8080'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'cors'
+    'HTTP_SEC_FETCH_DEST' => 'empty'
+    'HTTP_REFERER' => 'http://localhost:8080/index.php?r=article%2Fview&id=1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6'
+    'HTTP_COOKIE' => 'wordpress_logged_in_86a9106ae65537651a8e456835b316ab=mmma%7C1677050114%7CbT7ng8zBap8ZomuqdwGcjq60357AHSocZMRZYk1b7uI%7C33c8845584b6d712613a75dad4396516b8f24492be531ba5872116c6f5fd0330; wp-settings-time-1=1675943997; _identity-frontend=ff4723d33490d1a30d5640e71fd7d121f9b6f51fd9475373e1d93f547b10525aa%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%224sSpK38KErySZpizaMO18REH4nXWPDrD%22%2C2592000%5D%22%3B%7D; _identity-backend=7223aaae057f741b3ba5c4d0725f6f17a2846f199c7fcfd05830ef9b8b13aedaa%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%224sSpK38KErySZpizaMO18REH4nXWPDrD%22%2C2592000%5D%22%3B%7D; BACKEND_FEEHICMS=dnlmbtugmh484b2amul8se0dp7; _csrf_backend=43663e0c7ed25d856c5cb2ed7134b91666a737f04f9e609acdd12844dabd5c26a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf_backend%22%3Bi%3A1%3Bs%3A32%3A%22wFkO7t7yTnXMOvL3qmIzixR-iMTm-taQ%22%3B%7D; PHPSESSID=5apsltl5a325rnqtc3hpe4qatp; _identity=d8255b71788c2d7fd95b28dd1be29a10ac8ef0387a20febdf79467c8c972139da%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%228phKWid8OO7INzOjfkQZ-9XONLK2UX40%22%2C2592000%5D%22%3B%7D; _csrf=92af61a699f1aaffd7085349e2ea5e39fcbc06534432fd6f176277fbb364f5dea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22lSz4IT2bZtbQB3MrxgBVZXI0YPxDGkUO%22%3B%7D'
+    'REQUEST_TIME_FLOAT' => 1676212680.3732
+    'REQUEST_TIME' => 1676212680
+]
+2023-02-12 22:38:04 [127.0.0.1][1][5apsltl5a325rnqtc3hpe4qatp][error][yii\web\HttpException:400] yii\web\BadRequestHttpException: 您提交的数据无法被验证。 in D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\web\Controller.php:166
+Stack trace:
+#0 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Controller.php(155): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#1 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('comment', Array)
+#2 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('article/comment', Array)
+#3 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#4 D:\phpstudy_pro\WWW\frontend\web\index.php(17): yii\base\Application->run()
+#5 {main}
+2023-02-12 22:38:03 [127.0.0.1][1][5apsltl5a325rnqtc3hpe4qatp][info][application] $_GET = [
+    'r' => 'article/comment'
+]
+
+$_POST = [
+    '_csrf' => 'LogRkLbc7r9ENi-ZT-0EJ1nIOkmBsjJKKOFkHyFwYDNWySb53eqhzAFySf84mk5zM4V2KPiLUR5YkT1PZTc3dQ=='
+    'Comment' => [
+        'aid' => '1'
+        'content' => '累'
+        'reply_to' => '0'
+        'nickname' => 'wanwan'
+        'email' => '298985343@qq.com'
+        'website_url' => ''
+    ]
+    'comment_post_ID' => '114'
+    'akismet_comment_nonce' => '32920dc775'
+    'ak_js' => '101'
+    'comment_mail_notify' => 'comment_mail_notify'
+]
+
+$_FILES = []
+
+$_COOKIE = [
+    'wordpress_logged_in_86a9106ae65537651a8e456835b316ab' => 'mmma|1677050114|bT7ng8zBap8ZomuqdwGcjq60357AHSocZMRZYk1b7uI|33c8845584b6d712613a75dad4396516b8f24492be531ba5872116c6f5fd0330'
+    'wp-settings-time-1' => '1675943997'
+    '_identity-frontend' => 'ff4723d33490d1a30d5640e71fd7d121f9b6f51fd9475373e1d93f547b10525aa:2:{i:0;s:18:\"_identity-frontend\";i:1;s:46:\"[1,\"4sSpK38KErySZpizaMO18REH4nXWPDrD\",2592000]\";}'
+    '_identity-backend' => '7223aaae057f741b3ba5c4d0725f6f17a2846f199c7fcfd05830ef9b8b13aedaa:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"4sSpK38KErySZpizaMO18REH4nXWPDrD\",2592000]\";}'
+    'BACKEND_FEEHICMS' => 'dnlmbtugmh484b2amul8se0dp7'
+    '_csrf_backend' => '43663e0c7ed25d856c5cb2ed7134b91666a737f04f9e609acdd12844dabd5c26a:2:{i:0;s:13:\"_csrf_backend\";i:1;s:32:\"wFkO7t7yTnXMOvL3qmIzixR-iMTm-taQ\";}'
+    'PHPSESSID' => '5apsltl5a325rnqtc3hpe4qatp'
+    '_identity' => 'd8255b71788c2d7fd95b28dd1be29a10ac8ef0387a20febdf79467c8c972139da:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"8phKWid8OO7INzOjfkQZ-9XONLK2UX40\",2592000]\";}'
+    '_csrf' => '92af61a699f1aaffd7085349e2ea5e39fcbc06534432fd6f176277fbb364f5dea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"lSz4IT2bZtbQB3MrxgBVZXI0YPxDGkUO\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => 'http://localhost:8080/'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'D:\\phpstudy_pro\\WWW\\frontend\\web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '47646'
+    'SERVER_SOFTWARE' => 'PHP 7.3.4 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/index.php?r=article%2Fcomment'
+    'REQUEST_METHOD' => 'POST'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'D:\\phpstudy_pro\\WWW\\frontend\\web\\index.php'
+    'PHP_SELF' => '/index.php'
+    'QUERY_STRING' => 'r=article%2Fcomment'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '368'
+    'HTTP_CONTENT_LENGTH' => '368'
+    'HTTP_SEC_CH_UA' => '\"Chromium\";v=\"110\", \"Not A(Brand\";v=\"24\", \"Microsoft Edge\";v=\"110\"'
+    'HTTP_X_CSRF_TOKEN' => 'LogRkLbc7r9ENi-ZT-0EJ1nIOkmBsjJKKOFkHyFwYDNWySb53eqhzAFySf84mk5zM4V2KPiLUR5YkT1PZTc3dQ=='
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36 Edg/110.0.1587.41'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_ORIGIN' => 'http://localhost:8080'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'cors'
+    'HTTP_SEC_FETCH_DEST' => 'empty'
+    'HTTP_REFERER' => 'http://localhost:8080/index.php?r=article%2Fview&id=1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6'
+    'HTTP_COOKIE' => 'wordpress_logged_in_86a9106ae65537651a8e456835b316ab=mmma%7C1677050114%7CbT7ng8zBap8ZomuqdwGcjq60357AHSocZMRZYk1b7uI%7C33c8845584b6d712613a75dad4396516b8f24492be531ba5872116c6f5fd0330; wp-settings-time-1=1675943997; _identity-frontend=ff4723d33490d1a30d5640e71fd7d121f9b6f51fd9475373e1d93f547b10525aa%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%224sSpK38KErySZpizaMO18REH4nXWPDrD%22%2C2592000%5D%22%3B%7D; _identity-backend=7223aaae057f741b3ba5c4d0725f6f17a2846f199c7fcfd05830ef9b8b13aedaa%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%224sSpK38KErySZpizaMO18REH4nXWPDrD%22%2C2592000%5D%22%3B%7D; BACKEND_FEEHICMS=dnlmbtugmh484b2amul8se0dp7; _csrf_backend=43663e0c7ed25d856c5cb2ed7134b91666a737f04f9e609acdd12844dabd5c26a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf_backend%22%3Bi%3A1%3Bs%3A32%3A%22wFkO7t7yTnXMOvL3qmIzixR-iMTm-taQ%22%3B%7D; PHPSESSID=5apsltl5a325rnqtc3hpe4qatp; _identity=d8255b71788c2d7fd95b28dd1be29a10ac8ef0387a20febdf79467c8c972139da%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%228phKWid8OO7INzOjfkQZ-9XONLK2UX40%22%2C2592000%5D%22%3B%7D; _csrf=92af61a699f1aaffd7085349e2ea5e39fcbc06534432fd6f176277fbb364f5dea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22lSz4IT2bZtbQB3MrxgBVZXI0YPxDGkUO%22%3B%7D'
+    'REQUEST_TIME_FLOAT' => 1676212683.9898
+    'REQUEST_TIME' => 1676212683
+]
+2023-02-12 22:38:11 [127.0.0.1][1][5apsltl5a325rnqtc3hpe4qatp][error][yii\web\HttpException:400] yii\web\BadRequestHttpException: 您提交的数据无法被验证。 in D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\web\Controller.php:166
+Stack trace:
+#0 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Controller.php(155): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#1 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('comment', Array)
+#2 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('article/comment', Array)
+#3 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#4 D:\phpstudy_pro\WWW\frontend\web\index.php(17): yii\base\Application->run()
+#5 {main}
+2023-02-12 22:38:11 [127.0.0.1][1][5apsltl5a325rnqtc3hpe4qatp][info][application] $_GET = [
+    'r' => 'article/comment'
+]
+
+$_POST = [
+    '_csrf' => 'LogRkLbc7r9ENi-ZT-0EJ1nIOkmBsjJKKOFkHyFwYDNWySb53eqhzAFySf84mk5zM4V2KPiLUR5YkT1PZTc3dQ=='
+    'Comment' => [
+        'aid' => '1'
+        'content' => '累'
+        'reply_to' => '0'
+        'nickname' => 'wanwan'
+        'email' => '298985343@qq.com'
+        'website_url' => 'www.vaidu.com'
+    ]
+    'comment_post_ID' => '114'
+    'akismet_comment_nonce' => '32920dc775'
+    'ak_js' => '101'
+    'comment_mail_notify' => 'comment_mail_notify'
+]
+
+$_FILES = []
+
+$_COOKIE = [
+    'wordpress_logged_in_86a9106ae65537651a8e456835b316ab' => 'mmma|1677050114|bT7ng8zBap8ZomuqdwGcjq60357AHSocZMRZYk1b7uI|33c8845584b6d712613a75dad4396516b8f24492be531ba5872116c6f5fd0330'
+    'wp-settings-time-1' => '1675943997'
+    '_identity-frontend' => 'ff4723d33490d1a30d5640e71fd7d121f9b6f51fd9475373e1d93f547b10525aa:2:{i:0;s:18:\"_identity-frontend\";i:1;s:46:\"[1,\"4sSpK38KErySZpizaMO18REH4nXWPDrD\",2592000]\";}'
+    '_identity-backend' => '7223aaae057f741b3ba5c4d0725f6f17a2846f199c7fcfd05830ef9b8b13aedaa:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"4sSpK38KErySZpizaMO18REH4nXWPDrD\",2592000]\";}'
+    'BACKEND_FEEHICMS' => 'dnlmbtugmh484b2amul8se0dp7'
+    '_csrf_backend' => '43663e0c7ed25d856c5cb2ed7134b91666a737f04f9e609acdd12844dabd5c26a:2:{i:0;s:13:\"_csrf_backend\";i:1;s:32:\"wFkO7t7yTnXMOvL3qmIzixR-iMTm-taQ\";}'
+    'PHPSESSID' => '5apsltl5a325rnqtc3hpe4qatp'
+    '_identity' => 'd8255b71788c2d7fd95b28dd1be29a10ac8ef0387a20febdf79467c8c972139da:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"8phKWid8OO7INzOjfkQZ-9XONLK2UX40\",2592000]\";}'
+    '_csrf' => '92af61a699f1aaffd7085349e2ea5e39fcbc06534432fd6f176277fbb364f5dea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"lSz4IT2bZtbQB3MrxgBVZXI0YPxDGkUO\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => 'http://localhost:8080/'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'D:\\phpstudy_pro\\WWW\\frontend\\web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '47648'
+    'SERVER_SOFTWARE' => 'PHP 7.3.4 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/index.php?r=article%2Fcomment'
+    'REQUEST_METHOD' => 'POST'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'D:\\phpstudy_pro\\WWW\\frontend\\web\\index.php'
+    'PHP_SELF' => '/index.php'
+    'QUERY_STRING' => 'r=article%2Fcomment'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '381'
+    'HTTP_CONTENT_LENGTH' => '381'
+    'HTTP_SEC_CH_UA' => '\"Chromium\";v=\"110\", \"Not A(Brand\";v=\"24\", \"Microsoft Edge\";v=\"110\"'
+    'HTTP_X_CSRF_TOKEN' => 'LogRkLbc7r9ENi-ZT-0EJ1nIOkmBsjJKKOFkHyFwYDNWySb53eqhzAFySf84mk5zM4V2KPiLUR5YkT1PZTc3dQ=='
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36 Edg/110.0.1587.41'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_ORIGIN' => 'http://localhost:8080'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'cors'
+    'HTTP_SEC_FETCH_DEST' => 'empty'
+    'HTTP_REFERER' => 'http://localhost:8080/index.php?r=article%2Fview&id=1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6'
+    'HTTP_COOKIE' => 'wordpress_logged_in_86a9106ae65537651a8e456835b316ab=mmma%7C1677050114%7CbT7ng8zBap8ZomuqdwGcjq60357AHSocZMRZYk1b7uI%7C33c8845584b6d712613a75dad4396516b8f24492be531ba5872116c6f5fd0330; wp-settings-time-1=1675943997; _identity-frontend=ff4723d33490d1a30d5640e71fd7d121f9b6f51fd9475373e1d93f547b10525aa%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%224sSpK38KErySZpizaMO18REH4nXWPDrD%22%2C2592000%5D%22%3B%7D; _identity-backend=7223aaae057f741b3ba5c4d0725f6f17a2846f199c7fcfd05830ef9b8b13aedaa%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%224sSpK38KErySZpizaMO18REH4nXWPDrD%22%2C2592000%5D%22%3B%7D; BACKEND_FEEHICMS=dnlmbtugmh484b2amul8se0dp7; _csrf_backend=43663e0c7ed25d856c5cb2ed7134b91666a737f04f9e609acdd12844dabd5c26a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf_backend%22%3Bi%3A1%3Bs%3A32%3A%22wFkO7t7yTnXMOvL3qmIzixR-iMTm-taQ%22%3B%7D; PHPSESSID=5apsltl5a325rnqtc3hpe4qatp; _identity=d8255b71788c2d7fd95b28dd1be29a10ac8ef0387a20febdf79467c8c972139da%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%228phKWid8OO7INzOjfkQZ-9XONLK2UX40%22%2C2592000%5D%22%3B%7D; _csrf=92af61a699f1aaffd7085349e2ea5e39fcbc06534432fd6f176277fbb364f5dea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22lSz4IT2bZtbQB3MrxgBVZXI0YPxDGkUO%22%3B%7D'
+    'REQUEST_TIME_FLOAT' => 1676212691.2792
+    'REQUEST_TIME' => 1676212691
+]
+2023-02-12 22:38:21 [127.0.0.1][1][5apsltl5a325rnqtc3hpe4qatp][error][yii\web\HttpException:400] yii\web\BadRequestHttpException: 您提交的数据无法被验证。 in D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\web\Controller.php:166
+Stack trace:
+#0 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Controller.php(155): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#1 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('comment', Array)
+#2 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('article/comment', Array)
+#3 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#4 D:\phpstudy_pro\WWW\frontend\web\index.php(17): yii\base\Application->run()
+#5 {main}
+2023-02-12 22:38:21 [127.0.0.1][1][5apsltl5a325rnqtc3hpe4qatp][info][application] $_GET = [
+    'r' => 'article/comment'
+]
+
+$_POST = [
+    '_csrf' => 'LogRkLbc7r9ENi-ZT-0EJ1nIOkmBsjJKKOFkHyFwYDNWySb53eqhzAFySf84mk5zM4V2KPiLUR5YkT1PZTc3dQ=='
+    'Comment' => [
+        'aid' => '1'
+        'content' => 'sadasd'
+        'reply_to' => '0'
+        'nickname' => 'mmma'
+        'email' => ''
+        'website_url' => ''
+    ]
+    'comment_post_ID' => '114'
+    'akismet_comment_nonce' => '32920dc775'
+    'ak_js' => '101'
+    'comment_mail_notify' => 'comment_mail_notify'
+]
+
+$_FILES = []
+
+$_COOKIE = [
+    'wordpress_logged_in_86a9106ae65537651a8e456835b316ab' => 'mmma|1677050114|bT7ng8zBap8ZomuqdwGcjq60357AHSocZMRZYk1b7uI|33c8845584b6d712613a75dad4396516b8f24492be531ba5872116c6f5fd0330'
+    'wp-settings-time-1' => '1675943997'
+    '_identity-frontend' => 'ff4723d33490d1a30d5640e71fd7d121f9b6f51fd9475373e1d93f547b10525aa:2:{i:0;s:18:\"_identity-frontend\";i:1;s:46:\"[1,\"4sSpK38KErySZpizaMO18REH4nXWPDrD\",2592000]\";}'
+    '_identity-backend' => '7223aaae057f741b3ba5c4d0725f6f17a2846f199c7fcfd05830ef9b8b13aedaa:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"4sSpK38KErySZpizaMO18REH4nXWPDrD\",2592000]\";}'
+    'BACKEND_FEEHICMS' => 'dnlmbtugmh484b2amul8se0dp7'
+    '_csrf_backend' => '43663e0c7ed25d856c5cb2ed7134b91666a737f04f9e609acdd12844dabd5c26a:2:{i:0;s:13:\"_csrf_backend\";i:1;s:32:\"wFkO7t7yTnXMOvL3qmIzixR-iMTm-taQ\";}'
+    'PHPSESSID' => '5apsltl5a325rnqtc3hpe4qatp'
+    '_identity' => 'd8255b71788c2d7fd95b28dd1be29a10ac8ef0387a20febdf79467c8c972139da:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"8phKWid8OO7INzOjfkQZ-9XONLK2UX40\",2592000]\";}'
+    '_csrf' => '92af61a699f1aaffd7085349e2ea5e39fcbc06534432fd6f176277fbb364f5dea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"lSz4IT2bZtbQB3MrxgBVZXI0YPxDGkUO\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => 'http://localhost:8080/'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'D:\\phpstudy_pro\\WWW\\frontend\\web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '47712'
+    'SERVER_SOFTWARE' => 'PHP 7.3.4 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/index.php?r=article%2Fcomment'
+    'REQUEST_METHOD' => 'POST'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'D:\\phpstudy_pro\\WWW\\frontend\\web\\index.php'
+    'PHP_SELF' => '/index.php'
+    'QUERY_STRING' => 'r=article%2Fcomment'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '345'
+    'HTTP_CONTENT_LENGTH' => '345'
+    'HTTP_SEC_CH_UA' => '\"Chromium\";v=\"110\", \"Not A(Brand\";v=\"24\", \"Microsoft Edge\";v=\"110\"'
+    'HTTP_X_CSRF_TOKEN' => 'LogRkLbc7r9ENi-ZT-0EJ1nIOkmBsjJKKOFkHyFwYDNWySb53eqhzAFySf84mk5zM4V2KPiLUR5YkT1PZTc3dQ=='
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36 Edg/110.0.1587.41'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_ORIGIN' => 'http://localhost:8080'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'cors'
+    'HTTP_SEC_FETCH_DEST' => 'empty'
+    'HTTP_REFERER' => 'http://localhost:8080/index.php?r=article%2Fview&id=1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6'
+    'HTTP_COOKIE' => 'wordpress_logged_in_86a9106ae65537651a8e456835b316ab=mmma%7C1677050114%7CbT7ng8zBap8ZomuqdwGcjq60357AHSocZMRZYk1b7uI%7C33c8845584b6d712613a75dad4396516b8f24492be531ba5872116c6f5fd0330; wp-settings-time-1=1675943997; _identity-frontend=ff4723d33490d1a30d5640e71fd7d121f9b6f51fd9475373e1d93f547b10525aa%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%224sSpK38KErySZpizaMO18REH4nXWPDrD%22%2C2592000%5D%22%3B%7D; _identity-backend=7223aaae057f741b3ba5c4d0725f6f17a2846f199c7fcfd05830ef9b8b13aedaa%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%224sSpK38KErySZpizaMO18REH4nXWPDrD%22%2C2592000%5D%22%3B%7D; BACKEND_FEEHICMS=dnlmbtugmh484b2amul8se0dp7; _csrf_backend=43663e0c7ed25d856c5cb2ed7134b91666a737f04f9e609acdd12844dabd5c26a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf_backend%22%3Bi%3A1%3Bs%3A32%3A%22wFkO7t7yTnXMOvL3qmIzixR-iMTm-taQ%22%3B%7D; PHPSESSID=5apsltl5a325rnqtc3hpe4qatp; _identity=d8255b71788c2d7fd95b28dd1be29a10ac8ef0387a20febdf79467c8c972139da%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%228phKWid8OO7INzOjfkQZ-9XONLK2UX40%22%2C2592000%5D%22%3B%7D; _csrf=92af61a699f1aaffd7085349e2ea5e39fcbc06534432fd6f176277fbb364f5dea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22lSz4IT2bZtbQB3MrxgBVZXI0YPxDGkUO%22%3B%7D'
+    'REQUEST_TIME_FLOAT' => 1676212701.8206
+    'REQUEST_TIME' => 1676212701
+]
+2023-02-12 22:39:05 [127.0.0.1][1][5apsltl5a325rnqtc3hpe4qatp][error][yii\web\HttpException:400] yii\web\BadRequestHttpException: 您提交的数据无法被验证。 in D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\web\Controller.php:166
+Stack trace:
+#0 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Controller.php(155): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#1 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('comment', Array)
+#2 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('article/comment', Array)
+#3 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#4 D:\phpstudy_pro\WWW\frontend\web\index.php(17): yii\base\Application->run()
+#5 {main}
+2023-02-12 22:39:05 [127.0.0.1][1][5apsltl5a325rnqtc3hpe4qatp][info][application] $_GET = [
+    'r' => 'article/comment'
+]
+
+$_POST = [
+    '_csrf' => 'LogRkLbc7r9ENi-ZT-0EJ1nIOkmBsjJKKOFkHyFwYDNWySb53eqhzAFySf84mk5zM4V2KPiLUR5YkT1PZTc3dQ=='
+    'Comment' => [
+        'aid' => '1'
+        'content' => 'aaa'
+        'reply_to' => '0'
+        'nickname' => 'mmma'
+        'email' => ''
+        'website_url' => ''
+    ]
+    'comment_post_ID' => '114'
+    'akismet_comment_nonce' => '32920dc775'
+    'ak_js' => '101'
+    'comment_mail_notify' => 'comment_mail_notify'
+]
+
+$_FILES = []
+
+$_COOKIE = [
+    'wordpress_logged_in_86a9106ae65537651a8e456835b316ab' => 'mmma|1677050114|bT7ng8zBap8ZomuqdwGcjq60357AHSocZMRZYk1b7uI|33c8845584b6d712613a75dad4396516b8f24492be531ba5872116c6f5fd0330'
+    'wp-settings-time-1' => '1675943997'
+    '_identity-frontend' => 'ff4723d33490d1a30d5640e71fd7d121f9b6f51fd9475373e1d93f547b10525aa:2:{i:0;s:18:\"_identity-frontend\";i:1;s:46:\"[1,\"4sSpK38KErySZpizaMO18REH4nXWPDrD\",2592000]\";}'
+    '_identity-backend' => '7223aaae057f741b3ba5c4d0725f6f17a2846f199c7fcfd05830ef9b8b13aedaa:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"4sSpK38KErySZpizaMO18REH4nXWPDrD\",2592000]\";}'
+    'BACKEND_FEEHICMS' => 'dnlmbtugmh484b2amul8se0dp7'
+    '_csrf_backend' => '43663e0c7ed25d856c5cb2ed7134b91666a737f04f9e609acdd12844dabd5c26a:2:{i:0;s:13:\"_csrf_backend\";i:1;s:32:\"wFkO7t7yTnXMOvL3qmIzixR-iMTm-taQ\";}'
+    'PHPSESSID' => '5apsltl5a325rnqtc3hpe4qatp'
+    '_identity' => 'd8255b71788c2d7fd95b28dd1be29a10ac8ef0387a20febdf79467c8c972139da:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"8phKWid8OO7INzOjfkQZ-9XONLK2UX40\",2592000]\";}'
+    '_csrf' => '92af61a699f1aaffd7085349e2ea5e39fcbc06534432fd6f176277fbb364f5dea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"lSz4IT2bZtbQB3MrxgBVZXI0YPxDGkUO\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => 'http://localhost:8080/'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'D:\\phpstudy_pro\\WWW\\frontend\\web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '48286'
+    'SERVER_SOFTWARE' => 'PHP 7.3.4 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/index.php?r=article%2Fcomment'
+    'REQUEST_METHOD' => 'POST'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'D:\\phpstudy_pro\\WWW\\frontend\\web\\index.php'
+    'PHP_SELF' => '/index.php'
+    'QUERY_STRING' => 'r=article%2Fcomment'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '342'
+    'HTTP_CONTENT_LENGTH' => '342'
+    'HTTP_SEC_CH_UA' => '\"Chromium\";v=\"110\", \"Not A(Brand\";v=\"24\", \"Microsoft Edge\";v=\"110\"'
+    'HTTP_X_CSRF_TOKEN' => 'LogRkLbc7r9ENi-ZT-0EJ1nIOkmBsjJKKOFkHyFwYDNWySb53eqhzAFySf84mk5zM4V2KPiLUR5YkT1PZTc3dQ=='
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36 Edg/110.0.1587.41'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_ORIGIN' => 'http://localhost:8080'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'cors'
+    'HTTP_SEC_FETCH_DEST' => 'empty'
+    'HTTP_REFERER' => 'http://localhost:8080/index.php?r=article%2Fview&id=1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6'
+    'HTTP_COOKIE' => 'wordpress_logged_in_86a9106ae65537651a8e456835b316ab=mmma%7C1677050114%7CbT7ng8zBap8ZomuqdwGcjq60357AHSocZMRZYk1b7uI%7C33c8845584b6d712613a75dad4396516b8f24492be531ba5872116c6f5fd0330; wp-settings-time-1=1675943997; _identity-frontend=ff4723d33490d1a30d5640e71fd7d121f9b6f51fd9475373e1d93f547b10525aa%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%224sSpK38KErySZpizaMO18REH4nXWPDrD%22%2C2592000%5D%22%3B%7D; _identity-backend=7223aaae057f741b3ba5c4d0725f6f17a2846f199c7fcfd05830ef9b8b13aedaa%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%224sSpK38KErySZpizaMO18REH4nXWPDrD%22%2C2592000%5D%22%3B%7D; BACKEND_FEEHICMS=dnlmbtugmh484b2amul8se0dp7; _csrf_backend=43663e0c7ed25d856c5cb2ed7134b91666a737f04f9e609acdd12844dabd5c26a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf_backend%22%3Bi%3A1%3Bs%3A32%3A%22wFkO7t7yTnXMOvL3qmIzixR-iMTm-taQ%22%3B%7D; PHPSESSID=5apsltl5a325rnqtc3hpe4qatp; _identity=d8255b71788c2d7fd95b28dd1be29a10ac8ef0387a20febdf79467c8c972139da%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%228phKWid8OO7INzOjfkQZ-9XONLK2UX40%22%2C2592000%5D%22%3B%7D; _csrf=92af61a699f1aaffd7085349e2ea5e39fcbc06534432fd6f176277fbb364f5dea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22lSz4IT2bZtbQB3MrxgBVZXI0YPxDGkUO%22%3B%7D'
+    'REQUEST_TIME_FLOAT' => 1676212745.6167
+    'REQUEST_TIME' => 1676212745
+]
+2023-02-12 22:39:14 [127.0.0.1][1][5apsltl5a325rnqtc3hpe4qatp][error][yii\web\HttpException:400] yii\web\BadRequestHttpException: 您提交的数据无法被验证。 in D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\web\Controller.php:166
+Stack trace:
+#0 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Controller.php(155): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#1 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('comment', Array)
+#2 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('article/comment', Array)
+#3 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#4 D:\phpstudy_pro\WWW\frontend\web\index.php(17): yii\base\Application->run()
+#5 {main}
+2023-02-12 22:39:14 [127.0.0.1][1][5apsltl5a325rnqtc3hpe4qatp][info][application] $_GET = [
+    'r' => 'article/comment'
+]
+
+$_POST = [
+    '_csrf' => 'LogRkLbc7r9ENi-ZT-0EJ1nIOkmBsjJKKOFkHyFwYDNWySb53eqhzAFySf84mk5zM4V2KPiLUR5YkT1PZTc3dQ=='
+    'Comment' => [
+        'aid' => '1'
+        'content' => '哈哈'
+        'reply_to' => '0'
+        'nickname' => 'mmma'
+        'email' => ''
+        'website_url' => ''
+    ]
+    'comment_post_ID' => '114'
+    'akismet_comment_nonce' => '32920dc775'
+    'ak_js' => '101'
+    'comment_mail_notify' => 'comment_mail_notify'
+]
+
+$_FILES = []
+
+$_COOKIE = [
+    'wordpress_logged_in_86a9106ae65537651a8e456835b316ab' => 'mmma|1677050114|bT7ng8zBap8ZomuqdwGcjq60357AHSocZMRZYk1b7uI|33c8845584b6d712613a75dad4396516b8f24492be531ba5872116c6f5fd0330'
+    'wp-settings-time-1' => '1675943997'
+    '_identity-frontend' => 'ff4723d33490d1a30d5640e71fd7d121f9b6f51fd9475373e1d93f547b10525aa:2:{i:0;s:18:\"_identity-frontend\";i:1;s:46:\"[1,\"4sSpK38KErySZpizaMO18REH4nXWPDrD\",2592000]\";}'
+    '_identity-backend' => '7223aaae057f741b3ba5c4d0725f6f17a2846f199c7fcfd05830ef9b8b13aedaa:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"4sSpK38KErySZpizaMO18REH4nXWPDrD\",2592000]\";}'
+    'BACKEND_FEEHICMS' => 'dnlmbtugmh484b2amul8se0dp7'
+    '_csrf_backend' => '43663e0c7ed25d856c5cb2ed7134b91666a737f04f9e609acdd12844dabd5c26a:2:{i:0;s:13:\"_csrf_backend\";i:1;s:32:\"wFkO7t7yTnXMOvL3qmIzixR-iMTm-taQ\";}'
+    'PHPSESSID' => '5apsltl5a325rnqtc3hpe4qatp'
+    '_identity' => 'd8255b71788c2d7fd95b28dd1be29a10ac8ef0387a20febdf79467c8c972139da:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"8phKWid8OO7INzOjfkQZ-9XONLK2UX40\",2592000]\";}'
+    '_csrf' => '92af61a699f1aaffd7085349e2ea5e39fcbc06534432fd6f176277fbb364f5dea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"lSz4IT2bZtbQB3MrxgBVZXI0YPxDGkUO\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => 'http://localhost:8080/'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'D:\\phpstudy_pro\\WWW\\frontend\\web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '48358'
+    'SERVER_SOFTWARE' => 'PHP 7.3.4 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/index.php?r=article%2Fcomment'
+    'REQUEST_METHOD' => 'POST'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'D:\\phpstudy_pro\\WWW\\frontend\\web\\index.php'
+    'PHP_SELF' => '/index.php'
+    'QUERY_STRING' => 'r=article%2Fcomment'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '357'
+    'HTTP_CONTENT_LENGTH' => '357'
+    'HTTP_SEC_CH_UA' => '\"Chromium\";v=\"110\", \"Not A(Brand\";v=\"24\", \"Microsoft Edge\";v=\"110\"'
+    'HTTP_X_CSRF_TOKEN' => 'LogRkLbc7r9ENi-ZT-0EJ1nIOkmBsjJKKOFkHyFwYDNWySb53eqhzAFySf84mk5zM4V2KPiLUR5YkT1PZTc3dQ=='
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36 Edg/110.0.1587.41'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_ORIGIN' => 'http://localhost:8080'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'cors'
+    'HTTP_SEC_FETCH_DEST' => 'empty'
+    'HTTP_REFERER' => 'http://localhost:8080/index.php?r=article%2Fview&id=1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6'
+    'HTTP_COOKIE' => 'wordpress_logged_in_86a9106ae65537651a8e456835b316ab=mmma%7C1677050114%7CbT7ng8zBap8ZomuqdwGcjq60357AHSocZMRZYk1b7uI%7C33c8845584b6d712613a75dad4396516b8f24492be531ba5872116c6f5fd0330; wp-settings-time-1=1675943997; _identity-frontend=ff4723d33490d1a30d5640e71fd7d121f9b6f51fd9475373e1d93f547b10525aa%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%224sSpK38KErySZpizaMO18REH4nXWPDrD%22%2C2592000%5D%22%3B%7D; _identity-backend=7223aaae057f741b3ba5c4d0725f6f17a2846f199c7fcfd05830ef9b8b13aedaa%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%224sSpK38KErySZpizaMO18REH4nXWPDrD%22%2C2592000%5D%22%3B%7D; BACKEND_FEEHICMS=dnlmbtugmh484b2amul8se0dp7; _csrf_backend=43663e0c7ed25d856c5cb2ed7134b91666a737f04f9e609acdd12844dabd5c26a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf_backend%22%3Bi%3A1%3Bs%3A32%3A%22wFkO7t7yTnXMOvL3qmIzixR-iMTm-taQ%22%3B%7D; PHPSESSID=5apsltl5a325rnqtc3hpe4qatp; _identity=d8255b71788c2d7fd95b28dd1be29a10ac8ef0387a20febdf79467c8c972139da%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%228phKWid8OO7INzOjfkQZ-9XONLK2UX40%22%2C2592000%5D%22%3B%7D; _csrf=92af61a699f1aaffd7085349e2ea5e39fcbc06534432fd6f176277fbb364f5dea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22lSz4IT2bZtbQB3MrxgBVZXI0YPxDGkUO%22%3B%7D'
+    'REQUEST_TIME_FLOAT' => 1676212754.7073
+    'REQUEST_TIME' => 1676212754
+]
+2023-02-12 22:39:21 [127.0.0.1][1][5apsltl5a325rnqtc3hpe4qatp][error][yii\web\HttpException:400] yii\web\BadRequestHttpException: 您提交的数据无法被验证。 in D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\web\Controller.php:166
+Stack trace:
+#0 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Controller.php(155): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#1 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('comment', Array)
+#2 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('article/comment', Array)
+#3 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#4 D:\phpstudy_pro\WWW\frontend\web\index.php(17): yii\base\Application->run()
+#5 {main}
+2023-02-12 22:39:21 [127.0.0.1][1][5apsltl5a325rnqtc3hpe4qatp][info][application] $_GET = [
+    'r' => 'article/comment'
+]
+
+$_POST = [
+    '_csrf' => 'LogRkLbc7r9ENi-ZT-0EJ1nIOkmBsjJKKOFkHyFwYDNWySb53eqhzAFySf84mk5zM4V2KPiLUR5YkT1PZTc3dQ=='
+    'Comment' => [
+        'aid' => '1'
+        'content' => '搜索'
+        'reply_to' => '0'
+        'nickname' => 'mmma'
+        'email' => ''
+        'website_url' => ''
+    ]
+    'comment_post_ID' => '114'
+    'akismet_comment_nonce' => '32920dc775'
+    'ak_js' => '101'
+    'comment_mail_notify' => 'comment_mail_notify'
+]
+
+$_FILES = []
+
+$_COOKIE = [
+    'wordpress_logged_in_86a9106ae65537651a8e456835b316ab' => 'mmma|1677050114|bT7ng8zBap8ZomuqdwGcjq60357AHSocZMRZYk1b7uI|33c8845584b6d712613a75dad4396516b8f24492be531ba5872116c6f5fd0330'
+    'wp-settings-time-1' => '1675943997'
+    '_identity-frontend' => 'ff4723d33490d1a30d5640e71fd7d121f9b6f51fd9475373e1d93f547b10525aa:2:{i:0;s:18:\"_identity-frontend\";i:1;s:46:\"[1,\"4sSpK38KErySZpizaMO18REH4nXWPDrD\",2592000]\";}'
+    '_identity-backend' => '7223aaae057f741b3ba5c4d0725f6f17a2846f199c7fcfd05830ef9b8b13aedaa:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"4sSpK38KErySZpizaMO18REH4nXWPDrD\",2592000]\";}'
+    'BACKEND_FEEHICMS' => 'dnlmbtugmh484b2amul8se0dp7'
+    '_csrf_backend' => '43663e0c7ed25d856c5cb2ed7134b91666a737f04f9e609acdd12844dabd5c26a:2:{i:0;s:13:\"_csrf_backend\";i:1;s:32:\"wFkO7t7yTnXMOvL3qmIzixR-iMTm-taQ\";}'
+    'PHPSESSID' => '5apsltl5a325rnqtc3hpe4qatp'
+    '_identity' => 'd8255b71788c2d7fd95b28dd1be29a10ac8ef0387a20febdf79467c8c972139da:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"8phKWid8OO7INzOjfkQZ-9XONLK2UX40\",2592000]\";}'
+    '_csrf' => '92af61a699f1aaffd7085349e2ea5e39fcbc06534432fd6f176277fbb364f5dea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"lSz4IT2bZtbQB3MrxgBVZXI0YPxDGkUO\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => 'http://localhost:8080/'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'D:\\phpstudy_pro\\WWW\\frontend\\web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '48412'
+    'SERVER_SOFTWARE' => 'PHP 7.3.4 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/index.php?r=article%2Fcomment'
+    'REQUEST_METHOD' => 'POST'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'D:\\phpstudy_pro\\WWW\\frontend\\web\\index.php'
+    'PHP_SELF' => '/index.php'
+    'QUERY_STRING' => 'r=article%2Fcomment'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '357'
+    'HTTP_CONTENT_LENGTH' => '357'
+    'HTTP_SEC_CH_UA' => '\"Chromium\";v=\"110\", \"Not A(Brand\";v=\"24\", \"Microsoft Edge\";v=\"110\"'
+    'HTTP_X_CSRF_TOKEN' => 'LogRkLbc7r9ENi-ZT-0EJ1nIOkmBsjJKKOFkHyFwYDNWySb53eqhzAFySf84mk5zM4V2KPiLUR5YkT1PZTc3dQ=='
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36 Edg/110.0.1587.41'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_ORIGIN' => 'http://localhost:8080'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'cors'
+    'HTTP_SEC_FETCH_DEST' => 'empty'
+    'HTTP_REFERER' => 'http://localhost:8080/index.php?r=article%2Fview&id=1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6'
+    'HTTP_COOKIE' => 'wordpress_logged_in_86a9106ae65537651a8e456835b316ab=mmma%7C1677050114%7CbT7ng8zBap8ZomuqdwGcjq60357AHSocZMRZYk1b7uI%7C33c8845584b6d712613a75dad4396516b8f24492be531ba5872116c6f5fd0330; wp-settings-time-1=1675943997; _identity-frontend=ff4723d33490d1a30d5640e71fd7d121f9b6f51fd9475373e1d93f547b10525aa%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%224sSpK38KErySZpizaMO18REH4nXWPDrD%22%2C2592000%5D%22%3B%7D; _identity-backend=7223aaae057f741b3ba5c4d0725f6f17a2846f199c7fcfd05830ef9b8b13aedaa%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%224sSpK38KErySZpizaMO18REH4nXWPDrD%22%2C2592000%5D%22%3B%7D; BACKEND_FEEHICMS=dnlmbtugmh484b2amul8se0dp7; _csrf_backend=43663e0c7ed25d856c5cb2ed7134b91666a737f04f9e609acdd12844dabd5c26a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf_backend%22%3Bi%3A1%3Bs%3A32%3A%22wFkO7t7yTnXMOvL3qmIzixR-iMTm-taQ%22%3B%7D; PHPSESSID=5apsltl5a325rnqtc3hpe4qatp; _identity=d8255b71788c2d7fd95b28dd1be29a10ac8ef0387a20febdf79467c8c972139da%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%228phKWid8OO7INzOjfkQZ-9XONLK2UX40%22%2C2592000%5D%22%3B%7D; _csrf=92af61a699f1aaffd7085349e2ea5e39fcbc06534432fd6f176277fbb364f5dea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22lSz4IT2bZtbQB3MrxgBVZXI0YPxDGkUO%22%3B%7D'
+    'REQUEST_TIME_FLOAT' => 1676212761.8219
+    'REQUEST_TIME' => 1676212761
+]
+2023-02-12 22:40:03 [127.0.0.1][1][5apsltl5a325rnqtc3hpe4qatp][error][yii\web\HttpException:400] yii\web\BadRequestHttpException: 您提交的数据无法被验证。 in D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\web\Controller.php:166
+Stack trace:
+#0 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Controller.php(155): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#1 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('comment', Array)
+#2 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('article/comment', Array)
+#3 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#4 D:\phpstudy_pro\WWW\frontend\web\index.php(17): yii\base\Application->run()
+#5 {main}
+2023-02-12 22:40:03 [127.0.0.1][1][5apsltl5a325rnqtc3hpe4qatp][info][application] $_GET = [
+    'r' => 'article/comment'
+]
+
+$_POST = [
+    '_csrf' => 'LogRkLbc7r9ENi-ZT-0EJ1nIOkmBsjJKKOFkHyFwYDNWySb53eqhzAFySf84mk5zM4V2KPiLUR5YkT1PZTc3dQ=='
+    'Comment' => [
+        'aid' => '1'
+        'content' => '嗷嗷'
+        'reply_to' => '0'
+        'nickname' => 'mmma'
+        'email' => ''
+        'website_url' => ''
+    ]
+    'comment_post_ID' => '114'
+    'akismet_comment_nonce' => '32920dc775'
+    'ak_js' => '101'
+    'comment_mail_notify' => 'comment_mail_notify'
+]
+
+$_FILES = []
+
+$_COOKIE = [
+    'wordpress_logged_in_86a9106ae65537651a8e456835b316ab' => 'mmma|1677050114|bT7ng8zBap8ZomuqdwGcjq60357AHSocZMRZYk1b7uI|33c8845584b6d712613a75dad4396516b8f24492be531ba5872116c6f5fd0330'
+    'wp-settings-time-1' => '1675943997'
+    '_identity-frontend' => 'ff4723d33490d1a30d5640e71fd7d121f9b6f51fd9475373e1d93f547b10525aa:2:{i:0;s:18:\"_identity-frontend\";i:1;s:46:\"[1,\"4sSpK38KErySZpizaMO18REH4nXWPDrD\",2592000]\";}'
+    '_identity-backend' => '7223aaae057f741b3ba5c4d0725f6f17a2846f199c7fcfd05830ef9b8b13aedaa:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"4sSpK38KErySZpizaMO18REH4nXWPDrD\",2592000]\";}'
+    'BACKEND_FEEHICMS' => 'dnlmbtugmh484b2amul8se0dp7'
+    '_csrf_backend' => '43663e0c7ed25d856c5cb2ed7134b91666a737f04f9e609acdd12844dabd5c26a:2:{i:0;s:13:\"_csrf_backend\";i:1;s:32:\"wFkO7t7yTnXMOvL3qmIzixR-iMTm-taQ\";}'
+    'PHPSESSID' => '5apsltl5a325rnqtc3hpe4qatp'
+    '_identity' => 'd8255b71788c2d7fd95b28dd1be29a10ac8ef0387a20febdf79467c8c972139da:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"8phKWid8OO7INzOjfkQZ-9XONLK2UX40\",2592000]\";}'
+    '_csrf' => '92af61a699f1aaffd7085349e2ea5e39fcbc06534432fd6f176277fbb364f5dea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"lSz4IT2bZtbQB3MrxgBVZXI0YPxDGkUO\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => 'http://localhost:8080/'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'D:\\phpstudy_pro\\WWW\\frontend\\web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '48545'
+    'SERVER_SOFTWARE' => 'PHP 7.3.4 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/index.php?r=article%2Fcomment'
+    'REQUEST_METHOD' => 'POST'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'D:\\phpstudy_pro\\WWW\\frontend\\web\\index.php'
+    'PHP_SELF' => '/index.php'
+    'QUERY_STRING' => 'r=article%2Fcomment'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '357'
+    'HTTP_CONTENT_LENGTH' => '357'
+    'HTTP_SEC_CH_UA' => '\"Chromium\";v=\"110\", \"Not A(Brand\";v=\"24\", \"Microsoft Edge\";v=\"110\"'
+    'HTTP_X_CSRF_TOKEN' => 'LogRkLbc7r9ENi-ZT-0EJ1nIOkmBsjJKKOFkHyFwYDNWySb53eqhzAFySf84mk5zM4V2KPiLUR5YkT1PZTc3dQ=='
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36 Edg/110.0.1587.41'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_ORIGIN' => 'http://localhost:8080'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'cors'
+    'HTTP_SEC_FETCH_DEST' => 'empty'
+    'HTTP_REFERER' => 'http://localhost:8080/index.php?r=article%2Fview&id=1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6'
+    'HTTP_COOKIE' => 'wordpress_logged_in_86a9106ae65537651a8e456835b316ab=mmma%7C1677050114%7CbT7ng8zBap8ZomuqdwGcjq60357AHSocZMRZYk1b7uI%7C33c8845584b6d712613a75dad4396516b8f24492be531ba5872116c6f5fd0330; wp-settings-time-1=1675943997; _identity-frontend=ff4723d33490d1a30d5640e71fd7d121f9b6f51fd9475373e1d93f547b10525aa%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%224sSpK38KErySZpizaMO18REH4nXWPDrD%22%2C2592000%5D%22%3B%7D; _identity-backend=7223aaae057f741b3ba5c4d0725f6f17a2846f199c7fcfd05830ef9b8b13aedaa%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%224sSpK38KErySZpizaMO18REH4nXWPDrD%22%2C2592000%5D%22%3B%7D; BACKEND_FEEHICMS=dnlmbtugmh484b2amul8se0dp7; _csrf_backend=43663e0c7ed25d856c5cb2ed7134b91666a737f04f9e609acdd12844dabd5c26a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf_backend%22%3Bi%3A1%3Bs%3A32%3A%22wFkO7t7yTnXMOvL3qmIzixR-iMTm-taQ%22%3B%7D; PHPSESSID=5apsltl5a325rnqtc3hpe4qatp; _identity=d8255b71788c2d7fd95b28dd1be29a10ac8ef0387a20febdf79467c8c972139da%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%228phKWid8OO7INzOjfkQZ-9XONLK2UX40%22%2C2592000%5D%22%3B%7D; _csrf=92af61a699f1aaffd7085349e2ea5e39fcbc06534432fd6f176277fbb364f5dea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22lSz4IT2bZtbQB3MrxgBVZXI0YPxDGkUO%22%3B%7D'
+    'REQUEST_TIME_FLOAT' => 1676212803.1602
+    'REQUEST_TIME' => 1676212803
+]
+2023-02-12 22:40:42 [127.0.0.1][1][jri24p4a99164n5e1cvoguc7bq][error][yii\web\HttpException:400] yii\web\BadRequestHttpException: 您提交的数据无法被验证。 in D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\web\Controller.php:166
+Stack trace:
+#0 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Controller.php(155): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#1 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('comment', Array)
+#2 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('article/comment', Array)
+#3 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#4 D:\phpstudy_pro\WWW\frontend\web\index.php(17): yii\base\Application->run()
+#5 {main}
+2023-02-12 22:40:42 [127.0.0.1][1][jri24p4a99164n5e1cvoguc7bq][info][application] $_GET = [
+    'r' => 'article/comment'
+]
+
+$_POST = [
+    '_csrf' => 'LogRkLbc7r9ENi-ZT-0EJ1nIOkmBsjJKKOFkHyFwYDNWySb53eqhzAFySf84mk5zM4V2KPiLUR5YkT1PZTc3dQ=='
+    'Comment' => [
+        'aid' => '1'
+        'content' => '  '
+        'reply_to' => '0'
+        'nickname' => 'mmma'
+        'email' => ''
+        'website_url' => ''
+    ]
+    'comment_post_ID' => '114'
+    'akismet_comment_nonce' => '32920dc775'
+    'ak_js' => '101'
+    'comment_mail_notify' => 'comment_mail_notify'
+]
+
+$_FILES = []
+
+$_COOKIE = [
+    'wordpress_logged_in_86a9106ae65537651a8e456835b316ab' => 'mmma|1677050114|bT7ng8zBap8ZomuqdwGcjq60357AHSocZMRZYk1b7uI|33c8845584b6d712613a75dad4396516b8f24492be531ba5872116c6f5fd0330'
+    'wp-settings-time-1' => '1675943997'
+    '_identity-frontend' => 'ff4723d33490d1a30d5640e71fd7d121f9b6f51fd9475373e1d93f547b10525aa:2:{i:0;s:18:\"_identity-frontend\";i:1;s:46:\"[1,\"4sSpK38KErySZpizaMO18REH4nXWPDrD\",2592000]\";}'
+    '_identity-backend' => '7223aaae057f741b3ba5c4d0725f6f17a2846f199c7fcfd05830ef9b8b13aedaa:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"4sSpK38KErySZpizaMO18REH4nXWPDrD\",2592000]\";}'
+    'BACKEND_FEEHICMS' => 'dnlmbtugmh484b2amul8se0dp7'
+    '_csrf_backend' => '43663e0c7ed25d856c5cb2ed7134b91666a737f04f9e609acdd12844dabd5c26a:2:{i:0;s:13:\"_csrf_backend\";i:1;s:32:\"wFkO7t7yTnXMOvL3qmIzixR-iMTm-taQ\";}'
+    'PHPSESSID' => 'jri24p4a99164n5e1cvoguc7bq'
+    '_identity' => 'd8255b71788c2d7fd95b28dd1be29a10ac8ef0387a20febdf79467c8c972139da:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"8phKWid8OO7INzOjfkQZ-9XONLK2UX40\",2592000]\";}'
+    '_csrf' => 'cde2e1a7eef17364ffcddeb042b107004b3c63a356bf8182035cf19f06710b66a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"9Vp-GoADPRoz5MKyA2byBa1Ft6H1tgQA\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => 'http://localhost:8080/'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'D:\\phpstudy_pro\\WWW\\frontend\\web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '48841'
+    'SERVER_SOFTWARE' => 'PHP 7.3.4 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/index.php?r=article%2Fcomment'
+    'REQUEST_METHOD' => 'POST'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'D:\\phpstudy_pro\\WWW\\frontend\\web\\index.php'
+    'PHP_SELF' => '/index.php'
+    'QUERY_STRING' => 'r=article%2Fcomment'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '341'
+    'HTTP_CONTENT_LENGTH' => '341'
+    'HTTP_SEC_CH_UA' => '\"Chromium\";v=\"110\", \"Not A(Brand\";v=\"24\", \"Microsoft Edge\";v=\"110\"'
+    'HTTP_X_CSRF_TOKEN' => 'LogRkLbc7r9ENi-ZT-0EJ1nIOkmBsjJKKOFkHyFwYDNWySb53eqhzAFySf84mk5zM4V2KPiLUR5YkT1PZTc3dQ=='
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36 Edg/110.0.1587.41'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_ORIGIN' => 'http://localhost:8080'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'cors'
+    'HTTP_SEC_FETCH_DEST' => 'empty'
+    'HTTP_REFERER' => 'http://localhost:8080/index.php?r=article%2Fview&id=1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6'
+    'HTTP_COOKIE' => 'wordpress_logged_in_86a9106ae65537651a8e456835b316ab=mmma%7C1677050114%7CbT7ng8zBap8ZomuqdwGcjq60357AHSocZMRZYk1b7uI%7C33c8845584b6d712613a75dad4396516b8f24492be531ba5872116c6f5fd0330; wp-settings-time-1=1675943997; _identity-frontend=ff4723d33490d1a30d5640e71fd7d121f9b6f51fd9475373e1d93f547b10525aa%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%224sSpK38KErySZpizaMO18REH4nXWPDrD%22%2C2592000%5D%22%3B%7D; _identity-backend=7223aaae057f741b3ba5c4d0725f6f17a2846f199c7fcfd05830ef9b8b13aedaa%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%224sSpK38KErySZpizaMO18REH4nXWPDrD%22%2C2592000%5D%22%3B%7D; BACKEND_FEEHICMS=dnlmbtugmh484b2amul8se0dp7; _csrf_backend=43663e0c7ed25d856c5cb2ed7134b91666a737f04f9e609acdd12844dabd5c26a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf_backend%22%3Bi%3A1%3Bs%3A32%3A%22wFkO7t7yTnXMOvL3qmIzixR-iMTm-taQ%22%3B%7D; PHPSESSID=jri24p4a99164n5e1cvoguc7bq; _identity=d8255b71788c2d7fd95b28dd1be29a10ac8ef0387a20febdf79467c8c972139da%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%228phKWid8OO7INzOjfkQZ-9XONLK2UX40%22%2C2592000%5D%22%3B%7D; _csrf=cde2e1a7eef17364ffcddeb042b107004b3c63a356bf8182035cf19f06710b66a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%229Vp-GoADPRoz5MKyA2byBa1Ft6H1tgQA%22%3B%7D'
+    'REQUEST_TIME_FLOAT' => 1676212842.2343
+    'REQUEST_TIME' => 1676212842
+]
+2023-02-12 22:48:18 [127.0.0.1][1][1g6a2f925k3jg9qioqpuuhttiv][error][yii\web\HttpException:404] yii\web\NotFoundHttpException: 未找到分类javascript in D:\phpstudy_pro\WWW\frontend\controllers\ArticleController.php:78
+Stack trace:
+#0 [internal function]: frontend\controllers\ArticleController->actionIndex('javascript')
+#1 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#2 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#3 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('index', Array)
+#4 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('article/index', Array)
+#5 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#6 D:\phpstudy_pro\WWW\frontend\web\index.php(17): yii\base\Application->run()
+#7 {main}
+2023-02-12 22:48:17 [127.0.0.1][1][1g6a2f925k3jg9qioqpuuhttiv][info][application] $_GET = [
+    'r' => 'article/index'
+    'cat' => 'javascript'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'wordpress_logged_in_86a9106ae65537651a8e456835b316ab' => 'mmma|1677050114|bT7ng8zBap8ZomuqdwGcjq60357AHSocZMRZYk1b7uI|33c8845584b6d712613a75dad4396516b8f24492be531ba5872116c6f5fd0330'
+    'wp-settings-time-1' => '1675943997'
+    '_identity-frontend' => 'ff4723d33490d1a30d5640e71fd7d121f9b6f51fd9475373e1d93f547b10525aa:2:{i:0;s:18:\"_identity-frontend\";i:1;s:46:\"[1,\"4sSpK38KErySZpizaMO18REH4nXWPDrD\",2592000]\";}'
+    '_identity-backend' => '7223aaae057f741b3ba5c4d0725f6f17a2846f199c7fcfd05830ef9b8b13aedaa:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"4sSpK38KErySZpizaMO18REH4nXWPDrD\",2592000]\";}'
+    '_identity' => 'd8255b71788c2d7fd95b28dd1be29a10ac8ef0387a20febdf79467c8c972139da:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"8phKWid8OO7INzOjfkQZ-9XONLK2UX40\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'D:\\phpstudy_pro\\WWW\\frontend\\web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '51046'
+    'SERVER_SOFTWARE' => 'PHP 7.3.4 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/index.php?r=article%2Findex&cat=javascript'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'D:\\phpstudy_pro\\WWW\\frontend\\web\\index.php'
+    'PHP_SELF' => '/index.php'
+    'QUERY_STRING' => 'r=article%2Findex&cat=javascript'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_SEC_CH_UA' => '\"Chromium\";v=\"110\", \"Not A(Brand\";v=\"24\", \"Microsoft Edge\";v=\"110\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36 Edg/110.0.1587.41'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_SEC_FETCH_SITE' => 'none'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6'
+    'HTTP_COOKIE' => 'wordpress_logged_in_86a9106ae65537651a8e456835b316ab=mmma%7C1677050114%7CbT7ng8zBap8ZomuqdwGcjq60357AHSocZMRZYk1b7uI%7C33c8845584b6d712613a75dad4396516b8f24492be531ba5872116c6f5fd0330; wp-settings-time-1=1675943997; _identity-frontend=ff4723d33490d1a30d5640e71fd7d121f9b6f51fd9475373e1d93f547b10525aa%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%224sSpK38KErySZpizaMO18REH4nXWPDrD%22%2C2592000%5D%22%3B%7D; _identity-backend=7223aaae057f741b3ba5c4d0725f6f17a2846f199c7fcfd05830ef9b8b13aedaa%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%224sSpK38KErySZpizaMO18REH4nXWPDrD%22%2C2592000%5D%22%3B%7D; _identity=d8255b71788c2d7fd95b28dd1be29a10ac8ef0387a20febdf79467c8c972139da%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%228phKWid8OO7INzOjfkQZ-9XONLK2UX40%22%2C2592000%5D%22%3B%7D'
+    'REQUEST_TIME_FLOAT' => 1676213297.8595
+    'REQUEST_TIME' => 1676213297
+]
+2023-02-12 23:07:16 [127.0.0.1][1][v2ndvbrlg6kja940sc6qiubpb8][error][yii\web\HttpException:404] yii\web\NotFoundHttpException: 未找到分类javascript in D:\phpstudy_pro\WWW\frontend\controllers\ArticleController.php:78
+Stack trace:
+#0 [internal function]: frontend\controllers\ArticleController->actionIndex('javascript')
+#1 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#2 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#3 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('index', Array)
+#4 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('article/index', Array)
+#5 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#6 D:\phpstudy_pro\WWW\frontend\web\index.php(17): yii\base\Application->run()
+#7 {main}
+2023-02-12 23:07:15 [127.0.0.1][1][v2ndvbrlg6kja940sc6qiubpb8][info][application] $_GET = [
+    'r' => 'article/index'
+    'cat' => 'javascript'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'wordpress_logged_in_86a9106ae65537651a8e456835b316ab' => 'mmma|1677050114|bT7ng8zBap8ZomuqdwGcjq60357AHSocZMRZYk1b7uI|33c8845584b6d712613a75dad4396516b8f24492be531ba5872116c6f5fd0330'
+    'wp-settings-time-1' => '1675943997'
+    '_identity-frontend' => 'ff4723d33490d1a30d5640e71fd7d121f9b6f51fd9475373e1d93f547b10525aa:2:{i:0;s:18:\"_identity-frontend\";i:1;s:46:\"[1,\"4sSpK38KErySZpizaMO18REH4nXWPDrD\",2592000]\";}'
+    '_identity-backend' => '7223aaae057f741b3ba5c4d0725f6f17a2846f199c7fcfd05830ef9b8b13aedaa:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"4sSpK38KErySZpizaMO18REH4nXWPDrD\",2592000]\";}'
+    '_identity' => 'd8255b71788c2d7fd95b28dd1be29a10ac8ef0387a20febdf79467c8c972139da:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"8phKWid8OO7INzOjfkQZ-9XONLK2UX40\",2592000]\";}'
+    'PHPSESSID' => 'v2ndvbrlg6kja940sc6qiubpb8'
+    '_csrf' => 'ffc9477bfa699665a36ad907bfbbcd7f639280a8830830bee482a14de311aeaca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"t2MGitV-1CLsx2Pc2yqmTqTHNvBvA_2h\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'D:\\phpstudy_pro\\WWW\\frontend\\web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '30670'
+    'SERVER_SOFTWARE' => 'PHP 7.3.4 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/index.php?r=article%2Findex&cat=javascript'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'D:\\phpstudy_pro\\WWW\\frontend\\web\\index.php'
+    'PHP_SELF' => '/index.php'
+    'QUERY_STRING' => 'r=article%2Findex&cat=javascript'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_SEC_CH_UA' => '\"Chromium\";v=\"110\", \"Not A(Brand\";v=\"24\", \"Microsoft Edge\";v=\"110\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36 Edg/110.0.1587.41'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_SEC_FETCH_SITE' => 'none'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6'
+    'HTTP_COOKIE' => 'wordpress_logged_in_86a9106ae65537651a8e456835b316ab=mmma%7C1677050114%7CbT7ng8zBap8ZomuqdwGcjq60357AHSocZMRZYk1b7uI%7C33c8845584b6d712613a75dad4396516b8f24492be531ba5872116c6f5fd0330; wp-settings-time-1=1675943997; _identity-frontend=ff4723d33490d1a30d5640e71fd7d121f9b6f51fd9475373e1d93f547b10525aa%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%224sSpK38KErySZpizaMO18REH4nXWPDrD%22%2C2592000%5D%22%3B%7D; _identity-backend=7223aaae057f741b3ba5c4d0725f6f17a2846f199c7fcfd05830ef9b8b13aedaa%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%224sSpK38KErySZpizaMO18REH4nXWPDrD%22%2C2592000%5D%22%3B%7D; _identity=d8255b71788c2d7fd95b28dd1be29a10ac8ef0387a20febdf79467c8c972139da%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%228phKWid8OO7INzOjfkQZ-9XONLK2UX40%22%2C2592000%5D%22%3B%7D; PHPSESSID=v2ndvbrlg6kja940sc6qiubpb8; _csrf=ffc9477bfa699665a36ad907bfbbcd7f639280a8830830bee482a14de311aeaca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22t2MGitV-1CLsx2Pc2yqmTqTHNvBvA_2h%22%3B%7D'
+    'REQUEST_TIME_FLOAT' => 1676214435.9069
+    'REQUEST_TIME' => 1676214435
+]

@@ -1,0 +1,121 @@
+Message-ID: <9cb6809d547d643b502740ba3318db8c@localhost>
+Date: Mon, 13 Feb 2023 20:22:26 +0800
+Subject: =?UTF-8?Q?=E6=9D=A5=E8=87=AA?= Feehi CMS
+ =?UTF-8?Q?=E5=89=8D=E5=8F=B0=E7=9A=84=E6=96=B0?=
+ =?UTF-8?Q?=E6=97=A5=E5=BF=97=E6=B6=88=E6=81=AF?=
+From: Feehi CMS robot  <admin@feehi.com>
+To: admin@feehi.com, liufee@126.com
+MIME-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+2023-02-13 20:22:26
+[127.0.0.1][1][3merpjkjnla62be7idt2r7tni6][error][yii\web\HttpException:4=
+00]
+yii\web\BadRequestHttpException: =E6=82=A8=E6=8F=90=E4=BA=A4=E7=9A=84=
+=E6=95=B0=E6=8D=AE=E6=97=A0=E6=B3=95=E8=A2=AB=E9=AA=8C=E8=AF=81=E3=80=82
+in D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\web\Controller.php:166
+Stack trace:
+#0 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Controller.php(155):
+yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#1 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Module.php(528):
+yii\base\Controller->runAction('comment', Array)
+#2 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\web\Application.php(103):
+yii\base\Module->runAction('article/comment', Array)
+#3 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Application.php(386):
+yii\web\Application->handleRequest(Object(yii\web\Request))
+#4 D:\phpstudy_pro\WWW\frontend\web\index.php(17):
+yii\base\Application->run()
+#5 {main}
+2023-02-13 20:22:26
+[127.0.0.1][1][3merpjkjnla62be7idt2r7tni6][info][application] $_GET =3D
+[
+    'r' =3D> 'article/comment'
+]
+
+$_POST =3D [
+    '_csrf' =3D>
+'tp39PKIYwoY2-Fi_Gf3WnK_ZUOSS7dyRd03fO70At_T125hbk12r8nGuCewutInv4ZQktMaOqe=
+tDIK1i_GyOgw=3D=3D'
+    'Comment' =3D> [
+        'aid' =3D> '1'
+        'content' =3D> '=E7=95=99=E8=A8=80=E6=B5=8B=E8=AF=95'
+        'reply_to' =3D> '0'
+        'nickname' =3D> 'mmma'
+        'email' =3D> ''
+        'website_url' =3D> ''
+    ]
+    'comment_post_ID' =3D> '114'
+    'akismet_comment_nonce' =3D> '32920dc775'
+    'ak_js' =3D> '101'
+    'comment_mail_notify' =3D> 'comment_mail_notify'
+]
+
+$_FILES =3D []
+
+$_COOKIE =3D [
+    'PHPSESSID' =3D> '3merpjkjnla62be7idt2r7tni6'
+    '_csrf' =3D>
+'9f2706488046c515dbfacd9850b7faa0d73404d18124f97fc02f695f5f055740a:2:{i:0;=
+s:5:\"_csrf\";i:1;s:32:\"mxRh4abkCPSY3yUoL-zJw6kq3uPs3Iov\";}'
+    '_identity' =3D>
+'d8255b71788c2d7fd95b28dd1be29a10ac8ef0387a20febdf79467c8c972139da:2:{i:0;=
+s:9:\"_identity\";i:1;s:46:\"[1,\"8phKWid8OO7INzOjfkQZ-9XONLK2UX40\",259=
+2000]\";}'
+]
+
+$_SESSION =3D [
+    '__flash' =3D> []
+    '__returnUrl' =3D> 'http://localhost:8080/'
+    '__id' =3D> 1
+]
+
+$_SERVER =3D [
+    'DOCUMENT_ROOT' =3D> 'D:\\phpstudy_pro\\WWW\\frontend\\web'
+    'REMOTE_ADDR' =3D> '127.0.0.1'
+    'REMOTE_PORT' =3D> '1787'
+    'SERVER_SOFTWARE' =3D> 'PHP 7.3.4 Development Server'
+    'SERVER_PROTOCOL' =3D> 'HTTP/1.1'
+    'SERVER_NAME' =3D> 'localhost'
+    'SERVER_PORT' =3D> '8080'
+    'REQUEST_URI' =3D> '/index.php?r=3Darticle%2Fcomment'
+    'REQUEST_METHOD' =3D> 'POST'
+    'SCRIPT_NAME' =3D> '/index.php'
+    'SCRIPT_FILENAME' =3D>
+'D:\\phpstudy_pro\\WWW\\frontend\\web\\index.php'
+    'PHP_SELF' =3D> '/index.php'
+    'QUERY_STRING' =3D> 'r=3Darticle%2Fcomment'
+    'HTTP_HOST' =3D> 'localhost:8080'
+    'HTTP_USER_AGENT' =3D> 'Mozilla/5.0 (Windows NT 10.0; Win64; x64;
+rv:109.0) Gecko/20100101 Firefox/109.0'
+    'HTTP_ACCEPT' =3D> '*/*'
+    'HTTP_ACCEPT_LANGUAGE' =3D>
+'zh-CN,zh;q=3D0.8,zh-TW;q=3D0.7,zh-HK;q=3D0.5,en-US;q=3D0.3,en;q=3D0.2'
+    'HTTP_ACCEPT_ENCODING' =3D> 'gzip, deflate, br'
+    'HTTP_X_CSRF_TOKEN' =3D>
+'tp39PKIYwoY2-Fi_Gf3WnK_ZUOSS7dyRd03fO70At_T125hbk12r8nGuCewutInv4ZQktMaOq=
+etDIK1i_GyOgw=3D=3D'
+    'CONTENT_TYPE' =3D> 'application/x-www-form-urlencoded;
+charset=3DUTF-8'
+    'HTTP_CONTENT_TYPE' =3D> 'application/x-www-form-urlencoded;
+charset=3DUTF-8'
+    'HTTP_X_REQUESTED_WITH' =3D> 'XMLHttpRequest'
+    'CONTENT_LENGTH' =3D> '375'
+    'HTTP_CONTENT_LENGTH' =3D> '375'
+    'HTTP_ORIGIN' =3D> 'http://localhost:8080'
+    'HTTP_CONNECTION' =3D> 'keep-alive'
+    'HTTP_REFERER' =3D>
+'http://localhost:8080/index.php?r=3Darticle%2Fview&id=3D1'
+    'HTTP_COOKIE' =3D> 'PHPSESSID=3D3merpjkjnla62be7idt2r7tni6;
+_csrf=3D9f2706488046c515dbfacd9850b7faa0d73404d18124f97fc02f695f5f055740a%3=
+A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22mxRh4abkCPSY3y=
+UoL-zJw6kq3uPs3Iov%22%3B%7D;
+_identity=3Dd8255b71788c2d7fd95b28dd1be29a10ac8ef0387a20febdf79467c8c9721=
+39da%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1=
+%2C%228phKWid8OO7INzOjfkQZ-9XONLK2UX40%22%2C2592000%5D%22%3B%7D'
+    'HTTP_SEC_FETCH_DEST' =3D> 'empty'
+    'HTTP_SEC_FETCH_MODE' =3D> 'cors'
+    'HTTP_SEC_FETCH_SITE' =3D> 'same-origin'
+    'REQUEST_TIME_FLOAT' =3D> 1676290946.0636
+    'REQUEST_TIME' =3D> 1676290946
+]

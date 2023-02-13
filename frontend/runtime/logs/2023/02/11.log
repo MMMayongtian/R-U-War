@@ -1,0 +1,532 @@
+2023-02-11 16:29:54 [::1][-][us54bpkrh2262mn1l8e33f9982][error][yii\web\HttpException:404] yii\web\NotFoundHttpException: 未找到分类view/15 in D:\wamp64\www\Feehi_CMS\frontend\controllers\ArticleController.php:78
+Stack trace:
+#0 [internal function]: frontend\controllers\ArticleController->actionIndex('view/15')
+#1 D:\wamp64\www\Feehi_CMS\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#2 D:\wamp64\www\Feehi_CMS\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#3 D:\wamp64\www\Feehi_CMS\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('index', Array)
+#4 D:\wamp64\www\Feehi_CMS\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('', Array)
+#5 D:\wamp64\www\Feehi_CMS\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#6 D:\wamp64\www\Feehi_CMS\frontend\web\index.php(17): yii\base\Application->run()
+#7 {main}
+2023-02-11 16:29:54 [::1][-][us54bpkrh2262mn1l8e33f9982][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'wordpress_logged_in_86a9106ae65537651a8e456835b316ab' => 'Wanwan|1677050114|nNbyePEJNhBeYqiB8uYorYIWKunt6T7RMavrsRtcg1G|76c634d69ffdb7d37ccc03881c3b12a5ed3cc861fc62b27ec0109e2af9f9c54b'
+    'wp-settings-time-1' => '1675886118'
+    '_identity-frontend' => 'd4b7ad72a8e6c6d95ab49812ead33890fe92444bd5e60117090753dae4aa3b2ba:2:{i:0;s:18:\"_identity-frontend\";i:1;s:46:\"[1,\"RxcspEY_9Aj9arphhsD7ftuXdBpzNgju\",2592000]\";}'
+    '_identity-backend' => '8fa528a6c635a32cfb8b3a23f8f9872ffcee529b5080a0dca075b7006fa1656aa:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"RxcspEY_9Aj9arphhsD7ftuXdBpzNgju\",2592000]\";}'
+    'PHPSESSID' => 'us54bpkrh2262mn1l8e33f9982'
+    '_csrf' => '8f12780b0d01b05207aacf36098e7034dad4e7f453ae4b50b8a478cdf117cda1a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"hd5-6jTF3KmXCkaqKPbjn7QjwC6PLzIF\";}'
+    'BACKEND_FEEHICMS' => 'eltnkqpdvgjugng28dfirkjug3'
+    '_csrf_backend' => '2caf7f094267ad4b504eb2416bf38784ab690312fd06d9e5e6c441a326b66caea:2:{i:0;s:13:\"_csrf_backend\";i:1;s:32:\"P1a_RqW3CrUA2lvZjy3V1xla3jXQ0m4W\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'language' => 'zh-CN'
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'D:\\wamp64\\www\\Feehi_CMS\\frontend\\web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '53690'
+    'SERVER_SOFTWARE' => 'PHP 7.3.4 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/view/15'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'D:\\wamp64\\www\\Feehi_CMS\\frontend\\web\\index.php'
+    'PATH_INFO' => '/view/15'
+    'PHP_SELF' => '/index.php/view/15'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_SEC_CH_UA' => '\"Not_A Brand\";v=\"99\", \"Microsoft Edge\";v=\"109\", \"Chromium\";v=\"109\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36 Edg/109.0.1518.78'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_REFERER' => 'http://localhost:8080/index.php?r=search%2Findex&q=%E5%B0%8F%E6%8A%84'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6'
+    'HTTP_COOKIE' => 'wordpress_logged_in_86a9106ae65537651a8e456835b316ab=Wanwan%7C1677050114%7CnNbyePEJNhBeYqiB8uYorYIWKunt6T7RMavrsRtcg1G%7C76c634d69ffdb7d37ccc03881c3b12a5ed3cc861fc62b27ec0109e2af9f9c54b; wp-settings-time-1=1675886118; _identity-frontend=d4b7ad72a8e6c6d95ab49812ead33890fe92444bd5e60117090753dae4aa3b2ba%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22RxcspEY_9Aj9arphhsD7ftuXdBpzNgju%22%2C2592000%5D%22%3B%7D; _identity-backend=8fa528a6c635a32cfb8b3a23f8f9872ffcee529b5080a0dca075b7006fa1656aa%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22RxcspEY_9Aj9arphhsD7ftuXdBpzNgju%22%2C2592000%5D%22%3B%7D; PHPSESSID=us54bpkrh2262mn1l8e33f9982; _csrf=8f12780b0d01b05207aacf36098e7034dad4e7f453ae4b50b8a478cdf117cda1a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22hd5-6jTF3KmXCkaqKPbjn7QjwC6PLzIF%22%3B%7D; BACKEND_FEEHICMS=eltnkqpdvgjugng28dfirkjug3; _csrf_backend=2caf7f094267ad4b504eb2416bf38784ab690312fd06d9e5e6c441a326b66caea%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf_backend%22%3Bi%3A1%3Bs%3A32%3A%22P1a_RqW3CrUA2lvZjy3V1xla3jXQ0m4W%22%3B%7D'
+    'REQUEST_TIME_FLOAT' => 1676104194.7531
+    'REQUEST_TIME' => 1676104194
+]
+2023-02-11 16:32:31 [::1][-][us54bpkrh2262mn1l8e33f9982][error][yii\web\HttpException:404] yii\web\NotFoundHttpException: 未找到分类view/11 in D:\wamp64\www\Feehi_CMS\frontend\controllers\ArticleController.php:78
+Stack trace:
+#0 [internal function]: frontend\controllers\ArticleController->actionIndex('view/11')
+#1 D:\wamp64\www\Feehi_CMS\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#2 D:\wamp64\www\Feehi_CMS\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#3 D:\wamp64\www\Feehi_CMS\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('index', Array)
+#4 D:\wamp64\www\Feehi_CMS\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('', Array)
+#5 D:\wamp64\www\Feehi_CMS\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#6 D:\wamp64\www\Feehi_CMS\frontend\web\index.php(17): yii\base\Application->run()
+#7 {main}
+2023-02-11 16:32:31 [::1][-][us54bpkrh2262mn1l8e33f9982][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'wordpress_logged_in_86a9106ae65537651a8e456835b316ab' => 'Wanwan|1677050114|nNbyePEJNhBeYqiB8uYorYIWKunt6T7RMavrsRtcg1G|76c634d69ffdb7d37ccc03881c3b12a5ed3cc861fc62b27ec0109e2af9f9c54b'
+    'wp-settings-time-1' => '1675886118'
+    '_identity-frontend' => 'd4b7ad72a8e6c6d95ab49812ead33890fe92444bd5e60117090753dae4aa3b2ba:2:{i:0;s:18:\"_identity-frontend\";i:1;s:46:\"[1,\"RxcspEY_9Aj9arphhsD7ftuXdBpzNgju\",2592000]\";}'
+    '_identity-backend' => '8fa528a6c635a32cfb8b3a23f8f9872ffcee529b5080a0dca075b7006fa1656aa:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"RxcspEY_9Aj9arphhsD7ftuXdBpzNgju\",2592000]\";}'
+    'PHPSESSID' => 'us54bpkrh2262mn1l8e33f9982'
+    '_csrf' => '8f12780b0d01b05207aacf36098e7034dad4e7f453ae4b50b8a478cdf117cda1a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"hd5-6jTF3KmXCkaqKPbjn7QjwC6PLzIF\";}'
+    'BACKEND_FEEHICMS' => 'eltnkqpdvgjugng28dfirkjug3'
+    '_csrf_backend' => '2caf7f094267ad4b504eb2416bf38784ab690312fd06d9e5e6c441a326b66caea:2:{i:0;s:13:\"_csrf_backend\";i:1;s:32:\"P1a_RqW3CrUA2lvZjy3V1xla3jXQ0m4W\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'language' => 'zh-CN'
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'D:\\wamp64\\www\\Feehi_CMS\\frontend\\web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '53913'
+    'SERVER_SOFTWARE' => 'PHP 7.3.4 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/view/11'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'D:\\wamp64\\www\\Feehi_CMS\\frontend\\web\\index.php'
+    'PATH_INFO' => '/view/11'
+    'PHP_SELF' => '/index.php/view/11'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_SEC_CH_UA' => '\"Not_A Brand\";v=\"99\", \"Microsoft Edge\";v=\"109\", \"Chromium\";v=\"109\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36 Edg/109.0.1518.78'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_REFERER' => 'http://localhost:8080/index.php?r=search%2Findex&q=%E5%B0%8F%E6%8A%84'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6'
+    'HTTP_COOKIE' => 'wordpress_logged_in_86a9106ae65537651a8e456835b316ab=Wanwan%7C1677050114%7CnNbyePEJNhBeYqiB8uYorYIWKunt6T7RMavrsRtcg1G%7C76c634d69ffdb7d37ccc03881c3b12a5ed3cc861fc62b27ec0109e2af9f9c54b; wp-settings-time-1=1675886118; _identity-frontend=d4b7ad72a8e6c6d95ab49812ead33890fe92444bd5e60117090753dae4aa3b2ba%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22RxcspEY_9Aj9arphhsD7ftuXdBpzNgju%22%2C2592000%5D%22%3B%7D; _identity-backend=8fa528a6c635a32cfb8b3a23f8f9872ffcee529b5080a0dca075b7006fa1656aa%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22RxcspEY_9Aj9arphhsD7ftuXdBpzNgju%22%2C2592000%5D%22%3B%7D; PHPSESSID=us54bpkrh2262mn1l8e33f9982; _csrf=8f12780b0d01b05207aacf36098e7034dad4e7f453ae4b50b8a478cdf117cda1a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22hd5-6jTF3KmXCkaqKPbjn7QjwC6PLzIF%22%3B%7D; BACKEND_FEEHICMS=eltnkqpdvgjugng28dfirkjug3; _csrf_backend=2caf7f094267ad4b504eb2416bf38784ab690312fd06d9e5e6c441a326b66caea%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf_backend%22%3Bi%3A1%3Bs%3A32%3A%22P1a_RqW3CrUA2lvZjy3V1xla3jXQ0m4W%22%3B%7D'
+    'REQUEST_TIME_FLOAT' => 1676104351.1268
+    'REQUEST_TIME' => 1676104351
+]
+2023-02-11 16:32:35 [::1][-][us54bpkrh2262mn1l8e33f9982][error][yii\web\HttpException:404] yii\web\NotFoundHttpException: 未找到分类view/16 in D:\wamp64\www\Feehi_CMS\frontend\controllers\ArticleController.php:78
+Stack trace:
+#0 [internal function]: frontend\controllers\ArticleController->actionIndex('view/16')
+#1 D:\wamp64\www\Feehi_CMS\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#2 D:\wamp64\www\Feehi_CMS\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#3 D:\wamp64\www\Feehi_CMS\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('index', Array)
+#4 D:\wamp64\www\Feehi_CMS\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('', Array)
+#5 D:\wamp64\www\Feehi_CMS\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#6 D:\wamp64\www\Feehi_CMS\frontend\web\index.php(17): yii\base\Application->run()
+#7 {main}
+2023-02-11 16:32:35 [::1][-][us54bpkrh2262mn1l8e33f9982][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'wordpress_logged_in_86a9106ae65537651a8e456835b316ab' => 'Wanwan|1677050114|nNbyePEJNhBeYqiB8uYorYIWKunt6T7RMavrsRtcg1G|76c634d69ffdb7d37ccc03881c3b12a5ed3cc861fc62b27ec0109e2af9f9c54b'
+    'wp-settings-time-1' => '1675886118'
+    '_identity-frontend' => 'd4b7ad72a8e6c6d95ab49812ead33890fe92444bd5e60117090753dae4aa3b2ba:2:{i:0;s:18:\"_identity-frontend\";i:1;s:46:\"[1,\"RxcspEY_9Aj9arphhsD7ftuXdBpzNgju\",2592000]\";}'
+    '_identity-backend' => '8fa528a6c635a32cfb8b3a23f8f9872ffcee529b5080a0dca075b7006fa1656aa:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"RxcspEY_9Aj9arphhsD7ftuXdBpzNgju\",2592000]\";}'
+    'PHPSESSID' => 'us54bpkrh2262mn1l8e33f9982'
+    '_csrf' => '8f12780b0d01b05207aacf36098e7034dad4e7f453ae4b50b8a478cdf117cda1a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"hd5-6jTF3KmXCkaqKPbjn7QjwC6PLzIF\";}'
+    'BACKEND_FEEHICMS' => 'eltnkqpdvgjugng28dfirkjug3'
+    '_csrf_backend' => '2caf7f094267ad4b504eb2416bf38784ab690312fd06d9e5e6c441a326b66caea:2:{i:0;s:13:\"_csrf_backend\";i:1;s:32:\"P1a_RqW3CrUA2lvZjy3V1xla3jXQ0m4W\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'language' => 'zh-CN'
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'D:\\wamp64\\www\\Feehi_CMS\\frontend\\web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '53931'
+    'SERVER_SOFTWARE' => 'PHP 7.3.4 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/view/16'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'D:\\wamp64\\www\\Feehi_CMS\\frontend\\web\\index.php'
+    'PATH_INFO' => '/view/16'
+    'PHP_SELF' => '/index.php/view/16'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_SEC_CH_UA' => '\"Not_A Brand\";v=\"99\", \"Microsoft Edge\";v=\"109\", \"Chromium\";v=\"109\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36 Edg/109.0.1518.78'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_REFERER' => 'http://localhost:8080/index.php?r=search%2Findex&q=%E5%B0%8F%E6%8A%84'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6'
+    'HTTP_COOKIE' => 'wordpress_logged_in_86a9106ae65537651a8e456835b316ab=Wanwan%7C1677050114%7CnNbyePEJNhBeYqiB8uYorYIWKunt6T7RMavrsRtcg1G%7C76c634d69ffdb7d37ccc03881c3b12a5ed3cc861fc62b27ec0109e2af9f9c54b; wp-settings-time-1=1675886118; _identity-frontend=d4b7ad72a8e6c6d95ab49812ead33890fe92444bd5e60117090753dae4aa3b2ba%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22RxcspEY_9Aj9arphhsD7ftuXdBpzNgju%22%2C2592000%5D%22%3B%7D; _identity-backend=8fa528a6c635a32cfb8b3a23f8f9872ffcee529b5080a0dca075b7006fa1656aa%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22RxcspEY_9Aj9arphhsD7ftuXdBpzNgju%22%2C2592000%5D%22%3B%7D; PHPSESSID=us54bpkrh2262mn1l8e33f9982; _csrf=8f12780b0d01b05207aacf36098e7034dad4e7f453ae4b50b8a478cdf117cda1a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22hd5-6jTF3KmXCkaqKPbjn7QjwC6PLzIF%22%3B%7D; BACKEND_FEEHICMS=eltnkqpdvgjugng28dfirkjug3; _csrf_backend=2caf7f094267ad4b504eb2416bf38784ab690312fd06d9e5e6c441a326b66caea%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf_backend%22%3Bi%3A1%3Bs%3A32%3A%22P1a_RqW3CrUA2lvZjy3V1xla3jXQ0m4W%22%3B%7D'
+    'REQUEST_TIME_FLOAT' => 1676104355.0587
+    'REQUEST_TIME' => 1676104355
+]
+2023-02-11 16:39:39 [::1][-][us54bpkrh2262mn1l8e33f9982][error][yii\web\HttpException:404] yii\web\NotFoundHttpException: 未找到分类view/11 in D:\wamp64\www\Feehi_CMS\frontend\controllers\ArticleController.php:78
+Stack trace:
+#0 [internal function]: frontend\controllers\ArticleController->actionIndex('view/11')
+#1 D:\wamp64\www\Feehi_CMS\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#2 D:\wamp64\www\Feehi_CMS\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#3 D:\wamp64\www\Feehi_CMS\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('index', Array)
+#4 D:\wamp64\www\Feehi_CMS\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('', Array)
+#5 D:\wamp64\www\Feehi_CMS\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#6 D:\wamp64\www\Feehi_CMS\frontend\web\index.php(17): yii\base\Application->run()
+#7 {main}
+2023-02-11 16:39:39 [::1][-][us54bpkrh2262mn1l8e33f9982][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'wordpress_logged_in_86a9106ae65537651a8e456835b316ab' => 'Wanwan|1677050114|nNbyePEJNhBeYqiB8uYorYIWKunt6T7RMavrsRtcg1G|76c634d69ffdb7d37ccc03881c3b12a5ed3cc861fc62b27ec0109e2af9f9c54b'
+    'wp-settings-time-1' => '1675886118'
+    '_identity-frontend' => 'd4b7ad72a8e6c6d95ab49812ead33890fe92444bd5e60117090753dae4aa3b2ba:2:{i:0;s:18:\"_identity-frontend\";i:1;s:46:\"[1,\"RxcspEY_9Aj9arphhsD7ftuXdBpzNgju\",2592000]\";}'
+    '_identity-backend' => '8fa528a6c635a32cfb8b3a23f8f9872ffcee529b5080a0dca075b7006fa1656aa:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"RxcspEY_9Aj9arphhsD7ftuXdBpzNgju\",2592000]\";}'
+    'PHPSESSID' => 'us54bpkrh2262mn1l8e33f9982'
+    '_csrf' => '8f12780b0d01b05207aacf36098e7034dad4e7f453ae4b50b8a478cdf117cda1a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"hd5-6jTF3KmXCkaqKPbjn7QjwC6PLzIF\";}'
+    'BACKEND_FEEHICMS' => 'eltnkqpdvgjugng28dfirkjug3'
+    '_csrf_backend' => '2caf7f094267ad4b504eb2416bf38784ab690312fd06d9e5e6c441a326b66caea:2:{i:0;s:13:\"_csrf_backend\";i:1;s:32:\"P1a_RqW3CrUA2lvZjy3V1xla3jXQ0m4W\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'language' => 'zh-CN'
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'D:\\wamp64\\www\\Feehi_CMS\\frontend\\web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '54895'
+    'SERVER_SOFTWARE' => 'PHP 7.3.4 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/view/11'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'D:\\wamp64\\www\\Feehi_CMS\\frontend\\web\\index.php'
+    'PATH_INFO' => '/view/11'
+    'PHP_SELF' => '/index.php/view/11'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_SEC_CH_UA' => '\"Not_A Brand\";v=\"99\", \"Microsoft Edge\";v=\"109\", \"Chromium\";v=\"109\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36 Edg/109.0.1518.78'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_REFERER' => 'http://localhost:8080/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6'
+    'HTTP_COOKIE' => 'wordpress_logged_in_86a9106ae65537651a8e456835b316ab=Wanwan%7C1677050114%7CnNbyePEJNhBeYqiB8uYorYIWKunt6T7RMavrsRtcg1G%7C76c634d69ffdb7d37ccc03881c3b12a5ed3cc861fc62b27ec0109e2af9f9c54b; wp-settings-time-1=1675886118; _identity-frontend=d4b7ad72a8e6c6d95ab49812ead33890fe92444bd5e60117090753dae4aa3b2ba%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22RxcspEY_9Aj9arphhsD7ftuXdBpzNgju%22%2C2592000%5D%22%3B%7D; _identity-backend=8fa528a6c635a32cfb8b3a23f8f9872ffcee529b5080a0dca075b7006fa1656aa%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22RxcspEY_9Aj9arphhsD7ftuXdBpzNgju%22%2C2592000%5D%22%3B%7D; PHPSESSID=us54bpkrh2262mn1l8e33f9982; _csrf=8f12780b0d01b05207aacf36098e7034dad4e7f453ae4b50b8a478cdf117cda1a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22hd5-6jTF3KmXCkaqKPbjn7QjwC6PLzIF%22%3B%7D; BACKEND_FEEHICMS=eltnkqpdvgjugng28dfirkjug3; _csrf_backend=2caf7f094267ad4b504eb2416bf38784ab690312fd06d9e5e6c441a326b66caea%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf_backend%22%3Bi%3A1%3Bs%3A32%3A%22P1a_RqW3CrUA2lvZjy3V1xla3jXQ0m4W%22%3B%7D'
+    'REQUEST_TIME_FLOAT' => 1676104779.8888
+    'REQUEST_TIME' => 1676104779
+]
+2023-02-11 16:57:46 [::1][-][us54bpkrh2262mn1l8e33f9982][error][yii\web\HttpException:404] yii\web\NotFoundHttpException: 未找到分类view/11 in D:\wamp64\www\Feehi_CMS\frontend\controllers\ArticleController.php:78
+Stack trace:
+#0 [internal function]: frontend\controllers\ArticleController->actionIndex('view/11')
+#1 D:\wamp64\www\Feehi_CMS\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#2 D:\wamp64\www\Feehi_CMS\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#3 D:\wamp64\www\Feehi_CMS\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('index', Array)
+#4 D:\wamp64\www\Feehi_CMS\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('', Array)
+#5 D:\wamp64\www\Feehi_CMS\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#6 D:\wamp64\www\Feehi_CMS\frontend\web\index.php(17): yii\base\Application->run()
+#7 {main}
+2023-02-11 16:57:45 [::1][-][us54bpkrh2262mn1l8e33f9982][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'wordpress_logged_in_86a9106ae65537651a8e456835b316ab' => 'Wanwan|1677050114|nNbyePEJNhBeYqiB8uYorYIWKunt6T7RMavrsRtcg1G|76c634d69ffdb7d37ccc03881c3b12a5ed3cc861fc62b27ec0109e2af9f9c54b'
+    'wp-settings-time-1' => '1675886118'
+    '_identity-frontend' => 'd4b7ad72a8e6c6d95ab49812ead33890fe92444bd5e60117090753dae4aa3b2ba:2:{i:0;s:18:\"_identity-frontend\";i:1;s:46:\"[1,\"RxcspEY_9Aj9arphhsD7ftuXdBpzNgju\",2592000]\";}'
+    '_identity-backend' => '8fa528a6c635a32cfb8b3a23f8f9872ffcee529b5080a0dca075b7006fa1656aa:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"RxcspEY_9Aj9arphhsD7ftuXdBpzNgju\",2592000]\";}'
+    'PHPSESSID' => 'us54bpkrh2262mn1l8e33f9982'
+    '_csrf' => '8f12780b0d01b05207aacf36098e7034dad4e7f453ae4b50b8a478cdf117cda1a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"hd5-6jTF3KmXCkaqKPbjn7QjwC6PLzIF\";}'
+    'BACKEND_FEEHICMS' => 'eltnkqpdvgjugng28dfirkjug3'
+    '_csrf_backend' => '2caf7f094267ad4b504eb2416bf38784ab690312fd06d9e5e6c441a326b66caea:2:{i:0;s:13:\"_csrf_backend\";i:1;s:32:\"P1a_RqW3CrUA2lvZjy3V1xla3jXQ0m4W\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'language' => 'zh-CN'
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'D:\\wamp64\\www\\Feehi_CMS\\frontend\\web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '57410'
+    'SERVER_SOFTWARE' => 'PHP 7.3.4 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/view/11'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'D:\\wamp64\\www\\Feehi_CMS\\frontend\\web\\index.php'
+    'PATH_INFO' => '/view/11'
+    'PHP_SELF' => '/index.php/view/11'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_SEC_CH_UA' => '\"Not_A Brand\";v=\"99\", \"Microsoft Edge\";v=\"109\", \"Chromium\";v=\"109\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36 Edg/109.0.1518.78'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_REFERER' => 'http://localhost:8080/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6'
+    'HTTP_COOKIE' => 'wordpress_logged_in_86a9106ae65537651a8e456835b316ab=Wanwan%7C1677050114%7CnNbyePEJNhBeYqiB8uYorYIWKunt6T7RMavrsRtcg1G%7C76c634d69ffdb7d37ccc03881c3b12a5ed3cc861fc62b27ec0109e2af9f9c54b; wp-settings-time-1=1675886118; _identity-frontend=d4b7ad72a8e6c6d95ab49812ead33890fe92444bd5e60117090753dae4aa3b2ba%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22RxcspEY_9Aj9arphhsD7ftuXdBpzNgju%22%2C2592000%5D%22%3B%7D; _identity-backend=8fa528a6c635a32cfb8b3a23f8f9872ffcee529b5080a0dca075b7006fa1656aa%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22RxcspEY_9Aj9arphhsD7ftuXdBpzNgju%22%2C2592000%5D%22%3B%7D; PHPSESSID=us54bpkrh2262mn1l8e33f9982; _csrf=8f12780b0d01b05207aacf36098e7034dad4e7f453ae4b50b8a478cdf117cda1a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22hd5-6jTF3KmXCkaqKPbjn7QjwC6PLzIF%22%3B%7D; BACKEND_FEEHICMS=eltnkqpdvgjugng28dfirkjug3; _csrf_backend=2caf7f094267ad4b504eb2416bf38784ab690312fd06d9e5e6c441a326b66caea%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf_backend%22%3Bi%3A1%3Bs%3A32%3A%22P1a_RqW3CrUA2lvZjy3V1xla3jXQ0m4W%22%3B%7D'
+    'REQUEST_TIME_FLOAT' => 1676105865.9653
+    'REQUEST_TIME' => 1676105865
+]
+2023-02-11 17:32:02 [::1][-][us54bpkrh2262mn1l8e33f9982][error][yii\web\HttpException:404] yii\web\NotFoundHttpException: 未找到分类view/15 in D:\wamp64\www\Feehi_CMS\frontend\controllers\ArticleController.php:78
+Stack trace:
+#0 [internal function]: frontend\controllers\ArticleController->actionIndex('view/15')
+#1 D:\wamp64\www\Feehi_CMS\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#2 D:\wamp64\www\Feehi_CMS\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#3 D:\wamp64\www\Feehi_CMS\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('index', Array)
+#4 D:\wamp64\www\Feehi_CMS\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('', Array)
+#5 D:\wamp64\www\Feehi_CMS\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#6 D:\wamp64\www\Feehi_CMS\frontend\web\index.php(17): yii\base\Application->run()
+#7 {main}
+2023-02-11 17:32:02 [::1][-][us54bpkrh2262mn1l8e33f9982][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'wordpress_logged_in_86a9106ae65537651a8e456835b316ab' => 'Wanwan|1677050114|nNbyePEJNhBeYqiB8uYorYIWKunt6T7RMavrsRtcg1G|76c634d69ffdb7d37ccc03881c3b12a5ed3cc861fc62b27ec0109e2af9f9c54b'
+    'wp-settings-time-1' => '1675886118'
+    '_identity-frontend' => 'd4b7ad72a8e6c6d95ab49812ead33890fe92444bd5e60117090753dae4aa3b2ba:2:{i:0;s:18:\"_identity-frontend\";i:1;s:46:\"[1,\"RxcspEY_9Aj9arphhsD7ftuXdBpzNgju\",2592000]\";}'
+    '_identity-backend' => '8fa528a6c635a32cfb8b3a23f8f9872ffcee529b5080a0dca075b7006fa1656aa:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"RxcspEY_9Aj9arphhsD7ftuXdBpzNgju\",2592000]\";}'
+    'PHPSESSID' => 'us54bpkrh2262mn1l8e33f9982'
+    '_csrf' => '8f12780b0d01b05207aacf36098e7034dad4e7f453ae4b50b8a478cdf117cda1a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"hd5-6jTF3KmXCkaqKPbjn7QjwC6PLzIF\";}'
+    'BACKEND_FEEHICMS' => 'eltnkqpdvgjugng28dfirkjug3'
+    '_csrf_backend' => '2caf7f094267ad4b504eb2416bf38784ab690312fd06d9e5e6c441a326b66caea:2:{i:0;s:13:\"_csrf_backend\";i:1;s:32:\"P1a_RqW3CrUA2lvZjy3V1xla3jXQ0m4W\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'language' => 'zh-CN'
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'D:\\wamp64\\www\\Feehi_CMS\\frontend\\web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '52930'
+    'SERVER_SOFTWARE' => 'PHP 7.3.4 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/view/15'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'D:\\wamp64\\www\\Feehi_CMS\\frontend\\web\\index.php'
+    'PATH_INFO' => '/view/15'
+    'PHP_SELF' => '/index.php/view/15'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_SEC_CH_UA' => '\"Not_A Brand\";v=\"99\", \"Microsoft Edge\";v=\"109\", \"Chromium\";v=\"109\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36 Edg/109.0.1518.78'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_REFERER' => 'http://localhost:8080/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6'
+    'HTTP_COOKIE' => 'wordpress_logged_in_86a9106ae65537651a8e456835b316ab=Wanwan%7C1677050114%7CnNbyePEJNhBeYqiB8uYorYIWKunt6T7RMavrsRtcg1G%7C76c634d69ffdb7d37ccc03881c3b12a5ed3cc861fc62b27ec0109e2af9f9c54b; wp-settings-time-1=1675886118; _identity-frontend=d4b7ad72a8e6c6d95ab49812ead33890fe92444bd5e60117090753dae4aa3b2ba%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22RxcspEY_9Aj9arphhsD7ftuXdBpzNgju%22%2C2592000%5D%22%3B%7D; _identity-backend=8fa528a6c635a32cfb8b3a23f8f9872ffcee529b5080a0dca075b7006fa1656aa%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22RxcspEY_9Aj9arphhsD7ftuXdBpzNgju%22%2C2592000%5D%22%3B%7D; PHPSESSID=us54bpkrh2262mn1l8e33f9982; _csrf=8f12780b0d01b05207aacf36098e7034dad4e7f453ae4b50b8a478cdf117cda1a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22hd5-6jTF3KmXCkaqKPbjn7QjwC6PLzIF%22%3B%7D; BACKEND_FEEHICMS=eltnkqpdvgjugng28dfirkjug3; _csrf_backend=2caf7f094267ad4b504eb2416bf38784ab690312fd06d9e5e6c441a326b66caea%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf_backend%22%3Bi%3A1%3Bs%3A32%3A%22P1a_RqW3CrUA2lvZjy3V1xla3jXQ0m4W%22%3B%7D'
+    'REQUEST_TIME_FLOAT' => 1676107922.3807
+    'REQUEST_TIME' => 1676107922
+]
+2023-02-11 18:03:57 [::1][-][bmagtnp5hi0eeccnaku2s0favo][error][yii\base\UnknownPropertyException] yii\base\UnknownPropertyException: Getting unknown property: frontend\widgets\SNSView::template in D:\wamp64\www\Feehi_CMS\vendor\yiisoft\yii2\base\Component.php:154
+Stack trace:
+#0 D:\wamp64\www\Feehi_CMS\frontend\widgets\SNSView.php(43): yii\base\Component->__get('template')
+#1 D:\wamp64\www\Feehi_CMS\vendor\yiisoft\yii2\base\Widget.php(140): frontend\widgets\SNSView->run()
+#2 D:\wamp64\www\Feehi_CMS\frontend\views\article\_sidebar.php(24): yii\base\Widget::widget()
+#3 D:\wamp64\www\Feehi_CMS\vendor\yiisoft\yii2\base\View.php(348): require('D:\\wamp64\\www\\F...')
+#4 D:\wamp64\www\Feehi_CMS\vendor\yiisoft\yii2\base\View.php(257): yii\base\View->renderPhpFile('D:\\wamp64\\www\\F...', Array)
+#5 D:\wamp64\www\Feehi_CMS\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile('D:\\wamp64\\www\\F...', Array, NULL)
+#6 D:\wamp64\www\Feehi_CMS\frontend\views\article\index.php(75): yii\base\View->render('_sidebar', Array)
+#7 D:\wamp64\www\Feehi_CMS\vendor\yiisoft\yii2\base\View.php(348): require('D:\\wamp64\\www\\F...')
+#8 D:\wamp64\www\Feehi_CMS\vendor\yiisoft\yii2\base\View.php(257): yii\base\View->renderPhpFile('D:\\wamp64\\www\\F...', Array)
+#9 D:\wamp64\www\Feehi_CMS\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile('D:\\wamp64\\www\\F...', Array, Object(frontend\controllers\ArticleController))
+#10 D:\wamp64\www\Feehi_CMS\vendor\yiisoft\yii2\base\Controller.php(384): yii\base\View->render('index', Array, Object(frontend\controllers\ArticleController))
+#11 D:\wamp64\www\Feehi_CMS\frontend\controllers\ArticleController.php(108): yii\base\Controller->render('index', Array)
+#12 [internal function]: frontend\controllers\ArticleController->actionIndex('')
+#13 D:\wamp64\www\Feehi_CMS\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#14 D:\wamp64\www\Feehi_CMS\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#15 D:\wamp64\www\Feehi_CMS\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('index', Array)
+#16 D:\wamp64\www\Feehi_CMS\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('', Array)
+#17 D:\wamp64\www\Feehi_CMS\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#18 D:\wamp64\www\Feehi_CMS\frontend\web\index.php(17): yii\base\Application->run()
+#19 {main}
+2023-02-11 18:03:56 [::1][-][bmagtnp5hi0eeccnaku2s0favo][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'wordpress_logged_in_86a9106ae65537651a8e456835b316ab' => 'Wanwan|1677050114|nNbyePEJNhBeYqiB8uYorYIWKunt6T7RMavrsRtcg1G|76c634d69ffdb7d37ccc03881c3b12a5ed3cc861fc62b27ec0109e2af9f9c54b'
+    'wp-settings-time-1' => '1675886118'
+    '_identity-frontend' => 'd4b7ad72a8e6c6d95ab49812ead33890fe92444bd5e60117090753dae4aa3b2ba:2:{i:0;s:18:\"_identity-frontend\";i:1;s:46:\"[1,\"RxcspEY_9Aj9arphhsD7ftuXdBpzNgju\",2592000]\";}'
+    '_identity-backend' => '8fa528a6c635a32cfb8b3a23f8f9872ffcee529b5080a0dca075b7006fa1656aa:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"RxcspEY_9Aj9arphhsD7ftuXdBpzNgju\",2592000]\";}'
+    'BACKEND_FEEHICMS' => 'vf7gdk9uck6t284a3l2t1b4vej'
+    '_csrf_backend' => '71b58b1e777965b031eb72ec1bef83c2a86c753674db9f82dcaf89465beab4d9a:2:{i:0;s:13:\"_csrf_backend\";i:1;s:32:\"1F6LKC_qzNdOw6-jQfda5Oqd99CqCDgA\";}'
+    'PHPSESSID' => 'bmagtnp5hi0eeccnaku2s0favo'
+    '_csrf' => '66c6c25c1e348d0054d91413d6d27e5b9e280a547f5f063fe2b9cd6056917037a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"2IpclBiNIatHdYtiRKdLnNrBL_0a7MG6\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'D:\\wamp64\\www\\Feehi_CMS\\frontend\\web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '58941'
+    'SERVER_SOFTWARE' => 'PHP 7.3.4 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'D:\\wamp64\\www\\Feehi_CMS\\frontend\\web\\index.php'
+    'PHP_SELF' => '/index.php'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_SEC_CH_UA' => '\"Chromium\";v=\"110\", \"Not A(Brand\";v=\"24\", \"Microsoft Edge\";v=\"110\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36 Edg/110.0.1587.41'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_REFERER' => 'http://localhost:8080/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6'
+    'HTTP_COOKIE' => 'wordpress_logged_in_86a9106ae65537651a8e456835b316ab=Wanwan%7C1677050114%7CnNbyePEJNhBeYqiB8uYorYIWKunt6T7RMavrsRtcg1G%7C76c634d69ffdb7d37ccc03881c3b12a5ed3cc861fc62b27ec0109e2af9f9c54b; wp-settings-time-1=1675886118; _identity-frontend=d4b7ad72a8e6c6d95ab49812ead33890fe92444bd5e60117090753dae4aa3b2ba%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22RxcspEY_9Aj9arphhsD7ftuXdBpzNgju%22%2C2592000%5D%22%3B%7D; _identity-backend=8fa528a6c635a32cfb8b3a23f8f9872ffcee529b5080a0dca075b7006fa1656aa%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22RxcspEY_9Aj9arphhsD7ftuXdBpzNgju%22%2C2592000%5D%22%3B%7D; BACKEND_FEEHICMS=vf7gdk9uck6t284a3l2t1b4vej; _csrf_backend=71b58b1e777965b031eb72ec1bef83c2a86c753674db9f82dcaf89465beab4d9a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf_backend%22%3Bi%3A1%3Bs%3A32%3A%221F6LKC_qzNdOw6-jQfda5Oqd99CqCDgA%22%3B%7D; PHPSESSID=bmagtnp5hi0eeccnaku2s0favo; _csrf=66c6c25c1e348d0054d91413d6d27e5b9e280a547f5f063fe2b9cd6056917037a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%222IpclBiNIatHdYtiRKdLnNrBL_0a7MG6%22%3B%7D'
+    'REQUEST_TIME_FLOAT' => 1676109836.9904
+    'REQUEST_TIME' => 1676109836
+]
+2023-02-11 20:03:26 [::1][-][bmagtnp5hi0eeccnaku2s0favo][error][yii\web\HttpException:404] yii\web\NotFoundHttpException: 未找到分类view/16 in D:\wamp64\www\Feehi_CMS\frontend\controllers\ArticleController.php:78
+Stack trace:
+#0 [internal function]: frontend\controllers\ArticleController->actionIndex('view/16')
+#1 D:\wamp64\www\Feehi_CMS\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#2 D:\wamp64\www\Feehi_CMS\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#3 D:\wamp64\www\Feehi_CMS\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('index', Array)
+#4 D:\wamp64\www\Feehi_CMS\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('', Array)
+#5 D:\wamp64\www\Feehi_CMS\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#6 D:\wamp64\www\Feehi_CMS\frontend\web\index.php(17): yii\base\Application->run()
+#7 {main}
+2023-02-11 20:03:26 [::1][-][bmagtnp5hi0eeccnaku2s0favo][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'wordpress_logged_in_86a9106ae65537651a8e456835b316ab' => 'Wanwan|1677050114|nNbyePEJNhBeYqiB8uYorYIWKunt6T7RMavrsRtcg1G|76c634d69ffdb7d37ccc03881c3b12a5ed3cc861fc62b27ec0109e2af9f9c54b'
+    'wp-settings-time-1' => '1675886118'
+    '_identity-frontend' => 'd4b7ad72a8e6c6d95ab49812ead33890fe92444bd5e60117090753dae4aa3b2ba:2:{i:0;s:18:\"_identity-frontend\";i:1;s:46:\"[1,\"RxcspEY_9Aj9arphhsD7ftuXdBpzNgju\",2592000]\";}'
+    '_identity-backend' => '8fa528a6c635a32cfb8b3a23f8f9872ffcee529b5080a0dca075b7006fa1656aa:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"RxcspEY_9Aj9arphhsD7ftuXdBpzNgju\",2592000]\";}'
+    'BACKEND_FEEHICMS' => 'vf7gdk9uck6t284a3l2t1b4vej'
+    '_csrf_backend' => '71b58b1e777965b031eb72ec1bef83c2a86c753674db9f82dcaf89465beab4d9a:2:{i:0;s:13:\"_csrf_backend\";i:1;s:32:\"1F6LKC_qzNdOw6-jQfda5Oqd99CqCDgA\";}'
+    'PHPSESSID' => 'bmagtnp5hi0eeccnaku2s0favo'
+    '_csrf' => '66c6c25c1e348d0054d91413d6d27e5b9e280a547f5f063fe2b9cd6056917037a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"2IpclBiNIatHdYtiRKdLnNrBL_0a7MG6\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => 'http://localhost:8080/index.php?r=article%2Findex'
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'D:\\wamp64\\www\\Feehi_CMS\\frontend\\web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '64677'
+    'SERVER_SOFTWARE' => 'PHP 7.3.4 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/view/16'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'D:\\wamp64\\www\\Feehi_CMS\\frontend\\web\\index.php'
+    'PATH_INFO' => '/view/16'
+    'PHP_SELF' => '/index.php/view/16'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_SEC_CH_UA' => '\"Chromium\";v=\"110\", \"Not A(Brand\";v=\"24\", \"Microsoft Edge\";v=\"110\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36 Edg/110.0.1587.41'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_REFERER' => 'http://localhost:8080/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6'
+    'HTTP_COOKIE' => 'wordpress_logged_in_86a9106ae65537651a8e456835b316ab=Wanwan%7C1677050114%7CnNbyePEJNhBeYqiB8uYorYIWKunt6T7RMavrsRtcg1G%7C76c634d69ffdb7d37ccc03881c3b12a5ed3cc861fc62b27ec0109e2af9f9c54b; wp-settings-time-1=1675886118; _identity-frontend=d4b7ad72a8e6c6d95ab49812ead33890fe92444bd5e60117090753dae4aa3b2ba%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22RxcspEY_9Aj9arphhsD7ftuXdBpzNgju%22%2C2592000%5D%22%3B%7D; _identity-backend=8fa528a6c635a32cfb8b3a23f8f9872ffcee529b5080a0dca075b7006fa1656aa%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22RxcspEY_9Aj9arphhsD7ftuXdBpzNgju%22%2C2592000%5D%22%3B%7D; BACKEND_FEEHICMS=vf7gdk9uck6t284a3l2t1b4vej; _csrf_backend=71b58b1e777965b031eb72ec1bef83c2a86c753674db9f82dcaf89465beab4d9a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf_backend%22%3Bi%3A1%3Bs%3A32%3A%221F6LKC_qzNdOw6-jQfda5Oqd99CqCDgA%22%3B%7D; PHPSESSID=bmagtnp5hi0eeccnaku2s0favo; _csrf=66c6c25c1e348d0054d91413d6d27e5b9e280a547f5f063fe2b9cd6056917037a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%222IpclBiNIatHdYtiRKdLnNrBL_0a7MG6%22%3B%7D'
+    'REQUEST_TIME_FLOAT' => 1676117006.8665
+    'REQUEST_TIME' => 1676117006
+]

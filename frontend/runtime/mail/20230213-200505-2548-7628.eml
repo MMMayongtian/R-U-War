@@ -1,0 +1,154 @@
+Message-ID: <5a7845e7357aa2ab7eebbabab10d8d4b@localhost>
+Date: Mon, 13 Feb 2023 20:05:05 +0800
+Subject: =?UTF-8?Q?=E6=9D=A5=E8=87=AA?= Feehi CMS
+ =?UTF-8?Q?=E5=89=8D=E5=8F=B0=E7=9A=84=E6=96=B0?=
+ =?UTF-8?Q?=E6=97=A5=E5=BF=97=E6=B6=88=E6=81=AF?=
+From: Feehi CMS robot  <admin@feehi.com>
+To: admin@feehi.com, liufee@126.com
+MIME-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+2023-02-13 20:05:05
+[127.0.0.1][2][t2pc5clgto213hq573o8u86t9i][error][yii\web\HttpException:4=
+04]
+yii\web\NotFoundHttpException: =E6=96=87=E7=AB=A0id 4=
+=E4=B8=8D=E5=AD=98=E5=9C=A8 in
+D:\phpstudy_pro\WWW\frontend\controllers\ArticleController.php:51
+Stack trace:
+#0 [internal function]:
+frontend\controllers\ArticleController->frontend\controllers\{closure}(Obj=
+ect(yii\base\InlineAction),
+NULL)
+#1 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\filters\HttpCache.php(129):
+call_user_func(Object(Closure), Object(yii\base\InlineAction), NULL)
+#2 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\ActionFilter.php(77):
+yii\filters\HttpCache->beforeAction(Object(yii\base\InlineAction))
+#3 [internal function]:
+yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#4 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Component.php(627):
+call_user_func(Array, Object(yii\base\ActionEvent))
+#5 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Controller.php(274):
+yii\base\Component->trigger('beforeAction',
+Object(yii\base\ActionEvent))
+#6 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\web\Controller.php(164):
+yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#7 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Controller.php(155):
+yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#8 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Module.php(528):
+yii\base\Controller->runAction('view', Array)
+#9 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\web\Application.php(103):
+yii\base\Module->runAction('article/view', Array)
+#10 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Application.php(386):
+yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 D:\phpstudy_pro\WWW\frontend\web\index.php(17):
+yii\base\Application->run()
+#12 {main}
+2023-02-13 20:05:05
+[127.0.0.1][2][t2pc5clgto213hq573o8u86t9i][info][application] $_GET =3D
+[
+    'r' =3D> 'article/view'
+    'id' =3D> '4'
+]
+
+$_POST =3D []
+
+$_FILES =3D []
+
+$_COOKIE =3D [
+    'wordpress_logged_in_86a9106ae65537651a8e456835b316ab' =3D>
+'mmma|1677050114|bT7ng8zBap8ZomuqdwGcjq60357AHSocZMRZYk1b7uI|33c8845584b6d7=
+12613a75dad4396516b8f24492be531ba5872116c6f5fd0330'
+    'wp-settings-time-1' =3D> '1675943997'
+    '_identity-frontend' =3D>
+'ff4723d33490d1a30d5640e71fd7d121f9b6f51fd9475373e1d93f547b10525aa:2:{i:0=
+;s:18:\"_identity-frontend\";i:1;s:46:\"[1,\"4sSpK38KErySZpizaMO18REH4nX=
+WPDrD\",2592000]\";}'
+    '_identity-backend' =3D>
+'7223aaae057f741b3ba5c4d0725f6f17a2846f199c7fcfd05830ef9b8b13aedaa:2:{i:0;s=
+:17:\"_identity-backend\";i:1;s:46:\"[1,\"4sSpK38KErySZpizaMO18REH4nXWPD=
+rD\",2592000]\";}'
+    'BACKEND_FEEHICMS' =3D> 'b2pdvmihg4g8rk9jd24mvd894o'
+    '_csrf_backend' =3D>
+'9998a43e88d0d6bffcdfb7e5eeb483c2e48ce00eb3229d501bb8a016b1295c1ca:2:{i:0;s=
+:13:\"_csrf_backend\";i:1;s:32:\"k3tHQJTTAQsYtJqIwqcgDuS9jKPzoZ9i\";}'
+    'PHPSESSID' =3D> 't2pc5clgto213hq573o8u86t9i'
+    '_identity' =3D>
+'c611cd6c8e95427c47ca9a51bc621bc07ac53230c1792444197f2a353872268da:2:{i:0;=
+s:9:\"_identity\";i:1;s:46:\"[2,\"n5mqrm4-2L5R_evs6a9UBl0up4na2qed\",259=
+2000]\";}'
+    '_csrf' =3D>
+'88ba11669ee0c3c6298f3cb8cdf57fbd12a6a74c451de88ee65ded2727e6d3f8a:2:{i:0;=
+s:5:\"_csrf\";i:1;s:32:\"Lzeu7mpYcUX-UuNQQPcNdc_T1roAxQo6\";}'
+]
+
+$_SESSION =3D [
+    '__flash' =3D> []
+    '__returnUrl' =3D> 'http://localhost:8080/'
+    '__id' =3D> 2
+]
+
+$_SERVER =3D [
+    'DOCUMENT_ROOT' =3D> 'D:\\phpstudy_pro\\WWW\\frontend\\web'
+    'REMOTE_ADDR' =3D> '127.0.0.1'
+    'REMOTE_PORT' =3D> '28662'
+    'SERVER_SOFTWARE' =3D> 'PHP 7.3.4 Development Server'
+    'SERVER_PROTOCOL' =3D> 'HTTP/1.1'
+    'SERVER_NAME' =3D> 'localhost'
+    'SERVER_PORT' =3D> '8080'
+    'REQUEST_URI' =3D> '/index.php?r=3Darticle%2Fview&id=3D4'
+    'REQUEST_METHOD' =3D> 'GET'
+    'SCRIPT_NAME' =3D> '/index.php'
+    'SCRIPT_FILENAME' =3D>
+'D:\\phpstudy_pro\\WWW\\frontend\\web\\index.php'
+    'PHP_SELF' =3D> '/index.php'
+    'QUERY_STRING' =3D> 'r=3Darticle%2Fview&id=3D4'
+    'HTTP_HOST' =3D> 'localhost:8080'
+    'HTTP_CONNECTION' =3D> 'keep-alive'
+    'HTTP_SEC_CH_UA' =3D> '\"Chromium\";v=3D\"110\", \"Not
+A(Brand\";v=3D\"24\", \"Microsoft Edge\";v=3D\"110\"'
+    'HTTP_SEC_CH_UA_MOBILE' =3D> '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' =3D> '\"Windows\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' =3D> '1'
+    'HTTP_USER_AGENT' =3D> 'Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36
+Edg/110.0.1587.41'
+    'HTTP_ACCEPT' =3D>
+'text/html,application/xhtml+xml,application/xml;q=3D0.9,image/webp,image/a=
+png,*/*;q=3D0.8,application/signed-exchange;v=3Db3;q=3D0.7'
+    'HTTP_SEC_FETCH_SITE' =3D> 'same-origin'
+    'HTTP_SEC_FETCH_MODE' =3D> 'navigate'
+    'HTTP_SEC_FETCH_USER' =3D> '?1'
+    'HTTP_SEC_FETCH_DEST' =3D> 'document'
+    'HTTP_REFERER' =3D>
+'http://localhost:8080/index.php?r=3Dsearch%2Findex&q=3D%E8%A8%80%E6%9D%BF'
+    'HTTP_ACCEPT_ENCODING' =3D> 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' =3D>
+'zh-CN,zh;q=3D0.9,en;q=3D0.8,en-GB;q=3D0.7,en-US;q=3D0.6'
+    'HTTP_COOKIE' =3D>
+'wordpress_logged_in_86a9106ae65537651a8e456835b316ab=3Dmmma%7C1677050114%7=
+CbT7ng8zBap8ZomuqdwGcjq60357AHSocZMRZYk1b7uI%7C33c8845584b6d712613a75dad=
+4396516b8f24492be531ba5872116c6f5fd0330;
+wp-settings-time-1=3D1675943997;
+_identity-frontend=3Dff4723d33490d1a30d5640e71fd7d121f9b6f51fd9475373e1d93f=
+547b10525aa%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3=
+Bs%3A46%3A%22%5B1%2C%224sSpK38KErySZpizaMO18REH4nXWPDrD%22%2C2592000%5D%=
+22%3B%7D;
+_identity-backend=3D7223aaae057f741b3ba5c4d0725f6f17a2846f199c7fcfd05830=
+ef9b8b13aedaa%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%=
+3Bs%3A46%3A%22%5B1%2C%224sSpK38KErySZpizaMO18REH4nXWPDrD%22%2C2592000%5D=
+%22%3B%7D;
+BACKEND_FEEHICMS=3Db2pdvmihg4g8rk9jd24mvd894o;
+_csrf_backend=3D9998a43e88d0d6bffcdfb7e5eeb483c2e48ce00eb3229d501bb8a016b12=
+95c1ca%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf_backend%22%3Bi%3A1%3Bs%3A32%3A=
+%22k3tHQJTTAQsYtJqIwqcgDuS9jKPzoZ9i%22%3B%7D;
+PHPSESSID=3Dt2pc5clgto213hq573o8u86t9i;
+_identity=3Dc611cd6c8e95427c47ca9a51bc621bc07ac53230c1792444197f2a353872268=
+da%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2=
+C%22n5mqrm4-2L5R_evs6a9UBl0up4na2qed%22%2C2592000%5D%22%3B%7D;
+_csrf=3D88ba11669ee0c3c6298f3cb8cdf57fbd12a6a74c451de88ee65ded2727e6d3f8a%3=
+A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22Lzeu7mpYcUX-Uu=
+NQQPcNdc_T1roAxQo6%22%3B%7D'
+    'REQUEST_TIME_FLOAT' =3D> 1676289905.1536
+    'REQUEST_TIME' =3D> 1676289905
+]

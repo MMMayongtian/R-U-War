@@ -1,0 +1,107 @@
+Message-ID: <7fbad8d25d06a7ae415579c484cc4818@localhost>
+Date: Sun, 12 Feb 2023 22:03:57 +0800
+Subject: =?UTF-8?Q?=E6=9D=A5=E8=87=AA?= Feehi CMS
+ =?UTF-8?Q?=E5=89=8D=E5=8F=B0=E7=9A=84=E6=96=B0?=
+ =?UTF-8?Q?=E6=97=A5=E5=BF=97=E6=B6=88=E6=81=AF?=
+From: Feehi CMS robot  <admin@feehi.com>
+To: admin@feehi.com, liufee@126.com
+MIME-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+2023-02-12 22:03:57
+[127.0.0.1][-][l6c2h7hthgqt29rt3agd99u27j][error][yii\web\HttpException:4=
+04]
+yii\web\NotFoundHttpException: =E6=96=87=E7=AB=A0id 7=
+=E4=B8=8D=E5=AD=98=E5=9C=A8 in
+D:\phpstudy_pro\WWW\frontend\controllers\ArticleController.php:51
+Stack trace:
+#0 [internal function]:
+frontend\controllers\ArticleController->frontend\controllers\{closure}(Obj=
+ect(yii\base\InlineAction),
+NULL)
+#1 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\filters\HttpCache.php(129):
+call_user_func(Object(Closure), Object(yii\base\InlineAction), NULL)
+#2 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\ActionFilter.php(77):
+yii\filters\HttpCache->beforeAction(Object(yii\base\InlineAction))
+#3 [internal function]:
+yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#4 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Component.php(627):
+call_user_func(Array, Object(yii\base\ActionEvent))
+#5 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Controller.php(274):
+yii\base\Component->trigger('beforeAction',
+Object(yii\base\ActionEvent))
+#6 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\web\Controller.php(164):
+yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#7 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Controller.php(155):
+yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#8 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Module.php(528):
+yii\base\Controller->runAction('view', Array)
+#9 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\web\Application.php(103):
+yii\base\Module->runAction('article/view', Array)
+#10 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Application.php(386):
+yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 D:\phpstudy_pro\WWW\frontend\web\index.php(17):
+yii\base\Application->run()
+#12 {main}
+2023-02-12 22:03:57
+[127.0.0.1][-][l6c2h7hthgqt29rt3agd99u27j][info][application] $_GET =3D
+[
+    'r' =3D> 'article/view'
+    'id' =3D> '7'
+]
+
+$_POST =3D []
+
+$_FILES =3D []
+
+$_COOKIE =3D [
+    'PHPSESSID' =3D> 'l6c2h7hthgqt29rt3agd99u27j'
+    '_csrf' =3D>
+'a737e7d1532a5ce81e979d2171ca5e8d0c6803408fdc4d0ecbfd9e4954c768f2a:2:{i:0;=
+s:5:\"_csrf\";i:1;s:32:\"gt_gcqEYgpCyQWv0LYona8YklEMKT7JD\";}'
+]
+
+$_SESSION =3D [
+    '__flash' =3D> []
+]
+
+$_SERVER =3D [
+    'DOCUMENT_ROOT' =3D> 'D:\\phpstudy_pro\\WWW\\frontend\\web'
+    'REMOTE_ADDR' =3D> '127.0.0.1'
+    'REMOTE_PORT' =3D> '38669'
+    'SERVER_SOFTWARE' =3D> 'PHP 7.3.4 Development Server'
+    'SERVER_PROTOCOL' =3D> 'HTTP/1.1'
+    'SERVER_NAME' =3D> 'localhost'
+    'SERVER_PORT' =3D> '8080'
+    'REQUEST_URI' =3D> '/index.php?r=3Darticle%2Fview&id=3D7'
+    'REQUEST_METHOD' =3D> 'GET'
+    'SCRIPT_NAME' =3D> '/index.php'
+    'SCRIPT_FILENAME' =3D>
+'D:\\phpstudy_pro\\WWW\\frontend\\web\\index.php'
+    'PHP_SELF' =3D> '/index.php'
+    'QUERY_STRING' =3D> 'r=3Darticle%2Fview&id=3D7'
+    'HTTP_HOST' =3D> 'localhost:8080'
+    'HTTP_USER_AGENT' =3D> 'Mozilla/5.0 (Windows NT 10.0; Win64; x64;
+rv:109.0) Gecko/20100101 Firefox/109.0'
+    'HTTP_ACCEPT' =3D>
+'text/html,application/xhtml+xml,application/xml;q=3D0.9,image/avif,imag=
+e/webp,*/*;q=3D0.8'
+    'HTTP_ACCEPT_LANGUAGE' =3D>
+'zh-CN,zh;q=3D0.8,zh-TW;q=3D0.7,zh-HK;q=3D0.5,en-US;q=3D0.3,en;q=3D0.2'
+    'HTTP_ACCEPT_ENCODING' =3D> 'gzip, deflate, br'
+    'HTTP_CONNECTION' =3D> 'keep-alive'
+    'HTTP_REFERER' =3D>
+'http://localhost:8080/index.php?r=3Darticle%2Fview&id=3D27'
+    'HTTP_COOKIE' =3D> 'PHPSESSID=3Dl6c2h7hthgqt29rt3agd99u27j;
+_csrf=3Da737e7d1532a5ce81e979d2171ca5e8d0c6803408fdc4d0ecbfd9e4954c768f2a%3=
+A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22gt_gcqEYgpCyQW=
+v0LYona8YklEMKT7JD%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' =3D> '1'
+    'HTTP_SEC_FETCH_DEST' =3D> 'document'
+    'HTTP_SEC_FETCH_MODE' =3D> 'navigate'
+    'HTTP_SEC_FETCH_SITE' =3D> 'same-origin'
+    'HTTP_SEC_FETCH_USER' =3D> '?1'
+    'REQUEST_TIME_FLOAT' =3D> 1676210637.8133
+    'REQUEST_TIME' =3D> 1676210637
+]

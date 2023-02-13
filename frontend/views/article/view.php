@@ -74,32 +74,7 @@ ViewAsset::register($this);
 
         <article class="article-content">
             <?= $model->articleContent->content ?>
-            <p>
-                <?= Yii::t('frontend', 'Reproduced please indicate the source') ?>：
-                <a href="<?= Yii::$app->homeUrl ?>" data-original-title="" title=""><?= Yii::$app->feehi->website_title ?></a>
-                »
-                <a href="<?= Url::to(['article/view', 'id' => $model->id]) ?>" data-original-title="" title=""><?= $model->title ?></a>
-            </p>
-
-            <div class="article-social">
-                <a href="javascript:;" data-action="ding" data-id="<?=$model->id?>" like-url="<?=Url::to(['article/like'])?>" id="Addlike" class="action"><i class="fa fa-heart-o"></i><?=Yii::t('frontend', 'Like')?> (<span class="count"><?= $model->getArticleLikeCount() ?></span>)</a>
-                <span class="or">or</span>
-                <span class="action action-share bdsharebuttonbox"><i class="fa fa-share-alt"></i><?=Yii::t('frontend', 'Share')?> (<span class="bds_count" data-cmd="count" title="累计分享0次">0</span>)
-                    <div class="action-popover">
-                        <div class="popover top in"><div class="arrow"></div>
-                            <div class="popover-content">
-                                <a href="#" class="sinaweibo fa fa-weibo" data-cmd="tsina" title="分享到新浪微博"></a>
-                                <a href="#" class="bds_qzone fa fa-star" data-cmd="qzone" title="分享到QQ空间"></a>
-                                <a href="#" class="tencentweibo fa fa-tencent-weibo" data-cmd="tqq" title="分享到腾讯微博"></a>
-                                <a href="#" class="qq fa fa-qq" data-cmd="sqq" title="分享到QQ好友"></a>
-                                <a href="#" class="bds_renren fa fa-renren" data-cmd="renren" title="分享到人人网"></a>
-                                <a href="#" class="bds_weixin fa fa-weixin" data-cmd="weixin" title="分享到微信"></a>
-                                <a href="#" class="bds_more fa fa-ellipsis-h" data-cmd="more"></a>
-                            </div>
-                        </div>
-                    </div>
-                </span>
-            </div>
+  
         </article>
         <footer class="article-footer">
             <div class="article-tags">

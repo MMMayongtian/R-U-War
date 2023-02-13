@@ -22,18 +22,11 @@ class Helper
         $articleService = Yii::$app->get(ArticleServiceInterface::ServiceName);
         /** @var BannerServiceInterface $bannerService */
         $bannerService = Yii::$app->get(BannerServiceInterface::ServiceName);
-        /** @var AdServiceInterface $adService */
-        $adService = Yii::$app->get(AdServiceInterface::ServiceName);
-
         $headLineArticles = $articleService->getFlagHeadLinesArticles(4);
         $indexBanners = $bannerService->getBannersByAdType("index");
-        $rightAd1 = $adService->getAdByName("sidebar_right_1");
-        $rightAd2 = $adService->getAdByName("sidebar_right_2");
         return [
             'headLinesArticles' => $headLineArticles,
             "indexBanners" => $indexBanners,
-            "rightAd1" => $rightAd1,
-            "rightAd2" => $rightAd2,
         ];
     }
 }

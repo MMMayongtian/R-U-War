@@ -1,0 +1,130 @@
+Message-ID: <9a6d88377a6e91634ccf6cfbc1b1191a@localhost>
+Date: Fri, 10 Feb 2023 21:14:11 +0800
+Subject: =?UTF-8?Q?=E6=9D=A5=E8=87=AA?= Feehi CMS
+ =?UTF-8?Q?=E5=89=8D=E5=8F=B0=E7=9A=84=E6=96=B0?=
+ =?UTF-8?Q?=E6=97=A5=E5=BF=97=E6=B6=88=E6=81=AF?=
+From: Feehi CMS robot  <admin@feehi.com>
+To: admin@feehi.com, liufee@126.com
+MIME-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+2023-02-10 21:14:11
+[::1][-][us54bpkrh2262mn1l8e33f9982][error][yii\web\HttpException:404]
+yii\web\NotFoundHttpException: =E6=9C=AA=E6=89=BE=E5=88=B0=
+=E5=88=86=E7=B1=BBview/11 in
+D:\wamp64\www\Feehi_CMS\frontend\controllers\ArticleController.php:78
+Stack trace:
+#0 [internal function]:
+frontend\controllers\ArticleController->actionIndex('view/11')
+#1
+D:\wamp64\www\Feehi_CMS\vendor\yiisoft\yii2\base\InlineAction.php(57):
+call_user_func_array(Array, Array)
+#2
+D:\wamp64\www\Feehi_CMS\vendor\yiisoft\yii2\base\Controller.php(157):
+yii\base\InlineAction->runWithParams(Array)
+#3 D:\wamp64\www\Feehi_CMS\vendor\yiisoft\yii2\base\Module.php(528):
+yii\base\Controller->runAction('index', Array)
+#4
+D:\wamp64\www\Feehi_CMS\vendor\yiisoft\yii2\web\Application.php(103):
+yii\base\Module->runAction('', Array)
+#5
+D:\wamp64\www\Feehi_CMS\vendor\yiisoft\yii2\base\Application.php(386):
+yii\web\Application->handleRequest(Object(yii\web\Request))
+#6 D:\wamp64\www\Feehi_CMS\frontend\web\index.php(17):
+yii\base\Application->run()
+#7 {main}
+2023-02-10 21:14:11
+[::1][-][us54bpkrh2262mn1l8e33f9982][info][application] $_GET =3D []
+
+$_POST =3D []
+
+$_FILES =3D []
+
+$_COOKIE =3D [
+    'wordpress_logged_in_86a9106ae65537651a8e456835b316ab' =3D>
+'Wanwan|1677050114|nNbyePEJNhBeYqiB8uYorYIWKunt6T7RMavrsRtcg1G|76c634d69ffd=
+b7d37ccc03881c3b12a5ed3cc861fc62b27ec0109e2af9f9c54b'
+    'wp-settings-time-1' =3D> '1675886118'
+    '_identity-frontend' =3D>
+'d4b7ad72a8e6c6d95ab49812ead33890fe92444bd5e60117090753dae4aa3b2ba:2:{i:0=
+;s:18:\"_identity-frontend\";i:1;s:46:\"[1,\"RxcspEY_9Aj9arphhsD7ftuXdBp=
+zNgju\",2592000]\";}'
+    '_identity-backend' =3D>
+'8fa528a6c635a32cfb8b3a23f8f9872ffcee529b5080a0dca075b7006fa1656aa:2:{i:0;s=
+:17:\"_identity-backend\";i:1;s:46:\"[1,\"RxcspEY_9Aj9arphhsD7ftuXdBpzNg=
+ju\",2592000]\";}'
+    'PHPSESSID' =3D> 'us54bpkrh2262mn1l8e33f9982'
+    '_csrf' =3D>
+'8f12780b0d01b05207aacf36098e7034dad4e7f453ae4b50b8a478cdf117cda1a:2:{i:0;=
+s:5:\"_csrf\";i:1;s:32:\"hd5-6jTF3KmXCkaqKPbjn7QjwC6PLzIF\";}'
+    'BACKEND_FEEHICMS' =3D> 'eltnkqpdvgjugng28dfirkjug3'
+    '_csrf_backend' =3D>
+'2caf7f094267ad4b504eb2416bf38784ab690312fd06d9e5e6c441a326b66caea:2:{i:0;s=
+:13:\"_csrf_backend\";i:1;s:32:\"P1a_RqW3CrUA2lvZjy3V1xla3jXQ0m4W\";}'
+]
+
+$_SESSION =3D [
+    '__flash' =3D> []
+]
+
+$_SERVER =3D [
+    'DOCUMENT_ROOT' =3D> 'D:\\wamp64\\www\\Feehi_CMS\\frontend\\web'
+    'REMOTE_ADDR' =3D> '::1'
+    'REMOTE_PORT' =3D> '60640'
+    'SERVER_SOFTWARE' =3D> 'PHP 7.3.4 Development Server'
+    'SERVER_PROTOCOL' =3D> 'HTTP/1.1'
+    'SERVER_NAME' =3D> 'localhost'
+    'SERVER_PORT' =3D> '8080'
+    'REQUEST_URI' =3D> '/view/11'
+    'REQUEST_METHOD' =3D> 'GET'
+    'SCRIPT_NAME' =3D> '/index.php'
+    'SCRIPT_FILENAME' =3D>
+'D:\\wamp64\\www\\Feehi_CMS\\frontend\\web\\index.php'
+    'PATH_INFO' =3D> '/view/11'
+    'PHP_SELF' =3D> '/index.php/view/11'
+    'HTTP_HOST' =3D> 'localhost:8080'
+    'HTTP_CONNECTION' =3D> 'keep-alive'
+    'HTTP_SEC_CH_UA' =3D> '\"Not_A Brand\";v=3D\"99\", \"Microsoft
+Edge\";v=3D\"109\", \"Chromium\";v=3D\"109\"'
+    'HTTP_SEC_CH_UA_MOBILE' =3D> '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' =3D> '\"Windows\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' =3D> '1'
+    'HTTP_USER_AGENT' =3D> 'Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36
+Edg/109.0.1518.78'
+    'HTTP_ACCEPT' =3D>
+'text/html,application/xhtml+xml,application/xml;q=3D0.9,image/webp,image/a=
+png,*/*;q=3D0.8,application/signed-exchange;v=3Db3;q=3D0.9'
+    'HTTP_SEC_FETCH_SITE' =3D> 'same-origin'
+    'HTTP_SEC_FETCH_MODE' =3D> 'navigate'
+    'HTTP_SEC_FETCH_USER' =3D> '?1'
+    'HTTP_SEC_FETCH_DEST' =3D> 'document'
+    'HTTP_REFERER' =3D> 'http://localhost:8080/'
+    'HTTP_ACCEPT_ENCODING' =3D> 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' =3D>
+'zh-CN,zh;q=3D0.9,en;q=3D0.8,en-GB;q=3D0.7,en-US;q=3D0.6'
+    'HTTP_COOKIE' =3D>
+'wordpress_logged_in_86a9106ae65537651a8e456835b316ab=3DWanwan%7C1677050114=
+%7CnNbyePEJNhBeYqiB8uYorYIWKunt6T7RMavrsRtcg1G%7C76c634d69ffdb7d37ccc038=
+81c3b12a5ed3cc861fc62b27ec0109e2af9f9c54b;
+wp-settings-time-1=3D1675886118;
+_identity-frontend=3Dd4b7ad72a8e6c6d95ab49812ead33890fe92444bd5e60117090=
+753dae4aa3b2ba%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A=
+1%3Bs%3A46%3A%22%5B1%2C%22RxcspEY_9Aj9arphhsD7ftuXdBpzNgju%22%2C2592000%=
+5D%22%3B%7D;
+_identity-backend=3D8fa528a6c635a32cfb8b3a23f8f9872ffcee529b5080a0dca075b=
+7006fa1656aa%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3=
+Bs%3A46%3A%22%5B1%2C%22RxcspEY_9Aj9arphhsD7ftuXdBpzNgju%22%2C2592000%5D%=
+22%3B%7D;
+PHPSESSID=3Dus54bpkrh2262mn1l8e33f9982;
+_csrf=3D8f12780b0d01b05207aacf36098e7034dad4e7f453ae4b50b8a478cdf117cda1a%3=
+A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22hd5-6jTF3KmXCk=
+aqKPbjn7QjwC6PLzIF%22%3B%7D;
+BACKEND_FEEHICMS=3Deltnkqpdvgjugng28dfirkjug3;
+_csrf_backend=3D2caf7f094267ad4b504eb2416bf38784ab690312fd06d9e5e6c441a3=
+26b66caea%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf_backend%22%3Bi%3A1%3Bs%3A32=
+%3A%22P1a_RqW3CrUA2lvZjy3V1xla3jXQ0m4W%22%3B%7D'
+    'REQUEST_TIME_FLOAT' =3D> 1676034851.0863
+    'REQUEST_TIME' =3D> 1676034851
+]

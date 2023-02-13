@@ -1,0 +1,159 @@
+Message-ID: <df5e1f119d80313e7f6869327b44ee1e@localhost>
+Date: Mon, 13 Feb 2023 19:50:58 +0800
+Subject: =?UTF-8?Q?=E6=9D=A5=E8=87=AA?= Feehi CMS
+ =?UTF-8?Q?=E5=89=8D=E5=8F=B0=E7=9A=84=E6=96=B0?=
+ =?UTF-8?Q?=E6=97=A5=E5=BF=97=E6=B6=88=E6=81=AF?=
+From: Feehi CMS robot  <admin@feehi.com>
+To: admin@feehi.com, liufee@126.com
+MIME-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+2023-02-13 19:50:58
+[127.0.0.1][2][ac1dgpeu52fsb31q921oq99p4e][error][yii\web\HttpException:4=
+00]
+yii\web\BadRequestHttpException: =E6=82=A8=E6=8F=90=E4=BA=A4=E7=9A=84=
+=E6=95=B0=E6=8D=AE=E6=97=A0=E6=B3=95=E8=A2=AB=E9=AA=8C=E8=AF=81=E3=80=82
+in D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\web\Controller.php:166
+Stack trace:
+#0 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Controller.php(155):
+yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#1 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Module.php(528):
+yii\base\Controller->runAction('comment', Array)
+#2 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\web\Application.php(103):
+yii\base\Module->runAction('article/comment', Array)
+#3 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Application.php(386):
+yii\web\Application->handleRequest(Object(yii\web\Request))
+#4 D:\phpstudy_pro\WWW\frontend\web\index.php(17):
+yii\base\Application->run()
+#5 {main}
+2023-02-13 19:50:58
+[127.0.0.1][2][ac1dgpeu52fsb31q921oq99p4e][info][application] $_GET =3D
+[
+    'r' =3D> 'article/comment'
+]
+
+$_POST =3D [
+    '_csrf' =3D>
+'BVYw9WVHlWBLOJdQOGk_ta7z2vX1Yetncg6SfTXCO2tqOV-SNT7MBAhh3WAAGH7j15-CrJwbiC=
+k8OOdER4cKDQ=3D=3D'
+    'Comment' =3D> [
+        'aid' =3D> '1'
+        'content' =3D> '=E9=98=BF=E8=BE=BE'
+        'reply_to' =3D> '0'
+        'nickname' =3D> 'mmma'
+        'email' =3D> ''
+        'website_url' =3D> ''
+    ]
+    'comment_post_ID' =3D> '114'
+    'akismet_comment_nonce' =3D> '32920dc775'
+    'ak_js' =3D> '101'
+    'comment_mail_notify' =3D> 'comment_mail_notify'
+]
+
+$_FILES =3D []
+
+$_COOKIE =3D [
+    'wordpress_logged_in_86a9106ae65537651a8e456835b316ab' =3D>
+'mmma|1677050114|bT7ng8zBap8ZomuqdwGcjq60357AHSocZMRZYk1b7uI|33c8845584b6d7=
+12613a75dad4396516b8f24492be531ba5872116c6f5fd0330'
+    'wp-settings-time-1' =3D> '1675943997'
+    '_identity-frontend' =3D>
+'ff4723d33490d1a30d5640e71fd7d121f9b6f51fd9475373e1d93f547b10525aa:2:{i:0=
+;s:18:\"_identity-frontend\";i:1;s:46:\"[1,\"4sSpK38KErySZpizaMO18REH4nX=
+WPDrD\",2592000]\";}'
+    '_identity-backend' =3D>
+'7223aaae057f741b3ba5c4d0725f6f17a2846f199c7fcfd05830ef9b8b13aedaa:2:{i:0;s=
+:17:\"_identity-backend\";i:1;s:46:\"[1,\"4sSpK38KErySZpizaMO18REH4nXWPD=
+rD\",2592000]\";}'
+    'BACKEND_FEEHICMS' =3D> 'b2pdvmihg4g8rk9jd24mvd894o'
+    '_csrf_backend' =3D>
+'9998a43e88d0d6bffcdfb7e5eeb483c2e48ce00eb3229d501bb8a016b1295c1ca:2:{i:0;s=
+:13:\"_csrf_backend\";i:1;s:32:\"k3tHQJTTAQsYtJqIwqcgDuS9jKPzoZ9i\";}'
+    'PHPSESSID' =3D> 'ac1dgpeu52fsb31q921oq99p4e'
+    '_identity' =3D>
+'c611cd6c8e95427c47ca9a51bc621bc07ac53230c1792444197f2a353872268da:2:{i:0;=
+s:9:\"_identity\";i:1;s:46:\"[2,\"n5mqrm4-2L5R_evs6a9UBl0up4na2qed\",259=
+2000]\";}'
+    '_csrf' =3D>
+'9c308ed955a4d789610248aab0b03887449679bc1384871825608a877de79460a:2:{i:0;=
+s:5:\"_csrf\";i:1;s:32:\"k2sAzuUJTtHVU0-MNQ5461FL7iTpKSao\";}'
+]
+
+$_SESSION =3D [
+    '__flash' =3D> []
+    '__returnUrl' =3D> 'http://localhost:8080/'
+    '__id' =3D> 2
+]
+
+$_SERVER =3D [
+    'DOCUMENT_ROOT' =3D> 'D:\\phpstudy_pro\\WWW\\frontend\\web'
+    'REMOTE_ADDR' =3D> '127.0.0.1'
+    'REMOTE_PORT' =3D> '27493'
+    'SERVER_SOFTWARE' =3D> 'PHP 7.3.4 Development Server'
+    'SERVER_PROTOCOL' =3D> 'HTTP/1.1'
+    'SERVER_NAME' =3D> 'localhost'
+    'SERVER_PORT' =3D> '8080'
+    'REQUEST_URI' =3D> '/index.php?r=3Darticle%2Fcomment'
+    'REQUEST_METHOD' =3D> 'POST'
+    'SCRIPT_NAME' =3D> '/index.php'
+    'SCRIPT_FILENAME' =3D>
+'D:\\phpstudy_pro\\WWW\\frontend\\web\\index.php'
+    'PHP_SELF' =3D> '/index.php'
+    'QUERY_STRING' =3D> 'r=3Darticle%2Fcomment'
+    'HTTP_HOST' =3D> 'localhost:8080'
+    'HTTP_CONNECTION' =3D> 'keep-alive'
+    'CONTENT_LENGTH' =3D> '357'
+    'HTTP_CONTENT_LENGTH' =3D> '357'
+    'HTTP_SEC_CH_UA' =3D> '\"Chromium\";v=3D\"110\", \"Not
+A(Brand\";v=3D\"24\", \"Microsoft Edge\";v=3D\"110\"'
+    'HTTP_X_CSRF_TOKEN' =3D>
+'BVYw9WVHlWBLOJdQOGk_ta7z2vX1Yetncg6SfTXCO2tqOV-SNT7MBAhh3WAAGH7j15-CrJwbi=
+Ck8OOdER4cKDQ=3D=3D'
+    'HTTP_SEC_CH_UA_MOBILE' =3D> '?0'
+    'HTTP_USER_AGENT' =3D> 'Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36
+Edg/110.0.1587.41'
+    'CONTENT_TYPE' =3D> 'application/x-www-form-urlencoded;
+charset=3DUTF-8'
+    'HTTP_CONTENT_TYPE' =3D> 'application/x-www-form-urlencoded;
+charset=3DUTF-8'
+    'HTTP_ACCEPT' =3D> '*/*'
+    'HTTP_X_REQUESTED_WITH' =3D> 'XMLHttpRequest'
+    'HTTP_SEC_CH_UA_PLATFORM' =3D> '\"Windows\"'
+    'HTTP_ORIGIN' =3D> 'http://localhost:8080'
+    'HTTP_SEC_FETCH_SITE' =3D> 'same-origin'
+    'HTTP_SEC_FETCH_MODE' =3D> 'cors'
+    'HTTP_SEC_FETCH_DEST' =3D> 'empty'
+    'HTTP_REFERER' =3D>
+'http://localhost:8080/index.php?r=3Darticle%2Fview&id=3D1'
+    'HTTP_ACCEPT_ENCODING' =3D> 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' =3D>
+'zh-CN,zh;q=3D0.9,en;q=3D0.8,en-GB;q=3D0.7,en-US;q=3D0.6'
+    'HTTP_COOKIE' =3D>
+'wordpress_logged_in_86a9106ae65537651a8e456835b316ab=3Dmmma%7C167705011=
+4%7CbT7ng8zBap8ZomuqdwGcjq60357AHSocZMRZYk1b7uI%7C33c8845584b6d712613a75=
+dad4396516b8f24492be531ba5872116c6f5fd0330;
+wp-settings-time-1=3D1675943997;
+_identity-frontend=3Dff4723d33490d1a30d5640e71fd7d121f9b6f51fd9475373e1d=
+93f547b10525aa%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A=
+1%3Bs%3A46%3A%22%5B1%2C%224sSpK38KErySZpizaMO18REH4nXWPDrD%22%2C2592000%=
+5D%22%3B%7D;
+_identity-backend=3D7223aaae057f741b3ba5c4d0725f6f17a2846f199c7fcfd05830e=
+f9b8b13aedaa%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3=
+Bs%3A46%3A%22%5B1%2C%224sSpK38KErySZpizaMO18REH4nXWPDrD%22%2C2592000%5D%=
+22%3B%7D;
+BACKEND_FEEHICMS=3Db2pdvmihg4g8rk9jd24mvd894o;
+_csrf_backend=3D9998a43e88d0d6bffcdfb7e5eeb483c2e48ce00eb3229d501bb8a016b12=
+95c1ca%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf_backend%22%3Bi%3A1%3Bs%3A32%3A=
+%22k3tHQJTTAQsYtJqIwqcgDuS9jKPzoZ9i%22%3B%7D;
+PHPSESSID=3Dac1dgpeu52fsb31q921oq99p4e;
+_identity=3Dc611cd6c8e95427c47ca9a51bc621bc07ac53230c1792444197f2a353872268=
+da%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2=
+C%22n5mqrm4-2L5R_evs6a9UBl0up4na2qed%22%2C2592000%5D%22%3B%7D;
+_csrf=3D9c308ed955a4d789610248aab0b03887449679bc1384871825608a877de79460a%3=
+A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22k2sAzuUJTtHVU0=
+-MNQ5461FL7iTpKSao%22%3B%7D'
+    'REQUEST_TIME_FLOAT' =3D> 1676289058.6826
+    'REQUEST_TIME' =3D> 1676289058
+]

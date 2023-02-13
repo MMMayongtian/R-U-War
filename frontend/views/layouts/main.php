@@ -29,6 +29,7 @@ AppAsset::register($this);
     <?= Html::csrfMetaTags() ?>
     <meta http-equiv="X-UA-Compatible" content="IE=10,IE=9,IE=8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
     <script>
         window._deel = {
             name: '<?=Yii::$app->feehi->website_title?>',
@@ -41,35 +42,10 @@ AppAsset::register($this);
     </script>
 </head>
 <?php $this->beginBody() ?>
-<body class="home blog">
+<body style="background-color:#0D1117;" class="home blog">
 <?= $this->render('_flash') ?>
-<header id="masthead" class="site-header">
-    <nav id="top-header">
-        <div class="top-nav">
-            <div id="user-profile">
-                <span class="nav-set">
-                    <span class="nav-login">
-                        <?php
-                        if (Yii::$app->getUser()->getIsGuest()) {
-                            ?>
-                            <a href="<?= Url::to(['site/login']) ?>" class="signin-loader"><?= Yii::t('frontend', 'Hi, Log in') ?></a>&nbsp; &nbsp;
-                            <a href="<?= Url::to(['site/signup']) ?>" class="signup-loader"><?= Yii::t('frontend', 'Sign up') ?></a>
-                        <?php } else { ?>
-                            <?=Yii::t("frontend", "Welcome")?>, <?= Html::encode(Yii::$app->user->identity->username) ?>
-                            <a href="<?= Url::to(['site/logout']) ?>" class="signup-loader"><?= Yii::t('frontend', 'Log out') ?></a>
-                        <?php } ?>
-                    </span>
-                </span>
-            </div>
-            <div class="menu-container">
-                <ul id="menu-page" class="top-menu">
-                    <a target="_blank" href="<?=Url::to(['page/view', 'name'=>'about'])?>"><?= Yii::t('frontend', 'About us') ?></a>
-                    |
-                    <a target="_blank" href="<?=Url::to(['page/view', 'name'=>'contact'])?>"><?= Yii::t('frontend', 'Contact us') ?></a>
-                </ul>
-            </div>
-        </div>
-    </nav>
+<header style="background-color:#161B22;" id="masthead" class="site-header">
+
     <div id="nav-header" class="">
         <div id="top-menu">
             <div id="top-menu_1">
@@ -85,10 +61,29 @@ AppAsset::register($this);
                         <div>
                             <?= MenuView::widget() ?>
                         </div>
+                        <div id="user-profile">
+                            <span class="nav-set">
+                                <span class="nav-login">
+                                    <?php
+                                    if (Yii::$app->getUser()->getIsGuest()) {
+                                        ?>
+                                        <a href="<?= Url::to(['site/login']) ?>" class="signin-loader"><?= Yii::t('frontend', 'Hi, Log in') ?></a>&nbsp; &nbsp;
+                                        <a href="<?= Url::to(['site/signup']) ?>" class="signup-loader"><?= Yii::t('frontend', 'Sign up') ?></a>
+                                    <?php } else { ?>
+                                        <?=Yii::t("frontend", "Welcome")?>, <?= Html::encode(Yii::$app->user->identity->username) ?>
+                                        <a href="<?= Url::to(['site/logout']) ?>" class="signup-loader"><?= Yii::t('frontend', 'Log out') ?></a>
+                                    <?php } ?>
+                                </span>
+                            </span>
+                        </div>
                     </nav>
+                    
                 </div>
+                
             </div>
+            
         </div>
+
     </div>
     <?= MenuView::widget([
         'template' => '<nav><ul class="nav_sj" id="nav-search_1">{lis}</ul></nav>',
@@ -122,7 +117,7 @@ AppAsset::register($this);
 <div class="branding branding-black">
     <div class="container_f">
         <h2><?= Yii::t('frontend', 'Effective,Professional,Conform to SEO') ?></h2>
-        <a class="btn btn-lg" href="http://www.feehi.com/page/contact" target="_blank"><?= Yii::t('frontend', 'Contact us') ?></a>
+        <a class="btn btn-lg" href="http://localhost:8080/index.php?r=team%2Findex" target="_blank"><?= Yii::t('frontend', 'Contact us') ?></a>
     </div>
 </div>
 

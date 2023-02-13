@@ -1,0 +1,189 @@
+Message-ID: <e6ecfd76d24f4da9726cb365d739b7c6@localhost>
+Date: Mon, 13 Feb 2023 20:00:47 +0800
+Subject: =?UTF-8?Q?=E6=9D=A5=E8=87=AA?= Feehi CMS
+ =?UTF-8?Q?=E5=89=8D=E5=8F=B0=E7=9A=84=E6=96=B0?=
+ =?UTF-8?Q?=E6=97=A5=E5=BF=97=E6=B6=88=E6=81=AF?=
+From: Feehi CMS robot  <admin@feehi.com>
+To: admin@feehi.com, liufee@126.com
+MIME-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+2023-02-13 20:00:47
+[127.0.0.1][-][t2pc5clgto213hq573o8u86t9i][error][yii\base\InvalidConfigE=
+xception]
+yii\base\InvalidConfigException: The table does not exist: {{%user}}
+in D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\db\ActiveRecord.php:438
+Stack trace:
+#0 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\db\ActiveRecord.php(262):
+yii\db\ActiveRecord::getTableSchema()
+#1 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\db\ActiveRecord.php(234):
+yii\db\ActiveRecord::filterValidColumnNames(Object(yii\db\Connection),
+Array)
+#2 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\db\ActiveRecord.php(191):
+yii\db\ActiveRecord::filterCondition(Array, Array)
+#3
+D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\db\BaseActiveRecord.php(112):
+yii\db\ActiveRecord::findByCondition(Array)
+#4 D:\phpstudy_pro\WWW\common\models\User.php(150):
+yii\db\BaseActiveRecord::findOne(Array)
+#5 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\web\User.php(690):
+common\models\User::findIdentity(2)
+#6 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\web\User.php(192):
+yii\web\User->renewAuthStatus()
+#7 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\web\User.php(360):
+yii\web\User->getIdentity()
+#8 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Component.php(139):
+yii\web\User->getIsGuest()
+#9
+D:\phpstudy_pro\WWW\vendor\yiisoft\yii2-debug\src\panels\UserPanel.php(79):
+yii\base\Component->__get('isGuest')
+#10 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\BaseObject.php(109):
+yii\debug\panels\UserPanel->init()
+#11 [internal function]: yii\base\BaseObject->__construct(Array)
+#12 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\di\Container.php(384):
+ReflectionClass->newInstanceArgs(Array)
+#13 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\di\Container.php(156):
+yii\di\Container->build('yii\\debug\\panel...', Array, Array)
+#14 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\BaseYii.php(349):
+yii\di\Container->get('yii\\debug\\panel...', Array, Array)
+#15 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2-debug\src\Module.php(182):
+yii\BaseYii::createObject(Array)
+#16 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2-debug\src\Module.php(154):
+yii\debug\Module->initPanels()
+#17 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\BaseObject.php(109):
+yii\debug\Module->init()
+#18 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Module.php(158):
+yii\base\BaseObject->__construct(Array)
+#19 [internal function]: yii\base\Module->__construct('debug',
+Object(yii\web\Application), Array)
+#20 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\di\Container.php(384):
+ReflectionClass->newInstanceArgs(Array)
+#21 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\di\Container.php(156):
+yii\di\Container->build('yii\\debug\\Modul...', Array, Array)
+#22 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\BaseYii.php(349):
+yii\di\Container->get('yii\\debug\\Modul...', Array, Array)
+#23 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Module.php(427):
+yii\BaseYii::createObject(Array, Array)
+#24 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Application.php(315):
+yii\base\Module->getModule('debug')
+#25 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\web\Application.php(69):
+yii\base\Application->bootstrap()
+#26 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Application.php(273):
+yii\web\Application->bootstrap()
+#27 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\BaseObject.php(109):
+yii\base\Application->init()
+#28 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Application.php(206):
+yii\base\BaseObject->__construct(Array)
+#29 D:\phpstudy_pro\WWW\frontend\web\index.php(17):
+yii\base\Application->__construct(Array)
+#30 {main}
+2023-02-13 20:00:47
+[127.0.0.1][-][t2pc5clgto213hq573o8u86t9i][info][application] $_GET =3D
+[
+    'r' =3D> 'search/index'
+    'q' =3D> '=E4=B8=BA=E4=BB=80=E4=B9=88'
+]
+
+$_POST =3D []
+
+$_FILES =3D []
+
+$_COOKIE =3D [
+    'wordpress_logged_in_86a9106ae65537651a8e456835b316ab' =3D>
+'mmma|1677050114|bT7ng8zBap8ZomuqdwGcjq60357AHSocZMRZYk1b7uI|33c8845584b6d7=
+12613a75dad4396516b8f24492be531ba5872116c6f5fd0330'
+    'wp-settings-time-1' =3D> '1675943997'
+    '_identity-frontend' =3D>
+'ff4723d33490d1a30d5640e71fd7d121f9b6f51fd9475373e1d93f547b10525aa:2:{i:0=
+;s:18:\"_identity-frontend\";i:1;s:46:\"[1,\"4sSpK38KErySZpizaMO18REH4nX=
+WPDrD\",2592000]\";}'
+    '_identity-backend' =3D>
+'7223aaae057f741b3ba5c4d0725f6f17a2846f199c7fcfd05830ef9b8b13aedaa:2:{i:0;s=
+:17:\"_identity-backend\";i:1;s:46:\"[1,\"4sSpK38KErySZpizaMO18REH4nXWPD=
+rD\",2592000]\";}'
+    'BACKEND_FEEHICMS' =3D> 'b2pdvmihg4g8rk9jd24mvd894o'
+    '_csrf_backend' =3D>
+'9998a43e88d0d6bffcdfb7e5eeb483c2e48ce00eb3229d501bb8a016b1295c1ca:2:{i:0;s=
+:13:\"_csrf_backend\";i:1;s:32:\"k3tHQJTTAQsYtJqIwqcgDuS9jKPzoZ9i\";}'
+    'PHPSESSID' =3D> 't2pc5clgto213hq573o8u86t9i'
+    '_identity' =3D>
+'c611cd6c8e95427c47ca9a51bc621bc07ac53230c1792444197f2a353872268da:2:{i:0;=
+s:9:\"_identity\";i:1;s:46:\"[2,\"n5mqrm4-2L5R_evs6a9UBl0up4na2qed\",259=
+2000]\";}'
+    '_csrf' =3D>
+'88ba11669ee0c3c6298f3cb8cdf57fbd12a6a74c451de88ee65ded2727e6d3f8a:2:{i:0;=
+s:5:\"_csrf\";i:1;s:32:\"Lzeu7mpYcUX-UuNQQPcNdc_T1roAxQo6\";}'
+]
+
+$_SESSION =3D [
+    '__flash' =3D> []
+    '__returnUrl' =3D> 'http://localhost:8080/'
+    '__id' =3D> 2
+]
+
+$_SERVER =3D [
+    'DOCUMENT_ROOT' =3D> 'D:\\phpstudy_pro\\WWW\\frontend\\web'
+    'REMOTE_ADDR' =3D> '127.0.0.1'
+    'REMOTE_PORT' =3D> '28265'
+    'SERVER_SOFTWARE' =3D> 'PHP 7.3.4 Development Server'
+    'SERVER_PROTOCOL' =3D> 'HTTP/1.1'
+    'SERVER_NAME' =3D> 'localhost'
+    'SERVER_PORT' =3D> '8080'
+    'REQUEST_URI' =3D>
+'/index.php?r=3Dsearch%2Findex&q=3D%E4%B8%BA%E4%BB%80%E4%B9%88'
+    'REQUEST_METHOD' =3D> 'GET'
+    'SCRIPT_NAME' =3D> '/index.php'
+    'SCRIPT_FILENAME' =3D>
+'D:\\phpstudy_pro\\WWW\\frontend\\web\\index.php'
+    'PHP_SELF' =3D> '/index.php'
+    'QUERY_STRING' =3D> 'r=3Dsearch%2Findex&q=3D%E4%B8%BA%E4%BB%80%E4%B9%88=
+'
+    'HTTP_HOST' =3D> 'localhost:8080'
+    'HTTP_CONNECTION' =3D> 'keep-alive'
+    'HTTP_SEC_CH_UA' =3D> '\"Chromium\";v=3D\"110\", \"Not
+A(Brand\";v=3D\"24\", \"Microsoft Edge\";v=3D\"110\"'
+    'HTTP_SEC_CH_UA_MOBILE' =3D> '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' =3D> '\"Windows\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' =3D> '1'
+    'HTTP_USER_AGENT' =3D> 'Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36
+Edg/110.0.1587.41'
+    'HTTP_ACCEPT' =3D>
+'text/html,application/xhtml+xml,application/xml;q=3D0.9,image/webp,image/a=
+png,*/*;q=3D0.8,application/signed-exchange;v=3Db3;q=3D0.7'
+    'HTTP_SEC_FETCH_SITE' =3D> 'same-origin'
+    'HTTP_SEC_FETCH_MODE' =3D> 'navigate'
+    'HTTP_SEC_FETCH_USER' =3D> '?1'
+    'HTTP_SEC_FETCH_DEST' =3D> 'document'
+    'HTTP_REFERER' =3D> 'http://localhost:8080/'
+    'HTTP_ACCEPT_ENCODING' =3D> 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' =3D>
+'zh-CN,zh;q=3D0.9,en;q=3D0.8,en-GB;q=3D0.7,en-US;q=3D0.6'
+    'HTTP_COOKIE' =3D>
+'wordpress_logged_in_86a9106ae65537651a8e456835b316ab=3Dmmma%7C1677050114%7=
+CbT7ng8zBap8ZomuqdwGcjq60357AHSocZMRZYk1b7uI%7C33c8845584b6d712613a75dad=
+4396516b8f24492be531ba5872116c6f5fd0330;
+wp-settings-time-1=3D1675943997;
+_identity-frontend=3Dff4723d33490d1a30d5640e71fd7d121f9b6f51fd9475373e1d93f=
+547b10525aa%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3=
+Bs%3A46%3A%22%5B1%2C%224sSpK38KErySZpizaMO18REH4nXWPDrD%22%2C2592000%5D%=
+22%3B%7D;
+_identity-backend=3D7223aaae057f741b3ba5c4d0725f6f17a2846f199c7fcfd05830=
+ef9b8b13aedaa%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%=
+3Bs%3A46%3A%22%5B1%2C%224sSpK38KErySZpizaMO18REH4nXWPDrD%22%2C2592000%5D=
+%22%3B%7D;
+BACKEND_FEEHICMS=3Db2pdvmihg4g8rk9jd24mvd894o;
+_csrf_backend=3D9998a43e88d0d6bffcdfb7e5eeb483c2e48ce00eb3229d501bb8a016b12=
+95c1ca%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf_backend%22%3Bi%3A1%3Bs%3A32%3A=
+%22k3tHQJTTAQsYtJqIwqcgDuS9jKPzoZ9i%22%3B%7D;
+PHPSESSID=3Dt2pc5clgto213hq573o8u86t9i;
+_identity=3Dc611cd6c8e95427c47ca9a51bc621bc07ac53230c1792444197f2a353872268=
+da%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2=
+C%22n5mqrm4-2L5R_evs6a9UBl0up4na2qed%22%2C2592000%5D%22%3B%7D;
+_csrf=3D88ba11669ee0c3c6298f3cb8cdf57fbd12a6a74c451de88ee65ded2727e6d3f8a%3=
+A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22Lzeu7mpYcUX-Uu=
+NQQPcNdc_T1roAxQo6%22%3B%7D'
+    'REQUEST_TIME_FLOAT' =3D> 1676289647.8034
+    'REQUEST_TIME' =3D> 1676289647
+]

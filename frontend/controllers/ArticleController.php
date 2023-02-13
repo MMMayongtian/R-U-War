@@ -169,7 +169,6 @@ class ArticleController extends Controller
         isset($model->category) && $model->category->article_template != "" && $template = $model->category->article_template;
         $model->template != "" && $template = $model->template;
         /** @var AdServiceInterface $adService */
-        $adService = Yii::$app->get(AdServiceInterface::ServiceName);
         return $this->render($template, [
             'model' => $model,
             'prev' => $prev,
@@ -177,8 +176,6 @@ class ArticleController extends Controller
             'recommends' => $recommends,
             'commentModel' => $commentModel,
             'commentList' => $commentList,
-            'rightAd1' => $adService->getAdByName("sidebar_right_1"),
-            'rightAd2' => $adService->getAdByName("sidebar_right_2"),
         ]);
     }
 
