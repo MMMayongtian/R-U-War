@@ -1,0 +1,200 @@
+2023-02-12 02:02:57 [-][-][-][error][yii\console\UnknownCommandException] yii\base\InvalidRouteException: Unable to resolve the request "serve\". in D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Module.php:537
+Stack trace:
+#0 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\console\Application.php(180): yii\base\Module->runAction('serve\\', Array)
+#1 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('serve\\', Array)
+#2 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#3 D:\phpstudy_pro\WWW\yii(27): yii\base\Application->run()
+#4 {main}
+
+Next yii\console\UnknownCommandException: Unknown command "serve\". in D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\console\Application.php:183
+Stack trace:
+#0 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('serve\\', Array)
+#1 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#2 D:\phpstudy_pro\WWW\yii(27): yii\base\Application->run()
+#3 {main}
+2023-02-12 02:02:57 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\000\\AppData\\Roaming'
+    'ChocolateyInstall' => 'C:\\ProgramData\\chocolatey'
+    'ChocolateyLastPathUpdate' => '133078916893367818'
+    'CLASSPATH' => '.;D:\\JDK-WIN32\\JDK1.8\\lib\\dt.jar;D:\\JDK-WIN32\\JDK1.8\\lib\\tools.jar'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'LAPTOP-USR6HBI0'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'CUDA_PATH' => 'C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v11.6'
+    'CUDA_PATH_V11_6' => 'C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v11.6'
+    'DriverData' => 'C:\\Windows\\System32\\Drivers\\DriverData'
+    'GOOGLE_API_KEY' => 'no'
+    'GOOGLE_DEFAULT_CLIENT_ID' => 'no'
+    'GOOGLE_DEFAULT_CLIENT_SECRET' => 'no'
+    'HADOOP_HOME' => 'D:\\hadoop-3.1.0'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\000'
+    'INTEL_DEV_REDIST' => 'C:\\Program Files (x86)\\Common Files\\Intel\\Shared Libraries\\'
+    'JAVA_HOME' => 'D:\\JDK-WIN32\\JDK1.8'
+    'LOCALAPPDATA' => 'C:\\Users\\000\\AppData\\Local'
+    'LOGONSERVER' => '\\\\LAPTOP-USR6HBI0'
+    'MAVEN_HOME' => 'D:\\apache-maven-3.6.1'
+    'MIC_LD_LIBRARY_PATH' => 'C:\\Program Files (x86)\\Common Files\\Intel\\Shared Libraries\\compiler\\lib\\mic'
+    'MSMPI_BENCHMARKS' => 'D:\\MS-MPI\\Benchmarks\\'
+    'MSMPI_BIN' => 'D:\\MS-MPI\\Bin\\'
+    'MSMPI_INC' => 'D:\\MPISDK\\Include\\'
+    'MSMPI_LIB32' => 'D:\\MPISDK\\Lib\\x86\\'
+    'MSMPI_LIB64' => 'D:\\MPISDK\\Lib\\x64\\'
+    'NODE_PATH' => 'E:\\Nodejs\\node_global\\node_modules'
+    'NUMBER_OF_PROCESSORS' => '16'
+    'NVTOOLSEXT_PATH' => 'C:\\Program Files\\NVIDIA Corporation\\NvToolsExt\\'
+    'OneDrive' => 'C:\\Users\\000\\OneDrive'
+    'OneDriveConsumer' => 'C:\\Users\\000\\OneDrive'
+    'OS' => 'Windows_NT'
+    'Path' => 'D:\\JDK-WIN32\\JDK1.8\\bin;D:\\JDK-WIN32\\JDK1.8\\jre\\bin;D:\\hadoop-3.1.0\\bin;D:\\MS-MPI\\Bin\\;C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v11.6\\bin;C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v11.6\\libnvvp;C:\\Program Files\\Common Files\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;D:\\VMware\\bin\\;C:\\Program Files\\PlasticSCM5\\server;C:\\Program Files\\PlasticSCM5\\client;C:\\Program Files (x86)\\Common Files\\Intel\\Shared Libraries\\redist\\intel64\\compiler;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;D:\\Xshell\\;C:\\TDM-GCC-64\\bin;D:\\Git\\cmd;D:\\微信开发者工具\\微信web开发者工具\\dll;D:\\PuTTY\\;E:\\MATLAB\\runtime\\win64;E:\\MATLAB\\bin;D:\\Microsoft VS Code\\bin;D:\\Git\\bin\\;C:\\Program Files\\MySQL\\MySQL Server 8.0\\bin;D:\\QT\\5.14.2\\msvc2017_64\\lib\\cmake;C:\\Program Files (x86)\\Microsoft SQL Server\\100\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\100\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\100\\DTS\\Binn\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\NVIDIA Corporation\\Nsight Compute 2022.1.1\\;D:\\apache-maven-3.6.1\\bin;E:\\Nodejs\\;C:\\ProgramData\\chocolatey\\bin;D:\\Redis\\;D:\\phpstudy_pro\\Extensions\\php\\php7.3.4nts;D:\\phpstudy_pro\\Extensions\\php\\php7.3.4nts\\ext;'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'AMD64 Family 23 Model 96 Stepping 1, AuthenticAMD'
+    'PROCESSOR_LEVEL' => '23'
+    'PROCESSOR_REVISION' => '6001'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'QtMsBuild' => 'C:\\Users\\000\\AppData\\Local\\QtMsBuild'
+    'QUARTUS_ROOTDIR' => 'D:\\QuartusAltera\\quartus'
+    'SOPC_KIT_NIOS2' => 'D:\\QuartusAltera\\nios2eds'
+    'splint' => 'C:\\splint-3.0.1.6\\bin'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\000\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\000\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'LAPTOP-USR6HBI0'
+    'USERDOMAIN_ROAMINGPROFILE' => 'LAPTOP-USR6HBI0'
+    'USERNAME' => '马永田'
+    'USERPROFILE' => 'C:\\Users\\000'
+    'VS100COMNTOOLS' => 'D:\\vs2010\\Common7\\Tools\\'
+    'VS160COMCOMNTOOLS' => 'D:\\Visual Studio\\Visual Studio IDE\\Common7\\Tools\\'
+    'windir' => 'C:\\Windows'
+    'PHP_SELF' => './yii'
+    'SCRIPT_NAME' => './yii'
+    'SCRIPT_FILENAME' => './yii'
+    'PATH_TRANSLATED' => './yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1676138577.3471
+    'REQUEST_TIME' => 1676138577
+    'argv' => [
+        0 => './yii'
+        1 => 'serve\\'
+    ]
+    'argc' => 2
+]
+2023-02-12 02:02:59 [-][-][-][error][yii\console\UnknownCommandException] yii\base\InvalidRouteException: Unable to resolve the request "serve\". in D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Module.php:537
+Stack trace:
+#0 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\console\Application.php(180): yii\base\Module->runAction('serve\\', Array)
+#1 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('serve\\', Array)
+#2 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#3 D:\phpstudy_pro\WWW\yii(27): yii\base\Application->run()
+#4 {main}
+
+Next yii\console\UnknownCommandException: Unknown command "serve\". in D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\console\Application.php:183
+Stack trace:
+#0 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('serve\\', Array)
+#1 D:\phpstudy_pro\WWW\vendor\yiisoft\yii2\base\Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#2 D:\phpstudy_pro\WWW\yii(27): yii\base\Application->run()
+#3 {main}
+2023-02-12 02:02:59 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\000\\AppData\\Roaming'
+    'ChocolateyInstall' => 'C:\\ProgramData\\chocolatey'
+    'ChocolateyLastPathUpdate' => '133078916893367818'
+    'CLASSPATH' => '.;D:\\JDK-WIN32\\JDK1.8\\lib\\dt.jar;D:\\JDK-WIN32\\JDK1.8\\lib\\tools.jar'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'LAPTOP-USR6HBI0'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'CUDA_PATH' => 'C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v11.6'
+    'CUDA_PATH_V11_6' => 'C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v11.6'
+    'DriverData' => 'C:\\Windows\\System32\\Drivers\\DriverData'
+    'GOOGLE_API_KEY' => 'no'
+    'GOOGLE_DEFAULT_CLIENT_ID' => 'no'
+    'GOOGLE_DEFAULT_CLIENT_SECRET' => 'no'
+    'HADOOP_HOME' => 'D:\\hadoop-3.1.0'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\000'
+    'INTEL_DEV_REDIST' => 'C:\\Program Files (x86)\\Common Files\\Intel\\Shared Libraries\\'
+    'JAVA_HOME' => 'D:\\JDK-WIN32\\JDK1.8'
+    'LOCALAPPDATA' => 'C:\\Users\\000\\AppData\\Local'
+    'LOGONSERVER' => '\\\\LAPTOP-USR6HBI0'
+    'MAVEN_HOME' => 'D:\\apache-maven-3.6.1'
+    'MIC_LD_LIBRARY_PATH' => 'C:\\Program Files (x86)\\Common Files\\Intel\\Shared Libraries\\compiler\\lib\\mic'
+    'MSMPI_BENCHMARKS' => 'D:\\MS-MPI\\Benchmarks\\'
+    'MSMPI_BIN' => 'D:\\MS-MPI\\Bin\\'
+    'MSMPI_INC' => 'D:\\MPISDK\\Include\\'
+    'MSMPI_LIB32' => 'D:\\MPISDK\\Lib\\x86\\'
+    'MSMPI_LIB64' => 'D:\\MPISDK\\Lib\\x64\\'
+    'NODE_PATH' => 'E:\\Nodejs\\node_global\\node_modules'
+    'NUMBER_OF_PROCESSORS' => '16'
+    'NVTOOLSEXT_PATH' => 'C:\\Program Files\\NVIDIA Corporation\\NvToolsExt\\'
+    'OneDrive' => 'C:\\Users\\000\\OneDrive'
+    'OneDriveConsumer' => 'C:\\Users\\000\\OneDrive'
+    'OS' => 'Windows_NT'
+    'Path' => 'D:\\JDK-WIN32\\JDK1.8\\bin;D:\\JDK-WIN32\\JDK1.8\\jre\\bin;D:\\hadoop-3.1.0\\bin;D:\\MS-MPI\\Bin\\;C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v11.6\\bin;C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v11.6\\libnvvp;C:\\Program Files\\Common Files\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;D:\\VMware\\bin\\;C:\\Program Files\\PlasticSCM5\\server;C:\\Program Files\\PlasticSCM5\\client;C:\\Program Files (x86)\\Common Files\\Intel\\Shared Libraries\\redist\\intel64\\compiler;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;D:\\Xshell\\;C:\\TDM-GCC-64\\bin;D:\\Git\\cmd;D:\\微信开发者工具\\微信web开发者工具\\dll;D:\\PuTTY\\;E:\\MATLAB\\runtime\\win64;E:\\MATLAB\\bin;D:\\Microsoft VS Code\\bin;D:\\Git\\bin\\;C:\\Program Files\\MySQL\\MySQL Server 8.0\\bin;D:\\QT\\5.14.2\\msvc2017_64\\lib\\cmake;C:\\Program Files (x86)\\Microsoft SQL Server\\100\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\100\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\100\\DTS\\Binn\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\NVIDIA Corporation\\Nsight Compute 2022.1.1\\;D:\\apache-maven-3.6.1\\bin;E:\\Nodejs\\;C:\\ProgramData\\chocolatey\\bin;D:\\Redis\\;D:\\phpstudy_pro\\Extensions\\php\\php7.3.4nts;D:\\phpstudy_pro\\Extensions\\php\\php7.3.4nts\\ext;'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'AMD64 Family 23 Model 96 Stepping 1, AuthenticAMD'
+    'PROCESSOR_LEVEL' => '23'
+    'PROCESSOR_REVISION' => '6001'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'QtMsBuild' => 'C:\\Users\\000\\AppData\\Local\\QtMsBuild'
+    'QUARTUS_ROOTDIR' => 'D:\\QuartusAltera\\quartus'
+    'SOPC_KIT_NIOS2' => 'D:\\QuartusAltera\\nios2eds'
+    'splint' => 'C:\\splint-3.0.1.6\\bin'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\000\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\000\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'LAPTOP-USR6HBI0'
+    'USERDOMAIN_ROAMINGPROFILE' => 'LAPTOP-USR6HBI0'
+    'USERNAME' => '马永田'
+    'USERPROFILE' => 'C:\\Users\\000'
+    'VS100COMNTOOLS' => 'D:\\vs2010\\Common7\\Tools\\'
+    'VS160COMCOMNTOOLS' => 'D:\\Visual Studio\\Visual Studio IDE\\Common7\\Tools\\'
+    'windir' => 'C:\\Windows'
+    'PHP_SELF' => './yii'
+    'SCRIPT_NAME' => './yii'
+    'SCRIPT_FILENAME' => './yii'
+    'PATH_TRANSLATED' => './yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1676138579.0277
+    'REQUEST_TIME' => 1676138579
+    'argv' => [
+        0 => './yii'
+        1 => 'serve\\'
+    ]
+    'argc' => 2
+]
